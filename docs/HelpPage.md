@@ -24,9 +24,9 @@ Help Page
 1. Open RStudio   
 1. Select R script with App prefix (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
 
-1. The software will appear as a webpage interface in a default browser <img align="right" border="2px" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">  
+1. The software will appear as a webpage interface in a default browser <img align="center" width="256" height="256" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">  
 
-1. **File**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg) enables to upload user`s input file  <img align="right" border="2px" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/File_image.jpg">    
+1. **File**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg) enables to upload user`s input file      
 
 * Input file should contain five columns with exactly the same column names as shown below:  
 
@@ -42,4 +42,11 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 * **File Separator** p[tion of character separtion in the input file  
 * **Download demo file to local PC...** option provides example file  
 
-*
+1. **Explore**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg) enables to select functionality of the plot  
+* **Plot** tab enables to explore entire plot and visualize any clicked gene labels  
+* **Custom Gene List** tab enables to visualis custom genes of interest   
+* **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
+ 
+1. **Export**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg) enables to download generated plot. Also, a table that represents significant results or mitochodrial process(es)  
+1. **Help**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg) provides breife description of help images 
+1. **About**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AboutIcon_image.jpg) proides infomation about authors, license, used packages and their versions, citation 
