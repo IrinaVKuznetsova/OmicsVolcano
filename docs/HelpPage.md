@@ -82,13 +82,13 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 Explore Tab 
 ------
 * **Plot** tab enables to visualize a gene label of any value represented on the plot  
-&nbsp;&nbsp;&nbsp;&nbsp; *set significance and logFC thresholds (**Settings** at right top corner)      
-&nbsp;&nbsp;&nbsp;&nbsp; *explore any value represented on the plot
+&nbsp;&nbsp;&nbsp;&nbsp; * set significance and logFC thresholds (**Settings** at right top corner)      
+&nbsp;&nbsp;&nbsp;&nbsp; * explore any value represented on the plot
 
  
 * **Custom Gene List** tab enables to visualize custom list of genes of interest   
-&nbsp;&nbsp;&nbsp;&nbsp; *set significance and logFC thresholds (**Settings** at right top corner)     
-&nbsp;&nbsp;&nbsp;&nbsp; *typein own gene names separated by space or upload file with  
+&nbsp;&nbsp;&nbsp;&nbsp; * set significance and logFC thresholds (**Settings** at right top corner)     
+&nbsp;&nbsp;&nbsp;&nbsp; * typein own gene names separated by space or upload file with  
 
 
 * **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
