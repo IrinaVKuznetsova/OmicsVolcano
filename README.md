@@ -7,7 +7,7 @@
 © Copyright (C) 2020  
 https://github.com/IrinaVKuznetsova/OmicsVolcano.git  
   
-Software developers:  
+**Software developers:**  
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
 Artur Lugmayr | email: lartur@acm.org  
 
@@ -21,7 +21,7 @@ General Usage Notes
 
 
 **Software workflow:**  
-**Note:** Anyone with RStuio can use the OmicsVolcano software   
+**Note:** Anyone with RStudio can use the OmicsVolcano software   
 &nbsp;&nbsp;&nbsp;(Step 1) Checks presence of duplicated gene names in the input file. Provides a numeric extension 1,2,3.. to gene names that are duplicated  
 &nbsp;&nbsp;&nbsp;(Step 2) Represents data as volcano plot, and enables interactive way of exploring plot   
 &nbsp;&nbsp;&nbsp;(Step 3) Exports results as an image in selected format  
@@ -34,9 +34,9 @@ Input Data Format
 | ID | GeneSymbol | Description | log2FC | AdjPValue
 | - | - | - | - | - | 
 Q4U4S6 | Xirp2 | Xin actin-binding repeat-containing protein 2 | 6.64 | 1.33E-08
-Q497D7 | Rpl30 | Rpl30 protein | 2.14 | 1.33E-08
+Q497D7 | Rpl30 | Rpl30 protein | 2.14 | 0.8
 Q9CPP6 | Ndufa5 | NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5 | -1.52 | 6.24E-08
-P09055 | Itgb1 | Integrin beta-1 | 1.08 | 6.29E-08
+P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 ... | ... | ... | ... | ...
 
 
@@ -69,7 +69,7 @@ OmicsVolcano Version 1.0 R 3+
 
 
 ## Copyright Notice  
-This project is [licensed under](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/LICENSE.txt) the terms of the **GNU version 3** general public license  
+This project is licensed under the terms of the [**GNU version 3**](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/LICENSE.txt) general public license  
 
 ## Cite  
 Kuznetsova I, Lugmayr A, Rackham O, Filipovska A. OmicsVolcano: software for intuitive visualization and interactive exploration of high throughput biological data. 2020  
