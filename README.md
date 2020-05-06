@@ -40,7 +40,9 @@ P09055 | Itgb1 | Integrin beta-1 | 1.08 | 6.29E-08
 ... | ... | ... | ... | ...
 
 
-**Version control OmicsVolcano Version 1.0 R 3+:**  
+Version control  
+------ 
+OmicsVolcano Version 1.0 R 3+     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tested on Windows 10  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R version 3.6.1 (2019-07-05)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "dplyr" v.0.8.3  
