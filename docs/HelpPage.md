@@ -24,7 +24,7 @@ Help Page
 
 Software Download
 ------
-* Anyone with RStuio can use the OmicsVolcano software. If you don’t have RStuio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
+* Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
 * Download the OmicsVolcano software from GitHub repository as zip folder (Clone or Download; Download ZIP). Unzip folder into a directory of your choice. For example, to the desktop  
 * Open RStudio   
 * Select R script with App prefix (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
@@ -33,14 +33,15 @@ Software Download
 Software Icons  
 ------
 
-The software will appear as a webpage interface in a default browser   
+The software will appear as a webpage interface    
+   
  <img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">   
  
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  **File** tab enables to upload users  input file      
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: such as explore entire plot and visualize labels of any selelcted data points; or visualize a custom list of genes; or visualize a mitochodrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: (1)explore entire plot and visualize labels of any selelcted data points; (2) visualize a custom list of genes; (3) visualize a mitochodrial process(es)   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  **Export** tab enables to download generated plot. Tables show significant values or mitochondrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  **Export** tab enables to download generated plots and tables   
 
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg)  **Help** tab provides brief description of the software usage     
 
@@ -51,12 +52,12 @@ The software will appear as a webpage interface in a default browser
 
 Plot Managment  
 ------
-* Set significance and logFC thresholds (**Settings** at right top corner)      
-* Hold Shift and right click of the mouse to select as many gene labels as required  
+* Set significance and logFC thresholds by using **Settings** tab located at the right top corner      
+* Hold Shift and right click mouse to select as many gene labels as desired   
 **Note:** related information of the selected gene is represented in the table "InputData" below the plot   
 * To disable any changes double click on the plot   
-* Plot has own icons on the right top corner (visible when hovering with the mouse). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
-* If the image is frozen use browser Reload webpage button   
+* Plot has own icons on the right top corner of the plot (become visible when hovering over). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
+* If the image/page is frozen use browser Reload webpage button   
   
   
   
