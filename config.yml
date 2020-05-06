@@ -1,0 +1,30 @@
+homepc:
+  mm_ribos_file = read.table("./ReferenceFiles/Mouse/mm_Ribosomal_processes19March20.txt",
+                             header = T,
+                             sep    = "\t",
+                             fill   = T,
+                             quote  = "")   # dim = 82 x 3 | yourlist  Entry  Entry.name Protein.names Gene.names Organis
+  mm_processes_file = read.table("./ReferenceFiles/Mouse/mm_MitoCarta_MitoXplorer_AF_2April2020.txt",
+                                 header = T,
+                                 sep    = "\t",
+                                 fill   = T, 
+                                 quote  = "")   # dim = 1495  x 3 | GeneID Symbol Description Synonyms Maestro.score FDR Evidence Tissues
+  hs_ribos_file = read.table("./ReferenceFiles/Human/hs_ribosomal_30March2020.txt",
+                             header = T,
+                             sep    = "\t",
+                             fill   = T,
+                             quote  = "")[, c(2,3,4)] # dim = 82  x 4
+  hs_processes_file = read.table("./ReferenceFiles/Human/hs_MitoCarta_MitoXplorer_AF_2April2020.txt",
+                                 header = T,
+                                 sep    = "\t",
+                                 fill   = T, 
+                                 quote  = "")[,c(1,2,3,4)]   # dim(1516    5)
+
+university:
+  ribos_LSU_file = read.table("//uniwa.uwa.edu.au/userhome/staff8/00090658/Desktop/2019/0_mito_db/LSU_portienEntries.txt",
+  mm_processes_file = read.table("//uniwa.uwa.edu.au/userhome/staff8/00090658/Desktop/0_Shiny_db/MitoCarta_MitoXplorer_AF_5March2020.txt",
+  hs_ribos_file = read.table("//uniwa.uwa.edu.au/userhome/staff8/00090658/Desktop/2019/0_mito_db/LSU_portienEntries.txt",
+  hs_processes_file = read.table("//uniwa.uwa.edu.au/userhome/staff8/00090658/Desktop/0_Shiny_db/MitoCarta_MitoXplorer_AF_5March2020.txt",
+
+testui:
+  

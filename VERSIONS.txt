@@ -1,0 +1,31 @@
+RESOLVED ISSUES [6th May 2020]
+- Connect "Upload a Gene file" to the correct upload tab in the main window
+- Implement the messages window on the right top of the applicaiton
+- Explore Plot values: correct the table, and insert 2xbr
+- Explore Custom Gene list: correct teh table and insert 2xbr
+- Explore Custom Gene list: file upload is not working
+
+OPEN ISSUES FOR [7th May 2020]
+- Fix remove duplicates in Server needs to be validated (and checked)
+- [Irina] Check the correct loading of files as an exception that the file is not
+  found is triggered during startup
+- [Irina] download plot does not work, and it needs to be debugged
+
+
+OPEN ISSUES FOR [8th May 2020]
+- [Artur] Settings dialogue threshold/significance is not working for different windows
+- [Irina] HTML file help text, fix all the errors, but keep the other intact
+- [Artur] Under Home Page add some info about the software (or above it)
+- [Irina] About text content convert the file to HTML and style it well
+- [Irina] Help text content convert the file to HTML and style it well
+- [Artur] remove all the debug texts (e.g. menues, none, etc.) and cleanup code
+- orca function for file export: 
+
+OPENED ISSUES FOR A LATER RELEASE
+- Implement notification handling on top right header bar with list items 
+- reslove help page HTML file, and remove several classes and styles
+- Implement exception handling in the server file and link it to the messages
+- Exit application menue button on the left sidebar implementation
+- Implement the menue tab for exit: menue_tab_exit
+- "Plot" needs to be placed into boxes and resized to the size of teh screen
+- all explore functions in the same structure as Mitochondrial Process

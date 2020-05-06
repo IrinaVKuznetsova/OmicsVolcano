@@ -1,0 +1,83 @@
+ID	GeneName	Description	Process
+Q9NWT8	AURKAIP1	"Aurora kinase A-interacting protein (AURKA-interacting protein) (28S ribosomal protein S38, mitochondrial) (MRP-S38) (Mitochondrial small ribosomal subunit protein mS38)"	Ribosomal
+Q96BP2	CHCHD1	"Coiled-coil-helix-coiled-coil-helix domain-containing protein 1 (28S ribosomal protein S37, mitochondrial) (MRP-S37) (Mitochondrial small ribosomal subunit protein mS37) (Nuclear protein C2360)"	Ribosomal
+P51398	DAP3 	"28S ribosomal protein S29, mitochondrial (MRP-S29) (S29mt) (Death-associated protein 3) (DAP-3) (Ionizing radiation resistance conferring protein) (Mitochondrial small ribosomal subunit protein mS29)"	Ribosomal
+Q8TAE8	GADD45GIP1 	"Growth arrest and DNA damage-inducible proteins-interacting protein 1 (39S ribosomal protein L59, mitochondrial) (MRP-L59) (CKII beta-associating protein) (CR6-interacting factor 1) (CRIF1) (Mitochondrial large ribosomal subunit protein mL64) (Papillomavirus L2-interacting nuclear protein 1) (PLINP) (PLINP-1) (p53-responsive gene 6 protein)"	Ribosomal
+Q9BYD6	MRPL1 	"39S ribosomal protein L1, mitochondrial (L1mt) (MRP-L1) (Mitochondrial large ribosomal subunit protein uL1m)"	Ribosomal
+Q7Z7H8	MRPL10 	"39S ribosomal protein L10, mitochondrial (L10mt) (MRP-L10) (39S ribosomal protein L8, mitochondrial) (L8mt) (MRP-L8) (Mitochondrial large ribosomal subunit protein uL10m)"	Ribosomal
+Q9Y3B7	MRPL11 	"39S ribosomal protein L11, mitochondrial (L11mt) (MRP-L11) (Mitochondrial large ribosomal subunit protein uL11m)"	Ribosomal
+P52815	MRPL12 	"39S ribosomal protein L12, mitochondrial (L12mt) (MRP-L12) (5c5-2) (Mitochondrial large ribosomal subunit protein bL12m)"	Ribosomal
+Q9BYD1	MRPL13	"39S ribosomal protein L13, mitochondrial (L13mt) (MRP-L13) (Mitochondrial large ribosomal subunit protein uL13m)"	Ribosomal
+Q6P1L8	MRPL14 	"39S ribosomal protein L14, mitochondrial (L14mt) (MRP-L14) (39S ribosomal protein L32, mitochondrial) (L32mt) (MRP-L32) (Mitochondrial large ribosomal subunit protein uL14m)"	Ribosomal
+Q9P015	MRPL15 	"39S ribosomal protein L15, mitochondrial (L15mt) (MRP-L15) (Mitochondrial large ribosomal subunit protein uL15m)"	Ribosomal
+Q9NX20	MRPL16 	"39S ribosomal protein L16, mitochondrial (L16mt) (MRP-L16) (Mitochondrial large ribosomal subunit protein uL16m)"	Ribosomal
+Q9NRX2	MRPL17 	"39S ribosomal protein L17, mitochondrial (L17mt) (MRP-L17) (LYST-interacting protein 2) (Mitochondrial large ribosomal subunit protein bL17m)"	Ribosomal
+Q9H0U6	MRPL18	"39S ribosomal protein L18, mitochondrial (L18mt) (MRP-L18) (Mitochondrial large ribosomal subunit protein uL18m)"	Ribosomal
+P49406	MRPL19	"39S ribosomal protein L19, mitochondrial (L19mt) (MRP-L19) (39S ribosomal protein L15, mitochondrial) (L15mt) (MRP-L15) (Mitochondrial large ribosomal subunit protein bL19m)"	Ribosomal
+Q5T653	MRPL2	"39S ribosomal protein L2, mitochondrial (L2mt) (MRP-L2) (Mitochondrial large ribosomal subunit protein uL2m)"	Ribosomal
+Q9BYC9	MRPL20	"39S ribosomal protein L20, mitochondrial (L20mt) (MRP-L20) (Mitochondrial large ribosomal subunit protein bL20m)"	Ribosomal
+Q7Z2W9	MRPL21	"39S ribosomal protein L21, mitochondrial (L21mt) (MRP-L21) (Mitochondrial large ribosomal subunit protein bL21m)"	Ribosomal
+Q9NWU5	MRPL22 	"39S ribosomal protein L22, mitochondrial (L22mt) (MRP-L22) (39S ribosomal protein L25, mitochondrial) (L25mt) (MRP-L25) (Mitochondrial large ribosomal subunit protein uL22m)"	Ribosomal
+Q16540	MRPL23 	"39S ribosomal protein L23, mitochondrial (L23mt) (MRP-L23) (L23 mitochondrial-related protein) (Mitochondrial large ribosomal subunit protein uL23m) (Ribosomal protein L23-like)"	Ribosomal
+Q96A35	MRPL24	"39S ribosomal protein L24, mitochondrial (L24mt) (MRP-L24) (Mitochondrial large ribosomal subunit protein uL24m)"	Ribosomal
+Q9P0M9	MRPL27 	"39S ribosomal protein L27, mitochondrial (L27mt) (MRP-L27) (Mitochondrial large ribosomal subunit protein bL27m)"	Ribosomal
+Q13084	MRPL28 	"39S ribosomal protein L28, mitochondrial (L28mt) (MRP-L28) (Melanoma antigen p15) (Melanoma-associated antigen recognized by T-lymphocytes) (Mitochondrial large ribosomal subunit protein bL28m)"	Ribosomal
+P09001	MRPL3 	"39S ribosomal protein L3, mitochondrial (L3mt) (MRP-L3) (Mitochondrial large ribosomal subunit protein uL3m)"	Ribosomal
+Q8TCC3	MRPL30 	"39S ribosomal protein L30, mitochondrial (L30mt) (MRP-L30) (39S ribosomal protein L28, mitochondrial) (L28mt) (MRP-L28) (Mitochondrial large ribosomal subunit protein uL30m)"	Ribosomal
+Q9BYC8	MRPL32	"39S ribosomal protein L32, mitochondrial (L32mt) (MRP-L32) (Mitochondrial large ribosomal subunit protein bL32m)"	Ribosomal
+O75394	MRPL33 	"39S ribosomal protein L33, mitochondrial (L33mt) (MRP-L33) (Mitochondrial large ribosomal subunit protein bL33m)"	Ribosomal
+Q9BQ48	MRPL34	"39S ribosomal protein L34, mitochondrial (L34mt) (MRP-L34) (Mitochondrial large ribosomal subunit protein bL34m)"	Ribosomal
+Q9NZE8	MRPL35 	"39S ribosomal protein L35, mitochondrial (L35mt) (MRP-L35) (Mitochondrial large ribosomal subunit protein bL35m)"	Ribosomal
+Q9P0J6	MRPL36 	"39S ribosomal protein L36, mitochondrial (L36mt) (MRP-L36) (BRCA1-interacting protein 1) (Mitochondrial large ribosomal subunit protein bL36m)"	Ribosomal
+Q9BZE1	MRPL37	"39S ribosomal protein L37, mitochondrial (L37mt) (MRP-L37) (39S ribosomal protein L2, mitochondrial) (L2mt) (MRP-L2) (Mitochondrial large ribosomal subunit protein mL37)"	Ribosomal
+Q96DV4	MRPL38 	"39S ribosomal protein L38, mitochondrial (L38mt) (MRP-L38) (Mitochondrial large ribosomal subunit protein mL38)"	Ribosomal
+Q9NYK5	MRPL39 	"39S ribosomal protein L39, mitochondrial (L39mt) (MRP-L39) (39S ribosomal protein L5, mitochondrial) (L5mt) (MRP-L5) (Mitochondrial large ribosomal subunit protein mL39)"	Ribosomal
+Q9BYD3	MRPL4 	"39S ribosomal protein L4, mitochondrial (L4mt) (MRP-L4) (Mitochondrial large ribosomal subunit protein uL4m)"	Ribosomal
+Q9NQ50	MRPL40 	"39S ribosomal protein L40, mitochondrial (L40mt) (MRP-L40) (Mitochondrial large ribosomal subunit protein mL40) (Nuclear localization signal-containing protein deleted in velocardiofacial syndrome) (Up-regulated in metastasis)"	Ribosomal
+Q8IXM3	MRPL41	"39S ribosomal protein L41, mitochondrial (L41mt) (MRP-L41) (39S ribosomal protein L27 homolog) (Bcl-2-interacting mitochondrial ribosomal protein L41) (Cell proliferation-inducing gene 3 protein) (MRP-L27 homolog) (Mitochondrial large ribosomal subunit protein mL41)"	Ribosomal
+Q9Y6G3	MRPL42	"39S ribosomal protein L42, mitochondrial (L42mt) (MRP-L42) (39S ribosomal protein L31, mitochondrial) (L31mt) (MRP-L31) (Mitochondrial large ribosomal subunit protein mL42)"	Ribosomal
+Q8N983	MRPL43	"39S ribosomal protein L43, mitochondrial (L43mt) (MRP-L43) (Mitochondrial large ribosomal subunit protein mL43) (Mitochondrial ribosomal protein bMRP36a)"	Ribosomal
+Q9H9J2	MRPL44	"39S ribosomal protein L44, mitochondrial (L44mt) (MRP-L44) (EC 3.1.26.-) (Mitochondrial large ribosomal subunit protein mL44)"	Ribosomal
+Q9BRJ2	MRPL45	"39S ribosomal protein L45, mitochondrial (L45mt) (MRP-L45) (Mitochondrial large ribosomal subunit protein mL45)"	Ribosomal
+Q9H2W6	MRPL46	"39S ribosomal protein L46, mitochondrial (L46mt) (MRP-L46) (Mitochondrial large ribosomal subunit protein mL46) (P2ECSL)"	Ribosomal
+Q9HD33	MRPL47	"39S ribosomal protein L47, mitochondrial (L47mt) (MRP-L47) (Mitochondrial large ribosomal subunit protein uL29m) (Nasopharyngeal carcinoma metastasis-related protein 1)"	Ribosomal
+Q96GC5	MRPL48	"39S ribosomal protein L48, mitochondrial (L48mt) (MRP-L48) (Mitochondrial large ribosomal subunit protein mL48)"	Ribosomal
+Q13405	MRPL49	"39S ribosomal protein L49, mitochondrial (L49mt) (MRP-L49) (Mitochondrial large ribosomal subunit protein mL49) (Neighbor of FAU) (NOF) (Protein NOF1)"	Ribosomal
+Q8N5N7	MRPL50	"39S ribosomal protein L50, mitochondrial (L50mt) (MRP-L50) (Mitochondrial large ribosomal subunit protein mL50)"	Ribosomal
+Q4U2R6	MRPL51	"39S ribosomal protein L51, mitochondrial (L51mt) (MRP-L51) (Mitochondrial large ribosomal subunit protein mL51) (bMRP-64) (bMRP64)"	Ribosomal
+Q86TS9	MRPL52	"39S ribosomal protein L52, mitochondrial (L52mt) (MRP-L52) (Mitochondrial large ribosomal subunit protein mL52)"	Ribosomal
+Q96EL3	MRPL53	"39S ribosomal protein L53, mitochondrial (L53mt) (MRP-L53) (Mitochondrial large ribosomal subunit protein mL53)"	Ribosomal
+Q6P161	MRPL54	"39S ribosomal protein L54, mitochondrial (L54mt) (MRP-L54) (Mitochondrial large ribosomal subunit protein mL54)"	Ribosomal
+Q7Z7F7	MRPL55	"39S ribosomal protein L55, mitochondrial (L55mt) (MRP-L55) (Mitochondrial large ribosomal subunit protein bL31m) (Mitochondrial large ribosomal subunit protein mL55)"	Ribosomal
+Q9BQC6	MRPL57	"Ribosomal protein 63, mitochondrial (hMRP63) (Mitochondrial large ribosomal subunit protein mL63) (Mitochondrial ribosomal protein 63) (Mitochondrial ribosomal protein L57)"	Ribosomal
+Q14197	MRPL58	"Peptidyl-tRNA hydrolase ICT1, mitochondrial (EC 3.1.1.29) (39S ribosomal protein L58, mitochondrial) (MRP-L58) (Digestion substraction 1) (DS-1) (Immature colon carcinoma transcript 1 protein) (Mitochondrial large ribosomal subunit protein mL62)"	Ribosomal
+Q9BYD2	MRPL9	"39S ribosomal protein L9, mitochondrial (L9mt) (MRP-L9) (Mitochondrial large ribosomal subunit protein bL9m)"	Ribosomal
+P82664	MRPS10	"28S ribosomal protein S10, mitochondrial (MRP-S10) (S10mt) (Mitochondrial small ribosomal subunit protein uS10m)"	Ribosomal
+P82912	MRPS11	"28S ribosomal protein S11, mitochondrial (MRP-S11) (S11mt) (Cervical cancer proto-oncogene 2 protein) (HCC-2) (Mitochondrial small ribosomal subunit protein uS11m)"	Ribosomal
+O15235	MRPS12	"28S ribosomal protein S12, mitochondrial (MRP-S12) (S12mt) (MT-RPS12) (Mitochondrial small ribosomal subunit protein uS12m)"	Ribosomal
+O60783	MRPS14	"28S ribosomal protein S14, mitochondrial (MRP-S14) (S14mt) (Mitochondrial small ribosomal subunit protein uS14m)"	Ribosomal
+P82914	MRPS15	"28S ribosomal protein S15, mitochondrial (MRP-S15) (S15mt) (Mitochondrial small ribosomal subunit protein uS15m)"	Ribosomal
+Q9Y3D3	MRPS16	"28S ribosomal protein S16, mitochondrial (MRP-S16) (S16mt) (Mitochondrial small ribosomal subunit protein bS16m)"	Ribosomal
+Q9Y2R5	MRPS17	"28S ribosomal protein S17, mitochondrial (MRP-S17) (S17mt) (Mitochondrial small ribosomal subunit protein uS17m)"	Ribosomal
+Q9NVS2	MRPS18A	"39S ribosomal protein S18a, mitochondrial (MRP-S18-a) (Mrps18a) (S18mt-a) (39S ribosomal protein S18-3, mitochondrial) (MRP-S18-3) (Mitochondrial large ribosomal subunit protein bS18a) (Mitochondrial large ribosomal subunit protein mL66)"	Ribosomal
+Q9Y676	MRPS18B	"28S ribosomal protein S18b, mitochondrial (MRP-S18-b) (Mrps18-b) (S18mt-b) (28S ribosomal protein S18-2, mitochondrial) (MRP-S18-2) (Mitochondrial small ribosomal subunit protein bS18b) (Mitochondrial small ribosomal subunit protein mS40)"	Ribosomal
+Q9Y3D5	MRPS18C	"28S ribosomal protein S18c, mitochondrial (MRP-S18-c) (Mrps18-c) (S18mt-c) (28S ribosomal protein S18-1, mitochondrial) (MRP-S18-1) (Mitochondrial small ribosomal subunit protein bS18c) (Mitochondrial small ribosomal subunit protein bS18m)"	Ribosomal
+Q9Y399	MRPS2	"28S ribosomal protein S2, mitochondrial (MRP-S2) (S2mt) (Mitochondrial small ribosomal subunit protein uS2m)"	Ribosomal
+P82921	MRPS21	"28S ribosomal protein S21, mitochondrial (MRP-S21) (S21mt) (Mitochondrial small ribosomal subunit protein bS21m)"	Ribosomal
+P82650	MRPS22	"28S ribosomal protein S22, mitochondrial (MRP-S22) (S22mt) (Mitochondrial small ribosomal subunit protein mS22)"	Ribosomal
+Q9Y3D9	MRPS23	"28S ribosomal protein S23, mitochondrial (MRP-S23) (S23mt) (Mitochondrial small ribosomal subunit protein mS23)"	Ribosomal
+Q96EL2	MRPS24	"28S ribosomal protein S24, mitochondrial (MRP-S24) (S24mt) (Mitochondrial small ribosomal subunit protein uS3m) (bMRP-47) (bMRP47)"	Ribosomal
+P82663	MRPS25	"28S ribosomal protein S25, mitochondrial (MRP-S25) (S25mt) (Mitochondrial small ribosomal subunit protein mS25)"	Ribosomal
+Q9BYN8	MRPS26	"28S ribosomal protein S26, mitochondrial (MRP-S26) (S26mt) (28S ribosomal protein S13, mitochondrial) (MRP-S13) (S13mt) (Mitochondrial small ribosomal subunit protein mS26)"	Ribosomal
+Q92552	MRPS27	"28S ribosomal protein S27, mitochondrial (MRP-S27) (S27mt) (Mitochondrial ribosomal protein S27) (Mitochondrial small ribosomal subunit protein mS27)"	Ribosomal
+Q9Y2Q9	MRPS28	"28S ribosomal protein S28, mitochondrial (MRP-S28) (S28mt) (28S ribosomal protein S35, mitochondrial) (MRP-S35) (S35mt) (Mitochondrial small ribosomal subunit protein bS1m)"	Ribosomal
+Q9NP92	MRPS30	"39S ribosomal protein S30, mitochondrial (MRP-S30) (S30mt) (Mitochondrial large ribosomal subunit protein mL65) (Mitochondrial large ribosomal subunit protein mS30) (Programmed cell death protein 9)"	Ribosomal
+Q92665	MRPS31	"28S ribosomal protein S31, mitochondrial (MRP-S31) (S31mt) (Imogen 38) (Mitochondrial small ribosomal subunit protein mS31)"	Ribosomal
+Q9Y291	MRPS33	"28S ribosomal protein S33, mitochondrial (MRP-S33) (S33mt) (Mitochondrial small ribosomal subunit protein mS33)"	Ribosomal
+P82930	MRPS34	"28S ribosomal protein S34, mitochondrial (MRP-S34) (S34mt) (Mitochondrial small ribosomal subunit protein mS34)"	Ribosomal
+P82673	MRPS35	"28S ribosomal protein S35, mitochondrial (MRP-S35) (S35mt) (28S ribosomal protein S28, mitochondrial) (MRP-S28) (S28mt) (Mitochondrial small ribosomal subunit protein mS35)"	Ribosomal
+P82675	MRPS5	"28S ribosomal protein S5, mitochondrial (MRP-S5) (S5mt) (Mitochondrial small ribosomal subunit protein uS5m)"	Ribosomal
+P82932	MRPS6	"28S ribosomal protein S6, mitochondrial (MRP-S6) (S6mt) (Mitochondrial small ribosomal subunit protein bS6m)"	Ribosomal
+Q9Y2R9	MRPS7	"28S ribosomal protein S7, mitochondrial (MRP-S7) (S7mt) (Mitochondrial small ribosomal subunit protein uS7m) (bMRP-27a) (bMRP27a)"	Ribosomal
+P82933	MRPS9	"28S ribosomal protein S9, mitochondrial (MRP-S9) (S9mt) (Mitochondrial small ribosomal subunit protein uS9m)"	Ribosomal
+Q96EY7	PTCD3	"Pentatricopeptide repeat domain-containing protein 3, mitochondrial (28S ribosomal protein S39, mitochondrial) (MRP-S39) (Mitochondrial small ribosomal subunit protein mS39) (Transformation-related gene 15 protein) (TRG-15)"	Ribosomal

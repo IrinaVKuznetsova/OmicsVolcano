@@ -1,0 +1,241 @@
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+/*  -----------------------------------------------------------------------------------*/
+/*  BACKGROUND COLOR */
+/*  -----------------------------------------------------------------------------------*/
+/* 1.0. App's HEADING background color 8C8C8C-grey; #48D1CC - MediumTurquoise;  #DCDCDC -Gainsboro*/
+.skin-blue .main-header .logo {           
+background-color:  #48D1CC;}            
+           
+/* logo when hovered */                   
+.skin-blue .main-header .logo:hover {
+background-color:  #48D1CC; }
+
+/* navbar (rest of the header) */
+.skin-blue .main-header .navbar {
+background-color:  #48D1CC; }
+
+.main-header .logo {
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+/* 1.1. App's MAIN BODY background color */
+body {
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: normal;
+	background: none;   /* color behaind plot */
+	outline: none;
+	color: black;
+}
+
+/* 1.2. App's SIDEBAR background color grey - #8C8C8C;  light grey - #d8d9d2   */
+/* main sidebar */
+.skin-blue .main-sidebar {
+	background-color:  #DCDCDC;
+ }   
+
+/* active selected tab in the sidebarmenu */
+.skin-blue .main-sidebar .sidebar .sidebar-menu .active a{
+	background-color:  #DCDCDC;
+ }
+
+/* other links in the sidebarmenu */
+.skin-blue .main-sidebar .sidebar .sidebar-menu a{
+	background-color: #DCDCDC;
+}
+
+/* other links in the sidebarmenu when hovered */
+.skin-blue .main-sidebar .sidebar .sidebar-menu a:hover{
+	background-color: #DCDCDC;
+}
+
+/* toggle button when hovered  */
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+	background-color: #DCDCDC;
+}
+
+/* TABs top color - minty */                    
+.nav-tabs-custom .nav-tabs li.active {
+	border-color:      #48D1CC;}
+
+/* NOTE: Example file styling is done in .R script directly*/
+
+/*  -----------------------------------------------------------------------------------*/
+/*  SLIDER */
+/*  -----------------------------------------------------------------------------------*/
+/* 2.0. Style all elements with the class name "js-range-slider"  Signif */
+.js-irs-0 .irs-bar {
+	border-top-color: 		#48D1CC;
+	border-bottom-color: 	#48D1CC;    /*outline color of the slider*/
+} 
+
+.js-irs-0 .irs-bar-edge {
+	border-color: #48D1CC;    /*outline color of the slider*/
+}
+
+.js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {
+	background: #48D1CC;    /*inner color of the slider*/
+	color: 		black;
+}
+
+/* 2.1. TICKMARKS numbers in black color */
+.irs-grid-text {
+	font-family: 	Arial, sans-serif;
+	color: 			black;
+}
+
+/* 2.2. MAX and MIN text */
+/*.irs-data-min {font-family: 'arial'; color: black;}*/
+/*.irs-data-max {font-family: 'arial'; color: black;}*/
+
+/* 2.3. BROWSER button control; FONT family*/
+.form-control {
+	font-size: 		12px;
+	font-family: 	Arial, sans-serif;
+	border-color: 	#cccccc;
+	box-shadow: 	none;
+	margin-top:		1px;
+	margin-bottom:	1px;
+}
+
+/* 2.3. BROWSER button control font family*/
+/* .input-group {
+	font-size: 		20px;
+	font-family: 	Arial, sans-serif;
+	border-color: 	#cccccc;
+	margin-top:		1px;   /* 90px works*/
+	/*margin-bottom:	1px;   /* 90px works*/
+/*} */
+
+/* Spacing for Significance; vertical Threshold*/
+#VerticalThreshold{
+	margin-top:		10px;   /* 90px works*/
+	margin-bottom:	10px;   /* 90px works*/
+	}
+/*-------------------------*/
+
+/*TEST remove blue outline*/
+/* .js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+} */
+
+/*  -----------------------------------------------------------------------------------*/
+/*  TEXTUAL PROPERTIES */
+/*  -----------------------------------------------------------------------------------*/
+/* 3.0. WIDGETS LABELS styling */
+.form-group {             /* control-label - highlights in red all widgets lables organism, Select Plot  */
+	background:  	none;
+	color: 			black;
+	font-size: 		12px;
+	margin-bottom: 	1px;    /* */
+	margin-top: 	1px;
+	line-height: 	1em;
+	box-shadow: none}     /* space between lines*/
+
+/* 3.1. HEADER5 Text properties  */
+h5{
+	color: 			black;
+	font-size: 		15px;
+        text-align: left;
+	text-transform: uppercase;
+	text-indent: 15px;	
+	font-weight: 	bold;
+	font-family: 	Arial, sans-serif;
+	margin-top:		30px;
+	margin-bottom:	1px;
+}
+
+/* 3.2. HORIZONTAL LINES separating tasks */
+/* hr{
+	border-top: 	2px solid #48D1CC;	
+	margin-bottom: 	3px;    
+	margin-top: 	5px;
+	line-height: 	1em;
+} */
+
+/* 3.3. VERTICAL LINE separates tasks */
+/* .row {
+	color: 	#48D1CC;
+} */
+
+/* 3.4. SIDEBAR text color */
+#sidebarItemExpanded .sidebar{
+	font-family: 	Arial, sans-serif;
+	color: 			black;
+	font-size: 		12px;
+	font-style: 	normal;
+	text-align: 	left;
+	background: 	#DCDCDC;
+}
+
+
+/*  -----------------------------------------------------------------------------------*/
+/*  DOWNLOAD WIDGETS buttom */
+/*  -----------------------------------------------------------------------------------*/
+/* 4.0. Line space between BROWSE and next section */
+/* .btn, .btn-default, .btn-file, .input-group-btn{
+*/
+#InputFile{
+	margin-bottom: 	1px;
+}
+
+/* 4.1. DOWNLOAD widgets */
+#DownloadPlot, #DownloadTbl  {
+	width: 			130px; 
+	color: 			black;
+	font-style: 	normal;
+	/*margin-left: 	14px;  */
+	font-family: 	Arial, sans-serif;
+	font-size: 		12px;
+	text-align: 	left;
+	outline: 		none;
+	}
+
+/*  WIDGETS: Organisms; Select Plot; Select Table; Plot File Format; File Format    */
+.control-label {
+	font-size: 	12px;
+	color: 		black;
+ 	border: 	none;
+	outline: 	none;
+	border-color: none;
+	}
+
+/* CONVERTER tab downloads options*/
+/*btn btn-default shiny-download-link */
+#downloadDataConverted {
+	width: 			130px; 
+	color: 			black;
+	font-style: 	normal;
+	margin-left: 	14px;  
+	font-family: 	Arial, sans-serif;
+	font-size: 		12px;
+	text-align: 	left;
+	outline: 		none;
+	margin-top:		1px;
+	margin-bottom:	1px;
+	
+}

@@ -1,0 +1,83 @@
+GeneName	Description	Process
+1	Mrpl10	39S ribosomal protein L10, mitochondrial (L10mt) (MRP-L10)	Ribosomal
+2	Mrpl2	39S ribosomal protein L2, mitochondrial (L2mt) (MRP-L2)	Ribosomal
+3	Mrpl4	39S ribosomal protein L4, mitochondrial (L4mt) (MRP-L4)	Ribosomal
+4	Mrpl49	39S ribosomal protein L49, mitochondrial (L49mt) (MRP-L49)	Ribosomal
+5	Mrpl52	39S ribosomal protein L52, mitochondrial (L52mt) (MRP-L52)	Ribosomal
+6	Mrpl32	39S ribosomal protein L32, mitochondrial (L32mt) (MRP-L32) (Heart-expressed gene 1 protein)	Ribosomal
+7	Mrpl58	Peptidyl-tRNA hydrolase ICT1, mitochondrial (EC 3.1.1.29) (39S ribosomal protein L58, mitochondrial) (MRP-L58) (Immature colon carcinoma transcript 1 protein homolog)	Ribosomal
+8	Mrpl45	39S ribosomal protein L45, mitochondrial (L45mt) (MRP-L45)	Ribosomal
+9	Mrpl24	39S ribosomal protein L24, mitochondrial (L24mt) (MRP-L24)	Ribosomal
+10	Mrpl22	39S ribosomal protein L22, mitochondrial (L22mt) (MRP-L22)	Ribosomal
+11	Mrpl38	39S ribosomal protein L38, mitochondrial (L38mt) (MRP-L38)	Ribosomal
+12	Mrpl36	39S ribosomal protein L36, mitochondrial (L36mt) (MRP-L36)	Ribosomal
+13	Mrps30	28S ribosomal protein S30, mitochondrial (MRP-S30) (S30mt)	Ribosomal
+14	Mrpl57	Ribosomal protein 63, mitochondrial (Mitochondrial ribosomal protein 63) (Mitochondrial ribosomal protein L57) (mMRP63)	Ribosomal
+15	Mrpl13	39S ribosomal protein L13, mitochondrial (L13mt) (MRP-L13)	Ribosomal
+16	Mrpl40	39S ribosomal protein L40, mitochondrial (L40mt) (MRP-L40) (Nuclear localization signal-containing protein deleted in velocardiofacial syndrome homolog)	Ribosomal
+17	Mrpl39	39S ribosomal protein L39, mitochondrial (L39mt) (MRP-L39)	Ribosomal
+18	Mrpl14	39S ribosomal protein L14, mitochondrial (L14mt) (MRP-L14)	Ribosomal
+19	Mrps18a	28S ribosomal protein S18a, mitochondrial (MRP-S18-a) (Mrps18a) (S18mt-a) (28S ribosomal protein S18-3, mitochondrial) (MRP-S18-3)	Ribosomal
+20	Mrpl28	39S ribosomal protein L28, mitochondrial (L28mt) (MRP-L28)	Ribosomal
+21	Mrpl27	39S ribosomal protein L27, mitochondrial (L27mt) (MRP-L27)	Ribosomal
+22	Mrpl16	39S ribosomal protein L16, mitochondrial (L16mt) (MRP-L16)	Ribosomal
+23	Mrpl21	39S ribosomal protein L21, mitochondrial (L21mt) (MRP-L21)	Ribosomal
+24	Mrpl11	39S ribosomal protein L11, mitochondrial (L11mt) (MRP-L11)	Ribosomal
+25	Mrpl43	39S ribosomal protein L43, mitochondrial (L43mt) (MRP-L43) (Mitochondrial ribosomal protein bMRP36a)	Ribosomal
+26	Mrpl30	39S ribosomal protein L30, mitochondrial (L30mt) (MRP-L30)	Ribosomal
+27	Mrpl44	39S ribosomal protein L44, mitochondrial (L44mt) (MRP-L44) (EC 3.1.26.-)	Ribosomal
+28	Mrpl9	39S ribosomal protein L9, mitochondrial (L9mt) (MRP-L9)	Ribosomal
+29	Mrpl37	39S ribosomal protein L37, mitochondrial (L37mt) (MRP-L37)	Ribosomal
+30	Mrpl20	39S ribosomal protein L20, mitochondrial (L20mt) (MRP-L20)	Ribosomal
+31	Mrpl1	39S ribosomal protein L1, mitochondrial (L1mt) (MRP-L1)	Ribosomal
+32	Mrpl53	39S ribosomal protein L53, mitochondrial (L53mt) (MRP-L53)	Ribosomal
+33	Mrpl19	39S ribosomal protein L19, mitochondrial (L19mt) (MRP-L19)	Ribosomal
+34	Mrpl51	39S ribosomal protein L51, mitochondrial (L51mt) (MRP-L51) (bMRP-64) (bMRP64)	Ribosomal
+35	Mrpl46	39S ribosomal protein L46, mitochondrial (L46mt) (MRP-L46)	Ribosomal
+36	Mrpl48	39S ribosomal protein L48, mitochondrial (L48mt) (MRP-L48)	Ribosomal
+37	Mrpl17	39S ribosomal protein L17, mitochondrial (L17mt) (MRP-L17)	Ribosomal
+38	Mrpl3	39S ribosomal protein L3, mitochondrial (L3mt) (MRP-L3)	Ribosomal
+39	Gadd45gip1	Growth arrest and DNA damage-inducible proteins-interacting protein 1 (39S ribosomal protein L59, mitochondrial) (MRP-L59)	Ribosomal
+40	Mrpl15	39S ribosomal protein L15, mitochondrial (L15mt) (MRP-L15)	Ribosomal
+41	Mrpl34	39S ribosomal protein L34, mitochondrial (L34mt) (MRP-L34)	Ribosomal
+42	Mrpl54	39S ribosomal protein L54, mitochondrial (L54mt) (MRP-L54)	Ribosomal
+43	Mrpl41	39S ribosomal protein L41, mitochondrial (L41mt) (MRP-L41)	Ribosomal
+44	Mrpl55	39S ribosomal protein L55, mitochondrial (L55mt) (MRP-L55)	Ribosomal
+45	Mrpl47	39S ribosomal protein L47, mitochondrial (L47mt) (MRP-L47)	Ribosomal
+46	Mrpl23	39S ribosomal protein L23, mitochondrial (L23mt) (MRP-L23) (L23 mitochondrial-related protein)	Ribosomal
+47	Mrpl12	39S ribosomal protein L12, mitochondrial (L12mt) (MRP-L12)	Ribosomal
+48	Mrpl50	39S ribosomal protein L50, mitochondrial (L50mt) (MRP-L50)	Ribosomal
+49	Mrpl35	39S ribosomal protein L35, mitochondrial (L35mt) (MRP-L35)	Ribosomal
+50	Mrpl18	39S ribosomal protein L18, mitochondrial (L18mt) (MRP-L18)	Ribosomal
+51	Mrpl42	39S ribosomal protein L42, mitochondrial (L42mt) (MRP-L42) (28S ribosomal protein S32, mitochondrial) (MRP-S32) (S32mt) (39S ribosomal protein L31, mitochondrial) (L31mt) (MRP-L31)	Ribosomal
+52	Mrpl33	39S ribosomal protein L33, mitochondrial (L33mt) (MRP-L33)	Ribosomal
+53	Mrps25	28S ribosomal protein S25, mitochondrial (MRP-S25) (S25mt)	Ribosomal
+54	Mrps18c	28S ribosomal protein S18c, mitochondrial (MRP-S18-c) (Mrps18-c) (S18mt-c) (28S ribosomal protein S18-1, mitochondrial) (MRP-S18-1)	Ribosomal
+55	Mrps24	28S ribosomal protein S24, mitochondrial (MRP-S24) (S24mt)	Ribosomal
+56	Mrps23	28S ribosomal protein S23, mitochondrial (MRP-S23) (S23mt)	Ribosomal
+57	Mrps18b	28S ribosomal protein S18b, mitochondrial (MRP-S18-b) (Mrps18-b) (S18mt-b) (28S ribosomal protein S18-2, mitochondrial) (MRP-S18-2)	Ribosomal
+58	Mrps5	28S ribosomal protein S5, mitochondrial (MRP-S5) (S5mt)	Ribosomal
+59	Mrps15	28S ribosomal protein S15, mitochondrial (MRP-S15) (S15mt)	Ribosomal
+60	Mrps33	28S ribosomal protein S33, mitochondrial (MRP-S33) (S33mt) (Ganglioside-induced differentiation-associated-protein 3)	Ribosomal
+61	Mrps11	28S ribosomal protein S11, mitochondrial (MRP-S11) (S11mt)	Ribosomal
+62	Mrps31	28S ribosomal protein S31, mitochondrial (MRP-S31) (S31mt) (Imogen 38)	Ribosomal
+63	Mrps22	28S ribosomal protein S22, mitochondrial (MRP-S22) (S22mt)	Ribosomal
+64	Mrps17	28S ribosomal protein S17, mitochondrial (MRP-S17) (S17mt)	Ribosomal
+65	Mrps10	28S ribosomal protein S10, mitochondrial (MRP-S10) (S10mt)	Ribosomal
+66	Mrps2	28S ribosomal protein S2, mitochondrial (MRP-S2) (S2mt)	Ribosomal
+67	Mrps26	28S ribosomal protein S26, mitochondrial (MRP-S26) (S26mt)	Ribosomal
+68	Mrps34	28S ribosomal protein S34, mitochondrial (MRP-S34) (S34mt) (T-complex expressed gene 2 protein)	Ribosomal
+69	Mrps6	28S ribosomal protein S6, mitochondrial (MRP-S6) (S6mt)	Ribosomal
+70	Mrps35	28S ribosomal protein S35, mitochondrial (MRP-S35) (S35mt)	Ribosomal
+71	Mrps28	28S ribosomal protein S28, mitochondrial (MRP-S28) (S28mt)	Ribosomal
+72	Mrps27	28S ribosomal protein S27, mitochondrial (MRP-S27) (S27mt) (Mitochondrial ribosomal protein S27)	Ribosomal
+73	Mrps12	28S ribosomal protein S12, mitochondrial (MRP-S12) (S12mt) (MT-RPS12)	Ribosomal
+74	Mrps7	28S ribosomal protein S7, mitochondrial (MRP-S7) (S7mt)	Ribosomal
+75	Mrps16	28S ribosomal protein S16, mitochondrial (MRP-S16) (S16mt)	Ribosomal
+76	Mrps21	28S ribosomal protein S21, mitochondrial (MRP-S21) (S21mt)	Ribosomal
+77	Mrps14	28S ribosomal protein S14, mitochondrial (MRP-S14) (S14mt)	Ribosomal
+78	Mrps9	28S ribosomal protein S9, mitochondrial (MRP-S9) (S9mt)	Ribosomal
+79	Chchd1	Coiled-coil-helix-coiled-coil-helix domain-containing protein 1 (28S ribosomal protein S37, mitochondrial) (MRP-S37)	Ribosomal
+80	Ptcd3	Pentatricopeptide repeat domain-containing protein 3, mitochondrial (28S ribosomal protein S39, mitochondrial) (MRP-S39)	Ribosomal
+81	Aurkaip1	Aurora kinase A-interacting protein (AURKA-interacting protein) (28S ribosomal protein S38, mitochondrial) (MRP-S38)	Ribosomal
+82	Dap3	28S ribosomal protein S29, mitochondrial (MRP-S29) (S29mt) (Death-associated protein 3) (DAP-3)	Ribosomal
