@@ -11,7 +11,7 @@ Software developers:
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
 Artur Lugmayr | email: lartur@acm.org  
 
-**OmicsVolcano [help page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/images/HelpPage.md) was designed to help people to use the OmicsVolcano software**  
+**OmicsVolcano [help page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md) was designed to help people to use the OmicsVolcano software**  
 
  
 General Usage Notes  
