@@ -19,14 +19,14 @@ Artur Lugmayr | email: lartur@acm.org
 Help Page  
 ------
 
-------
+_______
 **Software Download**
 * Anyone with RStuio can use the OmicsVolcano software. If you don’t have RStuio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
 * Download the OmicsVolcano software from GitHub repository as zip folder (Clone or Download; Download ZIP). Unzip folder into a directory of your choice. For example, to the desktop  
 * Open RStudio   
 * Select R script with App prefix (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
 
-------  
+_______ 
 **Software Icons**  
 
 The software will appear as a webpage interface in a default browser   
@@ -45,7 +45,7 @@ The software will appear as a webpage interface in a default browser
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/SettingsIcon_image.jpg)  enables to setup settings  
 
 
-------  
+_______  
 **File Tab**  
 * Input file should contain five columns with exactly the same column names as shown below:  
 
@@ -62,14 +62,14 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 * **Download demo file to local PC...** option provides example file  
 
 
-------  
+_______  
 **Explore Tab**  
 * **Plot** tab enables to explore entire plot and visualize any clicked gene labels  
 * **Custom Gene List** tab enables to visualis custom genes of interest   
 * **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
 
 
-------  
+_______  
 **Export Tab**  
 * **Plot** enables to download image in selected format, such as SVG, PDF, JPEG, PNG, TIFF  
 * **Table** emables to download table in selected format, such as CSV or TXT  
