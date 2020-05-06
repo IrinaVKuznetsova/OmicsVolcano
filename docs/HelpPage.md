@@ -24,9 +24,9 @@ Help Page
 1. Open RStudio   
 1. Select R script with App prefix (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
 
-1. The software will appear as a webpage interface in a default browser <img align="right" width="50" height="50" border="1px solid black" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">  
+1. The software will appear as a webpage interface in a default browser <img align="right" width="100" height="100" border="1px" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">  
 
-1. **File**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg) enables to upload user`s input file  <img align="right" width="50" height="50" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/File_image.jpg">    
+1. **File**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg) enables to upload user`s input file  <img align="right" width="100" height="100" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/File_image.jpg">    
 
 * Input file should contain five columns with exactly the same column names as shown below:  
 
