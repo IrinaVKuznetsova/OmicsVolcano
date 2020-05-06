@@ -15,12 +15,14 @@ https://github.com/IrinaVKuznetsova/OmicsVolcano.git
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
 Artur Lugmayr | email: lartur@acm.org  
 
-------
+------  
+
+
 Help Page  
+------
 
 
-
-**Software Download**
+Software Download
 ------
 * Anyone with RStuio can use the OmicsVolcano software. If you don’t have RStuio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
 * Download the OmicsVolcano software from GitHub repository as zip folder (Clone or Download; Download ZIP). Unzip folder into a directory of your choice. For example, to the desktop  
@@ -28,27 +30,37 @@ Help Page
 * Select R script with App prefix (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
 
 
-**Software Icons**  
+Software Icons  
 ------
 
 The software will appear as a webpage interface in a default browser   
  <img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">   
  
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  enables to upload user`s input file      
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  **File** tab enables to upload user`s input file      
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  enables to select one of three plot`s functionality: such as explore entire plot and visualize labels of any selelcted data points; or visualize a custom list of genes; or visualize a mitochodrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab  enables to select one of three plot`s functionality: such as explore entire plot and visualize labels of any selelcted data points; or visualize a custom list of genes; or visualize a mitochodrial process(es)   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  enables to download generated plot. Also, a table that represents significant results or mitochodrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  **Export** tab  enables to download generated plot. Also, a table that represents significant results or mitochodrial process(es)   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg)  provides breife description of help images   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg)  **Help** tab  provides breife description of software usage     
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AboutIcon_image.jpg)  proides infomation about authors, license, used packages and their versions, citation   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AboutIcon_image.jpg)  **About** tab  proides infomation about authors, license, used packages and their versions, citation   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/SettingsIcon_image.jpg)  enables to setup settings  
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/SettingsIcon_image.jpg)  **Settings** tab  enables to setup settings  
 
 
-
-**File Tab**
+Plot Managment  
+------
+* Set significance and logFC thresholds (**Settings** at right top corner)      
+* Hold Shift and right click of the mouse to select as many gene labels as required  
+**Note:** related information of the selected gene is represented in the table "InputData" below the plot   
+* To disable any changes double click on the plot   
+* Plot has own icons in the right top corner (visible when hovering with the mouse). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
+* If image is frozen Reload webpage  
+  
+  
+  
+File Tab
 ------  
 * Input file should contain five columns with exactly the same column names as shown below:  
 
@@ -66,15 +78,25 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 
 
  
-**Explore Tab**  
+Explore Tab 
 ------
-* **Plot** tab enables to explore entire plot and visualize any clicked gene labels  
-* **Custom Gene List** tab enables to visualis custom genes of interest   
-* **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
-
+* **Plot** tab enables to visualize a gene label of any value represented on the plot 
+&nbsp;&nbsp;&nbsp;&nbsp; set significance and logFC thresholds (**Settings** at right top corner)      
+&nbsp;&nbsp;&nbsp;&nbsp; explore any value represented on the plot
 
  
-**Export Tab**  
+* **Custom Gene List** tab enables to visualis custom genes of interest   
+&nbsp;&nbsp;&nbsp;&nbsp; set significance and logFC thresholds (**Settings** at right top corner)     
+&nbsp;&nbsp;&nbsp;&nbsp; typein own gene names
+&nbsp;&nbsp;&nbsp;&nbsp; 
+
+* **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
+&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; 
+
+ 
+Export Tab
 ------
 * **Plot** enables to download image in selected format, such as SVG, PDF, JPEG, PNG, TIFF  
 * **Table** emables to download table in selected format, such as CSV or TXT  
