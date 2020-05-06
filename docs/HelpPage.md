@@ -36,17 +36,17 @@ Software Icons
 The software will appear as a webpage interface in a default browser   
  <img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">   
  
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  **File** tab enables to upload user`s input file      
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  **File** tab enables to upload users  input file      
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab  enables to select one of three plot`s functionality: such as explore entire plot and visualize labels of any selelcted data points; or visualize a custom list of genes; or visualize a mitochodrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: such as explore entire plot and visualize labels of any selelcted data points; or visualize a custom list of genes; or visualize a mitochodrial process(es)   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  **Export** tab  enables to download generated plot. Also, a table that represents significant results or mitochodrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  **Export** tab enables to download generated plot. Tables show significant values or mitochondrial process(es)   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg)  **Help** tab  provides breife description of software usage     
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg)  **Help** tab provides brief description of the software usage     
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AboutIcon_image.jpg)  **About** tab  proides infomation about authors, license, used packages and their versions, citation   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AboutIcon_image.jpg)  **About** tab provides information about authors, license, used packages and their versions, citation   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/SettingsIcon_image.jpg)  **Settings** tab  enables to setup settings  
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/SettingsIcon_image.jpg)  **Settings** tab enables to setup settings  
 
 
 Plot Managment  
@@ -55,8 +55,8 @@ Plot Managment
 * Hold Shift and right click of the mouse to select as many gene labels as required  
 **Note:** related information of the selected gene is represented in the table "InputData" below the plot   
 * To disable any changes double click on the plot   
-* Plot has own icons in the right top corner (visible when hovering with the mouse). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
-* If image is frozen Reload webpage  
+* Plot has own icons on the right top corner (visible when hovering with the mouse). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
+* If the image is frozen use browser Reload webpage button   
   
   
   
@@ -80,20 +80,22 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
  
 Explore Tab 
 ------
-* **Plot** tab enables to visualize a gene label of any value represented on the plot 
-&nbsp;&nbsp;&nbsp;&nbsp; set significance and logFC thresholds (**Settings** at right top corner)      
-&nbsp;&nbsp;&nbsp;&nbsp; explore any value represented on the plot
+* **Plot** tab enables to visualize a gene label of any value represented on the plot  
+&nbsp;&nbsp;&nbsp;&nbsp; *set significance and logFC thresholds (**Settings** at right top corner)      
+&nbsp;&nbsp;&nbsp;&nbsp; *explore any value represented on the plot
 
  
-* **Custom Gene List** tab enables to visualis custom genes of interest   
-&nbsp;&nbsp;&nbsp;&nbsp; set significance and logFC thresholds (**Settings** at right top corner)     
-&nbsp;&nbsp;&nbsp;&nbsp; typein own gene names
-&nbsp;&nbsp;&nbsp;&nbsp; 
+* **Custom Gene List** tab enables to visualize custom list of genes of interest   
+&nbsp;&nbsp;&nbsp;&nbsp; *set significance and logFC thresholds (**Settings** at right top corner)     
+&nbsp;&nbsp;&nbsp;&nbsp; *typein own gene names separated by space or upload file with  
+
 
 * **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
-&nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; * initial image highlights all mitochodrial genes present in the data vs nuclear genes  
+&nbsp;&nbsp;&nbsp;&nbsp; * select organism  
+&nbsp;&nbsp;&nbsp;&nbsp; * select process of interest  
+**Note:** we left the option of visualising gene lables of selected process to users  
+ 
 
  
 Export Tab
