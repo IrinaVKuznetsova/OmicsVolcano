@@ -94,14 +94,14 @@ Explore Tab
 &nbsp;&nbsp;&nbsp;&nbsp; * initial image highlights all mitochodrial genes present in the data vs nuclear genes  
 &nbsp;&nbsp;&nbsp;&nbsp; * select organism  
 &nbsp;&nbsp;&nbsp;&nbsp; * select process of interest  
-**Note:** we left the option of visualising gene lables of selected process to users  
+**Note:** User can chose which gene label(s) of the selected process are seen on the plot    
  
 
  
 Export Tab
 ------
-* **Plot** enables to download image in selected format, such as SVG, PDF, JPEG, PNG, TIFF  
-* **Table** emables to download table in selected format, such as CSV or TXT  
+* **Plot** enables to download image in the selected format, such as SVG, PDF, JPEG, PNG, TIFF  
+* **Table** emables to download table in the selected format, such as CSV or TXT  
 
 
 
