@@ -14,6 +14,7 @@ https://github.com/IrinaVKuznetsova/OmicsVolcano.git
 Software developers:  
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
 Artur Lugmayr | email: lartur@acm.org  
+
 ------
 Help Page  
 ------
@@ -21,9 +22,9 @@ Help Page
 1. Anyone with RStuio can use the OmicsVolcano software. If you don’t have RStuio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
 1. Download the OmicsVolcano software from GitHub repository as zip folder (Clone or Download; Download ZIP). Unzip folder into a directory of your choice. For example, to the desktop  
 1. Open RStudio   
-1. Select R script with App prefix (File – Open File ..  – App.r). To run the software, click [Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/docs/images/RunApp_image.jpg)  
-1. The software will appear as a [webpage interface](https://github.com/IrinaVKuznetsova/OmicsVolcano/docs/images/DashboardInterface_image.jpg) in a default browser   
-1. [File tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/docs/images/File_image.jpg) enables to upload user`s input file  
+1. Select R script with App prefix (File – Open File ..  – App.r). To run the software, click [Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/images/RunApp_image.jpg)  
+1. The software will appear as a [webpage interface](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/images/DashboardInterface_image.jpg) in a default browser   
+1. [File tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/images/File_image.jpg) enables to upload user`s input file  
 * Input file should contain five columns with exactly the same column names as shown below  
 
 | ID | GeneSymbol | Description | log2FC | AdjPValue
