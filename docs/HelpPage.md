@@ -24,7 +24,8 @@ Help Page
 1. Open RStudio   
 1. Select R script with App prefix (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
 
-1. The software will appear as a webpage interface in a default browser <img align="center" width="256" height="256" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">  
+1. The software will appear as a webpage interface in a default browser   
+ <img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">  
 
 1. **File**  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg) enables to upload user`s input file      
 
