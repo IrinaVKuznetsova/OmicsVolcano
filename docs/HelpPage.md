@@ -63,7 +63,7 @@ Plot Managment
   
 File Tab
 ------  
-* Input file should contain five columns with exactly the same column names as shown below:  
+* Input file should contain five columns with exactly the same column names as shown below. It can be tab, comma or semicolon separated.  
 
 | ID | GeneSymbol | Description | log2FC | AdjPValue
 | - | - | - | - | - | 
