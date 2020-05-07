@@ -22,8 +22,8 @@
 # Author:    Irina Kuznetsova
 # email:     irina.kuznetsova@perkins.org.au
 
-# Co-author: Artur Lugmayr
-# email:     lartur@acm.org
+# Co-developer: Artur Lugmayr
+# email:        lartur@acm.org
 
 
 
@@ -146,8 +146,8 @@ Sys.setenv(R_CONFIG_ACTIVE = "homepc")
 options(shiny.maxRequestSize = 900 * 1024 ^ 2)   # Increase file size for upload | https://shiny.rstudio.com/articles/upload.html
 
 source('config.r')
-source('VolcanOmixServerV0.8.r')
-source('VolcanOmixUIV0.8.r', local=TRUE)
+source('VolcanOmix_Benchmarking Server V0.8.r')
+source('VolcanOmix_Benchmarking UI V0.8.r', local=TRUE)
 #source('TestUI.r', local = TRUE)
 #source('TestServer.r')
 

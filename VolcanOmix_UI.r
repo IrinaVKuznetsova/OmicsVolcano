@@ -22,8 +22,8 @@
 # Author:    Irina Kuznetsova
 # email:     irina.kuznetsova@perkins.org.au
 
-# Co-author: Artur Lugmayr
-# email:     lartur@acm.org
+# Co-developer: Artur Lugmayr
+# email:        lartur@acm.org
 
 
 
@@ -116,8 +116,7 @@ ui_info_box <- box(width = 12,
                      infoBoxOutput("UI_INFO_GENERAL"),
                      infoBoxOutput("UI_INFO_PROCESS"),
                      infoBoxOutput("UI_INFO_EXPLORE")
-                     )
-)
+                     ) )
 
 
 
@@ -474,12 +473,10 @@ ui_download_plot <- box (
   selectInput(
     inputId  = "PlotDownload",
     label    = "Select Plot",
-    choices  = c(
-      "Explore Plot Values",
-      "Explore Mitochondrial Processes",
-      "Explore Custom Gene List"
-    ),
-    selected = c("Explore Mitochondrial Processes")
+    choices  = c( "Explore Plot Values",
+                  "Explore Mitochondrial Processes",
+                  "Explore Custom Gene List"),
+    selected = c("Explore Plot Values")
   ),
   selectInput(
     inputId  = "Plotfiletype",
