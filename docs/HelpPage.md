@@ -25,7 +25,7 @@ Help Page
 Software Download
 ------
 * Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
-* Download the OmicsVolcano software from GitHub repository as zip folder ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadIcon_image.jpg) and ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadZIPIcon_image.jpg. Unzip folder into a directory of your choice. For example, to the desktop  
+* Download the OmicsVolcano software from GitHub repository as zip folder ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadIcon_image.jpg) and  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadZIPIcon_image.jpg).  Unzip folder into a directory of your choice. For example, to the desktop  
 * Open RStudio   
 * Select R script VolcanOmix_AppV0.8.r (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
 * The software will appear as a webpage interface  
