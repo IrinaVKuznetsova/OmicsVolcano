@@ -25,18 +25,16 @@ Help Page
 Software Download
 ------
 * Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
-* Download the OmicsVolcano software from GitHub repository as zip folder (Clone or Download; Download ZIP). Unzip folder into a directory of your choice. For example, to the desktop  
+* Download the OmicsVolcano software from GitHub repository as zip folder (Clone or Download ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadIcon_image.jpg)  Download ZIP ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadZIPIcon_image.jpg)). Unzip folder into a directory of your choice. For example, to the desktop  
 * Open RStudio   
 * Select R script with App prefix (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
+* The software will appear as a webpage interface  
+
+<img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">   
 
 
 Software Icons  
 ------
-
-The software will appear as a webpage interface    
-   
- <img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">   
- 
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  **File** tab enables to upload users  input file      
 
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: (1)explore entire plot and visualize labels of any selelcted data points; (2) visualize a custom list of genes; (3) visualize a mitochodrial process(es)   
