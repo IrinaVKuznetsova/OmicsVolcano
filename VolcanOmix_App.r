@@ -146,8 +146,8 @@ Sys.setenv(R_CONFIG_ACTIVE = "homepc")
 options(shiny.maxRequestSize = 900 * 1024 ^ 2)   # Increase file size for upload | https://shiny.rstudio.com/articles/upload.html
 
 source('config.r')
-source('VolcanOmix_Benchmarking Server V0.8.r')
-source('VolcanOmix_Benchmarking UI V0.8.r', local=TRUE)
+source('VolcanOmix_Server.r')
+source('VolcanOmix_UI.r', local=TRUE)
 #source('TestUI.r', local = TRUE)
 #source('TestServer.r')
 
