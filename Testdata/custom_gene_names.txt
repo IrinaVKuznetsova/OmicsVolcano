@@ -7,5 +7,4 @@ Ilk
 rps10
 Snd1
 irina
-Artur
 gene

@@ -1,4 +1,4 @@
-ID	GeneSymbol	Description	log2FC	AdjPValue
+ID	GeneSymbol	Description	Log2FC	AdjPValue
 Q9EQI8	Mrpl46	39S ribosomal protein L46, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl46 PE=1 SV=1	-1.14	5.69909E-16
 Q497D7	Rpl30	Rpl30 protein OS=Mus musculus OX=10090 GN=Rpl30 PE=2 SV=1	2.28	1.33E-08
 Q4U4S6	Xirp2	Xin actin-binding repeat-containing protein 2 OS=Mus musculus OX=10090 GN=Xirp2 PE=1 SV=1	6.64	1.33E-08

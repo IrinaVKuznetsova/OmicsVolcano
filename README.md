@@ -11,7 +11,7 @@ https://github.com/IrinaVKuznetsova/OmicsVolcano.git
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
 Artur Lugmayr | email: lartur@acm.org  
 
-**OmicsVolcano [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md) was designed to help people to use the OmicsVolcano software**  
+**Please, first read OmicsVolcano [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md) on how to donwload and install OmicsVolcano software. Help page was designed to help you with the OmicsVolcano software.**  
 
  
 General Usage Notes  
@@ -31,7 +31,7 @@ Input Data Format
 ------
 **Note:** Input file should contain five columns with exactly the same column names as shown below  
 
-| ID | GeneSymbol | Description | log2FC | AdjPValue
+| ID | GeneSymbol | Description | Log2FC | AdjPValue
 | - | - | - | - | - | 
 Q4U4S6 | Xirp2 | Xin actin-binding repeat-containing protein 2 | 6.64 | 1.33E-08
 Q497D7 | Rpl30 | Rpl30 protein | 2.14 | 0.8

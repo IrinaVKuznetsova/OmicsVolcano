@@ -1,4 +1,4 @@
-ID	GeneSymbol	Description	log2FC	AdjPValue
+ID	GeneSymbol	Description	Log2FC	AdjPValue
 ENSMUSG00000005667.8	Mthfd2	methylenetetrahydrofolate dehydrogenase (NAD+ dependent), methenyltetrahydrofolate cyclohydrolase [Source:MGI Symbol;Acc:MGI:1338850]	6.408414548	2.41E-162
 ENSMUSG00000029752.12	Asns	asparagine synthetase [Source:MGI Symbol;Acc:MGI:1350929]	6.656360986	7.00E-147
 ENSMUSG00000048078.16	Tenm4	teneurin transmembrane protein 4 [Source:MGI Symbol;Acc:MGI:2447063]	6.500741035	2.36E-114

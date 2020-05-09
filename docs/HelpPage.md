@@ -22,7 +22,7 @@ Help Page
 ------
 
 
-Software Download
+Software Download and Usage
 ------
 * Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
 * Download the OmicsVolcano software from GitHub repository as zip folder ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadIcon_image.jpg) and  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadZIPIcon_image.jpg).  Unzip folder into a directory of your choice. For example, to the desktop  
@@ -50,12 +50,12 @@ Software Icons
 
 Plot Managment  
 ------
-* Set significance and logFC thresholds by using **Settings** tab located at the right top corner      
+* Set significance and log2FC thresholds by using **Settings** tab located at the right top corner      
 * Hold Shift and right click mouse to select as many gene labels as desired   
 **Note:** related information of the selected gene is represented in the table "InputData" below the plot   
 * To disable any changes double click on the plot   
 * Plot has own icons on the right top corner of the plot (become visible when hovering over). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
-* If the image/page is frozen use browser Reload webpage button   
+* If the image/page is frozen refresh (reload) browser page  
   
   
   
@@ -63,7 +63,7 @@ File Tab
 ------  
 * Input file should contain five columns with exactly the same column names as shown below. It can be tab, comma or semicolon separated.  
 
-| ID | GeneSymbol | Description | log2FC | AdjPValue
+| ID | GeneSymbol | Description | Log2FC | AdjPValue
 | - | - | - | - | - | 
 Q4U4S6 | Xirp2 | Xin actin-binding repeat-containing protein 2 | 6.64 | 1.33E-08
 Q497D7 | Rpl30 | Rpl30 protein | 2.14 | 0.8
@@ -72,7 +72,7 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 ... | ... | ... | ... | ...
 
 * **Remove Duplicates** checks for the presence of duplicated gene names in the input file. Provides a numeric extension 1,2,3.. to gene names that are duplicated  
-* **File Separator** p[tion of character separtion in the input file  
+* **File Separator** character separation in the input file  
 * **Download demo file to local PC...** option provides example file  
 
 
@@ -80,13 +80,22 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 Explore Tab 
 ------
 * **Plot** tab enables to visualize a gene label of any value represented on the plot  
-&nbsp;&nbsp;&nbsp;&nbsp; * set significance and logFC thresholds (**Settings** at right top corner)      
+&nbsp;&nbsp;&nbsp;&nbsp; * set significance and log2FC thresholds (**Settings** at right top corner)      
 &nbsp;&nbsp;&nbsp;&nbsp; * explore any value represented on the plot
 
  
 * **Custom Gene List** tab enables to visualize custom list of genes of interest   
-&nbsp;&nbsp;&nbsp;&nbsp; * set significance and logFC thresholds (**Settings** at right top corner)     
-&nbsp;&nbsp;&nbsp;&nbsp; * typein own gene names separated by space or upload file with  
+&nbsp;&nbsp;&nbsp;&nbsp; * set significance and log2FC thresholds (**Settings** at right top corner)     
+&nbsp;&nbsp;&nbsp;&nbsp; * type in own gene names separated by space or upload them as a file, where each gene name is on own row  
+
+||
+| - | 
+| Ndufs2 |
+| Gatc |
+| Cox7a1 |
+| lmnb1 |
+| Ndufa8 |
+| ... |  
 
 
 * **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
@@ -99,7 +108,7 @@ Explore Tab
  
 Export Tab
 ------
-* **Plot** enables to download image in the selected format, such as SVG, PDF, JPEG, PNG, TIFF  
+* **Plot** enables to download "Custom Gene List" plot in one of the selected formats, such as SVG, PDF, JPEG, PNG, TIFF  
 * **Table** emables to download table in the selected format, such as CSV or TXT  
 
 
