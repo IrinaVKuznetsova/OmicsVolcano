@@ -22,7 +22,7 @@ General Usage Notes
 
 Input Data Format  
 ------
-**Note:** Input file should contain five columns with exactly the same column names as shown below  
+**Note:** Input file can be TXT, or CSV. It should contain five columns with exactly the same column names as shown below  
 
 | ID | GeneSymbol | Description | Log2FC | AdjPValue
 | - | - | - | - | - | 
