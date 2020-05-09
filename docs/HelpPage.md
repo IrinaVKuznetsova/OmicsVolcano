@@ -39,13 +39,14 @@ Plot Managment
 **Note:** related information of the selected gene is represented in the table "InputData" below the plot   
 * To disable any changes double click on the plot   
 * Plot has own icons on the right top corner of the plot (become visible when hovering over). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
-* If the image/page is frozen refresh (reload) browser page  
+* If the image/page is frozen re-fresh (reload) browser page  
+* **IMPORTANT** if gene`s AdjPValue is not available, this gene will not be visualized! 
   
   
   
 File Tab
 ------  
-* Input file should contain five columns with exactly the same column names as shown below. It can be tab, comma or semicolon separated.  
+* Input file can be TXT, or CSV. It should contain five columns with exactly the same column names as shown below. It can be tab, comma or semicolon separated.  
 
 | ID | GeneSymbol | Description | Log2FC | AdjPValue
 | - | - | - | - | - | 
