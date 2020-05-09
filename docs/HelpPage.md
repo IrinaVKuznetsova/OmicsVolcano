@@ -4,7 +4,7 @@
 ------  
 Help Page  
 ------
-
+Help page was designed to help you with the OmicsVolcano software
 
 Software Download and Usage
 ------
@@ -99,8 +99,7 @@ Export Tab
 
 Support
 ------
-## Please, READ OmicsVolcano **Help Page** !!!
-Try the software by yourself. Demo file is provided in the **File** tab. Get general feeling how software work, what it`s flow and functionality.
+Explore OmicsVolcano software at first. The demo file is provided in the **File** tab. Get general feeling how software works, it`s flow and functionality.
 When you email your question please include OS you are using, R version, screenshort of the error message.
 
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
