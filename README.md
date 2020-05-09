@@ -4,8 +4,8 @@
 ! *OmicsVolcano Version 1.0 is available 06/05/2020  
 ```
 
-# Don't know where to start? Start at [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md)
-# Please, first read OmicsVolcano [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md) on how to donwload and install OmicsVolcano software. Help page was designed to help you with the OmicsVolcano software.**  
+### Don't know where to start? Start at [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md)
+### Please, first read OmicsVolcano [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md) on how to donwload and install OmicsVolcano software. Help page was designed to help you with the OmicsVolcano software.**  
 
  
 General Usage Notes  
