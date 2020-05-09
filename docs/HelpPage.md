@@ -99,7 +99,7 @@ Export Tab
 
 Support
 ------
-Explore OmicsVolcano software at first. The demo file is provided in the **File** tab. Get general feeling how software works, it`s flow and functionality.
+Explore OmicsVolcano. Get general feeling how software works, it`s flow and functionality. You can use Demo to explore OmicsVolcano, which is provided in the **File** tab.
 When you email your question please include OS you are using, R version, screenshort of the error message.
 
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  

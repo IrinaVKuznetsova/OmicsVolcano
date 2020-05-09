@@ -4,7 +4,7 @@
 ! *OmicsVolcano Version 1.0 is available 06/05/2020  
 ```
 
-#### Don't know where to start? Start at [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md)
+### Don't know where to start? Start at [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md)
 
  
 General Usage Notes  
