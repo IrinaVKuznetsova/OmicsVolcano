@@ -88,7 +88,7 @@ Explore Tab
 &nbsp;&nbsp;&nbsp;&nbsp; * set significance and log2FC thresholds (**Settings** at right top corner)     
 &nbsp;&nbsp;&nbsp;&nbsp; * type in own gene names separated by space or upload them as a file, where each gene name is on own row  
 
-||
+
 | - | 
 | Ndufs2 |
 | Gatc |
