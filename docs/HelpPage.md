@@ -1,23 +1,7 @@
 # OmicsVolcano Help Page
 
 
-```diff
-! *OmicsVolcano Version 1.0 is available 06/05/2020  
-```
-
-
-© Copyright (C) 2020  
-https://github.com/IrinaVKuznetsova/OmicsVolcano.git  
-
-
-  
-**Software developers:**  
-Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
-Artur Lugmayr | email: lartur@acm.org  
-
 ------  
-
-
 Help Page  
 ------
 
@@ -111,6 +95,18 @@ Export Tab
 * **Plot** enables to download "Custom Gene List" plot in one of the selected formats, such as SVG, PDF, JPEG, PNG, TIFF  
 * **Table** emables to download table in the selected format, such as CSV or TXT  
 
+
+
+Support
+------
+## Please, READ OmicsVolcano **Help Page** !!!
+Try the software by yourself. Demo file is provided in the **File** tab. Get general feeling how software work, what it`s flow and functionality.
+When you email your question please include OS you are using, R version, screenshort of the error message.
+
+Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
+ 
+© Copyright (C) 2020  
+https://github.com/IrinaVKuznetsova/OmicsVolcano.git  
 
 
 
