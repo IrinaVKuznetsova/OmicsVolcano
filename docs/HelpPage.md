@@ -82,7 +82,7 @@ Explore Tab
 
 
 * **Mitochondrial Process** tab enables to explore mitochondrial processes present in the data  
-&nbsp;&nbsp;&nbsp;&nbsp; * initial image highlights all mitochondrial genes present in the data vs nuclear genes  
+&nbsp;&nbsp;&nbsp;&nbsp; * default image highlights all mitochondrial genes present in the data vs nuclear genes  
 &nbsp;&nbsp;&nbsp;&nbsp; * select organism  
 &nbsp;&nbsp;&nbsp;&nbsp; * select process of interest  
 **Note:** User can chose which gene label(s) of the selected process are seen on the plot    
