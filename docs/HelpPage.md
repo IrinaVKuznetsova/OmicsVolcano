@@ -21,15 +21,13 @@ Software Icons
 ------
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  **File** tab enables to upload users  input file      
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: (1)explore entire plot and visualize labels of any selelcted data points; (2) visualize a custom list of genes; (3) visualize a mitochodrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: (1) explore entire plot and visualize labels of any selected data points; (2) visualize a custom list of genes; (3) visualize a mitochondrial process(es)   
 
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  **Export** tab enables to download generated plots and tables   
 
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg)  **Help** tab provides brief description of the software usage     
 
   ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AboutIcon_image.jpg)  **About** tab provides information about authors, license, used packages and their versions, citation   
-
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/SettingsIcon_image.jpg)  **Settings** tab enables to setup settings  
 
 
 Plot Managment  
@@ -46,7 +44,7 @@ Plot Managment
   
 File Tab
 ------  
-* Input file can be TXT, or CSV. It should contain five columns with exactly the same column names as shown below. It can be tab, comma or semicolon separated.  
+* Input file can be tab, comma or semicolon separated format saved as a text file. It should contain five columns with the same column names as shown below  
 
 | ID | GeneSymbol | Description | Log2FC | AdjPValue
 | - | - | - | - | - | 
@@ -56,7 +54,7 @@ Q9CPP6 | Ndufa5 | NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5 |
 P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 ... | ... | ... | ... | ...
 
-* **Remove Duplicates** checks for the presence of duplicated gene names in the input file. Provides a numeric extension 1,2,3.. to gene names that are duplicated  
+* **Check for Duplicates** checks for the presence of duplicated gene names in the input file. Provides a numeric extension 1,2,3.... to gene names that are duplicated  
 * **File Separator** character separation in the input file  
 * **Download demo file to local PC...** option provides example file  
 
@@ -83,8 +81,8 @@ Explore Tab
 | ... |  
 
 
-* **Mitochondrial Process** tab enables to explore mitochodrial processes present in the data  
-&nbsp;&nbsp;&nbsp;&nbsp; * initial image highlights all mitochodrial genes present in the data vs nuclear genes  
+* **Mitochondrial Process** tab enables to explore mitochondrial processes present in the data  
+&nbsp;&nbsp;&nbsp;&nbsp; * initial image highlights all mitochondrial genes present in the data vs nuclear genes  
 &nbsp;&nbsp;&nbsp;&nbsp; * select organism  
 &nbsp;&nbsp;&nbsp;&nbsp; * select process of interest  
 **Note:** User can chose which gene label(s) of the selected process are seen on the plot    

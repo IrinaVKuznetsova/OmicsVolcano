@@ -68,7 +68,7 @@ This project is licensed under the terms of the [**GNU version 3**](https://gith
 Kuznetsova I, Lugmayr A, Rackham O, Filipovska A. OmicsVolcano: software for intuitive visualization and interactive exploration of high throughput biological data. 2020  
  
  
-## Software developers 
+## Software Developers 
 Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
 Artur Lugmayr | email: lartur@acm.org   
  
