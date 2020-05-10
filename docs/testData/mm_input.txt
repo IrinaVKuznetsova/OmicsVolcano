@@ -1,4 +1,4 @@
-ID	GeneSymbol	Description	Log2FC	AdjPValue
+ID	GeneSymbol	Description	log2FC	AdjPValue
 Q4U4S6	Xirp2	Xin actin-binding repeat-containing protein 2 OS=Mus musculus OX=10090 GN=Xirp2 PE=1 SV=1	6.64	1.33e-08
 Q497D7	Rpl30	Rpl30 protein OS=Mus musculus OX=10090 GN=Rpl30 PE=2 SV=1	2.14	1.33e-08
 Q9CPP6	Ndufa5	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5 OS=Mus musculus OX=10090 GN=Ndufa5 PE=1 SV=3	-1.52	6.24e-08
