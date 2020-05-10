@@ -1,0 +1,1295 @@
+ID	GeneSymbol	Description	Log2FC	AdjPValue
+Q9EQI8	Mrpl46	39S ribosomal protein L46, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl46 PE=1 SV=1	-1.14	5.69909E-16
+Q497D7	Rpl30	Rpl30 protein OS=Mus musculus OX=10090 GN=Rpl30 PE=2 SV=1	2.28	1.33E-08
+Q4U4S6	Xirp2	Xin actin-binding repeat-containing protein 2 OS=Mus musculus OX=10090 GN=Xirp2 PE=1 SV=1	6.64	1.33E-08
+P09055	Itgb1	Integrin beta-1 OS=Mus musculus OX=10090 GN=Itgb1 PE=1 SV=1	1.08	6.29E-08
+Q9CQ75	Ndufa2	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2 OS=Mus musculus OX=10090 GN=Ndufa2 PE=1 SV=3	-1.55	6.68E-08
+Q3TIU7	Ndufs1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ndufs1 PE=2 SV=1	-1.42	6.68E-08
+A0A0R3P9C8		NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9, mitochondrial OS=Mus musculus OX=10090 GN=Ndufa9 PE=1 SV=1	-1.28	6.68E-08
+P48678	Lmna	Prelamin-A/C OS=Mus musculus OX=10090 GN=Lmna PE=1 SV=2	1.21	6.68E-08
+Q3TET0	Cct7	T-complex protein 1 subunit eta OS=Mus musculus OX=10090 GN=Cct7 PE=2 SV=1	4.37	6.68E-08
+P0DJF2	Gm20571; Pet117	Protein PET117 homolog, mitochondrial OS=Mus musculus OX=10090 GN=Pet117 PE=3 SV=1	0.92	6.72E-08
+A2AP31	Ndufb6	MCG9810 OS=Mus musculus OX=10090 GN=Ndufb6 PE=1 SV=1	-1.75	1.50E-07
+Q9CXZ1	Ndufs4	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitochondrial OS=Mus musculus OX=10090 GN=Ndufs4 PE=1 SV=3	-1.36	1.50E-07
+P17665	Cox7c; Gm12338; LOC100048613; LOC102642884	Cytochrome c oxidase subunit 7C, mitochondrial OS=Mus musculus OX=10090 GN=Cox7c PE=1 SV=1	-1.2	1.50E-07
+P62806	Hist4h4; Hist1h4a; Hist1h4k; Hist1h4c; Hist1h4i; Hist1h4n; Hist1h4h; Hist1h4f; Hist1h4j; Hist1h4b; Hist1h4m; Hist1h4d; Hist2h4; LOC100862646; LOC102641229	Histone H4 OS=Mus musculus OX=10090 GN=Hist1h4a PE=1 SV=2	0.77	1.50E-07
+P62911	Rpl32; Rpl32p	60S ribosomal protein L32 OS=Mus musculus OX=10090 GN=Rpl32 PE=1 SV=2	1.52	1.50E-07
+P62242	Rps8; Gm15501	40S ribosomal protein S8 OS=Mus musculus OX=10090 GN=Rps8 PE=1 SV=2	1.84	2.08E-07
+Q9CQC7	Gm3244; Ndufb4; Gm3873	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 OS=Mus musculus OX=10090 GN=Ndufb4 PE=1 SV=3	-1.5	3.00E-07
+E9QQ93	Xirp1	Xin actin-binding repeat-containing protein 1 OS=Mus musculus OX=10090 GN=Xirp1 PE=1 SV=1	4.13	4.80E-07
+Q8C153	Eef2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Eef2 PE=2 SV=1	3.08	5.04E-07
+P57759	Erp29	Endoplasmic reticulum resident protein 29 OS=Mus musculus OX=10090 GN=Erp29 PE=1 SV=2	1.78	5.51E-07
+A0A0G2JDP0	Hax1	HCLS1-associated protein X-1 OS=Mus musculus OX=10090 GN=Hax1 PE=1 SV=1	3.06	6.56E-07
+E9Q641		Nebulin-related-anchoring protein OS=Mus musculus OX=10090 GN=Nrap PE=1 SV=1	3.39	6.56E-07
+Q3V2C6	Des	Uncharacterized protein OS=Mus musculus OX=10090 GN=Des PE=2 SV=1	1.58	7.29E-07
+A0A140T8T4	Rpl9-ps6	Ribosomal protein L9, pseudogene 6 OS=Mus musculus OX=10090 GN=Rpl9-ps6 PE=4 SV=1	1.7	7.55E-07
+Q3TWG9	Serpinh1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Serpinh1 PE=2 SV=1	1.03	8.10E-07
+Q9D8E6	Rpl4	60S ribosomal protein L4 OS=Mus musculus OX=10090 GN=Rpl4 PE=1 SV=3	1.87	8.59E-07
+Q8VHX6	Flnc	Filamin-C OS=Mus musculus OX=10090 GN=Flnc PE=1 SV=3	2.85	8.59E-07
+Q3V471	Lgals3	Galectin (Fragment) OS=Mus musculus OX=10090 GN=Lgals3 PE=2 SV=1	5.48	8.59E-07
+Q80XB4	Nrap	Nebulin-related-anchoring protein OS=Mus musculus OX=10090 GN=Nrap PE=1 SV=3	3.07	9.76E-07
+A0A0R4J1T1	Sorbs2	Sorbin and SH3 domain-containing protein 2 (Fragment) OS=Mus musculus OX=10090 GN=Sorbs2 PE=1 SV=1	2.31	1.05E-06
+Q99LC3	Ndufa10	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 10, mitochondrial OS=Mus musculus OX=10090 GN=Ndufa10 PE=1 SV=1	-1.09	1.06E-06
+Q545C7	Csrp3	Cysteine and glycine-rich protein 3 OS=Mus musculus OX=10090 GN=Csrp3 PE=1 SV=1	1.47	1.24E-06
+Q91WD5	Ndufs2	NADH dehydrogenase [ubiquinone] iron-sulfur protein 2, mitochondrial OS=Mus musculus OX=10090 GN=Ndufs2 PE=1 SV=1	-1.25	1.30E-06
+Q9D6J6	Ndufv2	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondrial OS=Mus musculus OX=10090 GN=Ndufv2 PE=1 SV=2	-1.12	1.32E-06
+P62843	Rps15	40S ribosomal protein S15 OS=Mus musculus OX=10090 GN=Rps15 PE=1 SV=2	2.83	1.32E-06
+P62918	Rpl8	60S ribosomal protein L8 OS=Mus musculus OX=10090 GN=Rpl8 PE=1 SV=2	1.5	1.43E-06
+Q9CWI9	Rps23	Uncharacterized protein OS=Mus musculus OX=10090 GN=Rps23 PE=2 SV=1	2.04	1.45E-06
+Q80V08	Rpl17	Rpl17 protein (Fragment) OS=Mus musculus OX=10090 GN=Rpl17 PE=2 SV=1	1.71	1.64E-06
+P14206	Rpsa; LOC100045332; LOC100505031; LOC102642689	40S ribosomal protein SA OS=Mus musculus OX=10090 GN=Rpsa PE=1 SV=4	3.63	1.84E-06
+Q3UDS0	Hspa8	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Hspa8 PE=2 SV=1	0.83	1.92E-06
+D3Z1S8		40S ribosomal protein S5 (Fragment) OS=Mus musculus OX=10090 GN=Rps5 PE=1 SV=1	2.34	1.92E-06
+Q9CQJ8	Ndufb9	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 OS=Mus musculus OX=10090 GN=Ndufb9 PE=1 SV=3	-1.28	1.97E-06
+P47911	Rpl6	60S ribosomal protein L6 OS=Mus musculus OX=10090 GN=Rpl6 PE=1 SV=3	1.44	1.99E-06
+Q9WTI7	Myo1c	Unconventional myosin-Ic OS=Mus musculus OX=10090 GN=Myo1c PE=1 SV=2	2.09	1.99E-06
+Q545F8	Rps4x	40S ribosomal protein S4 OS=Mus musculus OX=10090 GN=Rps4x PE=2 SV=1	2.44	1.99E-06
+A0A5E1	Igfbp7	Insulin-like growth factor binding protein 7 OS=Mus musculus OX=10090 GN=Igfbp7 PE=2 SV=1	4.13	1.99E-06
+Q6P5H2	Nes	Nestin OS=Mus musculus OX=10090 GN=Nes PE=1 SV=1	6.64	1.99E-06
+Q3TIR1	2410002O22Rik; Trappc13	Trafficking protein particle complex subunit 13 OS=Mus musculus OX=10090 GN=Trappc13 PE=2 SV=1	1.26	2.09E-06
+Q9D0Q7	Mrpl45	Heterogeneous nuclear ribonucleoprotein H OS=Mus musculus OX=10090 GN=Mrpl45 PE=1 SV=1	3.29	2.15E-06
+Q543N7	Pacsin3	Protein kinase C and casein kinase substrate in neurons 3, isoform CRA_a OS=Mus musculus OX=10090 GN=Pacsin3 PE=1 SV=1	1.85	2.22E-06
+Q3TFD9	Vim	Uncharacterized protein OS=Mus musculus OX=10090 GN=Vim PE=2 SV=1	1.45	2.28E-06
+Q3UZG3	Hnrnpa3	Uncharacterized protein OS=Mus musculus OX=10090 GN=Hnrnpa3 PE=2 SV=1	3.41	2.32E-06
+Q9JK92	Hspb8	Heat shock protein beta-8 OS=Mus musculus OX=10090 GN=Hspb8 PE=1 SV=1	1.28	2.38E-06
+P63242	Eif5a	Eukaryotic translation initiation factor 5A-1 OS=Mus musculus OX=10090 GN=Eif5a PE=1 SV=2	2.83	2.55E-06
+P50580	Pa2g4	Proliferation-associated protein 2G4 OS=Mus musculus OX=10090 GN=Pa2g4 PE=1 SV=3	2.14	2.84E-06
+Q5M8R8	Rplp0	60S acidic ribosomal protein P0 OS=Mus musculus OX=10090 GN=Rplp0 PE=2 SV=1	2.19	2.84E-06
+Q8VC94	Rpl11	Rpl11 protein OS=Mus musculus OX=10090 GN=Rpl11 PE=2 SV=1	2.09	3.00E-06
+Q8CBY0	Gatc	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial OS=Mus musculus OX=10090 GN=Gatc PE=1 SV=1	2.43	3.01532E-06
+Q9DCT2	Ndufs3	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitochondrial OS=Mus musculus OX=10090 GN=Ndufs3 PE=1 SV=2	-1.42	3.09E-06
+P02463	Col4a1	Collagen alpha-1(IV) chain OS=Mus musculus OX=10090 GN=Col4a1 PE=1 SV=4	2.23	3.24E-06
+Q3U094	Arpc1b	Actin-related protein 2/3 complex subunit OS=Mus musculus OX=10090 GN=Arpc1b PE=2 SV=1	2.43	3.24E-06
+Q58EU6	Rpl5	MCG13589 OS=Mus musculus OX=10090 GN=Rpl5 PE=1 SV=1	1.37	3.53E-06
+Q6ZWZ4	Rpl36	60S ribosomal protein L36 OS=Mus musculus OX=10090 GN=Rpl36 PE=1 SV=1	1.57	3.53E-06
+Q8BU88	Mrpl22	Vat1 protein (Fragment) OS=Mus musculus OX=10090 GN=Mrpl22 PE=2 SV=1	1.83	3.53E-06
+Q3TXS9	Rps2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Rps2 PE=2 SV=1	2.53	3.53E-06
+P14602	Hspb1	Heat shock protein beta-1 OS=Mus musculus OX=10090 GN=Hspb1 PE=1 SV=3	3.1	3.53E-06
+P35979	Rpl12	60S ribosomal protein L12 OS=Mus musculus OX=10090 GN=Rpl12 PE=1 SV=2	1.85	3.56E-06
+G3UZG6	Cyb5r1	Cytochrome b5 reductase 1, isoform CRA_a (Fragment) OS=Mus musculus OX=10090 GN=Cyb5r1 PE=1 SV=1	4.45	3.94E-06
+Q3UCL7	Rps3	Uncharacterized protein OS=Mus musculus OX=10090 GN=Rps3 PE=2 SV=1	2.39	4.33E-06
+Q9D6J5	Ndufb8	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8, mitochondrial OS=Mus musculus OX=10090 GN=Ndufb8 PE=1 SV=1	-1.49	4.50E-06
+Q4V9X9	Rpl23a	Rpl23a protein (Fragment) OS=Mus musculus OX=10090 GN=Rpl23a PE=2 SV=1	1.6	4.61E-06
+P56392	Cox7a1	Cytochrome c oxidase subunit 7A1, mitochondrial OS=Mus musculus OX=10090 GN=Cox7a1 PE=1 SV=1	-1.53	4.71E-06
+B9EI85	Hist1h3d; Hist1h3f; Hist2h3c1; Hist2h3b; Hist2h3c2; Hist1h3c; Hist1h3e; Hist1h3b	Histone H3 OS=Mus musculus OX=10090 GN=Hist2h3b PE=2 SV=1	1.22	4.71E-06
+Q58ET1	Rpl7a	MCG11348 OS=Mus musculus OX=10090 GN=Rpl7a PE=1 SV=1	1.68	4.84E-06
+Q9DCX2	Atp5h	ATP synthase subunit d, mitochondrial OS=Mus musculus OX=10090 GN=Atp5pd PE=1 SV=3	-0.86	4.85E-06
+Q8BWB1	Synpo2l	Synaptopodin 2-like protein OS=Mus musculus OX=10090 GN=Synpo2l PE=1 SV=1	1.86	4.85E-06
+P09411	Pgk1	Phosphoglycerate kinase 1 OS=Mus musculus OX=10090 GN=Pgk1 PE=1 SV=4	1.97	4.85E-06
+P97351	Rps3a; Rps3a1	40S ribosomal protein S3a OS=Mus musculus OX=10090 GN=Rps3a PE=1 SV=3	2.1	4.85E-06
+P70333	Hnrnph2	Heterogeneous nuclear ribonucleoprotein H2 OS=Mus musculus OX=10090 GN=Hnrnph2 PE=1 SV=1	3.42	4.87E-06
+Q5SQB7	Npm1	MCG68069 OS=Mus musculus OX=10090 GN=Npm1 PE=1 SV=1	4.46	4.87E-06
+Q8BLF1	Nceh1	Neutral cholesterol ester hydrolase 1 OS=Mus musculus OX=10090 GN=Nceh1 PE=1 SV=1	0.66	5.07E-06
+Q9JM76	Arpc3	Actin-related protein 2/3 complex subunit 3 OS=Mus musculus OX=10090 GN=Arpc3 PE=1 SV=3	1.41	5.07E-06
+O35206	Col15a1	Collagen alpha-1(XV) chain OS=Mus musculus OX=10090 GN=Col15a1 PE=1 SV=2	1.59	5.07E-06
+Q3TCF1	Fn1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Fn1 PE=2 SV=1	1.97	5.07E-06
+P60867	Rps20	40S ribosomal protein S20 OS=Mus musculus OX=10090 GN=Rps20 PE=1 SV=1	1.63	5.14E-06
+P10126	Eef1a1; LOC101056619	Elongation factor 1-alpha 1 OS=Mus musculus OX=10090 GN=Eef1a1 PE=1 SV=3	1.84	5.16E-06
+P48771	Cox7a2	Cytochrome c oxidase subunit 7A2, mitochondrial OS=Mus musculus OX=10090 GN=Cox7a2 PE=1 SV=2	-1.01	5.40E-06
+Q3TI65	Mtfp1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Mtfp1 PE=2 SV=1	-1.33	5.53E-06
+Q8BXK9	Clic5	Chloride intracellular channel protein 5 OS=Mus musculus OX=10090 GN=Clic5 PE=1 SV=1	1.91	5.91E-06
+Q8R0F8	Fahd1	Acylpyruvase FAHD1, mitochondrial OS=Mus musculus OX=10090 GN=Fahd1 PE=1 SV=2	2.1	5.96E-06
+P59999	Arpc4	Actin-related protein 2/3 complex subunit 4 OS=Mus musculus OX=10090 GN=Arpc4 PE=1 SV=3	1.14	6.06E-06
+Q9CR57	Rpl14	60S ribosomal protein L14 OS=Mus musculus OX=10090 GN=Rpl14 PE=1 SV=3	1.54	6.06E-06
+A0A1L7NR37	Sorbs2	Arg/Abl-binding protein 2 OS=Mus musculus OX=10090 GN=Sorbs2 PE=2 SV=1	1.51	6.25E-06
+Q4VA28	Rpl21	Ribosomal protein L21 OS=Mus musculus OX=10090 GN=Rpl21 PE=2 SV=1	1.51	6.25E-06
+O54796	Tnxb	Tenascin-X OS=Mus musculus OX=10090 GN=Tnx PE=4 SV=1	2.35	6.25E-06
+Q8R3U1	Pla2g16	HRAS-like suppressor 3 OS=Mus musculus OX=10090 GN=Pla2g16 PE=1 SV=2	1.81	6.92E-06
+Q4VAG4	Rpl22; LOC100047372; LOC100504863; LOC102642602	MCG12304 OS=Mus musculus OX=10090 GN=Rpl22 PE=1 SV=1	2.11	6.99E-06
+A0A1S6GWI0	Ndufa8	NADH dehydrogenase (Ubiquinone) 1 alpha subcomplex, 8 OS=Mus musculus OX=10090 GN=Ndufa8 PE=2 SV=1	-1.61	7.09E-06
+P14733	Lmnb1	Lamin-B1 OS=Mus musculus OX=10090 GN=Lmnb1 PE=1 SV=3	0.72	7.09E-06
+A0A3B2WDD2		Ribosomal protein OS=Mus musculus OX=10090 GN=Rpl10a PE=1 SV=1	1.76	7.17E-06
+O55222	Ilk	Integrin-linked protein kinase OS=Mus musculus OX=10090 GN=Ilk PE=1 SV=2	1.72	7.36E-06
+O70251	Eef1b2	Elongation factor 1-beta OS=Mus musculus OX=10090 GN=Eef1b PE=1 SV=5	2.17	7.53E-06
+Q3U6S1	Vim	Uncharacterized protein OS=Mus musculus OX=10090 GN=Vim PE=2 SV=1	1.78	7.58E-06
+Q62261	Spnb2; Sptbn1	Spectrin beta chain, non-erythrocytic 1 OS=Mus musculus OX=10090 GN=Sptbn1 PE=1 SV=2	0.46	7.60E-06
+Q9D6H6	Ndufb3	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ndufb3 PE=2 SV=1	-1.41	7.78E-06
+Q6ZWV7	Rpl35	60S ribosomal protein L35 OS=Mus musculus OX=10090 GN=Rpl35 PE=1 SV=1	1.17	7.78E-06
+A3KGU9	Spna2; Sptan1	Spectrin alpha chain, non-erythrocytic 1 OS=Mus musculus OX=10090 GN=Sptan1 PE=1 SV=2	0.35	7.90E-06
+A0A1W2P7A1		40S ribosomal protein S12 OS=Mus musculus OX=10090 GN=Rps12 PE=1 SV=1	2.49	7.90E-06
+P34884	Mif	Macrophage migration inhibitory factor OS=Mus musculus OX=10090 GN=Mif PE=1 SV=2	3.13	7.90E-06
+P63325	Rps10	40S ribosomal protein S10 OS=Mus musculus OX=10090 GN=Rps10 PE=1 SV=1	2.03	8.94E-06
+P52480	Pkm	Pyruvate kinase PKM OS=Mus musculus OX=10090 GN=Pkm PE=1 SV=4	3.66	8.94E-06
+P18155	Mthfd2	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohydrolase, mitochondrial OS=Mus musculus OX=10090 GN=Mthfd2 PE=1 SV=1	4.58	9.15E-06
+Q8BG13	Rbm3	RNA-binding protein 3 OS=Mus musculus OX=10090 GN=Rbm3 PE=1 SV=1	2.98	9.50E-06
+E9PWE8	Dpysl3	Dihydropyrimidinase-related protein 3 OS=Mus musculus OX=10090 GN=Dpysl3 PE=1 SV=1	4.05	9.69E-06
+Q9CQ54	Ndufc2; LOC102641347	NADH dehydrogenase [ubiquinone] 1 subunit C2 OS=Mus musculus OX=10090 GN=Ndufc2 PE=1 SV=1	-1.27	1.00E-05
+P43406	Itgav	Integrin alpha-V OS=Mus musculus OX=10090 GN=Itgav PE=1 SV=2	2.28	1.06E-05
+Q78PY7	Snd1	Staphylococcal nuclease domain-containing protein 1 OS=Mus musculus OX=10090 GN=Snd1 PE=1 SV=1	2.87	1.12E-05
+Q99P72	Rtn4	Reticulon-4 OS=Mus musculus OX=10090 GN=Rtn4 PE=1 SV=2	3.89	1.17E-05
+Q0VG47	Hnrnpa3	Heterogeneous nuclear ribonucleoprotein A3 OS=Mus musculus OX=10090 GN=Hnrnpa3 PE=2 SV=1	2.59	1.22E-05
+Q9DCS9	Ndufb10	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10 OS=Mus musculus OX=10090 GN=Ndufb10 PE=1 SV=3	-1.03	1.25E-05
+Q3TXL5	Ctsd	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ctsd PE=2 SV=1	2.67	1.25E-05
+Q810K5	Ybx1	Y box protein 1 OS=Mus musculus OX=10090 GN=Ybx1 PE=2 SV=1	4.11	1.26E-05
+O70569	Rps14	Ribosomal protein S14 OS=Mus musculus OX=10090 GN=rps14 PE=3 SV=1	1.89	1.47E-05
+B2RQQ8	Col4a2	Collagen, type IV, alpha 2 OS=Mus musculus OX=10090 GN=Col4a2 PE=1 SV=1	1.48	1.51E-05
+J3QNM3		Protein enabled homolog OS=Mus musculus OX=10090 GN=Enah PE=1 SV=1	5.87	1.51E-05
+B1ARW4	Ndufs5	NADH dehydrogenase [ubiquinone] iron-sulfur protein 5 (Fragment) OS=Mus musculus OX=10090 GN=Ndufs5 PE=1 SV=1	-1.26	1.52E-05
+Q8BU20	Ndufb5	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ndufb5 PE=2 SV=1	-1.23	1.52E-05
+G5E814	Ndufa11	MCG5603 OS=Mus musculus OX=10090 GN=Ndufa11 PE=1 SV=1	-0.9	1.52E-05
+Q9JIK9	Mrps34	THO complex subunit 4 OS=Mus musculus OX=10090 GN=Mrps34 PE=1 SV=3	1.54	1.52E-05
+Q3TPD9	Maoa	Amine oxidase (Fragment) OS=Mus musculus OX=10090 GN=Maoa PE=2 SV=1	5.77	1.55E-05
+P26883	Fkbp1a	Peptidyl-prolyl cis-trans isomerase FKBP1A OS=Mus musculus OX=10090 GN=Fkbp1a PE=1 SV=2	2.4	1.63E-05
+A0A1L1SQA8		40S ribosomal protein S25 OS=Mus musculus OX=10090 GN=Rps25 PE=1 SV=1	1.57	1.64E-05
+Q9JHU4	Dync1h1	Cytoplasmic dynein 1 heavy chain 1 OS=Mus musculus OX=10090 GN=Dync1h1 PE=1 SV=2	2.49	1.66E-05
+Q9D898	Arpc5l	Actin-related protein 2/3 complex subunit 5-like protein OS=Mus musculus OX=10090 GN=Arpc5l PE=1 SV=1	1.59	1.67E-05
+Q8R0Y8	Slc25a42	Mitochondrial coenzyme A transporter SLC25A42 OS=Mus musculus OX=10090 GN=Slc25a42 PE=1 SV=1	-1.45	1.75E-05
+O35683	Ndufa1	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1 OS=Mus musculus OX=10090 GN=Ndufa1 PE=1 SV=1	-1.4	1.75E-05
+Q4FZH2	Rpl26; Gm15772	MCG50660, isoform CRA_a OS=Mus musculus OX=10090 GN=Rpl26 PE=1 SV=1	1.59	1.75E-05
+Q3TM70	Ehd4	EH-domain containing 4 OS=Mus musculus OX=10090 GN=Ehd4 PE=1 SV=1	1.69	1.75E-05
+D3YUM1		NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondrial OS=Mus musculus OX=10090 GN=Ndufv1 PE=1 SV=1	-1	1.87E-05
+Q99M04	Lias	Lipoyl synthase, mitochondrial OS=Mus musculus OX=10090 GN=Lias PE=1 SV=1	3.56	1.87E-05
+Q9CQR2	Rps21	40S ribosomal protein S21 OS=Mus musculus OX=10090 GN=Rps21 PE=1 SV=1	3	1.88E-05
+Q8VIJ6	Sfpq	Splicing factor, proline- and glutamine-rich OS=Mus musculus OX=10090 GN=Sfpq PE=1 SV=1	2.14	1.96E-05
+E9PXX7	Txndc5	Thioredoxin domain-containing protein 5 OS=Mus musculus OX=10090 GN=Txndc5 PE=1 SV=1	3.29	1.98E-05
+Q9QUI0	Rhoa	Transforming protein RhoA OS=Mus musculus OX=10090 GN=Rhoa PE=1 SV=1	1.17	2.03E-05
+H7BX64	Slmap	Sarcolemmal membrane-associated protein OS=Mus musculus OX=10090 GN=Slmap PE=1 SV=1	1.72	2.03E-05
+Q8BT90	Rps17	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Rps17 PE=2 SV=1	1.78	2.10E-05
+P10493	Nid1	Nidogen-1 OS=Mus musculus OX=10090 GN=Nid1 PE=1 SV=2	0.69	2.13E-05
+P19536	Cox5b	Cytochrome c oxidase subunit 5B, mitochondrial OS=Mus musculus OX=10090 GN=Cox5b PE=1 SV=1	-1.27	2.44E-05
+P12787	Cox5a	Cytochrome c oxidase subunit 5A, mitochondrial OS=Mus musculus OX=10090 GN=Cox5a PE=1 SV=2	-1.16	2.44E-05
+Q9Z2D6	Mecp2	Methyl-CpG-binding protein 2 OS=Mus musculus OX=10090 GN=Mecp2 PE=1 SV=1	0.82	2.44E-05
+P62983	Rps27a; Rps27a-ps2; LOC100042019	Ubiquitin-40S ribosomal protein S27a OS=Mus musculus OX=10090 GN=Rps27a PE=1 SV=2	0.84	2.44E-05
+O54734	Ddost	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase 48 kDa subunit OS=Mus musculus OX=10090 GN=Ddost PE=1 SV=2	1.15	2.44E-05
+Q9JIW9	Ralb	Ras-related protein Ral-B OS=Mus musculus OX=10090 GN=Ralb PE=1 SV=1	1.22	2.44E-05
+D3YUT3		40S ribosomal protein S19 (Fragment) OS=Mus musculus OX=10090 GN=Rps19 PE=1 SV=2	1.77	2.44E-05
+Q6ZWN5	Rps9	40S ribosomal protein S9 OS=Mus musculus OX=10090 GN=Rps9 PE=1 SV=3	2.29	2.44E-05
+Q5M8Q0	Rpl15	Ribosomal protein L15 OS=Mus musculus OX=10090 GN=Rpl15 PE=2 SV=1	3.6	2.44E-05
+O54962	Banf1	Barrier-to-autointegration factor OS=Mus musculus OX=10090 GN=Banf1 PE=1 SV=1	1.7	2.45E-05
+P62830	Rpl23; LOC100044627; LOC100862455	60S ribosomal protein L23 OS=Mus musculus OX=10090 GN=Rpl23 PE=1 SV=1	1.56	2.46E-05
+Q5FW97	Eno1; Gm5506; Eno1b	Enolase 1, alpha non-neuron OS=Mus musculus OX=10090 GN=EG433182 PE=1 SV=1	1.86	2.46E-05
+Q9CZN7	Shmt2	Serine hydroxymethyltransferase, mitochondrial OS=Mus musculus OX=10090 GN=Shmt2 PE=1 SV=1	2.86	2.50E-05
+Q545R0	Ctnna1	Catenin (Cadherin associated protein), alpha 1 OS=Mus musculus OX=10090 GN=Ctnna1 PE=1 SV=1	1.17	2.59E-05
+Q9D1B9	Mrpl28	39S ribosomal protein L28, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl28 PE=1 SV=3	-1.11	2.5958E-05
+Q5U222	Ddx5	Ddx5 protein (Fragment) OS=Mus musculus OX=10090 GN=Ddx5 PE=2 SV=1	2.54	2.60E-05
+Q6PEE6	Ap2a2	AP-2 complex subunit alpha OS=Mus musculus OX=10090 GN=Ap2a2 PE=2 SV=1	1.75	2.96E-05
+A1L0V4	Hist1h3h; Hist1h3i	Histone H3 (Fragment) OS=Mus musculus OX=10090 GN=Hist1h3i PE=2 SV=1	1.54	3.05E-05
+Q641N3	Rps16-ps2	Rps16 protein (Fragment) OS=Mus musculus OX=10090 GN=Rps16 PE=2 SV=1	1.84	3.10E-05
+Q497N1	Rps26; Rps26-ps1	40S ribosomal protein S26 OS=Mus musculus OX=10090 GN=Rps26 PE=1 SV=1	1.29	3.11E-05
+P50518	Atp6v1e1	V-type proton ATPase subunit E 1 OS=Mus musculus OX=10090 GN=Atp6v1e1 PE=1 SV=2	3.17	3.11E-05
+F6SVV1		40S ribosomal protein S7 OS=Mus musculus OX=10090 GN=Gm9493 PE=3 SV=1	1.31	3.12E-05
+Q9CR61	Ndufb7	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7 OS=Mus musculus OX=10090 GN=Ndufb7 PE=1 SV=3	-1.04	3.29E-05
+O70325	Gpx4	Phospholipid hydroperoxide glutathione peroxidase OS=Mus musculus OX=10090 GN=Gpx4 PE=1 SV=4	1.35	3.29E-05
+A0A338P7H5		Alpha-2-HS-glycoprotein OS=Mus musculus OX=10090 GN=Ahsg PE=1 SV=1	2.16	3.29E-05
+P35385	Hspb7	Heat shock protein beta-7 OS=Mus musculus OX=10090 GN=Hspb7 PE=1 SV=3	3.13	3.29E-05
+Q8BIG7	Comtd1	Catechol O-methyltransferase domain-containing protein 1 OS=Mus musculus OX=10090 GN=Comtd1 PE=1 SV=1	3.26	3.29E-05
+Q3U505	Rpn2	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Rpn2 PE=2 SV=1	1.83	3.35E-05
+A0A068BGR9	Ndufa7	NADH dehydrogenase OS=Mus musculus OX=10090 GN=Ndufa7 PE=2 SV=1	-1.36	3.45E-05
+Q5BLK1	Rps6-ps4; Rps6; LOC105244208	40S ribosomal protein S6 OS=Mus musculus OX=10090 GN=Rps6 PE=1 SV=1	0.96	3.51E-05
+Q9EP72	Emc7	ER membrane protein complex subunit 7 OS=Mus musculus OX=10090 GN=Emc7 PE=1 SV=1	0.94	3.72E-05
+Q8R5G0	Nid2	Nidogen 2 protein OS=Mus musculus OX=10090 GN=Nid2 PE=2 SV=1	1.09	3.72E-05
+Q3THJ6	Rpl10	Uncharacterized protein OS=Mus musculus OX=10090 PE=2 SV=1	1.84	3.72E-05
+Q7TNL9	Chchd10	Coiled-coil-helix-coiled-coil-helix domain-containing 10 OS=Mus musculus OX=10090 GN=Chchd10 PE=1 SV=1	1.96	3.72E-05
+O88951	Lin7b	Protein lin-7 homolog B OS=Mus musculus OX=10090 GN=Lin7b PE=1 SV=2	-0.49	3.78E-05
+Q561N5	Rps18	MCG23000, isoform CRA_b OS=Mus musculus OX=10090 GN=Rps18 PE=2 SV=1	1.83	3.96E-05
+Q9D8S9	Bola1	BolA-like protein 1 OS=Mus musculus OX=10090 GN=Bola1 PE=1 SV=1	2.82	4.07E-05
+D3Z4D7		Microfibrillar-associated protein 5 OS=Mus musculus OX=10090 GN=Mfap5 PE=1 SV=1	1.89	4.13E-05
+Q8C290	Hnrnpu	Uncharacterized protein OS=Mus musculus OX=10090 GN=Hnrnpu PE=2 SV=1	2.61	4.17E-05
+Q80T06	Eef1d	Elongation factor 1-delta OS=Mus musculus OX=10090 GN=Eef1d PE=1 SV=1	2.07	4.20E-05
+Q3TX45	Apoe	Uncharacterized protein OS=Mus musculus OX=10090 GN=Apoe PE=2 SV=1	0.9	4.40E-05
+Q8BTD1	Nxph4	Neurexophilin OS=Mus musculus OX=10090 GN=Nxph4 PE=2 SV=1	1.51	4.41E-05
+Q9CPQ1	Cox6c	Cytochrome c oxidase subunit 6C OS=Mus musculus OX=10090 GN=Cox6c PE=1 SV=3	-1.56	4.42E-05
+Q69ZV5	Akap2	MKIAA0920 protein (Fragment) OS=Mus musculus OX=10090 GN=mKIAA0920 PE=2 SV=1	2.55	4.42E-05
+P14148	Rpl7	60S ribosomal protein L7 OS=Mus musculus OX=10090 GN=Rpl7 PE=1 SV=2	2.8	4.42E-05
+Q9CR42	Ankrd1	Ankyrin repeat domain-containing protein 1 OS=Mus musculus OX=10090 GN=Ankrd1 PE=1 SV=1	5.18	4.42E-05
+Q149V4	Hist2h2ac	Histone H2A OS=Mus musculus OX=10090 GN=Hist2h2ac PE=2 SV=1	0.87	4.69E-05
+Q9EPC1	Parva	Alpha-parvin OS=Mus musculus OX=10090 GN=Parva PE=1 SV=1	1.66	4.69E-05
+Q571F9	G3bp1	MKIAA4115 protein (Fragment) OS=Mus musculus OX=10090 GN=G3bp1 PE=2 SV=1	1.98	4.69E-05
+Q9CX86	Hnrnpa0	Heterogeneous nuclear ribonucleoprotein A0 OS=Mus musculus OX=10090 GN=Hnrnpa0 PE=1 SV=1	1.99	4.69E-05
+Q3TTV7	Nono	Uncharacterized protein OS=Mus musculus OX=10090 GN=Nono PE=2 SV=1	2.47	4.69E-05
+Q3TID4	Psap	Uncharacterized protein OS=Mus musculus OX=10090 GN=Psap PE=2 SV=1	4.64	4.69E-05
+A2A6U5	Sep-09	Septin-9 (Fragment) OS=Mus musculus OX=10090 GN=Sept9 PE=1 SV=1	0.81	4.71E-05
+Q58E35	Rplp1	MCG10168 OS=Mus musculus OX=10090 GN=Rplp1 PE=1 SV=1	1.87	4.74E-05
+E9Q616	Ahnak	AHNAK nucleoprotein (desmoyokin) OS=Mus musculus OX=10090 GN=Ahnak PE=1 SV=1	1.06	4.87E-05
+Q5I0T8	Rpl19; Rpl19-ps11	Ribosomal protein L19 OS=Mus musculus OX=10090 GN=Rpl19 PE=1 SV=1	1.95	5.60E-05
+P17751	Tpi1	Triosephosphate isomerase OS=Mus musculus OX=10090 GN=Tpi1 PE=1 SV=4	1.08	5.84E-05
+A0A0M3HEQ0		Thioredoxin reductase 2, mitochondrial OS=Mus musculus OX=10090 GN=Txnrd2 PE=1 SV=1	1.44	6.28E-05
+E9PYH2	Acot7	Cytosolic acyl coenzyme A thioester hydrolase OS=Mus musculus OX=10090 GN=Acot7 PE=1 SV=1	3.36	6.54E-05
+Q3TDN8	Bphl	Uncharacterized protein OS=Mus musculus OX=10090 GN=Bphl PE=2 SV=1	2.22	6.65E-05
+P43023	Cox6a2	Cytochrome c oxidase subunit 6A2, mitochondrial OS=Mus musculus OX=10090 GN=Cox6a2 PE=1 SV=2	-1.69	6.67E-05
+Q80TM2	Tln1	MKIAA1027 protein (Fragment) OS=Mus musculus OX=10090 GN=Tln1 PE=2 SV=4	1.37	6.67E-05
+Q3TE63	Ppia	Peptidyl-prolyl cis-trans isomerase OS=Mus musculus OX=10090 GN=Ppia PE=2 SV=1	1.49	6.67E-05
+O55142	Rpl35a-ps4; Rpl35a; Rpl35a-ps2; Gm10243; Rpl35a-ps5; LOC100862595; Gm14279; LOC100048620	60S ribosomal protein L35a OS=Mus musculus OX=10090 GN=Rpl35a PE=1 SV=2	1.6	6.67E-05
+Q3UBP0	Adssl1	Adenylosuccinate synthetase isozyme 1 OS=Mus musculus OX=10090 GN=Adssl1 PE=2 SV=1	2.08	6.67E-05
+Q3U9Q3	Hnrnpk	Uncharacterized protein OS=Mus musculus OX=10090 GN=Hnrnpk PE=2 SV=1	2.51	6.67E-05
+A0A0A0MQF6	Gapdh	Glyceraldehyde-3-phosphate dehydrogenase OS=Mus musculus OX=10090 GN=Gapdh PE=1 SV=1	1.06	7.10E-05
+O88840	Fbn1	Mutant fibrillin-1 OS=Mus musculus OX=10090 GN=Fbn1 PE=2 SV=1	3.25	7.18E-05
+Q9D6E6	Myl12a	Uncharacterized protein OS=Mus musculus OX=10090 GN=Myl12a PE=2 SV=1	1.48	7.38E-05
+P99027	Rplp2	60S acidic ribosomal protein P2 OS=Mus musculus OX=10090 GN=Rplp2 PE=1 SV=3	1.25	7.51E-05
+Q9CPU2	Ndufb2	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 2, mitochondrial OS=Mus musculus OX=10090 GN=Ndufb2 PE=1 SV=1	-1.62	7.54E-05
+P62869	Tceb2; Elob	Elongin-B OS=Mus musculus OX=10090 GN=Elob PE=1 SV=1	1.46	7.60E-05
+S4R1W7		Ras-related protein Rab-35 OS=Mus musculus OX=10090 GN=Rab35 PE=1 SV=1	1.51	7.61E-05
+P47857	Pfkm	ATP-dependent 6-phosphofructokinase, muscle type OS=Mus musculus OX=10090 GN=Pfkm PE=1 SV=3	1.77	7.74E-05
+O88569	Hnrnpa2b1	Heterogeneous nuclear ribonucleoproteins A2/B1 OS=Mus musculus OX=10090 GN=Hnrnpa2b1 PE=1 SV=2	1.89	7.87E-05
+A0A1W2P6G5		Myosin light polypeptide 6 OS=Mus musculus OX=10090 GN=Myl6 PE=1 SV=1	0.86	8.39E-05
+A0A1B0GS68		Predicted gene 45713 OS=Mus musculus OX=10090 GN=Gm45713 PE=2 SV=1	1.73	8.71E-05
+Q61292	Lamb2	Laminin subunit beta-2 OS=Mus musculus OX=10090 GN=Lamb2 PE=1 SV=2	0.7	9.28E-05
+Q8BK30	Ndufv3	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondrial OS=Mus musculus OX=10090 GN=Ndufv3 PE=1 SV=1	-1.99	9.30E-05
+Q8BNM0	Hmgb1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 PE=2 SV=1	0.82	9.48E-05
+F8WJ64		Acyl carrier protein (Fragment) OS=Mus musculus OX=10090 GN=Ndufab1 PE=1 SV=1	-0.73	9.60E-05
+Q920W8		40S ribosomal protein S30 (Fragment) OS=Mus musculus OX=10090 GN=fau PE=3 SV=1	1.55	9.75E-05
+Q9CXI5	Manf	Mesencephalic astrocyte-derived neurotrophic factor OS=Mus musculus OX=10090 GN=Manf PE=1 SV=1	1.59	9.76E-05
+Q9CQL5	Mrpl18	39S ribosomal protein L18, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl18 PE=1 SV=1	-6.64	0.0001
+P61358	Rpl27; LOC108167922	60S ribosomal protein L27 OS=Mus musculus OX=10090 GN=Rpl27 PE=1 SV=2	1.98	0.000100299
+Q3TIF8	Rps24	40S ribosomal protein S24 OS=Mus musculus OX=10090 GN=Rps24 PE=2 SV=1	1.34	0.000103062
+Q8BIJ6	Iars2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Iars2 PE=2 SV=1	1.88	0.000106214
+Q3TW40	Hnrnpm	Uncharacterized protein OS=Mus musculus OX=10090 GN=Hnrnpm PE=2 SV=1	2.76	0.000106257
+Q149B8	2310042D19Rik; Perm1	PGC-1 and ERR-induced regulator in muscle protein 1 OS=Mus musculus OX=10090 GN=Perm1 PE=1 SV=2	-1.73	0.000107399
+Q8BNA5	Cttn	Uncharacterized protein OS=Mus musculus OX=10090 GN=Cttn PE=2 SV=1	1.02	0.000108174
+P26041	Msn	Moesin OS=Mus musculus OX=10090 GN=Msn PE=1 SV=3	1.69	0.0001086
+A8IP69	Ywhag	14-3-3 protein gamma subtype OS=Mus musculus OX=10090 GN=Ywhag PE=1 SV=1	1.33	0.000109412
+Q3UB67	Rpl3	Uncharacterized protein OS=Mus musculus OX=10090 GN=Rpl3 PE=2 SV=1	2.72	0.000109506
+Q1XH17	Trim72	Tripartite motif-containing protein 72 OS=Mus musculus OX=10090 GN=Trim72 PE=1 SV=1	1.33	0.000111038
+Q8CI78	Rmnd1	Non-specific lipid-transfer protein OS=Mus musculus OX=10090 GN=Rmnd1 PE=1 SV=3	-1.05	0.00011139
+A0A1W2P758		Cysteine and glycine-rich protein 2 (Fragment) OS=Mus musculus OX=10090 GN=Csrp2 PE=1 SV=1	1.51	0.00011139
+Q3U422	Ndufv3	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondrial OS=Mus musculus OX=10090 GN=Ndufv3 PE=1 SV=1	-1.17	0.00011254
+P60335	Pcbp1	Poly(rC)-binding protein 1 OS=Mus musculus OX=10090 GN=Pcbp1 PE=1 SV=1	2.57	0.00011254
+Q8K3J1	Ndufs8	NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitochondrial OS=Mus musculus OX=10090 GN=Ndufs8 PE=1 SV=1	-1.35	0.000114376
+Q9Z1N5	Ddx39b	Spliceosome RNA helicase Ddx39b OS=Mus musculus OX=10090 GN=Ddx39b PE=1 SV=1	2.37	0.000114376
+Q9D8N0	Eef1g	Elongation factor 1-gamma OS=Mus musculus OX=10090 GN=Eef1g PE=1 SV=3	2.69	0.000114376
+Q8CEH8	Pfn1	Profilin OS=Mus musculus OX=10090 GN=Pfn1 PE=2 SV=1	1.87	0.000120121
+A0A0G2JEX1	Nexn	Nexilin OS=Mus musculus OX=10090 GN=Nexn PE=1 SV=1	1.52	0.000120173
+A8DUK4	Beta-s; Hbb-bs; Hbb-bt; Hbb-b1	Beta-globin OS=Mus musculus OX=10090 GN=Hbb-bs PE=1 SV=1	2.08	0.00012137
+Q3UK30	Fus	Uncharacterized protein OS=Mus musculus OX=10090 PE=2 SV=1	3.1	0.000121495
+Q8VDJ3	Hdlbp	Vigilin OS=Mus musculus OX=10090 GN=Hdlbp PE=1 SV=1	3.08	0.000122381
+Q9CY06	Hba-a1	Uncharacterized protein OS=Mus musculus OX=10090 PE=2 SV=1	1.49	0.00012351
+P08752	Gnai2	Guanine nucleotide-binding protein G(i) subunit alpha-2 OS=Mus musculus OX=10090 GN=Gnai2 PE=1 SV=5	0.85	0.000124903
+Q01853	Vcp	Transitional endoplasmic reticulum ATPase OS=Mus musculus OX=10090 GN=Vcp PE=1 SV=4	2.11	0.000127142
+Q52KG9	Cct6a	Chaperonin containing Tcp1, subunit 6a (Zeta) OS=Mus musculus OX=10090 GN=Cct6a PE=2 SV=1	3.95	0.000130979
+Q9D832	Dnajb4	DnaJ homolog subfamily B member 4 OS=Mus musculus OX=10090 GN=Dnajb4 PE=1 SV=1	1.92	0.000131683
+Q3UW40	Rpl24	Uncharacterized protein OS=Mus musculus OX=10090 GN=Rpl24 PE=2 SV=1	1.41	0.000132673
+B9EKE9	Ddx3x	Ddx3x protein OS=Mus musculus OX=10090 GN=Ddx3x PE=2 SV=1	2.46	0.000132673
+Q6A0C9	Ap2m1	MKIAA0109 protein (Fragment) OS=Mus musculus OX=10090 GN=Ap2m1 PE=2 SV=1	1.17	0.000134125
+Q91YN9	Bag2	BAG family molecular chaperone regulator 2 OS=Mus musculus OX=10090 GN=Bag2 PE=1 SV=1	1.38	0.000134255
+P56391	Cox6b1	Cytochrome c oxidase subunit 6B1 OS=Mus musculus OX=10090 GN=Cox6b1 PE=1 SV=2	-1.02	0.000143269
+Q7TMX2	Ppp2r1a	Protein phosphatase 2 (Formerly 2A), regulatory subunit A (PR 65), alpha isoform OS=Mus musculus OX=10090 GN=Ppp2r1a PE=2 SV=1	1.1	0.000144249
+Q02248	Ctnnb1	Catenin beta-1 OS=Mus musculus OX=10090 GN=Ctnnb1 PE=1 SV=1	0.82	0.000144374
+P84244	H3f3a; H3f3b	Histone H3.3 OS=Mus musculus OX=10090 GN=H3f3a PE=1 SV=2	1.06	0.000144395
+B2RRX1	Actb	Actin, beta OS=Mus musculus OX=10090 GN=Actb PE=2 SV=1	0.76	0.000145727
+Q9DCN2	Cyb5r3	NADH-cytochrome b5 reductase 3 OS=Mus musculus OX=10090 GN=Cyb5r3 PE=1 SV=3	1.47	0.000145727
+A6ZI44	Aldoa	Fructose-bisphosphate aldolase OS=Mus musculus OX=10090 GN=Aldoa PE=1 SV=1	0.45	0.000146449
+Q9D6G1	Hnrnpab	Heterogeneous nuclear ribonucleoprotein A/B, isoform CRA_b OS=Mus musculus OX=10090 GN=Hnrnpab PE=2 SV=1	3.39	0.000149213
+Q3TXE5	Canx	Uncharacterized protein OS=Mus musculus OX=10090 GN=Canx PE=2 SV=1	0.71	0.000152071
+Q80UU9	Pgrmc2	Membrane-associated progesterone receptor component 2 OS=Mus musculus OX=10090 GN=Pgrmc2 PE=1 SV=2	2.5	0.000154824
+Q3UIC2	Cdh2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Cdh2 PE=2 SV=1	1.08	0.000155301
+O88630	Gosr1	Golgi SNAP receptor complex member 1 OS=Mus musculus OX=10090 GN=Gosr1 PE=1 SV=2	1.45	0.000155301
+P0DP27	Calm3; Calm1; Calm2	Calmodulin-2 OS=Mus musculus OX=10090 GN=Calm2 PE=1 SV=1	0.87	0.000161132
+Q3TF74	Coro1c	Coronin OS=Mus musculus OX=10090 GN=Coro1c PE=2 SV=1	0.72	0.000163449
+Q6S388	Plec	Plectin 7 OS=Mus musculus OX=10090 GN=Plec PE=2 SV=1	0.61	0.000165345
+Q9JIK9	Mrps34	28S ribosomal protein S34, mitochondrial OS=Mus musculus OX=10090 GN=Mrps34 PE=1 SV=1	1.1	0.000179742
+Q02257	Jup	Junction plakoglobin OS=Mus musculus OX=10090 GN=Jup PE=1 SV=3	0.59	0.000179874
+Q99K41	Emilin1	EMILIN-1 OS=Mus musculus OX=10090 GN=Emilin1 PE=1 SV=1	2.88	0.000180044
+Q642K1	Rpl18	Ribosomal protein L18 OS=Mus musculus OX=10090 GN=Rpl18 PE=2 SV=1	1.94	0.00018269
+Q5ND52	Rnmtl1; Mrm3	rRNA methyltransferase 3, mitochondrial OS=Mus musculus OX=10090 GN=Mrm3 PE=2 SV=1	1.77	0.000195347
+P23927	Cryab	Alpha-crystallin B chain OS=Mus musculus OX=10090 GN=Cryab PE=1 SV=2	1.76	0.000197507
+P24369	Ppib	Peptidyl-prolyl cis-trans isomerase B OS=Mus musculus OX=10090 GN=Ppib PE=1 SV=2	1.06	0.000201041
+Q3TSQ1	Atp1b1	Sodium/potassium-transporting ATPase subunit beta OS=Mus musculus OX=10090 GN=Atp1b1 PE=2 SV=1	0.64	0.000202116
+Q6ZWY3	Rps27l	40S ribosomal protein S27-like OS=Mus musculus OX=10090 GN=Rps27l PE=1 SV=3	1.45	0.000215982
+Q91VR5	Ddx1	ATP-dependent RNA helicase DDX1 OS=Mus musculus OX=10090 GN=Ddx1 PE=1 SV=1	2.21	0.000218203
+Q9D0I4	Stx17	Syntaxin-17 OS=Mus musculus OX=10090 GN=Stx17 PE=1 SV=1	2.6	0.000221165
+Q3UK83	Hnrnpa1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Hnrnpa1 PE=2 SV=1	2.81	0.00022124
+Q9QYR9	Acot2	Acyl-coenzyme A thioesterase 2, mitochondrial OS=Mus musculus OX=10090 GN=Acot2 PE=1 SV=2	2.06	0.000225722
+Q7TMY2	Acadsb	Acyl-Coenzyme A dehydrogenase, short/branched chain OS=Mus musculus OX=10090 GN=Acadsb PE=2 SV=1	-4	0.000227
+A0A0U1RQ71		40S ribosomal protein S13 OS=Mus musculus OX=10090 GN=Rps13 PE=1 SV=1	1.45	0.00023232
+P99024	Tubb5	Tubulin beta-5 chain OS=Mus musculus OX=10090 GN=Tubb5 PE=1 SV=1	1.6	0.000233485
+P80315	Cct4	T-complex protein 1 subunit delta OS=Mus musculus OX=10090 GN=Cct4 PE=1 SV=3	2	0.000233938
+Q8CD23	Ncl	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ncl PE=2 SV=1	4.75	0.000233938
+P27546	Map4; Mtap4	Microtubule-associated protein 4 OS=Mus musculus OX=10090 GN=Map4 PE=1 SV=3	1.02	0.00024367
+E9PZ16	Hspg2	Basement membrane-specific heparan sulfate proteoglycan core protein OS=Mus musculus OX=10090 GN=Hspg2 PE=1 SV=1	0.67	0.000245213
+Q60668	Hnrnpd	Heterogeneous nuclear ribonucleoprotein D0 OS=Mus musculus OX=10090 GN=Hnrnpd PE=1 SV=2	2.95	0.000251143
+Q9D1L9	Hbxip; Lamtor5	Ragulator complex protein LAMTOR5 OS=Mus musculus OX=10090 GN=Lamtor5 PE=1 SV=1	1.36	0.000253505
+P21550	Eno3	Beta-enolase OS=Mus musculus OX=10090 GN=Eno3 PE=1 SV=3	1.34	0.000257859
+Q8VCQ8	Cald1	Caldesmon 1 OS=Mus musculus OX=10090 GN=Cald1 PE=1 SV=1	0.82	0.000266774
+P80316	Cct5	T-complex protein 1 subunit epsilon OS=Mus musculus OX=10090 GN=Cct5 PE=1 SV=1	2.48	0.000272673
+P43275	Hist1h1a	Histone H1.1 OS=Mus musculus OX=10090 GN=Hist1h1a PE=1 SV=2	1.17	0.00028985
+Q61425	Hadh	Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Hadh PE=1 SV=2	2.15	0.000323003
+Q3UN10	Wfs1	Wolframin OS=Mus musculus OX=10090 GN=Wfs1 PE=1 SV=1	2.75	0.00032654
+Q9CQR4	Acot13	Acyl-coenzyme A thioesterase 13 OS=Mus musculus OX=10090 GN=Acot13 PE=1 SV=1	0.67	0.000331335
+Q8CA90	H2afy	Histone H2A OS=Mus musculus OX=10090 GN=H2afy PE=2 SV=1	0.55	0.000331427
+Q60675	Lama2	Laminin subunit alpha-2 OS=Mus musculus OX=10090 GN=Lama2 PE=1 SV=2	0.54	0.000334838
+E9Q1W0	Camk2d	Calcium/calmodulin-dependent protein kinase type II subunit delta OS=Mus musculus OX=10090 GN=Camk2d PE=1 SV=2	1.4	0.000334838
+Q5RKP3	Rpl13	60S ribosomal protein L13 OS=Mus musculus OX=10090 GN=Rpl13 PE=2 SV=1	1.47	0.000336604
+Q3TF84	Lrrc59	Uncharacterized protein OS=Mus musculus OX=10090 GN=Lrrc59 PE=2 SV=1	2.35	0.000337819
+P06745	Gpi1	Glucose-6-phosphate isomerase OS=Mus musculus OX=10090 GN=Gpi PE=1 SV=4	1.38	0.000346121
+P62259	Ywhae	14-3-3 protein epsilon OS=Mus musculus OX=10090 GN=Ywhae PE=1 SV=1	1.07	0.000346861
+P11983	Tcp1	T-complex protein 1 subunit alpha OS=Mus musculus OX=10090 GN=Tcp1 PE=1 SV=3	3.88	0.000347185
+Q5EBP9	Trim28	Tripartite motif-containing 28 OS=Mus musculus OX=10090 GN=Trim28 PE=2 SV=1	1.28	0.000359573
+E9Q1G8	Sep-07	Septin-7 OS=Mus musculus OX=10090 GN=Sept7 PE=1 SV=2	1.08	0.000364636
+Q9CR68	Uqcrfs1	Cytochrome b-c1 complex subunit Rieske, mitochondrial OS=Mus musculus OX=10090 GN=Uqcrfs1 PE=1 SV=1	-0.61	0.000368695
+Q8C6E3	Cat	Catalase OS=Mus musculus OX=10090 GN=Cat PE=2 SV=1	0.9	0.000372238
+F6VF36		Signal recognition particle receptor ('docking protein') (Fragment) OS=Mus musculus OX=10090 GN=Srpr PE=1 SV=1	1.67	0.000373619
+Q8BG51	Rhot1	Mitochondrial Rho GTPase 1 OS=Mus musculus OX=10090 GN=Rhot1 PE=1 SV=1	2.16	0.000374921
+O09111	Ndufb11	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11, mitochondrial OS=Mus musculus OX=10090 GN=Ndufb11 PE=1 SV=2	-1.14	0.000385054
+A0A1L1SQ51	Tln2	Talin-2 OS=Mus musculus OX=10090 GN=Tln2 PE=1 SV=1	0.72	0.000388157
+P27661	H2afx	Histone H2AX OS=Mus musculus OX=10090 GN=H2afx PE=1 SV=2	0.69	0.000388636
+A0A0N4SVK8	Adprhl1	[Protein ADP-ribosylarginine] hydrolase-like protein 1 OS=Mus musculus OX=10090 GN=Adprhl1 PE=1 SV=1	2.14	0.000388636
+A0A140LJG6		MCG7038, isoform CRA_a OS=Mus musculus OX=10090 GN=Spcs2 PE=1 SV=1	1.44	0.000389388
+Q3UNQ0	Cap1	Adenylyl cyclase-associated protein OS=Mus musculus OX=10090 GN=Cap1 PE=2 SV=1	1.46	0.000400871
+P0CW03	Ly6c2	Lymphocyte antigen 6C2 OS=Mus musculus OX=10090 GN=Ly6c2 PE=1 SV=1	1.16	0.00040204
+F6ZQL0		Protein LYRIC (Fragment) OS=Mus musculus OX=10090 GN=Mtdh PE=1 SV=1	1.14	0.000402485
+G3X9J1	Slc8a1	Sodium/calcium exchanger 1 OS=Mus musculus OX=10090 GN=Slc8a1 PE=1 SV=1	1.15	0.000423219
+Q3UFY8	Trmt10c	tRNA methyltransferase 10 homolog C OS=Mus musculus OX=10090 GN=Trmt10c PE=1 SV=2	1.45	0.000426301
+O08528	Hk2	Hexokinase-2 OS=Mus musculus OX=10090 GN=Hk2 PE=1 SV=1	1.69	0.000429234
+A0A0N4SV32		Plasminogen activator inhibitor 1 RNA-binding protein OS=Mus musculus OX=10090 GN=Serbp1 PE=1 SV=1	2.06	0.000432039
+Q3THJ0	Rpl18a	60S ribosomal protein L18a OS=Mus musculus OX=10090 GN=Rpl18a PE=2 SV=1	1.87	0.000438194
+Q3UTJ2	Sorbs2	Sorbin and SH3 domain-containing protein 2 OS=Mus musculus OX=10090 GN=Sorbs2 PE=1 SV=2	4.14	0.000441463
+P68134	Acta1	Actin, alpha skeletal muscle OS=Mus musculus OX=10090 GN=Acta1 PE=1 SV=1	6.64	0.000442642
+A0A087WS16		Collagen, type VI, alpha 3 OS=Mus musculus OX=10090 GN=Col6a3 PE=1 SV=1	1.21	0.00044325
+Q9JJI8	Rpl38; Rpl38-ps1; Rpl38-ps2	60S ribosomal protein L38 OS=Mus musculus OX=10090 GN=Rpl38 PE=1 SV=3	0.99	0.000444894
+Q8R3F5	Mcat	Malonyl-CoA-acyl carrier protein transacylase, mitochondrial OS=Mus musculus OX=10090 GN=Mcat PE=1 SV=3	0.97	0.000447738
+A0A0R4J0Z1	Pdia4	Protein disulfide-isomerase A4 OS=Mus musculus OX=10090 GN=Pdia4 PE=1 SV=1	3.55	0.000453038
+P62281	Rps11	40S ribosomal protein S11 OS=Mus musculus OX=10090 GN=Rps11 PE=1 SV=3	1.7	0.000458258
+Q811U4	Mfn1	Mitofusin-1 OS=Mus musculus OX=10090 GN=Mfn1 PE=1 SV=3	-0.83	0.000468754
+Q8VDN2	Atp1a1	Sodium/potassium-transporting ATPase subunit alpha-1 OS=Mus musculus OX=10090 GN=Atp1a1 PE=1 SV=1	0.68	0.000469661
+Q546G4	Alb	Albumin 1 OS=Mus musculus OX=10090 GN=Alb PE=1 SV=1	1.47	0.000473579
+P27048	Snrpb	Small nuclear ribonucleoprotein-associated protein B OS=Mus musculus OX=10090 GN=Snrpb PE=1 SV=1	3.11	0.000474183
+Q9ERS2	Ndufa13	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 13 OS=Mus musculus OX=10090 GN=Ndufa13 PE=1 SV=3	-1.09	0.000488934
+Q544B1	Aldh2	Aldehyde dehydrogenase 2, mitochondrial, isoform CRA_b OS=Mus musculus OX=10090 GN=Aldh2 PE=1 SV=1	1.34	0.000519091
+Q3TLF6	Mybbp1a	Uncharacterized protein OS=Mus musculus OX=10090 GN=Mybbp1a PE=2 SV=1	1.85	0.000519527
+Q52L50	Rap1b	RAS related protein 1b OS=Mus musculus OX=10090 GN=Rap1b PE=1 SV=1	1.89	0.000537078
+Q64475	Hist1h2bb	Histone H2B type 1-B OS=Mus musculus OX=10090 GN=Hist1h2bb PE=1 SV=3	1.18	0.00053741
+P54071	Idh2	Isocitrate dehydrogenase [NADP], mitochondrial OS=Mus musculus OX=10090 GN=Idh2 PE=1 SV=3	0.91	0.000539933
+Q71LX8	Hsp90ab1	Heat shock protein 84b OS=Mus musculus OX=10090 GN=Hsp90ab1 PE=1 SV=1	1.75	0.000539933
+Q8R1Q8	Dync1li1	Cytoplasmic dynein 1 light intermediate chain 1 OS=Mus musculus OX=10090 GN=Dync1li1 PE=1 SV=1	1.54	0.000546793
+P52503	Ndufs6	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitochondrial OS=Mus musculus OX=10090 GN=Ndufs6 PE=1 SV=2	-1.15	0.000549671
+F6UFG6		Acidic leucine-rich nuclear phosphoprotein 32 family member A (Fragment) OS=Mus musculus OX=10090 GN=Anp32a PE=1 SV=1	2.85	0.000554512
+P28653	Bgn	Biglycan OS=Mus musculus OX=10090 GN=Bgn PE=1 SV=1	3.82	0.000554512
+P14115	Rpl27a	60S ribosomal protein L27a OS=Mus musculus OX=10090 GN=Rpl27a PE=1 SV=5	1.76	0.000560422
+Q02788	Col6a2	Collagen alpha-2(VI) chain OS=Mus musculus OX=10090 GN=Col6a2 PE=1 SV=3	1.09	0.000568881
+Q9D1R9	Rpl34-ps1; Rpl34; Gm4705	60S ribosomal protein L34 OS=Mus musculus OX=10090 GN=Rpl34 PE=1 SV=2	3.25	0.000589246
+Q3TR40	Thbs1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Thbs1 PE=2 SV=1	1.87	0.000597397
+Q3TYC0	Rasgef1a	Uncharacterized protein OS=Mus musculus OX=10090 GN=Rasgef1a PE=2 SV=1	1.07	0.000603389
+A1BN54	Actn1	Alpha actinin 1a OS=Mus musculus OX=10090 GN=Actn1 PE=1 SV=1	3.03	0.000603389
+P32233	Drg1	Developmentally-regulated GTP-binding protein 1 OS=Mus musculus OX=10090 GN=Drg1 PE=1 SV=1	1.81	0.000608786
+G3UYV7		40S ribosomal protein S28 (Fragment) OS=Mus musculus OX=10090 GN=Rps28 PE=1 SV=1	2.09	0.000614208
+Q14DS6	Lars2	Leucyl-tRNA synthetase, mitochondrial OS=Mus musculus OX=10090 GN=Lars2 PE=2 SV=1	2.15	0.000614208
+Q6PGF3	Med16	Mediator of RNA polymerase II transcription subunit 16 OS=Mus musculus OX=10090 GN=Med16 PE=2 SV=2	0.86	0.000621935
+Q3UWP8	Calr	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Calr PE=2 SV=1	2.22	0.000621937
+Q8CGK3	Lonp1	Lon protease homolog, mitochondrial OS=Mus musculus OX=10090 GN=Lonp1 PE=1 SV=2	3.17	0.000627066
+P42669	Pura	Transcriptional activator protein Pur-alpha OS=Mus musculus OX=10090 GN=Pura PE=1 SV=1	2.74	0.000650166
+Q9CXT8	Pmpcb	Mitochondrial-processing peptidase subunit beta OS=Mus musculus OX=10090 GN=Pmpcb PE=1 SV=1	2.62	0.000654757
+Q9WV55	Vapa	Vesicle-associated membrane protein-associated protein A OS=Mus musculus OX=10090 GN=Vapa PE=1 SV=2	1.34	0.0006579
+Q5U458	Dnajc11	DnaJ homolog subfamily C member 11 OS=Mus musculus OX=10090 GN=Dnajc11 PE=1 SV=2	1.11	0.000660301
+Q3TK56	Arpc5	Actin-related protein 2/3 complex subunit 5 (Fragment) OS=Mus musculus OX=10090 GN=Arpc5 PE=2 SV=1	1.25	0.000671744
+Q3UMT7	Hnrnpl	Uncharacterized protein OS=Mus musculus OX=10090 GN=Hnrnpl PE=2 SV=1	4.12	0.000676221
+O88441	Mtx2	Metaxin-2 OS=Mus musculus OX=10090 GN=Mtx2 PE=1 SV=1	1.28	0.000681999
+B9EK92	Rasip1	Ras interacting protein 1 OS=Mus musculus OX=10090 GN=Rasip1 PE=2 SV=1	0.61	0.000694527
+Q9ET54	Palld	Palladin OS=Mus musculus OX=10090 GN=Palld PE=1 SV=2	-0.46	0.000705357
+Q8CHT0	Aldh4a1	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Aldh4a1 PE=1 SV=3	-2.08	0.00070957
+P97450	Atp5j	ATP synthase-coupling factor 6, mitochondrial OS=Mus musculus OX=10090 GN=Atp5pf PE=1 SV=1	-0.84	0.000718749
+Q01730	Rsu1	Ras suppressor protein 1 OS=Mus musculus OX=10090 GN=Rsu1 PE=1 SV=3	1.1	0.000744766
+Q8BH64	Ehd2	EH domain-containing protein 2 OS=Mus musculus OX=10090 GN=Ehd2 PE=1 SV=1	0.31	0.000751053
+Q9WTP6	Ak2	Adenylate kinase 2, mitochondrial OS=Mus musculus OX=10090 GN=Ak2 PE=1 SV=5	3.04	0.000763844
+Q5EBI8	Atp5k	ATP synthase, H+ transporting, mitochondrial F1F0 complex, subunit e OS=Mus musculus OX=10090 GN=Atp5k PE=2 SV=1	-0.64	0.000772833
+Q9QY76	Vapb	Vesicle-associated membrane protein-associated protein B OS=Mus musculus OX=10090 GN=Vapb PE=1 SV=3	0.57	0.000772833
+Q545A2	Slc25a5	MCG11560 OS=Mus musculus OX=10090 GN=Slc25a5 PE=1 SV=1	1.37	0.00077731
+Q9QYS9	Qk	Protein quaking OS=Mus musculus OX=10090 GN=Qki PE=1 SV=1	2.02	0.000802132
+D3Z5K6	Dnajc19	Mitochondrial import inner membrane translocase subunit TIM14 OS=Mus musculus OX=10090 GN=Dnajc19 PE=1 SV=1	2.13	0.000810331
+P19783	Cox4i1	Cytochrome c oxidase subunit 4 isoform 1, mitochondrial OS=Mus musculus OX=10090 GN=Cox4i1 PE=1 SV=2	-1.01	0.000831157
+Q2TPA8	Hsdl2	Hydroxysteroid dehydrogenase-like protein 2 OS=Mus musculus OX=10090 GN=Hsdl2 PE=1 SV=1	0.93	0.000846913
+B2RY26	Myh7	Myh7 protein OS=Mus musculus OX=10090 GN=Myh7 PE=2 SV=1	5.65	0.00084861
+Q9Z2I8	Suclg2	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondrial OS=Mus musculus OX=10090 GN=Suclg2 PE=1 SV=3	2.13	0.000851537
+A0A0A0MQA5		Tubulin alpha chain (Fragment) OS=Mus musculus OX=10090 GN=Tuba4a PE=1 SV=1	3.14	0.000870905
+A0A1W2P729		Protein canopy homolog 2 (Fragment) OS=Mus musculus OX=10090 GN=Cnpy2 PE=1 SV=1	2.3	0.00087723
+Q9CQ73	Pkp2	Plakophilin 2 OS=Mus musculus OX=10090 GN=Pkp2 PE=1 SV=1	0.89	0.000880429
+Q8C1B7	Sep-11	Septin-11 OS=Mus musculus OX=10090 GN=Sept11 PE=1 SV=4	1.04	0.000882533
+Q8BNF3	Tpp1	Tripeptidyl peptidase I, isoform CRA_a OS=Mus musculus OX=10090 GN=Tpp1 PE=2 SV=1	1.03	0.000882788
+A2AGT5	Ckap5	Cytoskeleton-associated protein 5 OS=Mus musculus OX=10090 GN=Ckap5 PE=1 SV=1	1.87	0.000895568
+Q3TZ17	Pdlim1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Pdlim1 PE=2 SV=1	3.41	0.000899693
+Q3V1T9	Plg	Plasminogen OS=Mus musculus OX=10090 GN=Plg PE=2 SV=1	1.3	0.000920834
+Q99N15	Hsd17b10	17beta-hydroxysteroid dehydrogenase type 10/short chain L-3-hydroxyacyl-CoA dehydrogenase OS=Mus musculus OX=10090 GN=Hsd17b10 PE=1 SV=1	1.19	0.000951636
+Q8R2K3	Ssbp1	Single-stranded DNA binding protein 1 OS=Mus musculus OX=10090 GN=Ssbp1 PE=1 SV=1	0.86	0.000955538
+Q91YQ5	Rpn1	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1 OS=Mus musculus OX=10090 GN=Rpn1 PE=1 SV=1	1.16	0.00096769
+Q3UXR4	Ezr	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ezr PE=2 SV=1	1.08	0.000980349
+Q3TZI3	Sf1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Sf1 PE=2 SV=1	2.15	0.000997227
+Q3ULW0	Ran	GTP-binding nuclear protein Ran OS=Mus musculus OX=10090 GN=Ran PE=2 SV=1	1.44	0.001008399
+Q6ZQ61	Matr3	MCG121979, isoform CRA_c (Fragment) OS=Mus musculus OX=10090 GN=Matr3 PE=2 SV=1	2.59	0.001014331
+Q8R5J9	Arl6ip5	PRA1 family protein 3 OS=Mus musculus OX=10090 GN=Arl6ip5 PE=1 SV=2	1.11	0.001064594
+Q9CQB4	Uqcrb	Cytochrome b-c1 complex subunit 7 OS=Mus musculus OX=10090 GN=Uqcrb PE=1 SV=1	-0.75	0.001065707
+P35700	Prdx1	Peroxiredoxin-1 OS=Mus musculus OX=10090 GN=Prdx1 PE=1 SV=1	0.96	0.00106889
+A0A0G2JDY6		Nexilin (Fragment) OS=Mus musculus OX=10090 GN=Nexn PE=1 SV=4	0.97	0.001070464
+Q3TJE3	Hk1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Hk1 PE=2 SV=1	1.01	0.001071769
+Q3U541	G3bp2	RIKEN cDNA E430034L04, isoform CRA_b OS=Mus musculus OX=10090 GN=G3bp2 PE=2 SV=1	1.21	0.001071769
+P39447	Tjp1	Tight junction protein ZO-1 OS=Mus musculus OX=10090 GN=Tjp1 PE=1 SV=2	1.26	0.001071769
+Q9Z2I9	Sucla2	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondrial OS=Mus musculus OX=10090 GN=Sucla2 PE=1 SV=2	0.94	0.001096697
+Q6PCP0	Ddx21	DEAD (Asp-Glu-Ala-Asp) box polypeptide 21 OS=Mus musculus OX=10090 GN=Ddx21 PE=2 SV=1	2.61	0.001102161
+P61161	Actr2	Actin-related protein 2 OS=Mus musculus OX=10090 GN=Actr2 PE=1 SV=1	3.13	0.001112068
+Q9DB20	Atp5o; LOC100047429; LOC102641678	ATP synthase subunit O, mitochondrial OS=Mus musculus OX=10090 GN=Atp5po PE=1 SV=1	-0.4	0.001113444
+Q8R5L1	C1qbp	Complement component 1 Q subcomponent-binding protein, mitochondrial OS=Mus musculus OX=10090 GN=C1qbp PE=1 SV=1	1.08	0.001113444
+Q3U2W7	Kras	Uncharacterized protein OS=Mus musculus OX=10090 GN=Kras PE=2 SV=1	1.09	0.001113444
+Q91VK1	Bzw2	Basic leucine zipper and W2 domain-containing protein 2 OS=Mus musculus OX=10090 GN=Bzw2 PE=1 SV=1	1.33	0.001114885
+Q9QZ23	Nfu1	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial OS=Mus musculus OX=10090 GN=Nfu1 PE=1 SV=2	2.54	0.001117638
+Q9WVR4	Fxr2	Fragile X mental retardation syndrome-related protein 2 OS=Mus musculus OX=10090 GN=Fxr2 PE=1 SV=1	2.2	0.001138647
+Q4FZG2	Fdx1	Fdx1 protein (Fragment) OS=Mus musculus OX=10090 GN=Fdx1 PE=2 SV=1	1.82	0.001146918
+Q8BYL4	Yars2	Tyrosine--tRNA ligase, mitochondrial OS=Mus musculus OX=10090 GN=Yars2 PE=1 SV=2	3.24	0.001156344
+Q8K0D5	Gfm1	Elongation factor G, mitochondrial OS=Mus musculus OX=10090 GN=Gfm1 PE=1 SV=1	2.56	0.00120611
+P11531	Dmd	Dystrophin OS=Mus musculus OX=10090 GN=Dmd PE=1 SV=3	0.37	0.001215756
+Q9D0F3	Lman1	Protein ERGIC-53 OS=Mus musculus OX=10090 GN=Lman1 PE=1 SV=1	0.61	0.001219132
+Q91XD2	Lims2	LIM and senescent cell antigen-like-containing domain protein 2 OS=Mus musculus OX=10090 GN=Lims2 PE=1 SV=1	1.96	0.001243508
+Q9WVA4	Tagln2	Transgelin-2 OS=Mus musculus OX=10090 GN=Tagln2 PE=1 SV=4	1.33	0.001252091
+P20029	Hspa5	Endoplasmic reticulum chaperone BiP OS=Mus musculus OX=10090 GN=Hspa5 PE=1 SV=3	0.55	0.001260966
+E9Q405	Myo18a	Unconventional myosin-XVIIIa OS=Mus musculus OX=10090 GN=Myo18a PE=1 SV=1	1.93	0.001264728
+P26443	Glud1	Glutamate dehydrogenase 1, mitochondrial OS=Mus musculus OX=10090 GN=Glud1 PE=1 SV=1	1.52	0.001274751
+Q78YY6	Dnajc15	DnaJ homolog subfamily C member 15 OS=Mus musculus OX=10090 GN=Dnajc15 PE=1 SV=1	2.4	0.001274825
+P38647	Hspa9	Stress-70 protein, mitochondrial OS=Mus musculus OX=10090 GN=Hspa9 PE=1 SV=3	1.18	0.001276231
+Q3UJS2	Fbl	Uncharacterized protein OS=Mus musculus OX=10090 GN=Fbl PE=2 SV=1	4.04	0.001276231
+Q8CC88	Vwa8	von Willebrand factor A domain-containing protein 8 OS=Mus musculus OX=10090 GN=Vwa8 PE=1 SV=2	1.17	0.001308121
+O88380	Trip12	Cbp37 (Fragment) OS=Mus musculus OX=10090 GN=Trip12 PE=2 SV=1	1.61	0.001343525
+Q3TCR7	Dnm2	Dynamin-2 OS=Mus musculus OX=10090 GN=Dnm2 PE=1 SV=1	2.35	0.001343525
+Q3TUE2	Col1a2	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Col1a2 PE=2 SV=1	2.64	0.001347254
+B9EKB0	Lamb1	Laminin B1 subunit 1 OS=Mus musculus OX=10090 GN=Lamb1 PE=2 SV=1	0.42	0.0013501
+Q8QZS1	Hibch	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial OS=Mus musculus OX=10090 GN=Hibch PE=1 SV=1	1.13	0.0013501
+Q62446	Fkbp3	Peptidyl-prolyl cis-trans isomerase FKBP3 OS=Mus musculus OX=10090 GN=Fkbp3 PE=1 SV=2	0.36	0.00137729
+D3Z4C9		Ubiquinol-cytochrome-c reductase complex assembly factor 2 OS=Mus musculus OX=10090 GN=Uqcc2 PE=1 SV=1	0.64	0.001379137
+E9QQ96	Obscn	Obscurin OS=Mus musculus OX=10090 GN=Obscn PE=1 SV=2	0.62	0.001379259
+E9Q557	Dsp	Desmoplakin OS=Mus musculus OX=10090 GN=Dsp PE=1 SV=1	0.26	0.001381834
+P11087	Col1a1	Collagen alpha-1(I) chain OS=Mus musculus OX=10090 GN=Col1a1 PE=1 SV=4	2.34	0.001397219
+D3Z5J3	Sorbs1	Sorbin and SH3 domain-containing protein 1 OS=Mus musculus OX=10090 GN=Sorbs1 PE=1 SV=1	0.84	0.001422755
+Q0VDM9	Krt78	Krt78 protein (Fragment) OS=Mus musculus OX=10090 GN=Krt78 PE=2 SV=1	-1.67	0.001458065
+Q9JK98	Clu	Clusterin OS=Mus musculus OX=10090 GN=Clu PE=2 SV=1	0.93	0.001488022
+P68372	Tubb4b	Tubulin beta-4B chain OS=Mus musculus OX=10090 GN=Tubb4b PE=1 SV=1	2.37	0.001507686
+Q9CXJ4	Abcb8	ATP-binding cassette sub-family B member 8, mitochondrial OS=Mus musculus OX=10090 GN=Abcb8 PE=1 SV=1	-1.61	0.001525313
+Q91V38	Hsp90b1	Heat shock protein 90, beta (Grp94), member 1 OS=Mus musculus OX=10090 GN=Hsp90b1 PE=2 SV=1	1.54	0.001525313
+A0A1D5RM59		Tensin 1 OS=Mus musculus OX=10090 GN=Tns1 PE=1 SV=1	0.49	0.001584173
+Q9CZI7	Anxa2	Annexin OS=Mus musculus OX=10090 GN=Anxa2 PE=2 SV=1	2.47	0.001589646
+Q9R0X4	Acot9	Acyl-coenzyme A thioesterase 9, mitochondrial OS=Mus musculus OX=10090 GN=Acot9 PE=1 SV=1	3.5	0.001680239
+Q922B1	Macrod1	ADP-ribose glycohydrolase MACROD1 OS=Mus musculus OX=10090 GN=Macrod1 PE=1 SV=2	-0.43	0.001739805
+P09103	P4hb	Protein disulfide-isomerase OS=Mus musculus OX=10090 GN=P4hb PE=1 SV=2	3.21	0.001781754
+Q921I1	Trf	Serotransferrin OS=Mus musculus OX=10090 GN=Tf PE=1 SV=1	0.85	0.001789581
+P82349	Sgcb	Beta-sarcoglycan OS=Mus musculus OX=10090 GN=Sgcb PE=1 SV=1	0.7	0.001792923
+Q6ZPS9	Pdcd6ip	MKIAA1375 protein (Fragment) OS=Mus musculus OX=10090 GN=Pdcd6ip PE=2 SV=1	1.35	0.001797786
+Q8R2Y8	Ptrh2	Peptidyl-tRNA hydrolase 2, mitochondrial OS=Mus musculus OX=10090 GN=Ptrh2 PE=1 SV=1	0.63	0.001806114
+P36552	Cpox	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondrial OS=Mus musculus OX=10090 GN=Cpox PE=1 SV=2	1.58	0.001825468
+Q9DB60	2810405K02Rik; Fam213b	Prostamide/prostaglandin F synthase OS=Mus musculus OX=10090 GN=Prxl2b PE=1 SV=1	3.1	0.001837457
+Q9EPB5	Serhl	Serine hydrolase-like protein OS=Mus musculus OX=10090 GN=Serhl PE=1 SV=1	0.61	0.001906216
+Q4KL76	Hspe1	Heat shock protein 1 (Chaperonin 10) OS=Mus musculus OX=10090 GN=Hspe1 PE=1 SV=1	1.19	0.001915049
+Q9CQ91	Ndufa3	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 3 OS=Mus musculus OX=10090 GN=Ndufa3 PE=1 SV=1	-1.79	0.001923633
+Q5M9N5	Rpl28	Ribosomal protein L28 OS=Mus musculus OX=10090 GN=Rpl28 PE=2 SV=1	3.36	0.001981624
+Q5SW87	Rab1; Rab1a	RAB1A, member RAS oncogene family OS=Mus musculus OX=10090 GN=Rab1a PE=1 SV=1	0.84	0.001988186
+Q9DCS3	Mecr	Enoyl-[acyl-carrier-protein] reductase, mitochondrial OS=Mus musculus OX=10090 GN=Mecr PE=1 SV=2	1.52	0.002007731
+Q3UXC2	Eif4a1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Eif4a1 PE=2 SV=1	2.95	0.002025296
+Q69ZX3	Myh11	MKIAA0866 protein (Fragment) OS=Mus musculus OX=10090 GN=Myh11 PE=2 SV=1	2.77	0.002039136
+E9Q3Z5		Supervillin OS=Mus musculus OX=10090 GN=Svil PE=1 SV=1	1.49	0.002041329
+A0A1C7CYU3	Nucb1	Nucleobindin 1, isoform CRA_b OS=Mus musculus OX=10090 GN=Nucb1 PE=1 SV=1	1.02	0.002050766
+Q9D2R6	Coa3	Cytochrome c oxidase assembly factor 3 homolog, mitochondrial OS=Mus musculus OX=10090 GN=Coa3 PE=1 SV=1	2.35	0.002050766
+Q8K4F5	Abhd11	Protein ABHD11 OS=Mus musculus OX=10090 GN=Abhd11 PE=1 SV=1	1.02	0.002064122
+Q3TPL7	Ddx39	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ddx39 PE=2 SV=1	0.98	0.002068268
+Q8BMK4	Ckap4	Cytoskeleton-associated protein 4 OS=Mus musculus OX=10090 GN=Ckap4 PE=1 SV=2	1.37	0.002080969
+Q9D8W6	Ak3	GTP:AMP phosphotransferase AK3, mitochondrial OS=Mus musculus OX=10090 GN=Ak3 PE=2 SV=1	1.11	0.002083581
+Q8CGY6	Unc45b	Protein unc-45 homolog B OS=Mus musculus OX=10090 GN=Unc45b PE=1 SV=1	0.96	0.002105838
+Q5M9K9	Rpl31	MCG126194, isoform CRA_a OS=Mus musculus OX=10090 GN=Rpl31 PE=1 SV=1	2.44	0.002106408
+Q9JMG1	Edf1	Endothelial differentiation-related factor 1 OS=Mus musculus OX=10090 GN=Edf1 PE=1 SV=1	1.3	0.002142249
+Q3UZI0	Hnrnpr	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Hnrnpr PE=2 SV=1	1.93	0.002142249
+Q8JZN7	Rhot2	Mitochondrial Rho GTPase 2 OS=Mus musculus OX=10090 GN=Rhot2 PE=1 SV=1	1.48	0.002165056
+Q9WVA2	Timm8a1	Mitochondrial import inner membrane translocase subunit Tim8 A OS=Mus musculus OX=10090 GN=Timm8a1 PE=1 SV=1	0.86	0.002173471
+A0A087WQH8		Probable UDP-sugar transporter protein SLC35A4 OS=Mus musculus OX=10090 GN=Slc35a4 PE=1 SV=1	1.13	0.002245527
+B7FAV1	Flna	Filamin, alpha (Fragment) OS=Mus musculus OX=10090 GN=Flna PE=1 SV=1	1.9	0.002267403
+Q1WWK3	Hist1h1b	Hist1h1b protein (Fragment) OS=Mus musculus OX=10090 GN=Hist1h1b PE=2 SV=1	0.55	0.002323575
+P10852	Slc3a2	4F2 cell-surface antigen heavy chain OS=Mus musculus OX=10090 GN=Slc3a2 PE=1 SV=1	5.64	0.002368302
+Q9QZV4	Hrc	Histidine-rich Ca2+ binding protein OS=Mus musculus OX=10090 GN=Hrc PE=2 SV=1	-1.4	0.002370649
+G3UYU4		Flotillin-1 OS=Mus musculus OX=10090 GN=Flot1 PE=1 SV=1	2.11	0.002385528
+Q99LF8	Pabpc4	Polyadenylate-binding protein OS=Mus musculus OX=10090 GN=Pabpc4 PE=2 SV=1	2.93	0.002398624
+Q99LF4	D10Wsu52e; Rtcb	tRNA-splicing ligase RtcB homolog OS=Mus musculus OX=10090 GN=Rtcb PE=1 SV=1	2.33	0.002417447
+Q3UHZ5	Lmod2	Leiomodin-2 OS=Mus musculus OX=10090 GN=Lmod2 PE=1 SV=1	0.82	0.002419805
+Q6ZQ49	Atp1a2	Sodium/potassium-transporting ATPase subunit alpha (Fragment) OS=Mus musculus OX=10090 GN=Atp1a2 PE=2 SV=1	0.74	0.002476813
+F6RER8		NAD(P)(+)--arginine ADP-ribosyltransferase (Fragment) OS=Mus musculus OX=10090 GN=Art3 PE=1 SV=1	2.15	0.002499811
+Q544D4	Sgcd	Sarcoglycan, delta (Dystrophin-associated glycoprotein) OS=Mus musculus OX=10090 GN=Sgcd PE=1 SV=1	0.66	0.002508816
+Q5XK33	Sdhc	Succinate dehydrogenase complex, subunit C, integral membrane protein OS=Mus musculus OX=10090 GN=Sdhc PE=2 SV=1	0.82	0.002509727
+Q9D051	Pdhb	Pyruvate dehydrogenase E1 component subunit beta, mitochondrial OS=Mus musculus OX=10090 GN=Pdhb PE=1 SV=1	0.56	0.002532371
+Q9CQ22	Lamtor1	Ragulator complex protein LAMTOR1 OS=Mus musculus OX=10090 GN=Lamtor1 PE=1 SV=1	1.35	0.002534223
+Q5M9J2	Hint2	Histidine triad nucleotide binding protein 2 OS=Mus musculus OX=10090 GN=Hint2 PE=1 SV=1	0.87	0.002562043
+P43274	Hist1h1e	Histone H1.4 OS=Mus musculus OX=10090 GN=Hist1h1e PE=1 SV=2	0.41	0.00256337
+P20108	Prdx3	Thioredoxin-dependent peroxide reductase, mitochondrial OS=Mus musculus OX=10090 GN=Prdx3 PE=1 SV=1	1.01	0.00267578
+A2A513	Krt10	Keratin, type I cytoskeletal 10 OS=Mus musculus OX=10090 GN=Krt10 PE=1 SV=1	-0.91	0.002694677
+Q9CQF8	Mrp63; Mrpl57	Ribosomal protein 63, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl57 PE=1 SV=1	-0.48	0.002715355
+P42208	Sep-02	Septin-2 OS=Mus musculus OX=10090 GN=Sept2 PE=1 SV=2	0.99	0.002762098
+Q3TUF3	Calu	Calumenin, isoform CRA_a OS=Mus musculus OX=10090 GN=Calu PE=1 SV=1	3.02	0.002796792
+Q3TTM6	Pmpca	Uncharacterized protein OS=Mus musculus OX=10090 GN=Pmpca PE=2 SV=1	0.82	0.002806341
+P97315	Csrp1	Cysteine and glycine-rich protein 1 OS=Mus musculus OX=10090 GN=Csrp1 PE=1 SV=3	0.96	0.002832403
+Q9JJD8	Cct2	Brain cDNA, clone MNCb-1272, similar to Mus musculus chaperonin subunit 2 (beta) (Cct2), mRNA OS=Mus musculus OX=10090 GN=Cct2 PE=2 SV=1	2.47	0.002852639
+O55143	Atp2a2	Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 OS=Mus musculus OX=10090 GN=Atp2a2 PE=1 SV=2	0.48	0.002874145
+Q61739	Itga6	Integrin alpha-6 OS=Mus musculus OX=10090 GN=Itga6 PE=1 SV=3	0.85	0.002912223
+E0CY64		General transcription factor IIH subunit 4 OS=Mus musculus OX=10090 GN=Gtf2h4 PE=1 SV=1	-0.73	0.002961469
+Q8JZQ9	Eif3b	Eukaryotic translation initiation factor 3 subunit B OS=Mus musculus OX=10090 GN=Eif3b PE=1 SV=1	2.85	0.002961469
+B7ZCI3	Nebl	Nebulette OS=Mus musculus OX=10090 GN=Nebl PE=1 SV=1	-0.32	0.002987001
+Q9ESZ9	Eln	ELN (Fragment) OS=Mus musculus OX=10090 PE=4 SV=1	4.68	0.003103895
+Q60597	Ogdh	2-oxoglutarate dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Ogdh PE=1 SV=3	1.28	0.003148067
+A6H663	Bag3	BCL2-associated athanogene 3 OS=Mus musculus OX=10090 GN=Bag3 PE=2 SV=1	1.08	0.003177456
+O35465	Fkbp8	Peptidyl-prolyl cis-trans isomerase FKBP8 OS=Mus musculus OX=10090 GN=Fkbp8 PE=1 SV=2	1.9	0.003177456
+Q3U6W4	Hmox2	Heme oxygenase OS=Mus musculus OX=10090 GN=Hmox2 PE=2 SV=1	1.73	0.003184668
+P60766	Cdc42	Cell division control protein 42 homolog OS=Mus musculus OX=10090 GN=Cdc42 PE=1 SV=2	1.27	0.003225813
+Q99LP6	Grpel1	GrpE protein homolog 1, mitochondrial OS=Mus musculus OX=10090 GN=Grpel1 PE=1 SV=1	1.51	0.003275458
+Q8CE04	Cast	Calpastatin OS=Mus musculus OX=10090 GN=Cast PE=1 SV=1	2.49	0.003278404
+Q3UKR1	Dcn	Decorin OS=Mus musculus OX=10090 GN=Dcn PE=1 SV=1	1.23	0.0033429
+Q9WV35	Apobec2	C->U-editing enzyme APOBEC-2 OS=Mus musculus OX=10090 GN=Apobec2 PE=1 SV=1	0.81	0.003430949
+K3W4Q8	Bsg	Basigin OS=Mus musculus OX=10090 GN=Bsg PE=1 SV=1	0.42	0.003460856
+Q6P8J7	Ckmt2	Creatine kinase S-type, mitochondrial OS=Mus musculus OX=10090 GN=Ckmt2 PE=1 SV=1	-0.54	0.003537497
+B2RVP5	H2afv	Histone H2A OS=Mus musculus OX=10090 GN=H2afv PE=2 SV=1	0.87	0.003551605
+Q9R069	Bcam	Basal cell adhesion molecule OS=Mus musculus OX=10090 GN=Bcam PE=1 SV=1	0.86	0.00362271
+Q8C2S9	Mvp	Uncharacterized protein OS=Mus musculus OX=10090 GN=Mvp PE=2 SV=1	1.86	0.003704533
+Q3UFJ3	Pdha1	Pyruvate dehydrogenase E1 component subunit alpha OS=Mus musculus OX=10090 GN=Pdha1 PE=1 SV=1	0.41	0.003720226
+Q9DCT5	Sdf2	Stromal cell-derived factor 2 OS=Mus musculus OX=10090 GN=Sdf2 PE=1 SV=1	1	0.004211887
+Q8BMF4	Dlat	Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial OS=Mus musculus OX=10090 GN=Dlat PE=1 SV=2	0.62	0.004217677
+Q922R9	Trap1	Trap1 protein (Fragment) OS=Mus musculus OX=10090 GN=Trap1 PE=2 SV=1	1.1	0.004320738
+A2AKD7	Snta1	Alpha-1-syntrophin OS=Mus musculus OX=10090 GN=Snta1 PE=1 SV=1	2.01	0.004320738
+Q9DB77	Uqcrc2	Cytochrome b-c1 complex subunit 2, mitochondrial OS=Mus musculus OX=10090 GN=Uqcrc2 PE=1 SV=1	-0.53	0.004346756
+Q3U781	Srsf3	MCG21131, isoform CRA_a OS=Mus musculus OX=10090 GN=Srsf3 PE=2 SV=1	1.98	0.004346756
+Q791V5	Mtch2	Mitochondrial carrier homolog 2 OS=Mus musculus OX=10090 GN=Mtch2 PE=1 SV=1	0.88	0.004412816
+Q8BKZ9	Pdhx	Pyruvate dehydrogenase protein X component, mitochondrial OS=Mus musculus OX=10090 GN=Pdhx PE=1 SV=1	0.53	0.00445506
+Q9CQ69	Uqcrq	Cytochrome b-c1 complex subunit 8 OS=Mus musculus OX=10090 GN=Uqcrq PE=1 SV=3	-0.3	0.004625038
+Q80ZS3	Mrps26	28S ribosomal protein S26, mitochondrial OS=Mus musculus OX=10090 GN=Mrps26 PE=1 SV=1	1.07	0.004625388
+Q3TXN0	Htra2	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Htra2 PE=2 SV=1	1.3	0.004683254
+Q9D7A8	Armc1	Armadillo repeat-containing protein 1 OS=Mus musculus OX=10090 GN=Armc1 PE=1 SV=1	0.72	0.004707439
+Q9D1D4	Tmed10	Transmembrane emp24 domain-containing protein 10 OS=Mus musculus OX=10090 GN=Tmed10 PE=1 SV=1	1.07	0.004750876
+Q3TML0	Pdia6	Protein disulfide-isomerase A6 OS=Mus musculus OX=10090 GN=Pdia6 PE=1 SV=1	0.96	0.004776279
+Q8CEE7	Rdh13	Retinol dehydrogenase 13 OS=Mus musculus OX=10090 GN=Rdh13 PE=1 SV=1	1.12	0.004780214
+P62631	Eef1a2	Elongation factor 1-alpha 2 OS=Mus musculus OX=10090 GN=Eef1a2 PE=1 SV=1	0.46	0.004850973
+Q8R127	Sccpdh	Saccharopine dehydrogenase-like oxidoreductase OS=Mus musculus OX=10090 GN=Sccpdh PE=1 SV=1	0.69	0.004952568
+P53702	Hccs	Cytochrome c-type heme lyase OS=Mus musculus OX=10090 GN=Hccs PE=1 SV=2	0.66	0.005075061
+Q62000	Ogn	Mimecan OS=Mus musculus OX=10090 GN=Ogn PE=1 SV=1	2.08	0.005075061
+Q8BW35	Acox1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 PE=2 SV=2	-1.91	0.005165162
+Q3UGW4	Clpp	ATP-dependent Clp protease proteolytic subunit (Fragment) OS=Mus musculus OX=10090 GN=Clpp PE=2 SV=1	1.31	0.00520941
+Q4FK36	Dstn	Destrin OS=Mus musculus OX=10090 GN=Dstn PE=1 SV=1	1.77	0.005226267
+Q3UQS9	Myom2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Myom2 PE=2 SV=1	1.15	0.005484737
+Q5EBG6	Hspb6	Heat shock protein beta-6 OS=Mus musculus OX=10090 GN=Hspb6 PE=1 SV=1	0.53	0.00551778
+Q3U4F0	Sfxn3	Sideroflexin-3 OS=Mus musculus OX=10090 GN=Sfxn3 PE=1 SV=1	0.88	0.005538429
+A0A0R4J083	Acadl	Long-chain-specific acyl-CoA dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Acadl PE=1 SV=1	1.23	0.005551989
+Q5M9N6	Rpl37a	Rpl37a protein OS=Mus musculus OX=10090 GN=Rpl37a PE=2 SV=1	3.64	0.005669386
+E9Q3E2	Synpo	Synaptopodin OS=Mus musculus OX=10090 GN=Synpo PE=1 SV=1	0.52	0.005750202
+P27773	Pdia3	Protein disulfide-isomerase A3 OS=Mus musculus OX=10090 GN=Pdia3 PE=1 SV=2	1.39	0.005784989
+Q03265	Atp5a1	ATP synthase subunit alpha, mitochondrial OS=Mus musculus OX=10090 GN=Atp5f1a PE=1 SV=1	-0.45	0.00583968
+Q3U7R1	Esyt1	Extended synaptotagmin-1 OS=Mus musculus OX=10090 GN=Esyt1 PE=1 SV=2	0.61	0.005842899
+Q3TS88	Ppp1r12a	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Ppp1r12a PE=2 SV=1	1.44	0.005858498
+Q9DC70	Ndufs7	NADH dehydrogenase [ubiquinone] iron-sulfur protein 7, mitochondrial OS=Mus musculus OX=10090 GN=Ndufs7 PE=1 SV=1	-0.61	0.005863585
+Q8VHY0	Cspg4	Chondroitin sulfate proteoglycan 4 OS=Mus musculus OX=10090 GN=Cspg4 PE=1 SV=3	0.9	0.005863585
+A0A2R8VI94		Leukocyte surface antigen CD47 OS=Mus musculus OX=10090 GN=Cd47 PE=1 SV=1	1.23	0.005863585
+Q99L13	Hibadh	3-hydroxyisobutyrate dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Hibadh PE=1 SV=1	1.32	0.005863585
+Q8BH95	Echs1	Enoyl-CoA hydratase, mitochondrial OS=Mus musculus OX=10090 GN=Echs1 PE=1 SV=1	-0.3	0.005921971
+Q3TIT3	Ehd1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Ehd1 PE=2 SV=1	0.83	0.005931792
+Q64727	Vcl	Vinculin OS=Mus musculus OX=10090 GN=Vcl PE=1 SV=4	0.35	0.006105063
+Q80T68	Myh10	MKIAA3005 protein (Fragment) OS=Mus musculus OX=10090 GN=Myh10 PE=2 SV=1	2.14	0.006155931
+P07310	Ckm	Creatine kinase M-type OS=Mus musculus OX=10090 GN=Ckm PE=1 SV=1	-1.44	0.006172794
+Q8VDD5	Myh9	Myosin-9 OS=Mus musculus OX=10090 GN=Myh9 PE=1 SV=4	0.53	0.006172794
+Q05B38	Krt6b	Krt6b protein (Fragment) OS=Mus musculus OX=10090 GN=Krt6b PE=2 SV=1	-1.53	0.006380258
+Q8BWF0	Aldh5a1	Succinate-semialdehyde dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Aldh5a1 PE=1 SV=1	1.84	0.006406384
+Q545U6	Cox8b	Cytochrome c oxidase, subunit VIIIb OS=Mus musculus OX=10090 GN=Cox8b PE=2 SV=1	-0.73	0.006421745
+Q80UT3	Tsfm	Tsfm protein (Fragment) OS=Mus musculus OX=10090 GN=Tsfm PE=2 SV=1	1.29	0.006462509
+Q9D7N6	Mrpl30	39S ribosomal protein L30, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl30 PE=1 SV=1	-2.38	0.006567679
+Q99JB2	Stoml2	Stomatin-like protein 2, mitochondrial OS=Mus musculus OX=10090 GN=Stoml2 PE=1 SV=1	1.4	0.006576723
+Q9DCM2	Gstk1	Glutathione S-transferase kappa 1 OS=Mus musculus OX=10090 GN=Gstk1 PE=1 SV=3	-1.78	0.006715531
+Q8C3Z4	Prkar1a	Uncharacterized protein OS=Mus musculus OX=10090 GN=Prkar1a PE=2 SV=1	1.7	0.006749824
+Q8R4N0	Clybl	Citramalyl-CoA lyase, mitochondrial OS=Mus musculus OX=10090 GN=Clybl PE=1 SV=2	1.34	0.006837416
+Q3UR33	Tmpo	Uncharacterized protein OS=Mus musculus OX=10090 GN=Tmpo PE=2 SV=1	1.12	0.006879523
+Q8VE38	Oxnad1	Oxidoreductase NAD-binding domain-containing protein 1 OS=Mus musculus OX=10090 GN=Oxnad1 PE=1 SV=2	0.96	0.006961749
+O09161	Casq2	Calsequestrin-2 OS=Mus musculus OX=10090 GN=Casq2 PE=1 SV=3	-0.35	0.006977332
+Q9CZ42	Carkd; Naxd	ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Mus musculus OX=10090 GN=Naxd PE=1 SV=1	2.95	0.007043114
+Q8BGX2	1810026J23Rik; Timm29	Mitochondrial import inner membrane translocase subunit Tim29 OS=Mus musculus OX=10090 GN=Timm29 PE=1 SV=1	0.77	0.007184937
+Q9WUD1	Stub1	STIP1 homology and U box-containing protein 1 OS=Mus musculus OX=10090 GN=Stub1 PE=1 SV=1	1.22	0.007293581
+E9Q906		Catenin delta-1 OS=Mus musculus OX=10090 GN=Ctnnd1 PE=1 SV=1	3.4	0.007293581
+P52825	Cpt2	Carnitine O-palmitoyltransferase 2, mitochondrial OS=Mus musculus OX=10090 GN=Cpt2 PE=1 SV=2	-0.36	0.007313792
+Q9D2G2	Dlst	Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex, mitochondrial OS=Mus musculus OX=10090 GN=Dlst PE=1 SV=1	1.08	0.007320553
+Q61584	Fxr1	Fragile X mental retardation syndrome-related protein 1 OS=Mus musculus OX=10090 GN=Fxr1 PE=1 SV=2	1.59	0.007444715
+P08228	Sod1	Superoxide dismutase [Cu-Zn] OS=Mus musculus OX=10090 GN=Sod1 PE=1 SV=2	0.79	0.007594305
+P97807	Fh1	Fumarate hydratase, mitochondrial OS=Mus musculus OX=10090 GN=Fh PE=1 SV=3	0.85	0.007649245
+Q5DTJ9	Mypn	Myopalladin OS=Mus musculus OX=10090 GN=Mypn PE=1 SV=2	0.95	0.007822003
+Q8VCW8	Acsf2	Acyl-CoA synthetase family member 2, mitochondrial OS=Mus musculus OX=10090 GN=Acsf2 PE=1 SV=1	0.78	0.007895343
+Q8K215	Lyrm4	LYR motif-containing protein 4 OS=Mus musculus OX=10090 GN=Lyrm4 PE=1 SV=1	1.51	0.008179185
+Q8K1A5	Tmem41b	Transmembrane protein 41B OS=Mus musculus OX=10090 GN=Tmem41b PE=1 SV=1	0.64	0.008221935
+O78206	H2-D1	H-2D cell surface glycoprotein (Fragment) OS=Mus musculus OX=10090 GN=H-2D PE=3 SV=1	0.71	0.008221935
+D3Z7Q2	1810013D10Rik; Smim20	Small integral membrane protein 20 OS=Mus musculus OX=10090 GN=Smim20 PE=1 SV=1	0.61	0.008223834
+Q3UJR8	Btf3	Transcription factor BTF3 OS=Mus musculus OX=10090 GN=Btf3 PE=2 SV=1	0.68	0.008346321
+P29341	Pabpc1	Polyadenylate-binding protein 1 OS=Mus musculus OX=10090 GN=Pabpc1 PE=1 SV=2	2.28	0.008414589
+Q8VCF0	Mavs	Mitochondrial antiviral-signaling protein OS=Mus musculus OX=10090 GN=Mavs PE=1 SV=1	-0.42	0.008514391
+D3YYS6		Monoglyceride lipase OS=Mus musculus OX=10090 GN=Mgll PE=1 SV=1	1.49	0.008751762
+A0A0N4SWH3	Dysf	Dysferlin OS=Mus musculus OX=10090 GN=Dysf PE=1 SV=1	1.69	0.00907457
+Q3UK61	Oxct1	Succinyl-CoA:3-ketoacid-coenzyme A transferase OS=Mus musculus OX=10090 GN=Oxct1 PE=2 SV=1	1.2	0.0093453
+Q9DCB8	Isca2	Iron-sulfur cluster assembly 2 homolog, mitochondrial OS=Mus musculus OX=10090 GN=Isca2 PE=1 SV=2	1.8	0.009426962
+E9PWN2		Isoleucine--tRNA ligase, mitochondrial OS=Mus musculus OX=10090 GN=Iars2 PE=1 SV=1	1.24	0.009447276
+Q921V3	Nfs1	Nitrogen fixation gene 1 (S. cerevisiae) OS=Mus musculus OX=10090 GN=Nfs1 PE=2 SV=1	1.59	0.009447276
+A2AMM0	Murc; Cavin4	Caveolae-associated protein 4 OS=Mus musculus OX=10090 GN=Cavin4 PE=1 SV=1	1.14	0.009520719
+A2A6H0	Lasp1	LIM and SH3 domain protein 1 (Fragment) OS=Mus musculus OX=10090 GN=Lasp1 PE=1 SV=1	1.59	0.009651964
+P51637	Cav3	Caveolin-3 OS=Mus musculus OX=10090 GN=Cav3 PE=1 SV=1	0.22	0.009780004
+A2AVJ7	Rrbp1	Ribosome-binding protein 1 OS=Mus musculus OX=10090 GN=Rrbp1 PE=1 SV=1	0.61	0.009813142
+E9Q705		BolA-like protein 3 OS=Mus musculus OX=10090 GN=Bola3 PE=1 SV=1	0.9	0.009949682
+Q922Q1	Marc2; Mosc2	Mitochondrial amidoxime reducing component 2 OS=Mus musculus OX=10090 GN=Marc2 PE=1 SV=1	0.41	0.010023505
+Q91VM9	Ppa2	Inorganic pyrophosphatase 2, mitochondrial OS=Mus musculus OX=10090 GN=Ppa2 PE=1 SV=1	1.77	0.010180744
+A0A140LIF0	Coq7	5-demethoxyubiquinone hydroxylase, mitochondrial OS=Mus musculus OX=10090 GN=Coq7 PE=1 SV=1	0.96	0.010604805
+Z4YJF5		Myomesin-1 OS=Mus musculus OX=10090 GN=Myom1 PE=1 SV=1	0.41	0.010656086
+Q9CPY7	Lap3	Cytosol aminopeptidase OS=Mus musculus OX=10090 GN=Lap3 PE=1 SV=3	2.06	0.010974529
+Q3TJA9	Dnaja3	DnaJ (Hsp40) homolog, subfamily A, member 3, isoform CRA_b OS=Mus musculus OX=10090 GN=Dnaja3 PE=2 SV=1	0.59	0.011017074
+Q99LT0	Dpy30	Protein dpy-30 homolog OS=Mus musculus OX=10090 GN=Dpy30 PE=1 SV=1	1.66	0.011027329
+P63038	Hspd1	60 kDa heat shock protein, mitochondrial OS=Mus musculus OX=10090 GN=Hspd1 PE=1 SV=1	1.09	0.011552426
+A0A0R4J2B2	Kctd12	BTB/POZ domain-containing protein KCTD12 OS=Mus musculus OX=10090 GN=Kctd12 PE=1 SV=1	0.88	0.011709112
+Q8BJZ4	Mrps35	28S ribosomal protein S35, mitochondrial OS=Mus musculus OX=10090 GN=Mrps35 PE=1 SV=2	2.11	0.011758227
+Q3TJD4	Atp5f1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Atp5f1 PE=2 SV=1	-0.43	0.011819272
+Q99N96	Mrpl1	39S ribosomal protein L1, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl1 PE=1 SV=2	-0.6	0.011835831
+Q9CQ19	Myl9	Myosin regulatory light polypeptide 9 OS=Mus musculus OX=10090 GN=Myl9 PE=1 SV=3	1.87	0.012217937
+A0A1B0GX27		Branched-chain-amino-acid aminotransferase OS=Mus musculus OX=10090 GN=Bcat2 PE=1 SV=1	0.85	0.012490874
+F6VQ81		Tumor protein D54 (Fragment) OS=Mus musculus OX=10090 GN=Tpd52l2 PE=1 SV=1	1.9	0.012490874
+P61164	Actr1a	Alpha-centractin OS=Mus musculus OX=10090 GN=Actr1a PE=1 SV=1	2.89	0.012490874
+Q8VCL2	Sco2	Protein SCO2 homolog, mitochondrial OS=Mus musculus OX=10090 GN=Sco2 PE=1 SV=1	0.98	0.012544441
+Q3UAI3	Cd36	CD36 antigen, isoform CRA_a OS=Mus musculus OX=10090 GN=Cd36 PE=1 SV=1	0.49	0.012694619
+A0A2I3BQ03		14-3-3 protein zeta/delta (Fragment) OS=Mus musculus OX=10090 GN=Ywhaz PE=1 SV=1	1.32	0.012694619
+Q76LL6	Fhod3	FH1/FH2 domain-containing protein 3 OS=Mus musculus OX=10090 GN=Fhod3 PE=1 SV=1	-1.95	0.012783205
+P22315	Fech	Ferrochelatase, mitochondrial OS=Mus musculus OX=10090 GN=Fech PE=1 SV=2	1.31	0.012944516
+D3Z7P3	Gls	Glutaminase kidney isoform, mitochondrial OS=Mus musculus OX=10090 GN=Gls PE=1 SV=1	1.58	0.012977408
+D6REG4		Glyoxylate reductase/hydroxypyruvate reductase OS=Mus musculus OX=10090 GN=Grhpr PE=1 SV=1	1.44	0.013051133
+Q544Y7	Cfl1	Cofilin 1, non-muscle OS=Mus musculus OX=10090 GN=Cfl1 PE=2 SV=1	1.56	0.01313897
+P31428	Dpep1	Dipeptidase 1 OS=Mus musculus OX=10090 GN=Dpep1 PE=1 SV=2	1.18	0.013364142
+Q6PB66	Lrpprc	Leucine-rich PPR motif-containing protein, mitochondrial OS=Mus musculus OX=10090 GN=Lrpprc PE=1 SV=2	1.25	0.013490757
+Q8BUZ1	Abra	Actin-binding Rho-activating protein OS=Mus musculus OX=10090 GN=Abra PE=1 SV=1	5.66	0.013767568
+Q9CY16	Mrps28	28S ribosomal protein S28, mitochondrial OS=Mus musculus OX=10090 GN=Mrps28 PE=1 SV=1	1.65	0.014503005
+P70670	Naca	Nascent polypeptide-associated complex subunit alpha, muscle-specific form OS=Mus musculus OX=10090 GN=Naca PE=1 SV=2	0.33	0.014539802
+P38060	Hmgcl	Hydroxymethylglutaryl-CoA lyase, mitochondrial OS=Mus musculus OX=10090 GN=Hmgcl PE=1 SV=2	1.17	0.014539802
+G3UZI2		Heterogeneous nuclear ribonucleoprotein Q OS=Mus musculus OX=10090 GN=Syncrip PE=1 SV=1	1.75	0.014539802
+A0A0R4J0Q5	Lmnb2	Lamin-B2 OS=Mus musculus OX=10090 GN=Lmnb2 PE=1 SV=1	1.05	0.014543498
+B0LAC7	Gm8894	Myosin light polypeptide 6 alkali smooth muscle and non-muscle protein (Fragment) OS=Mus musculus OX=10090 GN=Myl6 PE=2 SV=1	0.77	0.01492797
+D3YYT1	Glyr1	Putative oxidoreductase GLYR1 OS=Mus musculus OX=10090 GN=Glyr1 PE=1 SV=1	1.92	0.01492797
+Q99KI0	Aco2	Aconitate hydratase, mitochondrial OS=Mus musculus OX=10090 GN=Aco2 PE=1 SV=1	0.53	0.015053152
+P10605	Ctsb	Cathepsin B OS=Mus musculus OX=10090 GN=Ctsb PE=1 SV=2	1.37	0.015112239
+Q8K2C6	Sirt5	NAD-dependent protein deacylase sirtuin-5, mitochondrial OS=Mus musculus OX=10090 GN=Sirt5 PE=1 SV=1	0.63	0.015154368
+P60060	Gm10177; Sec61g; Gm11575; LOC102637269; Gm4184	Protein transport protein Sec61 subunit gamma OS=Mus musculus OX=10090 GN=Sec61g PE=3 SV=1	2.12	0.015184881
+Q9CWW6	Pin4; Gm6851; LOC105247253	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 4 OS=Mus musculus OX=10090 GN=Pin4 PE=1 SV=1	0.91	0.01541078
+A0A0G2JFK4		Cytochrome c oxidase assembly protein COX19 OS=Mus musculus OX=10090 GN=Cox19 PE=1 SV=1	0.25	0.016156845
+P59017	Bcl2l13	Bcl-2-like protein 13 OS=Mus musculus OX=10090 GN=Bcl2l13 PE=1 SV=2	-0.68	0.016164519
+P99028	Uqcrh	Cytochrome b-c1 complex subunit 6, mitochondrial OS=Mus musculus OX=10090 GN=Uqcrh PE=1 SV=2	-0.54	0.016168982
+Q3UK85	Dctn5	Uncharacterized protein OS=Mus musculus OX=10090 GN=Dctn5 PE=2 SV=1	2.27	0.0167678
+Q4FK74	Atp5d	ATP synthase, H+ transporting, mitochondrial F1 complex, delta subunit, isoform CRA_c OS=Mus musculus OX=10090 GN=Atp5d PE=1 SV=1	-0.62	0.017082604
+A1A4T2	Ganab	Alpha glucosidase 2 alpha neutral subunit OS=Mus musculus OX=10090 GN=Ganab PE=2 SV=1	3.51	0.01719467
+Q6PCW9	Myl1	Myl1 protein OS=Mus musculus OX=10090 GN=Myl1 PE=2 SV=1	1.39	0.017440098
+Q8R2L5	Mrps18c	28S ribosomal protein S18c, mitochondrial OS=Mus musculus OX=10090 GN=Mrps18c PE=1 SV=1	1.15	0.017490267
+A2AB79	Hist3h2a	Histone H2A OS=Mus musculus OX=10090 GN=Hist3h2a PE=2 SV=1	0.62	0.017842823
+V9GXF1		RIKEN cDNA 1110065P20 gene OS=Mus musculus OX=10090 GN=1110065P20Rik PE=1 SV=1	1.86	0.017863171
+O08749	Dld	Dihydrolipoyl dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Dld PE=1 SV=2	0.79	0.018309411
+Q8R1I1	Uqcr10	Cytochrome b-c1 complex subunit 9 OS=Mus musculus OX=10090 GN=Uqcr10 PE=1 SV=1	-0.31	0.018334611
+G3X9M0	Dap3	28S ribosomal protein S29, mitochondrial OS=Mus musculus OX=10090 GN=Dap3 PE=1 SV=1	0.83	0.018705858
+Q61768	Kif5b	Kinesin-1 heavy chain OS=Mus musculus OX=10090 GN=Kif5b PE=1 SV=3	2.17	0.018887598
+P45952	Acadm	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Acadm PE=1 SV=1	0.87	0.019003578
+Q4FJL0	Rab10	RAB10, member RAS oncogene family OS=Mus musculus OX=10090 GN=Rab10 PE=1 SV=1	1.29	0.019050252
+F7BUB8		Protein 4.1 (Fragment) OS=Mus musculus OX=10090 GN=Epb41 PE=1 SV=1	-0.55	0.01911315
+D3Z5Y0		Endothelial cell-selective adhesion molecule (Fragment) OS=Mus musculus OX=10090 GN=Esam PE=1 SV=1	0.71	0.01911315
+Q8K009	Aldh1l2	Mitochondrial 10-formyltetrahydrofolate dehydrogenase OS=Mus musculus OX=10090 GN=Aldh1l2 PE=1 SV=2	2.26	0.01911315
+A0A0A6YVR9		SURF1-like protein (Fragment) OS=Mus musculus OX=10090 GN=Surf1 PE=1 SV=1	1.03	0.019585158
+Q4FJQ0	Rab7	MCG130610 OS=Mus musculus OX=10090 GN=Rab7 PE=1 SV=1	0.45	0.020002383
+Q3TQP7	Acat1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Acat1 PE=2 SV=1	-0.39	0.020189125
+A0A1B0GS13		Apoptosis regulator BAX (Fragment) OS=Mus musculus OX=10090 GN=Bax PE=1 SV=1	2.22	0.020189125
+O08579	Emd	Emerin OS=Mus musculus OX=10090 GN=Emd PE=1 SV=1	2.48	0.020330074
+Q61001	Lama5	Laminin subunit alpha-5 OS=Mus musculus OX=10090 GN=Lama5 PE=1 SV=4	1.12	0.020478091
+Q8BVI9	Slc25a4	Uncharacterized protein OS=Mus musculus OX=10090 GN=Slc25a4 PE=2 SV=1	0.79	0.020541086
+Q8K411	Pitrm1	Presequence protease, mitochondrial OS=Mus musculus OX=10090 GN=Pitrm1 PE=1 SV=1	0.57	0.02075723
+P00920	Car2	Carbonic anhydrase 2 OS=Mus musculus OX=10090 GN=Ca2 PE=1 SV=4	1.15	0.020996281
+Q91YP0	L2hgdh	L-2-hydroxyglutarate dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=L2hgdh PE=1 SV=1	0.72	0.021300462
+Q52KI7	Lrpap1	Low density lipoprotein receptor-related protein associated protein 1 OS=Mus musculus OX=10090 GN=Lrpap1 PE=1 SV=1	0.88	0.021300462
+Q8C140	Slc25a13	Uncharacterized protein OS=Mus musculus OX=10090 GN=Slc25a13 PE=2 SV=1	-0.24	0.021493482
+P00342	Ldhc	L-lactate dehydrogenase C chain OS=Mus musculus OX=10090 GN=Ldhc PE=1 SV=2	0.55	0.021743805
+Q9D1I6	Mrpl14	39S ribosomal protein L14, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl14 PE=1 SV=1	-1.75	0.022283505
+P08074	Cbr2	Carbonyl reductase [NADPH] 2 OS=Mus musculus OX=10090 GN=Cbr2 PE=1 SV=1	1.31	0.022860045
+Q9D7N9	Apmap	Adipocyte plasma membrane-associated protein OS=Mus musculus OX=10090 GN=Apmap PE=1 SV=1	0.9	0.023080143
+Q61171	Prdx2	Peroxiredoxin-2 OS=Mus musculus OX=10090 GN=Prdx2 PE=1 SV=3	1.13	0.023122166
+A0A0N4SW94		Myeloid-associated differentiation marker (Fragment) OS=Mus musculus OX=10090 GN=Myadm PE=1 SV=1	0.89	0.023157796
+Q91VT4	Cbr4	Carbonyl reductase family member 4 OS=Mus musculus OX=10090 GN=Cbr4 PE=1 SV=2	0.43	0.023185389
+Q91VA7	Idh3b	Isocitrate dehydrogenase [NAD] subunit, mitochondrial OS=Mus musculus OX=10090 GN=Idh3b PE=1 SV=1	0.78	0.023294273
+A0A1Y7VJN9	Dtna	Dystrobrevin OS=Mus musculus OX=10090 GN=Dtna PE=1 SV=1	1.76	0.023974464
+Q8R1S0	Coq6	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial OS=Mus musculus OX=10090 GN=Coq6 PE=1 SV=3	2.47	0.023974464
+Q3V2E3	AI462493; Uqcc3	MCG17864, isoform CRA_b OS=Mus musculus OX=10090 GN=Uqcc3 PE=1 SV=1	0.46	0.024040305
+F6ZGN3		Unconventional myosin-XVIIIa (Fragment) OS=Mus musculus OX=10090 GN=Myo18a PE=1 SV=2	0.64	0.024159966
+Q921H9	Selrc1; Coa7	Cytochrome c oxidase assembly factor 7 OS=Mus musculus OX=10090 GN=Coa7 PE=1 SV=1	1.28	0.0241668
+G3UZY2		Thioredoxin, mitochondrial (Fragment) OS=Mus musculus OX=10090 GN=Txn2 PE=1 SV=1	1.34	0.024191331
+Q9CXJ1	Ears2	Probable glutamate--tRNA ligase, mitochondrial OS=Mus musculus OX=10090 GN=Ears2 PE=1 SV=1	0.93	0.024195396
+O35857	Timm44	Mitochondrial import inner membrane translocase subunit TIM44 OS=Mus musculus OX=10090 GN=Timm44 PE=1 SV=2	0.55	0.024327707
+Q3UNL5	Pnpt1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Pnpt1 PE=2 SV=1	1.2	0.02441735
+Q01339	Apoh	Beta-2-glycoprotein 1 OS=Mus musculus OX=10090 GN=Apoh PE=1 SV=1	0.67	0.024923422
+P62075	Timm13	Mitochondrial import inner membrane translocase subunit Tim13 OS=Mus musculus OX=10090 GN=Timm13 PE=1 SV=1	0.54	0.024992847
+Q9CQJ1	Higd2a	HIG1 domain family member 2A OS=Mus musculus OX=10090 GN=Higd2a PE=3 SV=1	0.28	0.025068296
+Q9CQF9	Pcyox1	Prenylcysteine oxidase OS=Mus musculus OX=10090 GN=Pcyox1 PE=1 SV=1	0.33	0.025598555
+Q3UQT9	Smyd1	SET and MYND domain containing 1, isoform CRA_a OS=Mus musculus OX=10090 GN=Smyd1 PE=2 SV=1	3.38	0.025607745
+Q505D7	Opa3	Optic atrophy 3 protein homolog OS=Mus musculus OX=10090 GN=Opa3 PE=1 SV=1	0.83	0.025962506
+Q9D173	Tomm7	Mitochondrial import receptor subunit TOM7 homolog OS=Mus musculus OX=10090 GN=Tomm7 PE=3 SV=1	1.85	0.026367463
+A0A087WQ25	Ktn1	Kinectin OS=Mus musculus OX=10090 GN=Ktn1 PE=1 SV=1	0.4	0.026587771
+E9Q030	Ablim1	Actin-binding LIM protein 1 OS=Mus musculus OX=10090 GN=Ablim1 PE=1 SV=1	-0.58	0.026601034
+P53395	Dbt	Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex, mitochondrial OS=Mus musculus OX=10090 GN=Dbt PE=1 SV=2	1.14	0.026787384
+P16332	Mut	Methylmalonyl-CoA mutase, mitochondrial OS=Mus musculus OX=10090 GN=Mmut PE=1 SV=2	1.52	0.026787384
+Q8BMJ0	Dhodh	Uncharacterized protein OS=Mus musculus OX=10090 GN=Dhodh PE=2 SV=1	-0.89	0.027139748
+Q9CQE3	Mrps17	28S ribosomal protein S17, mitochondrial OS=Mus musculus OX=10090 GN=Mrps17 PE=1 SV=1	1.39	0.027774555
+Q3TQ70	Gnb1	Beta1 subnuit of GTP-binding protein OS=Mus musculus OX=10090 GN=Gnb1 PE=1 SV=1	1.72	0.027858638
+Q9CZS1	Aldh1b1	Aldehyde dehydrogenase X, mitochondrial OS=Mus musculus OX=10090 GN=Aldh1b1 PE=1 SV=1	2.22	0.027979355
+O35295	Purb	Transcriptional activator protein Pur-beta OS=Mus musculus OX=10090 GN=Purb PE=1 SV=3	1.11	0.028008897
+Q9CZW5	Tomm70a	Mitochondrial import receptor subunit TOM70 OS=Mus musculus OX=10090 GN=Tomm70 PE=1 SV=2	0.77	0.028239802
+Q91VN4	Chchd6	MICOS complex subunit Mic25 OS=Mus musculus OX=10090 GN=Chchd6 PE=1 SV=2	0.63	0.028780063
+Q3THM1	Uqcrc1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Uqcrc1 PE=2 SV=1	-0.36	0.028900378
+E9PUD2	Dnm1l	Dynamin-1-like protein OS=Mus musculus OX=10090 GN=Dnm1l PE=1 SV=1	1.19	0.029015658
+Q7TNS2	Minos1	MICOS complex subunit Mic10 OS=Mus musculus OX=10090 GN=Micos10 PE=1 SV=1	0.8	0.030151929
+Q4VAA2	Cdv3	Protein CDV3 OS=Mus musculus OX=10090 GN=Cdv3 PE=1 SV=2	3.02	0.030225968
+Q99NB1	Acss1	Acetyl-coenzyme A synthetase 2-like, mitochondrial OS=Mus musculus OX=10090 GN=Acss1 PE=1 SV=1	1.15	0.030598297
+Q9DBG5	Plin3	Perilipin-3 OS=Mus musculus OX=10090 GN=Plin3 PE=1 SV=1	-1.24	0.030862152
+Q9WV98	Timm9	Mitochondrial import inner membrane translocase subunit Tim9 OS=Mus musculus OX=10090 GN=Timm9 PE=1 SV=1	0.5	0.031852804
+Q9CR59	Gadd45gip1	Growth arrest and DNA damage-inducible proteins-interacting protein 1 OS=Mus musculus OX=10090 GN=Gadd45gip1 PE=1 SV=1	-0.62	0.031858444
+B9EIU1	Eprs	Glutamyl-prolyl-tRNA synthetase OS=Mus musculus OX=10090 GN=Eprs PE=2 SV=1	1.07	0.032174959
+Q9WU01	Khdrbs2	KH domain-containing, RNA-binding, signal transduction-associated protein 2 OS=Mus musculus OX=10090 GN=Khdrbs2 PE=1 SV=1	2.11	0.032718643
+P56480	Atp5b	ATP synthase subunit beta, mitochondrial OS=Mus musculus OX=10090 GN=Atp5f1b PE=1 SV=2	-0.27	0.032916196
+Q91WS0	Cisd1	CDGSH iron-sulfur domain-containing protein 1 OS=Mus musculus OX=10090 GN=Cisd1 PE=1 SV=1	-0.25	0.032916196
+Q9CS06	Cct8	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Cct8 PE=2 SV=1	3.16	0.032916196
+P49813	Tmod1	Tropomodulin-1 OS=Mus musculus OX=10090 GN=Tmod1 PE=1 SV=2	-0.42	0.032951283
+Q8C8T0	Zfhx4	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Zfhx4 PE=2 SV=1	-0.24	0.033322439
+Q9Z1R9	Prss1	MCG124046 OS=Mus musculus OX=10090 GN=Prss1 PE=1 SV=1	-0.37	0.033531463
+Q9CXU4	Timm23	Mitochondrial import inner membrane translocase subunit TIM23 OS=Mus musculus OX=10090 GN=Gm10273 PE=1 SV=1	0.54	0.033905247
+O09044	Snap23	Synaptosomal-associated protein 23 OS=Mus musculus OX=10090 GN=Snap23 PE=1 SV=1	0.59	0.034160695
+Q8BTE5	1110001A16Rik; Cebpzos	Protein CEBPZOS OS=Mus musculus OX=10090 GN=Cebpzos PE=3 SV=2	1.34	0.034173987
+D3Z712		40S ribosomal protein S15a (Fragment) OS=Mus musculus OX=10090 GN=Rps15a PE=1 SV=2	5.13	0.034609131
+O88990	Actn3	Alpha-actinin-3 OS=Mus musculus OX=10090 GN=Actn3 PE=2 SV=1	-3.04	0.034775606
+P51660	Hsd17b4	Peroxisomal multifunctional enzyme type 2 OS=Mus musculus OX=10090 GN=Hsd17b4 PE=1 SV=3	-0.29	0.034775606
+Q9D023	Mpc2	Mitochondrial pyruvate carrier 2 OS=Mus musculus OX=10090 GN=Mpc2 PE=1 SV=1	0.76	0.034775606
+Q925I1	Atad3a	ATPase family AAA domain-containing protein 3 OS=Mus musculus OX=10090 GN=Atad3 PE=1 SV=1	0.6	0.03492294
+O35459	Ech1	Delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase, mitochondrial OS=Mus musculus OX=10090 GN=Ech1 PE=1 SV=1	-0.17	0.035782828
+Q99LX0	Park7	Protein/nucleic acid deglycase DJ-1 OS=Mus musculus OX=10090 GN=Park7 PE=1 SV=1	1.54	0.03640943
+Q9DA03	Lyrm7	Complex III assembly factor LYRM7 OS=Mus musculus OX=10090 GN=Lyrm7 PE=3 SV=2	1.33	0.036640172
+Q6IM75	Rtn2	Reticulon OS=Mus musculus OX=10090 GN=Rtn2 PE=2 SV=1	-0.37	0.037497916
+Q9CQE8	2700060E02Rik; Rtraf	RNA transcription, translation and transport factor protein OS=Mus musculus OX=10090 GN=RTRAF PE=1 SV=1	4.49	0.037603051
+Q3UQM8	Coq3	Ubiquinone biosynthesis O-methyltransferase, mitochondrial OS=Mus musculus OX=10090 GN=Coq3 PE=2 SV=1	0.66	0.037684981
+Q8BGC4	Zadh2	Prostaglandin reductase-3 OS=Mus musculus OX=10090 GN=Zadh2 PE=1 SV=1	0.8	0.03779802
+Q9CRB9	Chchd3	MICOS complex subunit Mic19 OS=Mus musculus OX=10090 GN=Chchd3 PE=1 SV=1	-0.27	0.038559927
+Q80X85	Mrps7	28S ribosomal protein S7, mitochondrial OS=Mus musculus OX=10090 GN=Mrps7 PE=1 SV=1	2.98	0.038688225
+Q9CR13	1110001J03Rik; Fmc1	Protein FMC1 homolog OS=Mus musculus OX=10090 GN=Fmc1 PE=1 SV=1	0.83	0.039156163
+P62897	Cycs; Gm10053	Cytochrome c, somatic OS=Mus musculus OX=10090 GN=Cycs PE=1 SV=2	-0.24	0.039286704
+E9Q8K5		Titin OS=Mus musculus OX=10090 GN=Ttn PE=1 SV=1	0.79	0.039581444
+P14152	Mdh1	Malate dehydrogenase, cytoplasmic OS=Mus musculus OX=10090 GN=Mdh1 PE=1 SV=3	0.49	0.039929715
+W6PPA1	Ank3	270-kDa ankyrinG OS=Mus musculus OX=10090 GN=Ank3 PE=4 SV=1	1.05	0.039956454
+Q9CZU6	Cs	Citrate synthase, mitochondrial OS=Mus musculus OX=10090 GN=Cs PE=1 SV=1	0.5	0.040577414
+Q14AR0	Slirp	RIKEN cDNA 1810035L17, isoform CRA_a OS=Mus musculus OX=10090 GN=Slirp PE=2 SV=1	1.04	0.04077756
+D3YZN4		Paraplegin OS=Mus musculus OX=10090 GN=Spg7 PE=1 SV=1	1.2	0.041166552
+Q543D7	Fhl2	Four and a half LIM domains 2, isoform CRA_a OS=Mus musculus OX=10090 GN=Fhl2 PE=1 SV=1	-0.44	0.041975687
+Q9Z0X1	Aifm1	Apoptosis-inducing factor 1, mitochondrial OS=Mus musculus OX=10090 GN=Aifm1 PE=1 SV=1	-0.18	0.042316412
+Q9CQN7	Mrpl41	39S ribosomal protein L41, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl41 PE=1 SV=1	-0.44	0.042934361
+P04104	Krt1	Keratin, type II cytoskeletal 1 OS=Mus musculus OX=10090 GN=Krt1 PE=1 SV=4	-1.65	0.04309933
+Q9D880	Timm50	Mitochondrial import inner membrane translocase subunit TIM50 OS=Mus musculus OX=10090 GN=Timm50 PE=1 SV=1	0.6	0.043502009
+F6YTG0		Enoyl-CoA hydratase domain-containing protein 2, mitochondrial (Fragment) OS=Mus musculus OX=10090 GN=Echdc2 PE=1 SV=1	-0.87	0.044137411
+Q8C6Y2	Slc12a7	Solute carrier family 12, member 7, isoform CRA_a OS=Mus musculus OX=10090 GN=Slc12a7 PE=2 SV=1	0.48	0.045322288
+E9QMW4	4930562C15Rik	Uncharacterized protein C16orf96 homolog OS=Mus musculus OX=10090 PE=2 SV=1	0.26	0.045755077
+Q9QYG0	Ndrg2	Protein NDRG2 OS=Mus musculus OX=10090 GN=Ndrg2 PE=1 SV=1	-0.03	0.046915112
+P58064	Mrps6	28S ribosomal protein S6, mitochondrial OS=Mus musculus OX=10090 GN=Mrps6 PE=1 SV=3	1.44	0.049049968
+O54724	Ptrf; Cavin1	Caveolae-associated protein 1 OS=Mus musculus OX=10090 GN=Cavin1 PE=1 SV=1	0.15	0.049273532
+Q9CYL5	Glipr2	Golgi-associated plant pathogenesis-related protein 1 OS=Mus musculus OX=10090 GN=Glipr2 PE=1 SV=3	0.57	0.049711911
+Q99N87	Mrps5	28S ribosomal protein S5, mitochondrial OS=Mus musculus OX=10090 GN=Mrps5 PE=1 SV=1	0.85	0.049793431
+D3YTT4		Isobutyryl-CoA dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Acad8 PE=1 SV=1	0.7	0.050707039
+Q3TZ23	Gm14866; LOC101056076	Uncharacterized protein OS=Mus musculus OX=10090 GN=Gm14866 PE=2 SV=1	-0.77	0.051127917
+P99029	Prdx5	Peroxiredoxin-5, mitochondrial OS=Mus musculus OX=10090 GN=Prdx5 PE=1 SV=2	0.83	0.052407722
+Q9WUR9	Ak4	Adenylate kinase 4, mitochondrial OS=Mus musculus OX=10090 GN=Ak4 PE=1 SV=1	0.98	0.054223176
+Q9CQP0	Mrpl33	39S ribosomal protein L33, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl33 PE=1 SV=1	-0.88	0.054448418
+Q9CRD2	Emc2	ER membrane protein complex subunit 2 OS=Mus musculus OX=10090 GN=Emc2 PE=1 SV=1	1.2	0.054519446
+Q9CQS4	Slc25a46	Solute carrier family 25 member 46 OS=Mus musculus OX=10090 GN=Slc25a46 PE=1 SV=1	-0.58	0.054569391
+Q9CZ83	Mrpl55	39S ribosomal protein L55, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl55 PE=1 SV=1	-0.89	0.055045498
+Q8CAK1	Iba57	Putative transferase CAF17 homolog, mitochondrial OS=Mus musculus OX=10090 GN=Iba57 PE=1 SV=1	1.33	0.055414287
+Q07417	Acads	Short-chain specific acyl-CoA dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Acads PE=1 SV=2	0.74	0.055814932
+A0A0G2JFY5	Fubp1	Far upstream element-binding protein 1 OS=Mus musculus OX=10090 GN=Fubp1 PE=1 SV=1	0.8	0.056530513
+E9QAQ5	Gsk3b	Glycogen synthase kinase-3 beta OS=Mus musculus OX=10090 GN=Gsk3b PE=1 SV=1	1.02	0.056573044
+A0A023J6F3		Cytochrome c oxidase subunit 2 OS=Mus musculus musculus OX=39442 GN=COX2 PE=3 SV=1	-0.56	0.05668333
+Q6P8N8	Clpx	ATP-dependent Clp protease ATP-binding subunit clpX-like, mitochondrial OS=Mus musculus OX=10090 GN=Clpx PE=1 SV=1	1.54	0.056875978
+A0A1B0GSX6	Pdlim3	PDZ and LIM domain 3, isoform CRA_a OS=Mus musculus OX=10090 GN=Pdlim3 PE=1 SV=1	0.56	0.057710372
+Q8C129	Lnpep	Leucyl-cystinyl aminopeptidase OS=Mus musculus OX=10090 GN=Lnpep PE=1 SV=1	0.45	0.057937191
+P82350	Sgca	Alpha-sarcoglycan OS=Mus musculus OX=10090 GN=Sgca PE=1 SV=1	0.62	0.058574097
+E9Q1J7	Pccb	Propionyl-CoA carboxylase beta chain, mitochondrial OS=Mus musculus OX=10090 GN=Pccb PE=1 SV=1	1.87	0.058574097
+P62073	Timm10	Mitochondrial import inner membrane translocase subunit Tim10 OS=Mus musculus OX=10090 GN=Timm10 PE=1 SV=1	0.17	0.059057135
+Q6P8R3	Pf4	C-X-C motif chemokine OS=Mus musculus OX=10090 GN=Pf4 PE=2 SV=1	2.16	0.059520913
+Q3U548	Ugp2	UTP--glucose-1-phosphate uridylyltransferase OS=Mus musculus OX=10090 GN=Ugp2 PE=2 SV=1	1.04	0.059547833
+Q9CQX8	Mrps36	28S ribosomal protein S36, mitochondrial OS=Mus musculus OX=10090 GN=Mrps36 PE=1 SV=1	0.63	0.060719985
+Q3UKS6	Mrpl40	Mitochondrial ribosomal protein L40 OS=Mus musculus OX=10090 GN=Mrpl40 PE=1 SV=1	-0.43	0.061595989
+D9J301	Pdlim5	ENH isoform 1d OS=Mus musculus OX=10090 GN=Pdlim5 PE=1 SV=1	-0.42	0.063622995
+Q3UGY4	Spnb1; Sptb	Spectrin beta chain OS=Mus musculus OX=10090 GN=Sptb PE=2 SV=1	-0.57	0.063988234
+P62077	Timm8b	Mitochondrial import inner membrane translocase subunit Tim8 B OS=Mus musculus OX=10090 GN=Timm8b PE=1 SV=1	0.56	0.063988234
+Q6Y642	Gm20498; Synj2bp-cox16	Activin receptor-interacting protein 2a OS=Mus musculus OX=10090 PE=2 SV=1	-0.49	0.06441191
+Q921G7	Etfdh	Electron transfer flavoprotein-ubiquinone oxidoreductase, mitochondrial OS=Mus musculus OX=10090 GN=Etfdh PE=1 SV=1	-0.25	0.066357834
+Q8VDT9	Mrpl50	39S ribosomal protein L50, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl50 PE=1 SV=2	-0.6	0.066996507
+Q3TH64	Cyb5b	Uncharacterized protein OS=Mus musculus OX=10090 GN=Cyb5b PE=2 SV=1	-0.52	0.067079574
+Q9D7J4	Cox20; Fam36a	Cytochrome c oxidase assembly protein COX20, mitochondrial OS=Mus musculus OX=10090 GN=Cox20 PE=1 SV=1	-0.25	0.067419505
+Q9DCZ4	Apoo	MICOS complex subunit Mic26 OS=Mus musculus OX=10090 GN=Apoo PE=1 SV=2	0.4	0.067580428
+A0A0R4J0S3	Rtn4ip1	Reticulon 4 interacting protein 1 OS=Mus musculus OX=10090 GN=Rtn4ip1 PE=1 SV=1	0.22	0.070032597
+Q9JHI5	Ivd	Isovaleryl-CoA dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Ivd PE=1 SV=1	1.19	0.070091098
+E9Q7B0	P4ha1	Prolyl 4-hydroxylase subunit alpha-1 OS=Mus musculus OX=10090 GN=P4ha1 PE=1 SV=1	1.28	0.070532504
+Q9CQV1	Pam16	Mitochondrial import inner membrane translocase subunit TIM16 OS=Mus musculus OX=10090 GN=Pam16 PE=1 SV=1	0.56	0.070617115
+Q9CQF0	Mrpl11	39S ribosomal protein L11, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl11 PE=1 SV=1	-0.67	0.070761525
+A0A087WSE3		Striated muscle-specific serine/threonine-protein kinase (Fragment) OS=Mus musculus OX=10090 GN=Speg PE=1 SV=1	0.42	0.071027509
+Q3UDQ7	Afg3l2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Afg3l2 PE=2 SV=1	0.8	0.071967396
+G3UX26		Voltage-dependent anion-selective channel protein 2 OS=Mus musculus OX=10090 GN=Vdac2 PE=1 SV=1	0.44	0.072888031
+B3DFI8	Cisd3	Cisd3 protein (Fragment) OS=Mus musculus OX=10090 GN=Cisd3 PE=2 SV=1	0.27	0.07453439
+Q9R0Y5	Ak1	Adenylate kinase isoenzyme 1 OS=Mus musculus OX=10090 GN=Ak1 PE=1 SV=1	1.06	0.074879876
+Q99JY0	Hadhb	Trifunctional enzyme subunit beta, mitochondrial OS=Mus musculus OX=10090 GN=Hadhb PE=1 SV=1	-0.21	0.075402285
+A2A6T4	Ict1; Mrpl58	Immature colon carcinoma transcript 1, isoform CRA_c OS=Mus musculus OX=10090 GN=Mrpl58 PE=1 SV=1	-1.04	0.075686408
+Q3UN47	Endog	Endonuclease G OS=Mus musculus OX=10090 GN=Endog PE=1 SV=1	-0.26	0.07691243
+P29268	Ctgf	Connective tissue growth factor OS=Mus musculus OX=10090 GN=Ctgf PE=2 SV=3	1.71	0.077259015
+Q9CPQ8	Atp5l	ATP synthase subunit g, mitochondrial OS=Mus musculus OX=10090 GN=Atp5mg PE=1 SV=1	-0.25	0.077550767
+A0A0A0MQ68	Gcdh	Glutaryl-CoA dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Gcdh PE=1 SV=1	-1.53	0.078133727
+Q8BFR5	Tufm	Elongation factor Tu, mitochondrial OS=Mus musculus OX=10090 GN=Tufm PE=1 SV=1	-0.19	0.078735608
+Q6P0X6	Glrx2	Glrx2 protein (Fragment) OS=Mus musculus OX=10090 GN=Glrx2 PE=2 SV=1	-0.48	0.078779567
+A2AKU9	Atp5c1	ATP synthase subunit gamma OS=Mus musculus OX=10090 GN=Atp5c1 PE=1 SV=1	-0.27	0.07899263
+P29788	Vtn	Vitronectin OS=Mus musculus OX=10090 GN=Vtn PE=1 SV=2	1.73	0.079135529
+Q8K2Q5	Chchd7	Coiled-coil-helix-coiled-coil-helix domain-containing protein 7 OS=Mus musculus OX=10090 GN=Chchd7 PE=1 SV=1	-1.5	0.081631653
+P58281	Opa1	Dynamin-like 120 kDa protein, mitochondrial OS=Mus musculus OX=10090 GN=Opa1 PE=1 SV=1	-0.24	0.082235588
+Q3UCZ2	Lpl	Lipoprotein lipase OS=Mus musculus OX=10090 GN=Lpl PE=2 SV=1	0.38	0.082235588
+A0A1L7NR63	Sorbs1	C-Cbl associated protein OS=Mus musculus OX=10090 GN=Sorbs1 PE=2 SV=1	0.9	0.082581417
+Q99N85	Mrps18a	28S ribosomal protein S18a, mitochondrial OS=Mus musculus OX=10090 GN=Mrps18a PE=2 SV=1	-0.66	0.085638317
+Q9CQU0	Txndc12	Thioredoxin domain-containing protein 12 OS=Mus musculus OX=10090 GN=Txndc12 PE=1 SV=1	3.78	0.086572665
+Q80UJ8	Lactb	Lactb protein OS=Mus musculus OX=10090 GN=Lactb PE=2 SV=1	-0.27	0.08723502
+Q9CY73	Mrpl44	39S ribosomal protein L44, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl44 PE=1 SV=3	-0.5	0.088301766
+Q3UEM7	Fgg	Uncharacterized protein OS=Mus musculus OX=10090 GN=Fgg PE=1 SV=1	2	0.08850699
+A0A0R4J023	Auh	Methylglutaconyl-CoA hydratase, mitochondrial OS=Mus musculus OX=10090 GN=Auh PE=1 SV=1	-0.24	0.088692331
+Q9D1C3	Pigy; Pyurf	Protein preY, mitochondrial OS=Mus musculus OX=10090 GN=Pyurf PE=1 SV=1	1.59	0.089449966
+Q3UGC8	Pcca	Propionyl-Coenzyme A carboxylase, alpha polypeptide, isoform CRA_b OS=Mus musculus OX=10090 GN=Pcca PE=1 SV=1	0.4	0.089755283
+F8WHP8		ATP synthase, H+-transporting, mitochondrial F0 complex, subunit F2 OS=Mus musculus OX=10090 GN=Atp5j2 PE=1 SV=1	-0.14	0.091584869
+Q5SVI8	Myl7	Myosin, light polypeptide 7, regulatory OS=Mus musculus OX=10090 GN=Myl7 PE=1 SV=1	3.15	0.091584869
+P70452	Stx4a	Syntaxin-4 OS=Mus musculus OX=10090 GN=Stx4 PE=1 SV=1	0.72	0.092331779
+P68040	Gnb2l1; Rack1	Receptor of activated protein C kinase 1 OS=Mus musculus OX=10090 GN=Rack1 PE=1 SV=3	2.28	0.092870227
+F8WHT5		Protein Mpv17 OS=Mus musculus OX=10090 GN=Mpv17 PE=1 SV=1	-1.82	0.093161882
+Q3UV16	Itpripl2	Inositol 1,4,5-trisphosphate receptor-interacting protein-like 2 OS=Mus musculus OX=10090 GN=Itpripl2 PE=2 SV=1	0.75	0.094219982
+F6TFN2		LIM domain only 7 (Fragment) OS=Mus musculus OX=10090 GN=Lmo7 PE=1 SV=1	-0.84	0.094249813
+Q8K199	2310061C15Rik; Cmc2	COX assembly mitochondrial protein 2 homolog OS=Mus musculus OX=10090 GN=Cmc2 PE=3 SV=1	-0.138	0.09499481
+A0A140LHT6	Mrpl48	39S ribosomal protein L48, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl48 PE=1 SV=1	-0.55	0.096458483
+Q3UKT3	Oat	Ornithine aminotransferase OS=Mus musculus OX=10090 GN=Oat PE=2 SV=1	1	0.097454589
+Q9CPR5	Mrpl15	39S ribosomal protein L15, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl15 PE=1 SV=1	-0.11	0.099041215
+A0A141CM32		ATP synthase protein 8 OS=Mus musculus OX=10090 GN=ATP8 PE=3 SV=1	-0.33	0.09981991
+Q5EBQ0	Vdac3	Voltage-dependent anion channel 3 OS=Mus musculus OX=10090 GN=Vdac3 PE=2 SV=1	0.51	0.103519542
+P50171	H2-Ke6	Estradiol 17-beta-dehydrogenase 8 OS=Mus musculus OX=10090 GN=Hsd17b8 PE=1 SV=2	0.41	0.105087817
+G5E850	Cyb5; Cyb5a	Cytochrome b-5, isoform CRA_a OS=Mus musculus OX=10090 GN=Cyb5a PE=1 SV=1	0.33	0.110362877
+Q3UGT1	Cpt1a	Uncharacterized protein OS=Mus musculus OX=10090 GN=Cpt1a PE=2 SV=1	0.5	0.111048509
+B7ZCI2	Nebl	Nebulette OS=Mus musculus OX=10090 GN=Nebl PE=1 SV=1	-0.45	0.112500426
+O08715	Akap1	A-kinase anchor protein 1, mitochondrial OS=Mus musculus OX=10090 GN=Akap1 PE=1 SV=4	0.25	0.11412315
+Q3TGR2	Fgb	Fibrinogen, B beta polypeptide, isoform CRA_a OS=Mus musculus OX=10090 GN=Fgb PE=1 SV=1	2.22	0.115820896
+P09671	Sod2	Superoxide dismutase [Mn], mitochondrial OS=Mus musculus OX=10090 GN=Sod2 PE=1 SV=3	0.21	0.116705325
+P58771	Tpm1	Tropomyosin alpha-1 chain OS=Mus musculus OX=10090 GN=Tpm1 PE=1 SV=1	-0.44	0.117661676
+G5E902	Slc25a3	MCG10343, isoform CRA_b OS=Mus musculus OX=10090 GN=Slc25a3 PE=1 SV=1	0.31	0.119804021
+Q8R404	2410015M20Rik	MICOS complex subunit MIC13 OS=Mus musculus OX=10090 GN=Micos13 PE=1 SV=1	-0.21	0.120213379
+Q8C6I2	Sdhaf2	Succinate dehydrogenase assembly factor 2, mitochondrial OS=Mus musculus OX=10090 GN=Sdhaf2 PE=1 SV=1	0.65	0.122542438
+Q9JI91	Actn2	Alpha-actinin-2 OS=Mus musculus OX=10090 GN=Actn2 PE=1 SV=2	0.16	0.123304604
+Q8VE22	Mrps23	28S ribosomal protein S23, mitochondrial OS=Mus musculus OX=10090 GN=Mrps23 PE=1 SV=1	0.95	0.123718036
+Q00623	Apoa1	Apolipoprotein A-I OS=Mus musculus OX=10090 GN=Apoa1 PE=1 SV=2	0.51	0.127426826
+E9Q179	Grsf1	G-rich sequence factor 1 OS=Mus musculus OX=10090 GN=Grsf1 PE=1 SV=1	0.96	0.127436312
+Q9DCC8	Tomm20	Mitochondrial import receptor subunit TOM20 homolog OS=Mus musculus OX=10090 GN=Tomm20 PE=1 SV=1	0.07	0.128036108
+F6RYD0		Pleckstrin homology-like domain family B member 1 (Fragment) OS=Mus musculus OX=10090 GN=Phldb1 PE=1 SV=1	0.56	0.128036108
+Q3UYF4	Podxl	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Podxl PE=2 SV=1	1.95	0.12805524
+Q3THU8	Slc25a3	Uncharacterized protein OS=Mus musculus OX=10090 GN=Slc25a3 PE=2 SV=1	1.57	0.129177569
+Q9D7P6	Iscu	Iron-sulfur cluster assembly enzyme ISCU, mitochondrial OS=Mus musculus OX=10090 GN=Iscu PE=1 SV=1	1.4	0.129736974
+Q8VEG6	Cnot6l	CCR4-NOT transcription complex subunit 6-like OS=Mus musculus OX=10090 GN=Cnot6l PE=1 SV=2	0.5	0.129789991
+E9Q9D2		Actin-binding LIM protein 1 OS=Mus musculus OX=10090 GN=Ablim1 PE=1 SV=1	-0.26	0.13003604
+P67778	Phb	Prohibitin OS=Mus musculus OX=10090 GN=Phb PE=1 SV=1	0.26	0.130310098
+Q99N92	Mrpl27; Gm6304	39S ribosomal protein L27, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl27 PE=1 SV=1	-0.44	0.130316334
+O35085	Arx	Homeobox protein ARX OS=Mus musculus OX=10090 GN=Arx PE=1 SV=3	1.06	0.130695462
+A2AP78	Hmgb3	High mobility group protein B3 (Fragment) OS=Mus musculus OX=10090 GN=Hmgb3 PE=1 SV=1	0.33	0.132891303
+Q3U5K7	Cst3	Cystatin (Fragment) OS=Mus musculus OX=10090 GN=Cst3 PE=2 SV=1	0.56	0.132891303
+Q9CPX8	Uqcr11	Cytochrome b-c1 complex subunit 10 OS=Mus musculus OX=10090 GN=Uqcr11 PE=3 SV=1	-0.08	0.136132219
+E9Q7G0	Numa1	Nuclear mitotic apparatus protein 1 OS=Mus musculus OX=10090 GN=Numa1 PE=1 SV=1	1.06	0.136615858
+P05125	Nppa	Natriuretic peptides A OS=Mus musculus OX=10090 GN=Nppa PE=1 SV=2	4.37	0.136872479
+Q9DB15	Mrpl12	39S ribosomal protein L12, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl12 PE=1 SV=2	0.22	0.137304368
+Q8CAQ8	Immt	MICOS complex subunit Mic60 OS=Mus musculus OX=10090 GN=Immt PE=1 SV=1	-0.16	0.140221801
+P04247	Mb	Myoglobin OS=Mus musculus OX=10090 GN=Mb PE=1 SV=3	-0.35	0.141158827
+Q8C2Q8	Atp5c1	ATP synthase subunit gamma OS=Mus musculus OX=10090 GN=Atp5c1 PE=1 SV=1	1.27	0.146593482
+Q9DBN7	Eci1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Eci1 PE=2 SV=1	0.11	0.146848798
+E9QLJ0	Cmya5	Cardiomyopathy-associated protein 5 OS=Mus musculus OX=10090 GN=Cmya5 PE=1 SV=1	-1.23	0.147951408
+Q60932	Vdac1	Voltage-dependent anion-selective channel protein 1 OS=Mus musculus OX=10090 GN=Vdac1 PE=1 SV=3	-0.07	0.149807932
+Q9CPY1	Mrpl51	39S ribosomal protein L51, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl51 PE=1 SV=1	-0.54	0.152083276
+Q02013	Aqp1	Aquaporin-1 OS=Mus musculus OX=10090 GN=Aqp1 PE=1 SV=3	0.39	0.153260058
+Q9CZ19	Myl4	Myosin light chain 4 OS=Mus musculus OX=10090 GN=Myl4 PE=1 SV=1	2.66	0.156154477
+Q5SUC9	Sco1	Protein SCO1 homolog, mitochondrial OS=Mus musculus OX=10090 GN=Sco1 PE=1 SV=1	-0.28	0.156841152
+Q91WK5	Gcsh	Glycine cleavage system H protein, mitochondrial OS=Mus musculus OX=10090 GN=Gcsh PE=1 SV=2	1.45	0.15821698
+D3Z7X0	Acad12	Acyl-Coenzyme A dehydrogenase family, member 12 OS=Mus musculus OX=10090 GN=Acad12 PE=1 SV=1	-1.59	0.159957794
+V9GXF6		Zinc finger protein 280D (Fragment) OS=Mus musculus OX=10090 GN=Zfp280d PE=1 SV=1	1.04	0.16048749
+Q5XJX8	Mrps9	Mrps9 protein (Fragment) OS=Mus musculus OX=10090 GN=Mrps9 PE=2 SV=1	0.84	0.160916454
+P19123	Tnnc1	Troponin C, slow skeletal and cardiac muscles OS=Mus musculus OX=10090 GN=Tnnc1 PE=1 SV=1	-0.21	0.161481812
+Q3TGZ3	Idh3g	Isocitrate dehydrogenase [NAD] subunit, mitochondrial OS=Mus musculus OX=10090 GN=Idh3g PE=1 SV=1	0.21	0.162640838
+Q8BMS1	Hadha	Trifunctional enzyme subunit alpha, mitochondrial OS=Mus musculus OX=10090 GN=Hadha PE=1 SV=1	-0.28	0.164137116
+Q3TGW0	Actr3	Uncharacterized protein OS=Mus musculus OX=10090 GN=Actr3 PE=2 SV=1	2.45	0.16494945
+Q8BWM0	Ptges2	Prostaglandin E synthase 2 OS=Mus musculus OX=10090 GN=Ptges2 PE=1 SV=3	0.41	0.167775204
+Q9WV96	Fxc1; Timm10b	Mitochondrial import inner membrane translocase subunit Tim10 B OS=Mus musculus OX=10090 GN=Timm10b PE=1 SV=1	0.8	0.167775204
+O35972	Mrpl23; Mrpl23-ps1	39S ribosomal protein L23, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl23 PE=1 SV=1	-0.37	0.177035653
+Q9JHU2	Palmd	Palmdelphin OS=Mus musculus OX=10090 GN=Palmd PE=1 SV=1	0.18	0.1776326
+Q9CQ62	Decr1	2,4-dienoyl-CoA reductase, mitochondrial OS=Mus musculus OX=10090 GN=Decr1 PE=1 SV=1	0.28	0.1776326
+Q3UIJ9	Myzap	Myocardial zonula adherens protein OS=Mus musculus OX=10090 GN=Myzap PE=1 SV=1	0.16	0.178367999
+Q9D0G0	Mrps30	28S ribosomal protein S30, mitochondrial OS=Mus musculus OX=10090 GN=Mrps30 PE=1 SV=1	-0.26	0.179048484
+Q6P9L9	Eef2	Eef2 protein (Fragment) OS=Mus musculus OX=10090 GN=Eef2 PE=2 SV=1	-0.19	0.179153768
+O70548	Tcap	Telethonin OS=Mus musculus OX=10090 GN=Tcap PE=1 SV=1	0.23	0.180203345
+I7DM66	Dhrs7b	PexRAP OS=Mus musculus OX=10090 GN=Dhrs7b PE=2 SV=1	0.5	0.184532117
+Q8VDC1	Fyco1	FYVE and coiled-coil domain-containing protein 1 OS=Mus musculus OX=10090 GN=Fyco1 PE=1 SV=1	0.23	0.185631381
+P16546	Spna2; Sptan1	Spectrin alpha chain, non-erythrocytic 1 OS=Mus musculus OX=10090 GN=Sptan1 PE=1 SV=4	0.3	0.186320925
+Q6ZQI3	Mlec	Malectin OS=Mus musculus OX=10090 GN=Mlec PE=1 SV=2	0.46	0.188150727
+Q99PG4	Rgs18	Regulator of G-protein signaling 18 OS=Mus musculus OX=10090 GN=Rgs18 PE=1 SV=1	0.24	0.198270851
+Q80U44	Zfyve16	Zinc finger FYVE domain-containing protein 16 OS=Mus musculus OX=10090 GN=Zfyve16 PE=1 SV=2	-0.75	0.198631873
+Q8VCG1	Dut	Deoxyuridine triphosphatase OS=Mus musculus OX=10090 GN=Dut PE=1 SV=1	0.75	0.198819578
+Q99MB3	Tm2d1	TM2 domain-containing protein 1 OS=Mus musculus OX=10090 GN=Tm2d1 PE=2 SV=1	0	0.202497467
+D3Z5B1		Zinc finger, BED type-containing 5 (Fragment) OS=Mus musculus OX=10090 GN=Zbed5 PE=4 SV=8	-0.1	0.202725436
+Q9D172	D10Jhu81e; LOC100046684; LOC102641949	Glutamine amidotransferase-like class 1 domain-containing protein 3A, mitochondrial OS=Mus musculus OX=10090 GN=Gatd3a PE=1 SV=1	0.42	0.202991522
+P70460	Vasp	Vasodilator-stimulated phosphoprotein OS=Mus musculus OX=10090 GN=Vasp PE=1 SV=4	1.82	0.203203093
+A6H644	Ppp1r12b	MCG130490 OS=Mus musculus OX=10090 GN=Ppp1r12b PE=1 SV=1	0.15	0.207662401
+Q8R3Q6	Ccdc58	Coiled-coil domain-containing protein 58 OS=Mus musculus OX=10090 GN=Ccdc58 PE=1 SV=1	0.31	0.208727627
+A2AJI1	Map7d1; Mtap7d1	MAP7 domain-containing protein 1 OS=Mus musculus OX=10090 GN=Map7d1 PE=1 SV=1	-0.24	0.210614258
+P51436	Drd4	D(4) dopamine receptor OS=Mus musculus OX=10090 GN=Drd4 PE=2 SV=1	0.19	0.210866209
+Q497F1	Tnni3	Troponin I, cardiac 3 OS=Mus musculus OX=10090 GN=Tnni3 PE=1 SV=1	0.37	0.213063752
+Q3UIB5	Dhrs4	Uncharacterized protein OS=Mus musculus OX=10090 GN=Dhrs4 PE=2 SV=1	-0.15	0.2131708
+Q9CT19	Hmgb2	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Hmgb2 PE=2 SV=3	0.28	0.215800154
+D3Z041		Long-chain-fatty-acid--CoA ligase 1 OS=Mus musculus OX=10090 GN=Acsl1 PE=1 SV=1	0.5	0.21620374
+P61014	Pln	Cardiac phospholamban OS=Mus musculus OX=10090 GN=Pln PE=1 SV=1	0.16	0.216242139
+Q99LC5	Etfa	Electron transfer flavoprotein subunit alpha, mitochondrial OS=Mus musculus OX=10090 GN=Etfa PE=1 SV=2	0.04	0.21714155
+Q9ES46	Parvb	Beta-parvin OS=Mus musculus OX=10090 GN=Parvb PE=1 SV=1	1.23	0.221957491
+Q3TPP5	Dlg1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Dlg1 PE=2 SV=1	1.58	0.223128317
+Q569U9	Rdh14	Retinol dehydrogenase 14 (All-trans and 9-cis) OS=Mus musculus OX=10090 GN=Rdh14 PE=2 SV=1	-0.26	0.225381725
+Q80ZK0	Mrps10	28S ribosomal protein S10, mitochondrial OS=Mus musculus OX=10090 GN=Mrps10 PE=1 SV=1	0.38	0.232800034
+P21981	Tgm2	Protein-glutamine gamma-glutamyltransferase 2 OS=Mus musculus OX=10090 GN=Tgm2 PE=1 SV=4	0.16	0.235817827
+E9QMK9	9030617O03Rik; Dglucy	D-glutamate cyclase, mitochondrial OS=Mus musculus OX=10090 GN=Dglucy PE=1 SV=1	-0.61	0.236565133
+Q9D0Y8	Mrpl52	39S ribosomal protein L52, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl52 PE=1 SV=1	1.89	0.238197723
+Q9CXI0	Coq5	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondrial OS=Mus musculus OX=10090 GN=Coq5 PE=1 SV=2	0.24	0.238383211
+Q9CPX7	Mrps16	28S ribosomal protein S16, mitochondrial OS=Mus musculus OX=10090 GN=Mrps16 PE=1 SV=1	0.26	0.239325436
+A2AB66	Hexim2	Protein HEXIM2 (Fragment) OS=Mus musculus OX=10090 GN=Hexim2 PE=1 SV=1	0.41	0.24399427
+Q8BHC4	Dcakd	Dephospho-CoA kinase domain-containing protein OS=Mus musculus OX=10090 GN=Dcakd PE=1 SV=1	1.17	0.244494992
+G3UY59		START domain-containing protein 10 OS=Mus musculus OX=10090 GN=Stard10 PE=1 SV=1	0.72	0.24463988
+Q78IK4	Apool	MICOS complex subunit Mic27 OS=Mus musculus OX=10090 GN=Apool PE=1 SV=1	-0.11	0.248547752
+S4R2K1		Zinc finger protein 82 (Fragment) OS=Mus musculus OX=10090 GN=Zfp82 PE=4 SV=1	-0.25	0.248978077
+P34914	Ephx2	Bifunctional epoxide hydrolase 2 OS=Mus musculus OX=10090 GN=Ephx2 PE=1 SV=2	0.48	0.249418169
+O09174	Amacr	Alpha-methylacyl-CoA racemase OS=Mus musculus OX=10090 GN=Amacr PE=1 SV=4	-0.31	0.249686124
+Q9D0M3	Cyc1	Cytochrome c1, heme protein, mitochondrial OS=Mus musculus OX=10090 GN=Cyc1 PE=1 SV=1	0.86	0.250942143
+Q0PD66	Rab1b	RAB1B, member RAS oncogene family, isoform CRA_c OS=Mus musculus OX=10090 GN=Rab1b PE=1 SV=1	0.61	0.253794398
+Q9WUM5	Suclg1	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitochondrial OS=Mus musculus OX=10090 GN=Suclg1 PE=1 SV=4	0.08	0.255038743
+Q9WUR2	Eci2	Enoyl-CoA delta isomerase 2, mitochondrial OS=Mus musculus OX=10090 GN=Eci2 PE=1 SV=2	0.2	0.256867327
+Q3TMK0	Heatr1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Heatr1 PE=2 SV=1	0.29	0.256879538
+Q9CXW2	Mrps22	28S ribosomal protein S22, mitochondrial OS=Mus musculus OX=10090 GN=Mrps22 PE=1 SV=1	0	0.25921011
+Q9CQ92	Fis1	Mitochondrial fission 1 protein OS=Mus musculus OX=10090 GN=Fis1 PE=1 SV=1	0	0.259850254
+Q9CXK3	Actc1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Actc1 PE=2 SV=1	0.25	0.265497693
+Q8R0B4	Tardbp	MCG16669, isoform CRA_a OS=Mus musculus OX=10090 GN=Tardbp PE=1 SV=1	0.73	0.265497693
+E9PV24	Fga	Fibrinogen alpha chain OS=Mus musculus OX=10090 GN=Fga PE=1 SV=1	0.66	0.265947381
+Q9D8P4	Mrpl17	39S ribosomal protein L17, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl17 PE=1 SV=1	0.42	0.268663145
+P63030	Mpc1	Mitochondrial pyruvate carrier 1 OS=Mus musculus OX=10090 GN=Mpc1 PE=1 SV=1	0.34	0.278561566
+Q9Z2Z6	Slc25a20	Mitochondrial carnitine/acylcarnitine carrier protein OS=Mus musculus OX=10090 GN=Slc25a20 PE=1 SV=1	3.43	0.282847268
+D3Z456	Mrpl3	39S ribosomal protein L3, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl3 PE=1 SV=1	0.16	0.283025385
+Q9JK48	Sh3glb1	Endophilin-B1 OS=Mus musculus OX=10090 GN=Sh3glb1 PE=1 SV=1	-0.47	0.286125761
+P47757	Capzb	F-actin-capping protein subunit beta OS=Mus musculus OX=10090 GN=Capzb PE=1 SV=3	0.11	0.296618222
+Q8K2Y7	Mrpl47	39S ribosomal protein L47, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl47 PE=1 SV=2	-0.36	0.298370535
+Q63918	Sdpr; Cavin2	Caveolae-associated protein 2 OS=Mus musculus OX=10090 GN=Cavin2 PE=1 SV=3	0.17	0.298920065
+Q3UMF0	Cobll1	Cordon-bleu protein-like 1 OS=Mus musculus OX=10090 GN=Cobll1 PE=1 SV=2	0.75	0.300152481
+E9Q3M3	Dctn1	Dynactin subunit 1 OS=Mus musculus OX=10090 GN=Dctn1 PE=1 SV=1	0.9	0.302724293
+Q3UDK5	Cox7a2l	Uncharacterized protein OS=Mus musculus OX=10090 GN=Cox7a2l PE=1 SV=1	1.01	0.30430544
+E9Q1L7	Dnajc28	DnaJ homolog subfamily C member 28 OS=Mus musculus OX=10090 GN=Dnajc28 PE=1 SV=1	-0.16	0.30516448
+H7BX88		Carnitine O-acetyltransferase OS=Mus musculus OX=10090 GN=Crat PE=1 SV=1	-0.27	0.308397147
+B1AXP6	Tomm5	Mitochondrial import receptor subunit TOM5 homolog OS=Mus musculus OX=10090 GN=Tomm5 PE=3 SV=1	0.38	0.308567301
+O88492	Plin4	Perilipin-4 OS=Mus musculus OX=10090 GN=Plin4 PE=1 SV=2	-0.07	0.309069417
+Q3ULD5	Mccc2	Methylcrotonoyl-CoA carboxylase beta chain, mitochondrial OS=Mus musculus OX=10090 GN=Mccc2 PE=1 SV=1	-0.81	0.311408923
+P26043	Rdx	Radixin OS=Mus musculus OX=10090 GN=Rdx PE=1 SV=3	2.21	0.311958212
+B2RQQ1	Myh6	MCG133649, isoform CRA_a OS=Mus musculus OX=10090 GN=Myh6 PE=1 SV=1	-0.13	0.320120572
+F8VPV0	Pcnt	Pericentrin OS=Mus musculus OX=10090 GN=Pcnt PE=1 SV=1	-0.48	0.332572441
+P62141	Ppp1cb	Serine/threonine-protein phosphatase PP1-beta catalytic subunit OS=Mus musculus OX=10090 GN=Ppp1cb PE=1 SV=3	0.09	0.339906723
+A0A1W2P7J1	Coq10a	Coenzyme Q10A OS=Mus musculus OX=10090 GN=Coq10a PE=1 SV=1	-0.18	0.345159567
+Q8BUY5	Timmdc1	Complex I assembly factor TIMMDC1, mitochondrial OS=Mus musculus OX=10090 GN=Timmdc1 PE=1 SV=1	-0.44	0.348622775
+Q9D1N9	Mrpl21	39S ribosomal protein L21, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl21 PE=1 SV=1	0	0.355489063
+Q9QYA2	Tomm40	Mitochondrial import receptor subunit TOM40 homolog OS=Mus musculus OX=10090 GN=Tomm40 PE=1 SV=3	0.07	0.355683294
+Q9D338	Mrpl19	39S ribosomal protein L19, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl19 PE=1 SV=1	-0.1	0.357597159
+Q3U452		ATP synthase subunit alpha OS=Mus musculus OX=10090 PE=2 SV=1	0.52	0.367380745
+B2RXT3	Ogdhl	Ogdhl protein OS=Mus musculus OX=10090 GN=Ogdhl PE=1 SV=1	-0.19	0.372296202
+Q7TMH5	Mrpl13	Mrpl13 protein (Fragment) OS=Mus musculus OX=10090 GN=Mrpl13 PE=2 SV=1	-0.55	0.374318144
+P54116	Stom	Erythrocyte band 7 integral membrane protein OS=Mus musculus OX=10090 GN=Stom PE=1 SV=3	-0.33	0.374643514
+Q8C3X2	Ccdc90b	Coiled-coil domain-containing protein 90B, mitochondrial OS=Mus musculus OX=10090 GN=Ccdc90b PE=1 SV=1	0.14	0.374649185
+Q8R1B4	Eif3c	Eukaryotic translation initiation factor 3 subunit C OS=Mus musculus OX=10090 GN=Eif3c PE=1 SV=1	-0.33	0.383203653
+Q9CVT6	Timm21	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Timm21 PE=2 SV=1	0.46	0.387351167
+Q9D6K8	Fundc2	FUN14 domain-containing protein 2 OS=Mus musculus OX=10090 GN=Fundc2 PE=1 SV=1	0.1	0.393614455
+Q9EQ83	Sgcg	Gamma sarcoglycan OS=Mus musculus OX=10090 GN=Sgcg PE=1 SV=1	0.15	0.396419005
+Q14DP5	Ctnna3	Catenin (Cadherin associated protein), alpha 3 OS=Mus musculus OX=10090 GN=Ctnna3 PE=2 SV=1	-0.37	0.40217426
+E9QP56	Apoc3	Apolipoprotein C-III OS=Mus musculus OX=10090 GN=Apoc3 PE=1 SV=1	0.59	0.402575914
+K3W4R7		Troponin T, cardiac muscle OS=Mus musculus OX=10090 GN=Tnnt2 PE=1 SV=1	-0.21	0.402843374
+Q6ZWX2	Tmsb4x	Thymosin beta OS=Mus musculus OX=10090 GN=Tmsb4x PE=2 SV=1	0.45	0.402843374
+P48024	Eif1	Eukaryotic translation initiation factor 1 OS=Mus musculus OX=10090 GN=Eif1 PE=1 SV=2	0.14	0.406464315
+Q3V2Z4	Anxa6	Annexin OS=Mus musculus OX=10090 PE=2 SV=1	0.3	0.409850195
+Q9CZN8	Qrsl1	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial OS=Mus musculus OX=10090 GN=Qrsl1 PE=1 SV=1	1.67	0.427091233
+Q9JHL1	Slc9a3r2	Na(+)/H(+) exchange regulatory cofactor NHE-RF2 OS=Mus musculus OX=10090 GN=Slc9a3r2 PE=1 SV=2	0.18	0.429539937
+D3Z316	1700021F05Rik	Protein 1700021F05Rik OS=Mus musculus OX=10090 GN=1700021F05Rik PE=1 SV=2	0.01	0.435962266
+Q810B1	Mrpl43	Mitochondrial ribosomal protein L43 (Fragment) OS=Mus musculus OX=10090 GN=Mrpl43 PE=2 SV=1	-0.18	0.439154422
+P97927	Lama4	Laminin subunit alpha-4 OS=Mus musculus OX=10090 GN=Lama4 PE=1 SV=2	0.4	0.451199447
+Q9D5T0	Atad1	ATPase family AAA domain-containing protein 1 OS=Mus musculus OX=10090 GN=Atad1 PE=1 SV=1	-0.23	0.455797816
+P43024	Cox6a1	Cytochrome c oxidase subunit 6A1, mitochondrial OS=Mus musculus OX=10090 GN=Cox6a1 PE=1 SV=2	0	0.457748337
+Q3UU58	Nebl	Uncharacterized protein OS=Mus musculus OX=10090 GN=Nebl PE=2 SV=1	0.14	0.458978206
+Q9JJW5	Myoz2	Myozenin-2 OS=Mus musculus OX=10090 GN=Myoz2 PE=1 SV=1	0	0.470514856
+G5E8J2	Ank1	Ankyrin 1, erythroid OS=Mus musculus OX=10090 GN=Ank1 PE=1 SV=1	-0.14	0.472902686
+Q6PCP5	Mff	Mitochondrial fission factor OS=Mus musculus OX=10090 GN=Mff PE=1 SV=1	-0.04	0.472902686
+E9Q9T8		Myosin-binding protein C, cardiac-type OS=Mus musculus OX=10090 GN=Mybpc3 PE=1 SV=1	-0.24	0.481445528
+Q9D6S7	Mrrf	Ribosome-recycling factor, mitochondrial OS=Mus musculus OX=10090 GN=Mrrf PE=1 SV=1	-0.03	0.483936863
+Q6URW6	Myh14	Myosin-14 OS=Mus musculus OX=10090 GN=Myh14 PE=1 SV=1	-0.02	0.486545914
+Q9CQ06	Mrpl24	39S ribosomal protein L24, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl24 PE=1 SV=1	-0.41	0.487915454
+E9Q6E9	4732471D19Rik; Simc1	SUMO-interacting motifs-containing 1 OS=Mus musculus OX=10090 GN=Simc1 PE=1 SV=1	-0.06	0.487915454
+Q8BGY7	4933403F05Rik; Fam210a	Protein FAM210A OS=Mus musculus OX=10090 GN=Fam210a PE=1 SV=1	0.01	0.48891161
+A0A1L1ST61		HIG1 domain family member 1A, mitochondrial (Fragment) OS=Mus musculus OX=10090 GN=Higd1a PE=1 SV=1	-0.01	0.491298176
+Q8CEX1	Chchd1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 PE=2 SV=1	-0.42	0.494321185
+Q8BGH2	Samm50	Sorting and assembly machinery component 50 homolog OS=Mus musculus OX=10090 GN=Samm50 PE=1 SV=1	-0.08	0.495416981
+P05202	Got2	Aspartate aminotransferase, mitochondrial OS=Mus musculus OX=10090 GN=Got2 PE=1 SV=1	0.04	0.500307153
+Q3TSU6	Gfm2	Ribosome-releasing factor 2, mitochondrial OS=Mus musculus OX=10090 GN=Gfm2 PE=2 SV=1	1.82	0.500307153
+A0A0R4J1N9	Tfam	Transcription factor A, mitochondrial OS=Mus musculus OX=10090 GN=Tfam PE=1 SV=1	0.17	0.500918538
+Q9D1H6	Ndufaf4	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly factor 4 OS=Mus musculus OX=10090 GN=Ndufaf4 PE=1 SV=1	0.2	0.502455549
+Q548W7	Dbi	Diazepam binding inhibitor OS=Mus musculus OX=10090 GN=Dbi PE=1 SV=1	-0.04	0.507670805
+V9GXX2		Muscular LMNA-interacting protein OS=Mus musculus OX=10090 GN=Mlip PE=1 SV=1	0.29	0.507670805
+Q8CE18	Cdh13	Uncharacterized protein OS=Mus musculus OX=10090 PE=2 SV=1	-0.02	0.509518491
+Q8BK99	Opa1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Opa1 PE=2 SV=1	-1.58	0.515645761
+Q3TNL6	Slc4a1	Anion exchange protein OS=Mus musculus OX=10090 GN=Slc4a1 PE=2 SV=1	-0.74	0.516150178
+Q3UN31	Pla2g6	Phospholipase A2, group VI, isoform CRA_d OS=Mus musculus OX=10090 GN=Pla2g6 PE=2 SV=1	0.33	0.522682709
+Q8R104	Sirt3	NAD-dependent protein deacetylase sirtuin-3 OS=Mus musculus OX=10090 GN=Sirt3 PE=1 SV=2	0.27	0.523013455
+Q9D924	Isca1	Iron-sulfur cluster assembly 1 homolog, mitochondrial OS=Mus musculus OX=10090 GN=Isca1 PE=2 SV=1	0.13	0.527813958
+Q8CA04	Mrpl9	Uncharacterized protein OS=Mus musculus OX=10090 GN=Mrpl9 PE=2 SV=1	0.15	0.527813958
+Q9DCT8	Crip2	Cysteine-rich protein 2 OS=Mus musculus OX=10090 GN=Crip2 PE=1 SV=1	-0.14	0.530207559
+Q99J39	Mlycd	Malonyl-CoA decarboxylase, mitochondrial OS=Mus musculus OX=10090 GN=Mlycd PE=1 SV=1	0.18	0.532717977
+Q9JKL4	Ndufaf3	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly factor 3 OS=Mus musculus OX=10090 GN=Ndufaf3 PE=1 SV=1	0.2	0.533789663
+Q99JR6	Nmnat3	Nicotinamide/nicotinic acid mononucleotide adenylyltransferase 3 OS=Mus musculus OX=10090 GN=Nmnat3 PE=1 SV=1	-0.19	0.535032318
+O70318	Epb4.1l2; Epb41l2	Band 4.1-like protein 2 OS=Mus musculus OX=10090 GN=Epb41l2 PE=1 SV=2	0.63	0.536462941
+Q60936	Adck3; Coq8a	Atypical kinase COQ8A, mitochondrial OS=Mus musculus OX=10090 GN=Coq8a PE=1 SV=2	-0.32	0.540056435
+Q3UBZ3	Capza2	F-actin-capping protein subunit alpha OS=Mus musculus OX=10090 GN=Capza2 PE=2 SV=1	-0.09	0.546328109
+E9Q5J9	Tpm3	Tropomyosin alpha-3 chain OS=Mus musculus OX=10090 GN=Tpm3 PE=1 SV=1	0.35	0.546328109
+Q9CQ40	Mrpl49	39S ribosomal protein L49, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl49 PE=1 SV=1	-0.16	0.550980224
+E9PUR2		Unconventional myosin-XVIIIa (Fragment) OS=Mus musculus OX=10090 GN=Myo18a PE=1 SV=2	0.3	0.559336348
+A2AQ17	Ndufaf1	Complex I intermediate-associated protein 30, mitochondrial OS=Mus musculus OX=10090 GN=Ndufaf1 PE=1 SV=1	-0.95	0.566797186
+Q78J03	Msrb2	Methionine-R-sulfoxide reductase B2, mitochondrial OS=Mus musculus OX=10090 GN=Msrb2 PE=1 SV=1	0.05	0.569834598
+Q9DCW4	Etfb	Electron transfer flavoprotein subunit beta OS=Mus musculus OX=10090 GN=Etfb PE=1 SV=3	0.07	0.57272669
+Q9Z2B8	Myh13	Myosin heavy chain (Fragment) OS=Mus musculus OX=10090 GN=Myh13 PE=4 SV=1	0.34	0.57272669
+Q9ES83	Bves	Blood vessel epicardial substance OS=Mus musculus OX=10090 GN=Bves PE=1 SV=1	0.09	0.573744142
+P09542	Myl3	Myosin light chain 3 OS=Mus musculus OX=10090 GN=Myl3 PE=1 SV=4	-0.1	0.602638593
+Q9CQN6	Tmem14c	Transmembrane protein 14C OS=Mus musculus OX=10090 GN=Tmem14c PE=1 SV=1	0.2	0.608058356
+Q99MR8	Mccc1	Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial OS=Mus musculus OX=10090 GN=Mccc1 PE=1 SV=2	-0.22	0.613405508
+B9V1K9		NADH-ubiquinone oxidoreductase chain 5 OS=Mus musculus domesticus OX=10092 GN=Nd5 PE=3 SV=1	-0.15	0.613405508
+Q9CQN3	Tomm6	Mitochondrial import receptor subunit TOM6 homolog OS=Mus musculus OX=10090 GN=Tomm6 PE=3 SV=1	0.13	0.613405508
+Q9D7J9	Echdc3	Enoyl-CoA hydratase domain-containing protein 3, mitochondrial OS=Mus musculus OX=10090 GN=Echdc3 PE=1 SV=1	-0.56	0.622596318
+Q8R0N6	Adhfe1	Hydroxyacid-oxoacid transhydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Adhfe1 PE=1 SV=2	-0.54	0.626803125
+Q8K0Z7	Taco1	Translational activator of cytochrome c oxidase 1 OS=Mus musculus OX=10090 GN=Taco1 PE=1 SV=1	0.13	0.633067706
+Q9JKS4	Ldb3	LIM domain-binding protein 3 OS=Mus musculus OX=10090 GN=Ldb3 PE=1 SV=1	-0.27	0.633465796
+O35129	Phb2	Prohibitin-2 OS=Mus musculus OX=10090 GN=Phb2 PE=1 SV=1	0.24	0.65565093
+Q3TBC5	Avil	Uncharacterized protein OS=Mus musculus OX=10090 GN=Avil PE=2 SV=1	0.6	0.660403382
+Q9ET78	Jph2	Junctophilin-2 OS=Mus musculus OX=10090 GN=Jph2 PE=1 SV=2	-0.2	0.661411618
+A0A2I3BS41		Vinexin OS=Mus musculus OX=10090 GN=Sorbs3 PE=1 SV=1	-0.95	0.672166047
+Q3URS9	Ccdc51	Coiled-coil domain-containing protein 51 OS=Mus musculus OX=10090 GN=Ccdc51 PE=1 SV=1	0.12	0.672166047
+Q9CWE0	Fam54b; Mtfr1l	Mitochondrial fission regulator 1-like OS=Mus musculus OX=10090 GN=Mtfr1l PE=1 SV=1	0.9	0.672903577
+A6H6E2	Mmrn2	Multimerin-2 OS=Mus musculus OX=10090 GN=Mmrn2 PE=1 SV=1	0.26	0.678330003
+Q5NCI4	Pgam2	Phosphoglycerate mutase OS=Mus musculus OX=10090 GN=Pgam2 PE=1 SV=1	1.4	0.691839239
+Q8K2B3	Sdha	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial OS=Mus musculus OX=10090 GN=Sdha PE=1 SV=1	0.19	0.69235302
+Q7TQ48	Srl	Sarcalumenin OS=Mus musculus OX=10090 GN=Srl PE=1 SV=1	-0.07	0.696548739
+Q8BH59	Slc25a12	Calcium-binding mitochondrial carrier protein Aralar1 OS=Mus musculus OX=10090 GN=Slc25a12 PE=1 SV=1	0.04	0.700038952
+Q3U3J1	Bckdha	2-oxoisovalerate dehydrogenase subunit alpha OS=Mus musculus OX=10090 GN=Bckdha PE=1 SV=1	0	0.716398241
+D3YUT2	Alpk3	Alpha-protein kinase 3 OS=Mus musculus OX=10090 GN=Alpk3 PE=1 SV=1	0.48	0.71938289
+Q50HX2	Rab14	RAB14 protein OS=Mus musculus OX=10090 GN=Rab14 PE=2 SV=1	1.37	0.731882404
+A0A023J654		NADH-ubiquinone oxidoreductase chain 4 OS=Mus musculus musculus OX=39442 GN=ND4 PE=3 SV=1	-0.21	0.732933305
+Q9JKR6	Hyou1	Hypoxia up-regulated protein 1 OS=Mus musculus OX=10090 GN=Hyou1 PE=1 SV=1	0.79	0.734273382
+V9GXI7		39S ribosomal protein L20, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl20 PE=1 SV=1	-0.05	0.737416171
+Q9D6T9	Mrps36	28S ribosomal protein S36, mitochondrial OS=Mus musculus OX=10090 GN=Mrps36 PE=1 SV=1	-1.25	0.743578423
+A0A1G5SJL2	Irgm1	Immunity related GTPase family M member 1 OS=Mus musculus domesticus OX=10092 GN=OTTMUSWSBG00059273 PE=4 SV=1	-0.47	0.743578423
+Q7M754	Gm5409	Try10-like trypsinogen OS=Mus musculus OX=10090 GN=Gm5409 PE=2 SV=1	-0.39	0.74967389
+Q8CBE6	Dag1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Dag1 PE=2 SV=1	-0.01	0.752311828
+P11404	Fabp3	Fatty acid-binding protein, heart OS=Mus musculus OX=10090 GN=Fabp3 PE=1 SV=5	-0.1	0.752499365
+Q8JZN5	Acad9	Acyl-CoA dehydrogenase family member 9, mitochondrial OS=Mus musculus OX=10090 GN=Acad9 PE=1 SV=2	-0.01	0.753142052
+Q3TEA8	Hp1bp3	Heterochromatin protein 1-binding protein 3 OS=Mus musculus OX=10090 GN=Hp1bp3 PE=1 SV=1	0.14	0.756525441
+Q3TD78	Gbas; Nipsnap2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Nipsnap2 PE=2 SV=1	0.05	0.764032536
+Q5QGU0	Reep5	Receptor expression-enhancing protein OS=Mus musculus OX=10090 GN=Reep5 PE=2 SV=1	0.11	0.766731064
+Q59J78	Ndufaf2	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly factor 2 OS=Mus musculus OX=10090 GN=Ndufaf2 PE=1 SV=1	0.11	0.768
+Q9CQA3	Sdhb	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mitochondrial OS=Mus musculus OX=10090 GN=Sdhb PE=1 SV=1	-0.03	0.776697957
+Q9CXS4	Cenpv	Centromere protein V OS=Mus musculus OX=10090 GN=Cenpv PE=1 SV=2	-0.13	0.777125238
+P13541	Myh3	Myosin-3 OS=Mus musculus OX=10090 GN=Myh3 PE=2 SV=2	-0.01	0.779106195
+Q91YE8	Synpo2	Synaptopodin-2 OS=Mus musculus OX=10090 GN=Synpo2 PE=1 SV=2	0.12	0.780184132
+P56382	Atp5e	ATP synthase subunit epsilon, mitochondrial OS=Mus musculus OX=10090 GN=Atp5f1e PE=1 SV=2	-0.65	0.790495888
+Q91WK1	Spryd4	SPRY domain-containing protein 4 OS=Mus musculus OX=10090 GN=Spryd4 PE=1 SV=1	0.04	0.790495888
+Q99KR7	Ppif	Peptidyl-prolyl cis-trans isomerase F, mitochondrial OS=Mus musculus OX=10090 GN=Ppif PE=1 SV=1	-0.12	0.791198798
+Q64521	Gpd2	Glycerol-3-phosphate dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Gpd2 PE=1 SV=2	0.0005	0.793931166
+Q8BWT1	Acaa2	3-ketoacyl-CoA thiolase, mitochondrial OS=Mus musculus OX=10090 GN=Acaa2 PE=1 SV=3	0.03	0.801390497
+Q9DC77	Smpx	Small muscular protein OS=Mus musculus OX=10090 GN=Smpx PE=1 SV=2	-0.2	0.806331023
+A0A0J9YTR2		RIKEN cDNA 0610012G03 gene OS=Mus musculus OX=10090 GN=0610012G03Rik PE=1 SV=1	-0.06	0.806331023
+Q5SX53	Slc25a11	Solute carrier family 25 (Mitochondrial carrier oxoglutarate carrier), member 11, isoform CRA_b OS=Mus musculus OX=10090 GN=Slc25a11 PE=1 SV=1	0.13	0.806999259
+A0A1L1SRJ1		Protein-cysteine N-palmitoyltransferase HHAT-like protein (Fragment) OS=Mus musculus OX=10090 GN=Hhatl PE=1 SV=1	0.35	0.809128679
+Q9Z2I0	Letm1	Mitochondrial proton/calcium exchanger protein OS=Mus musculus OX=10090 GN=Letm1 PE=1 SV=1	0.26	0.813177896
+H3BKG0		Caveolin-1 OS=Mus musculus OX=10090 GN=Cav1 PE=1 SV=1	0.14	0.820936204
+Q9ES94	Ctsz	Cathepsin Z OS=Mus musculus OX=10090 GN=Ctsz PE=2 SV=1	-0.11	0.821171279
+Q3UFZ6	Caprin1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Caprin1 PE=2 SV=1	-0.32	0.825241255
+Q924X2	Cpt1b	Carnitine O-palmitoyltransferase 1, muscle isoform OS=Mus musculus OX=10090 GN=Cpt1b PE=1 SV=1	0.15	0.825241255
+Q8BZM2	Anks1b	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Anks1b PE=2 SV=1	1.3	0.828681145
+Q3V384	Lace1; Afg1l	AFG1-like ATPase OS=Mus musculus OX=10090 GN=Afg1l PE=1 SV=1	0.23	0.833047035
+O88967	Yme1l1	ATP-dependent zinc metalloprotease YME1L1 OS=Mus musculus OX=10090 GN=Yme1l1 PE=1 SV=1	-0.02	0.833486578
+Q8C8R3	Ank2	Ankyrin-2 OS=Mus musculus OX=10090 GN=Ank2 PE=1 SV=2	-0.35	0.842197197
+P51667	Myl2	Myosin regulatory light chain 2, ventricular/cardiac muscle isoform OS=Mus musculus OX=10090 GN=Myl2 PE=1 SV=3	0.01	0.857526338
+Q9D1H8	Mrpl53	39S ribosomal protein L53, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl53 PE=1 SV=1	0.1	0.863379275
+Q6RUT7	BC003965	Protein CCSMST1 OS=Mus musculus OX=10090 GN=Ccsmst1 PE=1 SV=1	-0.1	0.867010737
+S4W0E5	St5	Suppression of tumorigenicity 5 splice variant 1 (Fragment) OS=Mus musculus OX=10090 GN=St5 PE=2 SV=1	-0.27	0.877750158
+Q3TIU1	Slc16a1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Slc16a1 PE=2 SV=1	0.08	0.879848501
+Q9EQ20	Aldh6a1	Methylmalonate-semialdehyde dehydrogenase [acylating], mitochondrial OS=Mus musculus OX=10090 GN=Aldh6a1 PE=1 SV=1	-0.06	0.893670286
+Q01768	Nme2	Nucleoside diphosphate kinase B OS=Mus musculus OX=10090 GN=Nme2 PE=1 SV=1	0.26	0.894365247
+Q5SX39	Myh4	Myosin-4 OS=Mus musculus OX=10090 GN=Myh4 PE=2 SV=1	0.25	0.898145105
+Q9QZH6	Ecsit	Evolutionarily conserved signaling intermediate in Toll pathway, mitochondrial OS=Mus musculus OX=10090 GN=Ecsit PE=1 SV=2	-3.17	0.900308498
+Q9CPQ3	Tomm22	Mitochondrial import receptor subunit TOM22 homolog OS=Mus musculus OX=10090 GN=Tomm22 PE=1 SV=3	0.05	0.91271207
+A0A1B0GSL6		Methylmalonic aciduria type A homolog, mitochondrial OS=Mus musculus OX=10090 GN=Mmaa PE=1 SV=1	0.13	0.921869919
+K7X735		NADH-ubiquinone oxidoreductase chain 2 OS=Mus musculus domesticus OX=10092 GN=ND2 PE=3 SV=1	0.12	0.924685297
+Q9D6U8	Fam162a	Protein FAM162A OS=Mus musculus OX=10090 GN=Fam162a PE=1 SV=1	0.06	0.930706082
+Q9CRB6	Tppp3	Tubulin polymerization-promoting protein family member 3 OS=Mus musculus OX=10090 GN=Tppp3 PE=1 SV=1	0.05	0.933859869
+Q9CR06	Asph	Aspartate-beta-hydroxylase, isoform CRA_a OS=Mus musculus OX=10090 GN=Asph PE=1 SV=1	-0.09	0.935250747
+Q921H8	Acaa1a	3-ketoacyl-CoA thiolase A, peroxisomal OS=Mus musculus OX=10090 GN=Acaa1a PE=1 SV=1	-0.13	0.936245793
+Q14BV6	Ydjc	Carbohydrate deacetylase OS=Mus musculus OX=10090 GN=Ydjc PE=2 SV=2	-0.01	0.93684569
+Q9Z1A9	Tbc1d8	TBC1 domain family member 8 OS=Mus musculus OX=10090 GN=Tbc1d8 PE=1 SV=2	0.17	0.942717923
+Q9JKF7	Mrpl39	39S ribosomal protein L39, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl39 PE=1 SV=4	-0.29	0.946722527
+P50544	Acadvl	Very long-chain specific acyl-CoA dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Acadvl PE=1 SV=3	0.15	0.959772494
+Q5M8N4		Epimerase family protein SDR39U1 OS=Mus musculus OX=10090 GN=Sdr39u1 PE=1 SV=2	0.00018	0.960694243
+Q9D1I5	Mcee	Methylmalonyl-CoA epimerase, mitochondrial OS=Mus musculus OX=10090 GN=Mcee PE=1 SV=1	0.31	0.971624558
+Q3U122	Acta2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Acta2 PE=2 SV=1	0.01	0.975455143
+Q3TEN9	Gyk; Gk	Uncharacterized protein OS=Mus musculus OX=10090 GN=Gk PE=2 SV=1	-0.11	0.977792499
+E9PY45		Mitochondrial glutamate carrier 1 (Fragment) OS=Mus musculus OX=10090 GN=Slc25a22 PE=1 SV=4	-0.12	0.983457078
+Q78ZJ8	Rab11b	MCG22989, isoform CRA_b OS=Mus musculus OX=10090 GN=Rab11b PE=1 SV=1	-0.26	0.985288193
+E9Q1X8		Voltage-dependent calcium channel subunit alpha-2/delta-1 OS=Mus musculus OX=10090 GN=Cacna2d1 PE=1 SV=2	-0.2	0.990893195
+Q9JHJ0	Tmod3	Tropomodulin-3 OS=Mus musculus OX=10090 GN=Tmod3 PE=1 SV=1	-0.11	0.990893195
+A2ASS6	Ttn	Titin OS=Mus musculus OX=10090 GN=Ttn PE=1 SV=1	-0.13	0.994645884
+P70290	Mpp1	55 kDa erythrocyte membrane protein OS=Mus musculus OX=10090 GN=Mpp1 PE=1 SV=1	-0.37	0.997922336
+Q8VCT4	Ces1d	Carboxylesterase 1D OS=Mus musculus OX=10090 GN=Ces1d PE=1 SV=1	-6.64	NA
+Q6NXH9	Krt73	Keratin, type II cytoskeletal 73 OS=Mus musculus OX=10090 GN=Krt73 PE=1 SV=1	-6.64	NA
+Q50HX0	Rab14	RAB14 protein OS=Mus musculus OX=10090 GN=Rab14 PE=2 SV=1	-6.64	NA
+Q3U2A8	Vars2	Valine--tRNA ligase, mitochondrial OS=Mus musculus OX=10090 GN=Vars2 PE=1 SV=2	-6.64	NA
+Q61733	Mrps31	28S ribosomal protein S31, mitochondrial OS=Mus musculus OX=10090 GN=Mrps31 PE=1 SV=1	-1.22	NA
+Q3TN26	Slc27a1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Slc27a1 PE=2 SV=1	-0.45	NA
+Q9R099	Tbl2	Transducin beta-like protein 2 OS=Mus musculus OX=10090 GN=Tbl2 PE=1 SV=2	0.13	NA
+B2RXS4	Plxnb2	Plexin-B2 OS=Mus musculus OX=10090 GN=Plxnb2 PE=1 SV=1	0.35	NA
+A0A338P6G0		Omega-amidase NIT2 OS=Mus musculus OX=10090 GN=Nit2 PE=1 SV=1	0.37	NA
+Q8BVJ7	Pdlim7	PDZ and LIM domain 7, isoform CRA_f OS=Mus musculus OX=10090 GN=Pdlim7 PE=1 SV=1	0.53	NA
+Q2VPR3	Chtop	2500003M10Rik protein (Fragment) OS=Mus musculus OX=10090 GN=Chtop PE=2 SV=1	0.58	NA
+O35609	Scamp3	Secretory carrier-associated membrane protein 3 OS=Mus musculus OX=10090 GN=Scamp3 PE=1 SV=3	0.83	NA
+P50543	S100a11	Protein S100-A11 OS=Mus musculus OX=10090 GN=S100a11 PE=1 SV=1	1.02	NA
+Q80YP5	Itga5	Integrin alpha 5 (Fibronectin receptor alpha) OS=Mus musculus OX=10090 GN=Itga5 PE=2 SV=1	1.07	NA
+A0A0N4SWI4		Protein FAM136A OS=Mus musculus OX=10090 GN=Fam136a PE=1 SV=1	1.13	NA
+F6SQH7		Polymerase delta-interacting protein 2 (Fragment) OS=Mus musculus OX=10090 GN=Poldip2 PE=1 SV=1	1.21	NA
+Q9CQI7	Snrpb2	U2 small nuclear ribonucleoprotein B'' OS=Mus musculus OX=10090 GN=Snrpb2 PE=1 SV=1	1.49	NA
+Q3U518	Prkcsh	Protein kinase C substrate 80K-H, isoform CRA_b OS=Mus musculus OX=10090 GN=Prkcsh PE=2 SV=1	1.57	NA
+Q9CXV1	Sdhd	Succinate dehydrogenase [ubiquinone] cytochrome b small subunit, mitochondrial OS=Mus musculus OX=10090 GN=Sdhd PE=1 SV=2	1.71	NA
+Q9JIG8	Praf2	PRA1 family protein 2 OS=Mus musculus OX=10090 GN=Praf2 PE=1 SV=1	1.85	NA
+Q3U3Q7	Ace	Angiotensin-converting enzyme OS=Mus musculus OX=10090 GN=Ace PE=2 SV=1	2.06	NA
+Q9JJL8	Sars2	Serine--tRNA ligase, mitochondrial OS=Mus musculus OX=10090 GN=Sars2 PE=1 SV=2	2.08	NA
+Q99KF1	Tmed9	Transmembrane emp24 domain-containing protein 9 OS=Mus musculus OX=10090 GN=Tmed9 PE=1 SV=2	2.17	NA
+Q3UMA4	Fermt2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Fermt2 PE=2 SV=1	2.2	NA
+A0A2R8VHY9		Poly(rC)-binding protein 2 (Fragment) OS=Mus musculus OX=10090 GN=Pcbp2 PE=1 SV=1	2.26	NA
+Q9D6Z0	Alkbh7	Alpha-ketoglutarate-dependent dioxygenase alkB homolog 7, mitochondrial OS=Mus musculus OX=10090 GN=Alkbh7 PE=1 SV=1	2.5	NA
+Q9R0Q6	Arpc1a	Actin-related protein 2/3 complex subunit 1A OS=Mus musculus OX=10090 GN=Arpc1a PE=1 SV=1	2.55	NA
+Q8BZF8	Pgm5	Phosphoglucomutase-like protein 5 OS=Mus musculus OX=10090 GN=Pgm5 PE=1 SV=2	2.59	NA
+Q9CSC2	Snx3	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Snx3 PE=2 SV=1	2.67	NA
+P45591	Cfl2	Cofilin-2 OS=Mus musculus OX=10090 GN=Cfl2 PE=1 SV=1	2.7	NA
+Q3TEB2	Dhx9	Uncharacterized protein OS=Mus musculus OX=10090 GN=Dhx9 PE=2 SV=1	3.69	NA
+Q54AC6	Cox17	Cox17p OS=Mus musculus OX=10090 GN=Cox17 PE=1 SV=1	4.35	NA
+F7CVJ5		AHNAK nucleoprotein 2 (Fragment) OS=Mus musculus OX=10090 GN=Ahnak2 PE=1 SV=1	4.37	NA
+Q3TWN8	Aldh18a1	Delta-1-pyrroline-5-carboxylate synthase OS=Mus musculus OX=10090 GN=Aldh18a1 PE=2 SV=1	4.9	NA
+E0CYV9	LOC102634333; 1110002E22Rik	Uncharacterized protein C4orf54 homolog OS=Mus musculus OX=10090 PE=1 SV=1	5.5	NA
+A9YSG1	Xirp2	Xin-beta isoform B (Fragment) OS=Mus musculus OX=10090 GN=Xirp2 PE=2 SV=1	6.18	NA
+Q9CVB6	Arpc2	Actin-related protein 2/3 complex subunit 2 OS=Mus musculus OX=10090 GN=Arpc2 PE=1 SV=3	6.64	NA
+Q8BKZ3	Cap2	Adenylyl cyclase-associated protein OS=Mus musculus OX=10090 GN=Cap2 PE=2 SV=1	6.64	NA
+A0A1L1SV25		Alpha-actinin-4 OS=Mus musculus OX=10090 GN=Actn4 PE=1 SV=1	6.64	NA
+A0A1L1SRX2	Ampd3	AMP deaminase OS=Mus musculus OX=10090 GN=Ampd3 PE=1 SV=1	6.64	NA
+Q922B2	Dars	Aspartate--tRNA ligase, cytoplasmic OS=Mus musculus OX=10090 GN=Dars PE=1 SV=2	6.64	NA
+Q99LE6	Abcf2	ATP-binding cassette sub-family F member 2 OS=Mus musculus OX=10090 GN=Abcf2 PE=1 SV=1	6.64	NA
+B3V097	Cstf2	BetaCstF-64 variant 3 OS=Mus musculus OX=10090 GN=Cstf2 PE=2 SV=1	6.64	NA
+Q9QYB1	Clic4	Chloride intracellular channel protein 4 OS=Mus musculus OX=10090 GN=Clic4 PE=1 SV=3	6.64	NA
+A0A0R4J0B4	Cmas	Cytidine monophospho-N-acetylneuraminic acid synthetase OS=Mus musculus OX=10090 GN=Cmas PE=1 SV=1	6.64	NA
+O08614	Utrn	Cytoskeletal protein OS=Mus musculus OX=10090 GN=Utrn PE=2 SV=1	6.64	NA
+Q9D113	Dnlz	DNL-type zinc finger protein OS=Mus musculus OX=10090 GN=Dnlz PE=1 SV=1	6.64	NA
+Q3TPZ5	Dctn2	Dynactin 2 OS=Mus musculus OX=10090 GN=Dctn2 PE=1 SV=1	6.64	NA
+E9QP49	Ehbp1l1	EH domain-binding protein 1-like protein 1 OS=Mus musculus OX=10090 GN=Ehbp1l1 PE=1 SV=1	6.64	NA
+Q66JW9	Eif3j2	Eif3j protein (Fragment) OS=Mus musculus OX=10090 GN=Eif3j PE=2 SV=1	6.64	NA
+Q3UFF9	Elavl1	ELAV-like protein OS=Mus musculus OX=10090 GN=Elavl1 PE=2 SV=1	6.64	NA
+A0A1Y7VJW9	Fbln5	Fibulin-5 OS=Mus musculus OX=10090 GN=Fbln5 PE=1 SV=1	6.64	NA
+A2AEX6	Fhl1	Four and a half LIM domains protein 1 OS=Mus musculus OX=10090 GN=Fhl1 PE=1 SV=1	6.64	NA
+O70310	Nmt1	Glycylpeptide N-tetradecanoyltransferase 1 OS=Mus musculus OX=10090 GN=Nmt1 PE=1 SV=1	6.64	NA
+D3YWB5	Gimap4	GTPase IMAP family member 4 OS=Mus musculus OX=10090 GN=Gimap4 PE=1 SV=1	6.64	NA
+Q00PI9	Hnrnpul2	Heterogeneous nuclear ribonucleoprotein U-like protein 2 OS=Mus musculus OX=10090 GN=Hnrnpul2 PE=1 SV=2	6.64	NA
+P85094	Isoc2a	Isochorismatase domain-containing protein 2A OS=Mus musculus OX=10090 GN=Isoc2a PE=1 SV=1	6.64	NA
+Q059G7	Mrps21	MCG16762, isoform CRA_a OS=Mus musculus OX=10090 GN=Mrps21 PE=1 SV=1	6.64	NA
+A2ARP8	Map1a; Mtap1a	Microtubule-associated protein 1A OS=Mus musculus OX=10090 GN=Map1a PE=1 SV=1	6.64	NA
+Q91VR7	Map1lc3a	Microtubule-associated proteins 1A/1B light chain 3A OS=Mus musculus OX=10090 GN=Map1lc3a PE=1 SV=1	6.64	NA
+A0A0A6YWB0	Mbnl1	Muscleblind-like protein 1 OS=Mus musculus OX=10090 GN=Mbnl1 PE=1 SV=1	6.64	NA
+O08692	Ngp	Neutrophilic granule protein OS=Mus musculus OX=10090 GN=Ngp PE=1 SV=1	6.64	NA
+Q9D0T1	Nhp2l1; Snu13; LOC100862468	NHP2-like protein 1 OS=Mus musculus OX=10090 GN=Snu13 PE=1 SV=4	6.64	NA
+Q7M739	Tpr	Nuclear pore complex-associated intranuclear coiled-coil protein TPR OS=Mus musculus OX=10090 GN=Tpr PE=1 SV=1	6.64	NA
+E9QMY1		OX-2 membrane glycoprotein OS=Mus musculus OX=10090 GN=Cd200 PE=1 SV=1	6.64	NA
+Q8R326	Pspc1	Paraspeckle component 1 OS=Mus musculus OX=10090 GN=Pspc1 PE=1 SV=1	6.64	NA
+A0A097BW21	Postn	Periostin isoform M2 OS=Mus musculus OX=10090 GN=Postn PE=2 SV=1	6.64	NA
+A0A1L1SUR7		Phosphatidylinositol-binding clathrin assembly protein (Fragment) OS=Mus musculus OX=10090 GN=Picalm PE=1 SV=1	6.64	NA
+A0A0R4J0G0	Pck2	Phosphoenolpyruvate carboxykinase [GTP], mitochondrial OS=Mus musculus OX=10090 GN=Pck2 PE=1 SV=1	6.64	NA
+J3QP87		Predicted pseudogene 2035 OS=Mus musculus OX=10090 GN=Gm2035 PE=3 SV=1	6.64	NA
+Q99KP6	Prpf19	Pre-mRNA-processing factor 19 OS=Mus musculus OX=10090 GN=Prpf19 PE=1 SV=1	6.64	NA
+Q9JK53	Prelp	Prolargin OS=Mus musculus OX=10090 GN=Prelp PE=1 SV=2	6.64	NA
+Q9WVE8	Pacsin2	Protein kinase C and casein kinase substrate in neurons protein 2 OS=Mus musculus OX=10090 GN=Pacsin2 PE=1 SV=1	6.64	NA
+Q3TJ21	Pycr2	Pyrroline-5-carboxylate reductase OS=Mus musculus OX=10090 GN=Pycr2 PE=2 SV=1	6.64	NA
+Q64012	Raly	RNA-binding protein Raly OS=Mus musculus OX=10090 GN=Raly PE=1 SV=3	6.64	NA
+T1ECW4	Rbpms	RNA-binding protein with multiple-splicing OS=Mus musculus OX=10090 GN=Rbpms PE=1 SV=1	6.64	NA
+Q64337	Sqstm1	Sequestosome-1 OS=Mus musculus OX=10090 GN=Sqstm1 PE=1 SV=1	6.64	NA
+A2AFS1		Serine--tRNA ligase, cytoplasmic (Fragment) OS=Mus musculus OX=10090 GN=Sars PE=1 SV=8	6.64	NA
+Q564E6	Ssb	Sjogren syndrome antigen B, isoform CRA_a OS=Mus musculus OX=10090 GN=Ssb PE=1 SV=1	6.64	NA
+Q3V424	Snrpg	Small nuclear ribonucleoprotein G OS=Mus musculus OX=10090 PE=2 SV=1	6.64	NA
+A0JLM6	Smc1a	Smc1a protein (Fragment) OS=Mus musculus OX=10090 GN=Smc1a PE=2 SV=1	6.64	NA
+Q9CWK8	Snx2	Sorting nexin-2 OS=Mus musculus OX=10090 GN=Snx2 PE=1 SV=2	6.64	NA
+D3Z3F8		Spastic paraplegia 20, spartin (Troyer syndrome) homolog (human) OS=Mus musculus OX=10090 GN=Spg20 PE=1 SV=1	6.64	NA
+E9Q366		Spermatogenesis-associated glutamate (E)-rich protein 4f2 OS=Mus musculus OX=10090 GN=Speer4f2 PE=4 SV=2	6.64	NA
+E9Q133		T-complex protein 1 subunit gamma OS=Mus musculus OX=10090 GN=Cct3 PE=1 SV=1	6.64	NA
+Q3UWG5	Cd81	Tetraspanin OS=Mus musculus OX=10090 GN=Cd81 PE=2 SV=1	6.64	NA
+Q62219	Tgfb1i1	Transforming growth factor beta-1-induced transcript 1 protein OS=Mus musculus OX=10090 GN=Tgfb1i1 PE=1 SV=2	6.64	NA
+P63028	Tpt1	Translationally-controlled tumor protein OS=Mus musculus OX=10090 GN=Tpt1 PE=1 SV=1	6.64	NA
+Q9D8Y1	Tmem126a	Transmembrane protein 126A OS=Mus musculus OX=10090 GN=Tmem126a PE=1 SV=1	6.64	NA
+Q91WQ3	Yars	Tyrosine--tRNA ligase, cytoplasmic OS=Mus musculus OX=10090 GN=Yars PE=1 SV=3	6.64	NA
+A0A1W2P7Z3		Ubiquitin-conjugating enzyme E2 N OS=Mus musculus OX=10090 GN=Ube2n PE=1 SV=1	6.64	NA
+Q9CV24	Eif2s1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Eif2s1 PE=2 SV=1	6.64	NA
+Q3TFF0	Dnaja2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Dnaja2 PE=2 SV=1	6.64	NA
+Q3TLQ9	Eif4b	Uncharacterized protein OS=Mus musculus OX=10090 GN=Eif4b PE=2 SV=1	6.64	NA
+Q3UIW3	Lamp2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Lamp2 PE=2 SV=1	6.64	NA
+Q3URS8	Mlf2	Uncharacterized protein OS=Mus musculus OX=10090 GN=Mlf2 PE=2 SV=1	6.64	NA
+Q4FJZ4	Wars	Wars protein OS=Mus musculus OX=10090 GN=Wars PE=2 SV=1	6.64	NA
+Q9ERU3	Zfp422	Zinc finger protein 22 OS=Mus musculus OX=10090 GN=Znf22 PE=1 SV=2	6.64	NA
+G3UX79		28S ribosomal protein S18b, mitochondrial (Fragment) OS=Mus musculus OX=10090 GN=Mrps18b PE=1 SV=1	NA	NA
+Q8BU88	Mrpl22	39S ribosomal protein L22, mitochondrial OS=Mus musculus OX=10090 GN=Mrpl22 PE=1 SV=1	NA	NA
+B2RWB7	9630033F20Rik; Tigar	9630033F20Rik protein OS=Mus musculus OX=10090 GN=Tigar PE=1 SV=1	NA	NA
+Q99L15	Acot1	Acot1 protein (Fragment) OS=Mus musculus OX=10090 GN=Acot1 PE=2 SV=1	NA	NA
+Q9ESW4	Agk	Acylglycerol kinase, mitochondrial OS=Mus musculus OX=10090 GN=Agk PE=1 SV=1	NA	NA
+Q8BFZ3	Actbl2	Beta-actin-like protein 2 OS=Mus musculus OX=10090 GN=Actbl2 PE=1 SV=1	NA	NA
+Q9JJA0	Gstz1	Brain cDNA, clone MNCb-6148, similar to Mus musculus glutathione transferase zeta 1 (maleylacetoacetate isomerase) (Gstz1), mRNA OS=Mus musculus OX=10090 GN=Gstz1 PE=2 SV=1	NA	NA
+P61022	1500003O03Rik; Chp1	Calcineurin B homologous protein 1 OS=Mus musculus OX=10090 GN=Chp1 PE=1 SV=2	NA	NA
+Q91VJ2	Prkcdbp; Cavin3	Caveolae-associated protein 3 OS=Mus musculus OX=10090 GN=Cavin3 PE=1 SV=1	NA	NA
+A2AC10	Stra13; Cenpx	Centromere protein X OS=Mus musculus OX=10090 GN=Cenpx PE=4 SV=1	NA	NA
+Q8BGT4	C8b	Complement component 8 beta subunit (Fragment) OS=Mus musculus OX=10090 PE=4 SV=1	NA	NA
+Q6A0A9	Fam120a	Constitutive coactivator of PPAR-gamma-like protein 1 OS=Mus musculus OX=10090 GN=FAM120A PE=1 SV=2	NA	NA
+Q3T9L1	Coro1a	Coronin OS=Mus musculus OX=10090 GN=Coro1a PE=2 SV=1	NA	NA
+Q99M07	Coa5	Cytochrome c oxidase assembly factor 5 OS=Mus musculus OX=10090 GN=Coa5 PE=1 SV=1	NA	NA
+Q8BGD8	1810063B05Rik; Coa6	Cytochrome c oxidase assembly factor 6 homolog OS=Mus musculus OX=10090 GN=Coa6 PE=1 SV=1	NA	NA
+A2BFF8	Dync1i2	Cytoplasmic dynein 1 intermediate chain 2 OS=Mus musculus OX=10090 GN=Dync1i2 PE=1 SV=1	NA	NA
+Q61478	Csda; Ybx3	DbpA murine homologue OS=Mus musculus OX=10090 GN=Ybx3 PE=2 SV=1	NA	NA
+Q6IS54	Ddx51	Ddx51 protein (Fragment) OS=Mus musculus OX=10090 GN=Ddx51 PE=2 SV=1	NA	NA
+Q6PEU5	Dsc2	Desmocollin 2 OS=Mus musculus OX=10090 GN=Dsc2 PE=2 SV=1	NA	NA
+O55111	Dsg2	Desmoglein-2 OS=Mus musculus OX=10090 GN=Dsg2 PE=1 SV=3	NA	NA
+Q921D5	Mcm4	DNA helicase OS=Mus musculus OX=10090 GN=Mcm4 PE=2 SV=1	NA	NA
+P23116	Eif3a	Eukaryotic translation initiation factor 3 subunit A OS=Mus musculus OX=10090 GN=Eif3a PE=1 SV=5	NA	NA
+P56213	Gfer	FAD-linked sulfhydryl oxidase ALR OS=Mus musculus OX=10090 GN=Gfer PE=1 SV=2	NA	NA
+A6X940	Fermt2	Fermitin family homolog 2 (Fragment) OS=Mus musculus OX=10090 GN=Fermt2 PE=1 SV=1	NA	NA
+Q80X90	Flnb	Filamin-B OS=Mus musculus OX=10090 GN=Flnb PE=1 SV=3	NA	NA
+Q9CPQ9	Aldoart1	Fructose-bisphosphate aldolase OS=Mus musculus OX=10090 GN=Aldoart1 PE=1 SV=1	NA	NA
+A0A1Y7VN70		Glutaredoxin-related protein 5, mitochondrial OS=Mus musculus OX=10090 GN=Glrx5 PE=1 SV=1	NA	NA
+A2A9I0	Gosr2	Golgi SNAP receptor complex member 2 OS=Mus musculus OX=10090 GN=Gosr2 PE=1 SV=1	NA	NA
+E9QKR0		Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-2 OS=Mus musculus OX=10090 GN=Gnb2 PE=1 SV=1	NA	NA
+P70349	Hint1	Histidine triad nucleotide-binding protein 1 OS=Mus musculus OX=10090 GN=Hint1 PE=1 SV=3	NA	NA
+Q9CTR1	H2afy2	Histone H2A (Fragment) OS=Mus musculus OX=10090 GN=H2afy2 PE=2 SV=1	NA	NA
+Q61191	Hcfc1	Host cell factor 1 OS=Mus musculus OX=10090 GN=Hcfc1 PE=1 SV=2	NA	NA
+A2KFE9	Igkv4-70	Immunglobulin light chain variable region (Fragment) OS=Mus musculus OX=10090 GN=Igkv4-70 PE=2 SV=1	NA	NA
+Q8K4I7	Prss45	Inactive serine protease 45 OS=Mus musculus OX=10090 GN=Prss45 PE=2 SV=1	NA	NA
+G3X9Q1	Itga7	Integrin alpha-7 OS=Mus musculus OX=10090 GN=Itga7 PE=1 SV=1	NA	NA
+Q61033	Tmpo	Lamina-associated polypeptide 2, isoforms alpha/zeta OS=Mus musculus OX=10090 GN=Tmpo PE=1 SV=4	NA	NA
+Q8BHE8	9430016H08Rik; Maip1	m-AAA protease-interacting protein 1, mitochondrial OS=Mus musculus OX=10090 GN=Maip1 PE=1 SV=1	NA	NA
+P15089	Cpa3	Mast cell carboxypeptidase A OS=Mus musculus OX=10090 GN=Cpa3 PE=2 SV=1	NA	NA
+Q9D571	Mtl5; Tesmin	MCG3887, isoform CRA_a OS=Mus musculus OX=10090 GN=Tesmin PE=1 SV=1	NA	NA
+O70423	Aoc3	Membrane primary amine oxidase OS=Mus musculus OX=10090 GN=Aoc3 PE=1 SV=3	NA	NA
+A0A0A0MQC7	Mapt	Microtubule-associated protein OS=Mus musculus OX=10090 GN=Mapt PE=1 SV=1	NA	NA
+Q9DCL9	Paics	Multifunctional protein ADE2 OS=Mus musculus OX=10090 GN=Paics PE=1 SV=4	NA	NA
+B1AR69	Myh13	Myosin, heavy polypeptide 13, skeletal muscle OS=Mus musculus OX=10090 GN=Myh13 PE=1 SV=1	NA	NA
+U3M993	Nsdhl	NAD(P)-dependent steroid dehydrogenase-like protein OS=Mus musculus OX=10090 GN=Nsdhl PE=2 SV=1	NA	NA
+A0A1Y7VM06		Neuronal PAS domain-containing protein 3 OS=Mus musculus OX=10090 GN=Npas3 PE=1 SV=1	NA	NA
+J9JIB2	Obscn	Obscurin (Fragment) OS=Mus musculus OX=10090 GN=Obscn PE=1 SV=1	NA	NA
+Q9QYC1	Pcnx	Pecanex-like protein 1 OS=Mus musculus OX=10090 GN=Pcnx1 PE=1 SV=3	NA	NA
+Q8BVZ1	Plin5	Perilipin-5 OS=Mus musculus OX=10090 GN=Plin5 PE=1 SV=1	NA	NA
+Q3U2B7	Atp11b	Phospholipid-transporting ATPase OS=Mus musculus OX=10090 GN=Atp11b PE=2 SV=1	NA	NA
+Q05BF9	Pdp1	Ppm2c protein OS=Mus musculus OX=10090 GN=Pdp1 PE=2 SV=1	NA	NA
+Q9QUM9	Psma6	Proteasome subunit alpha type-6 OS=Mus musculus OX=10090 GN=Psma6 PE=1 SV=1	NA	NA
+Q80VD1	Fam98b	Protein FAM98B OS=Mus musculus OX=10090 GN=Fam98b PE=1 SV=1	NA	NA
+A0A1D5RLV0	Iws1	Protein IWS1 homolog OS=Mus musculus OX=10090 GN=Iws1 PE=1 SV=1	NA	NA
+Q7TSD4	Tbata	Protein TBATA OS=Mus musculus OX=10090 GN=Tbata PE=1 SV=2	NA	NA
+Q3UDZ1	Rhog	Ras homolog gene family, member G OS=Mus musculus OX=10090 GN=Rhog PE=1 SV=1	NA	NA
+Q3U9U9	Eif4g2	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Eif4g2 PE=2 SV=1	NA	NA
+Q3UTE1	Gm4832	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Gm4832 PE=2 SV=1	NA	NA
+Q9CSU4	Mrpl16	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Mrpl16 PE=2 SV=1	NA	NA
+Q9CSZ8	Mrpl45	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Mrpl45 PE=2 SV=1	NA	NA
+Q9CT46	Ncl	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Ncl PE=2 SV=1	NA	NA
+Q3U0F8	Smarca5	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Smarca5 PE=2 SV=1	NA	NA
+Q3U046	Yap1	Uncharacterized protein (Fragment) OS=Mus musculus OX=10090 GN=Yap1 PE=2 SV=1	NA	NA
+Q8CAP5	Gramd3	Uncharacterized protein OS=Mus musculus OX=10090 GN=Gramd3 PE=2 SV=1	NA	NA
+Q3TFP8	Pgrmc1	Uncharacterized protein OS=Mus musculus OX=10090 GN=Pgrmc1 PE=2 SV=1	NA	NA
+Q8CBM0	Zyx	Uncharacterized protein OS=Mus musculus OX=10090 GN=Zyx PE=2 SV=1	NA	NA
+Q8BNT0	1700017B05Rik	Uncharacterized protein OS=Mus musculus OX=10090 PE=2 SV=1	NA	NA
+D3Z3A8	Myo9a	Unconventional myosin-IXa OS=Mus musculus OX=10090 GN=Myo9a PE=1 SV=1	NA	NA
