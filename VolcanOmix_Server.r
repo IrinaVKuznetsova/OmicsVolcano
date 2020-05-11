@@ -514,20 +514,20 @@ server = function(input, output, session) {
         logFC_threshold_neg = -logFC_threshold_pos                  # logFC_threshold_neg = -(logFC_threshold_pos) 
         signif_threshold    = input$Signif                          # signif_threshold    = 0.05
         
-        # 2.0.5 1-SIGNIF. positive | prot_in$log2FC > neg_val & prot_in$AdjPValue < input$Signif))] = sign_pos_color
+        # 2.0.5 1-SIGNIF. positive | prot_in$Log2FC > neg_val & prot_in$AdjPValue < input$Signif))] = sign_pos_color
         positiv_signif = finaldfpopulated %>%
-          filter( log2FC > logFC_threshold_pos & AdjPValue < signif_threshold) %>%
+          filter( Log2FC > logFC_threshold_pos & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "red")
         
-        # 2.0.6 2-SIGNIF. negative | prot_in$log2FC < -neg_val & prot_in$AdjPValue < input$Signif))] = sign_neg_color
+        # 2.0.6 2-SIGNIF. negative | prot_in$Log2FC < -neg_val & prot_in$AdjPValue < input$Signif))] = sign_neg_color
         neg_signif = finaldfpopulated %>%
-          filter( log2FC < logFC_threshold_neg & AdjPValue < signif_threshold) %>%
+          filter( Log2FC < logFC_threshold_neg & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "blue")
         
         # 2.0.7 3-NOT SIGNIF between [-1;+1]
         notsignif1 = finaldfpopulated %>%
-          filter( AdjPValue < signif_threshold & log2FC >= logFC_threshold_neg,
-                  AdjPValue < signif_threshold & log2FC <= logFC_threshold_pos) %>%
+          filter( AdjPValue < signif_threshold & Log2FC >= logFC_threshold_neg,
+                  AdjPValue < signif_threshold & Log2FC <= logFC_threshold_pos) %>%
           mutate(CharValue = "grey")
         
         # 2.0.8 4-NOT SIGNIF NA are excluded
@@ -537,13 +537,13 @@ server = function(input, output, session) {
         
         # 2.0.9 5-SUBSET to NA 
         na_data = finaldfpopulated %>% 
-          filter(is.na(AdjPValue) | is.na(log2FC)) %>%
+          filter(is.na(AdjPValue) | is.na(Log2FC)) %>%
           mutate(CharValue = "grey2")
         
         # 2.1.0 6-COMBINE ALL filtered data
         df_color        = rbind(positiv_signif, neg_signif, notsignif1, notsignif2, na_data) 
         #browser()
-        return(df_color[, c(1,2,3,4,6,7)])  # ID -	GeneSymbol -	log2FC -	AdjPValue -	Description -	CharValue
+        return(df_color[, c(1,2,3,4,6,7)])  # ID -	GeneSymbol -	Log2FC -	AdjPValue -	Description -	CharValue
       }
     }, error = function(e) {
       displayErrorMessage("File Structure Error in DataFrameWithColors!", "Please refer to the manual.", "") })
@@ -576,14 +576,14 @@ server = function(input, output, session) {
       tex   = list(family   = "sans serif", size  = 14, color = toRGB("#262626"))
       
       # 2.3.1 GGPLOT
-      VolcanoPlotExplore           = ggplot(  data  = DataSharedWithColors , mapping = aes(x = log2FC, y = -log10(AdjPValue), text = GeneSymbol )) +
+      VolcanoPlotExplore           = ggplot(  data  = DataSharedWithColors , mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol )) +
         geom_point( aes( color     = CharValue), show.legend = FALSE ) +
         scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +   # #9fd8fb- blue #cccccc-grey #ffcccc- red  "" none
         geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
         geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
         geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
         theme_classic() +
-        scale_x_continuous(breaks = seq( round( min( DataInputFile()$log2FC, na.rm = T)), round( max( DataInputFile()$log2FC, na.rm = T)), 1) )+
+        scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
         labs( title="Volcano Plot",
               caption= str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
       
@@ -624,7 +624,7 @@ server = function(input, output, session) {
       
       else if (input$OrganismSource == "Mouse" & !is.null(DataInputFile())) {
         # 3.1.0 Initialise input varibales  
-        inputdata  = DataInputFile()       # testdata 1388 5 | ID GeneSymbol Description log2FC AdjPValue
+        inputdata  = DataInputFile()       # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
         refprocess = mm_processes_file     # mm 1495 3       | GeneName Description Process
         ribosomal  = mm_ribos_file         # mm 82   3       | GeneName Description Process
         
@@ -650,20 +650,20 @@ server = function(input, output, session) {
         logFC_threshold_neg = -logFC_threshold_pos                  # logFC_threshold_neg = -(logFC_threshold_pos) 
         signif_threshold    = input$Signif                          # signif_threshold    = 0.05
         
-        # 3.1.5 1-SIGNIF. positive | prot_in$log2FC > neg_val & prot_in$AdjPValue < input$Signif))] = sign_pos_color
+        # 3.1.5 1-SIGNIF. positive | prot_in$Log2FC > neg_val & prot_in$AdjPValue < input$Signif))] = sign_pos_color
         positiv_signif = finaldfpopulated %>%
-          filter( log2FC > logFC_threshold_pos & AdjPValue < signif_threshold) %>%
+          filter( Log2FC > logFC_threshold_pos & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "red")
         
-        # 3.1.6 2-SIGNIF. negative | prot_in$log2FC < -neg_val & prot_in$AdjPValue < input$Signif))] = sign_neg_color
+        # 3.1.6 2-SIGNIF. negative | prot_in$Log2FC < -neg_val & prot_in$AdjPValue < input$Signif))] = sign_neg_color
         neg_signif = finaldfpopulated %>%
-          filter( log2FC < logFC_threshold_neg & AdjPValue < signif_threshold) %>%
+          filter( Log2FC < logFC_threshold_neg & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "blue")
         
         # 3.1.7 3-NOT SIGNIF between [-1;+1]
         notsignif1 = finaldfpopulated %>%
-          filter( AdjPValue < signif_threshold & log2FC >= logFC_threshold_neg,
-                  AdjPValue < signif_threshold & log2FC <= logFC_threshold_pos) %>%
+          filter( AdjPValue < signif_threshold & Log2FC >= logFC_threshold_neg,
+                  AdjPValue < signif_threshold & Log2FC <= logFC_threshold_pos) %>%
           mutate(CharValue = "grey")
         
         # 3.1.8 4-NOT SIGNIF NA are excluded
@@ -673,7 +673,7 @@ server = function(input, output, session) {
         
         # 3.1.9 5-SUBSET to NA 
         na_data = finaldfpopulated %>% 
-          filter(is.na(AdjPValue) | is.na(log2FC)) %>%
+          filter(is.na(AdjPValue) | is.na(Log2FC)) %>%
           mutate(CharValue = "grey2")
         
         # 3.2.0 Add Ribosomal
@@ -684,18 +684,18 @@ server = function(input, output, session) {
         
         # 3.2.1 Sign_pos_color
         positiv_signif_oxpho_rib = combine_oxpho_rib %>%
-          filter( log2FC > logFC_threshold_pos & AdjPValue < signif_threshold) %>%
+          filter( Log2FC > logFC_threshold_pos & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "red")   # dim = 17  8
         
         # 3.2.2 Sign_neg_color
         neg_signif_oxpho_rib = combine_oxpho_rib %>%
-          filter( log2FC < logFC_threshold_neg & AdjPValue < signif_threshold) %>%
+          filter( Log2FC < logFC_threshold_neg & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "blue")  # dim 40  8
         
         # 3.2.3 NOT SIGNIF between [-1;+1]
         notsignif1_oxpho_rib = combine_oxpho_rib %>%
-          filter( AdjPValue < signif_threshold & log2FC >= logFC_threshold_neg,
-                  AdjPValue < signif_threshold & log2FC <= logFC_threshold_pos) %>%
+          filter( AdjPValue < signif_threshold & Log2FC >= logFC_threshold_neg,
+                  AdjPValue < signif_threshold & Log2FC <= logFC_threshold_pos) %>%
           mutate(CharValue = "grey") # dim = 35  8
         
         # 3.2.4 NOT SIGNIF NA are excluded
@@ -705,7 +705,7 @@ server = function(input, output, session) {
         
         # 3.2.5 NAs 
         na_data_oxpho_rib  = combine_oxpho_rib %>% 
-          filter(is.na(AdjPValue) | is.na(log2FC)) %>%
+          filter(is.na(AdjPValue) | is.na(Log2FC)) %>%
           mutate(CharValue = "grey2")  # dim = 5  8
         
         df_color_oxpho_rib = rbind(positiv_signif_oxpho_rib, neg_signif_oxpho_rib, notsignif1_oxpho_rib, notsignif2_oxpho_rib, na_data_oxpho_rib) # dim = 158  8
@@ -724,7 +724,7 @@ server = function(input, output, session) {
       
       else {
         # 3.3.0 Initialise input varibales  
-        inputdata     = DataInputFile()   # testdata 1388 5 | ID GeneSymbol Description log2FC AdjPValue
+        inputdata     = DataInputFile()   # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
         refprocess_hs = hs_processes_file    # mm 1495 3       | GeneName Description Process
         ribosomal_hs  = hs_ribos_file        # mm 82   3       | GeneName Description Process ribosomal
         
@@ -750,20 +750,20 @@ server = function(input, output, session) {
         logFC_threshold_neg_hs = -logFC_threshold_pos_hs                  # logFC_threshold_neg_hs = -(logFC_threshold_pos_hs) 
         signif_threshold       = input$Signif                                # signif_threshold    = 0.05
         
-        # 3.3.6 SIGNIF. positive | prot_in$log2FC > neg_val & prot_in$AdjPValue < input$Signif))] = sign_pos_color
+        # 3.3.6 SIGNIF. positive | prot_in$Log2FC > neg_val & prot_in$AdjPValue < input$Signif))] = sign_pos_color
         positiv_signif_hs = finaldfpopulated_hs %>%
-          filter( log2FC > logFC_threshold_pos_hs & AdjPValue < signif_threshold) %>%
+          filter( Log2FC > logFC_threshold_pos_hs & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "red")
         
-        # 3.3.7 SIGNIF. negative | prot_in$log2FC < -neg_val & prot_in$AdjPValue < input$Signif))] = sign_neg_color
+        # 3.3.7 SIGNIF. negative | prot_in$Log2FC < -neg_val & prot_in$AdjPValue < input$Signif))] = sign_neg_color
         neg_signif_hs = finaldfpopulated_hs %>%
-          filter( log2FC < logFC_threshold_neg_hs & AdjPValue < signif_threshold) %>%
+          filter( Log2FC < logFC_threshold_neg_hs & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "blue")
         
         # 3.3.8 NOT SIGNIF between [-1;+1]
         notsignif1_hs = finaldfpopulated_hs %>%
-          filter( AdjPValue < signif_threshold & log2FC >= logFC_threshold_neg_hs,
-                  AdjPValue < signif_threshold & log2FC <= logFC_threshold_pos_hs) %>%
+          filter( AdjPValue < signif_threshold & Log2FC >= logFC_threshold_neg_hs,
+                  AdjPValue < signif_threshold & Log2FC <= logFC_threshold_pos_hs) %>%
           mutate(CharValue = "grey")
         
         # 3.3.9 NOT SIGNIF NA are excluded
@@ -773,7 +773,7 @@ server = function(input, output, session) {
         
         # 3.4.0 -SUBSET to NA 
         na_data_hs = finaldfpopulated_hs %>% 
-          filter(is.na(AdjPValue) | is.na(log2FC)) %>%
+          filter(is.na(AdjPValue) | is.na(Log2FC)) %>%
           mutate(CharValue = "grey2")
         
         # 3.4.1 Add OXPHOS df and Ribosomal
@@ -784,18 +784,18 @@ server = function(input, output, session) {
         
         # 3.4.2 sign_pos_color
         positiv_signif_oxpho_rib_hs = combine_oxpho_rib_hs %>%
-          filter( log2FC > logFC_threshold_pos_hs & AdjPValue < signif_threshold) %>%
+          filter( Log2FC > logFC_threshold_pos_hs & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "red")   # dim = 17  8
         
         # 3.4.3 sign_neg_color
         neg_signif_oxpho_rib_hs = combine_oxpho_rib_hs %>%
-          filter( log2FC < logFC_threshold_neg_hs & AdjPValue < signif_threshold) %>%
+          filter( Log2FC < logFC_threshold_neg_hs & AdjPValue < signif_threshold) %>%
           mutate(CharValue = "blue")  # dim 40  8
         
         # 3.4.4 NOT SIGNIF between [-1;+1]
         notsignif1_oxpho_rib_hs = combine_oxpho_rib_hs %>%
-          filter( AdjPValue < signif_threshold & log2FC >= logFC_threshold_neg_hs,
-                  AdjPValue < signif_threshold & log2FC <= logFC_threshold_pos_hs) %>%
+          filter( AdjPValue < signif_threshold & Log2FC >= logFC_threshold_neg_hs,
+                  AdjPValue < signif_threshold & Log2FC <= logFC_threshold_pos_hs) %>%
           mutate(CharValue = "grey") # dim = 35  8
         
         # 3.4.5 NOT SIGNIF NA are excluded
@@ -805,7 +805,7 @@ server = function(input, output, session) {
         
         # 3.4.6 NAs 
         na_data_oxpho_rib_hs = combine_oxpho_rib_hs %>% 
-          filter(is.na(AdjPValue) | is.na(log2FC)) %>%
+          filter(is.na(AdjPValue) | is.na(Log2FC)) %>%
           mutate(CharValue = "grey2")  # dim = 5  8
         
         df_color_oxpho_rib_hs = rbind(positiv_signif_oxpho_rib_hs, neg_signif_oxpho_rib_hs, notsignif1_oxpho_rib_hs, notsignif2_oxpho_rib_hs, na_data_oxpho_rib_hs) # dim = 158  8
@@ -890,24 +890,24 @@ server = function(input, output, session) {
       if (input$MtProcess == "Show All Mitochondrial Genes" & input$OrganismSource == "Mouse"){
         # a- data frame with colors for MT mm
         mm_colors_to_highlight_mt_all = AllSharedMitoProcesses$data() %>%  
-          mutate(CharValue  = case_when(AdjPValue < input$Signif & log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
-                                        AdjPValue < input$Signif & log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
-                                        AdjPValue > input$Signif & log2FC > (-1)*as.numeric(input$VerticalThreshold) | log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
+          mutate(CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
+                                        AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
+                                        AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                         AdjPValue > input$Signif  ~ "#6a6a6a" ))   # 485  7
         # b- Crosstalking / share
         mm_all_data_shared = SharedData$new(mm_colors_to_highlight_mt_all)
         
         # c- GGPLOT 
-        VolcanoPlot_mm_allmito = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        VolcanoPlot_mm_allmito = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
           geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = mm_all_data_shared, aes(x = log2FC, y = -log10(AdjPValue)),
+          geom_point(data  = mm_all_data_shared, aes(x = Log2FC, y = -log10(AdjPValue)),
                      color = mm_all_data_shared$origData()[,7], size = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$log2FC, na.rm = T)), round( max( DataInputFile()$log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
@@ -927,24 +927,24 @@ server = function(input, output, session) {
       else if (input$MtProcess == "Show All Mitochondrial Genes" & input$OrganismSource == "Human"){
         # a- data frame with colors for MT human
         hs_colors_to_highlight_mt_all = AllSharedMitoProcesses$data() %>%  
-          mutate(CharValue  = case_when(AdjPValue < input$Signif & log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
-                                        AdjPValue < input$Signif & log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
-                                        AdjPValue > input$Signif & log2FC > (-1)*as.numeric(input$VerticalThreshold) | log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
+          mutate(CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
+                                        AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
+                                        AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                         AdjPValue > input$Signif  ~ "#6a6a6a" ))   # 467   7
         # b- Crosstalking / share
         hs_all_data_shared = SharedData$new(hs_colors_to_highlight_mt_all)
         
         # c- GGPLOT 
-        VolcanoPlot_hs_allmito   = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        VolcanoPlot_hs_allmito   = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
           geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = hs_all_data_shared, aes(x = log2FC, y = -log10(AdjPValue)),
+          geom_point(data  = hs_all_data_shared, aes(x = Log2FC, y = -log10(AdjPValue)),
                      color = hs_all_data_shared$origData()[,7], size = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$log2FC, na.rm = T)), round( max( DataInputFile()$log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
@@ -968,24 +968,24 @@ server = function(input, output, session) {
         # a- data frame with colors for MT processes mouse
         colors_to_highlight_process = DataSharedForMitoProcess$data() %>%
           filter( Process   == input$MtProcess)     %>%
-          mutate(CharValue  = case_when(AdjPValue < input$Signif & log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
-                                        AdjPValue < input$Signif & log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
-                                        AdjPValue > input$Signif & log2FC > (-1)*as.numeric(input$VerticalThreshold) | log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
+          mutate(CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
+                                        AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
+                                        AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                         AdjPValue > input$Signif  ~ "#6a6a6a" ))
         # b- crosstalking sharing dataframe with colors
         data_shared_mm_process = SharedData$new(colors_to_highlight_process)  #works but only for highlighted dots
         
         # c- GGPLOT | Volcano plot
-        VolcanoPlot_mm_process = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        VolcanoPlot_mm_process = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
           geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = data_shared_mm_process, aes(x = log2FC, y = -log10(AdjPValue)),
+          geom_point(data  = data_shared_mm_process, aes(x = Log2FC, y = -log10(AdjPValue)),
                      color = data_shared_mm_process$origData()[,7], size = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$log2FC, na.rm = T)), round( max( DataInputFile()$log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
@@ -1013,24 +1013,24 @@ server = function(input, output, session) {
         # a- data frame with colors for MT processes mouse
         colors_to_highlight_hs_process = DataSharedForMitoProcess$data() %>%
           filter( Process   == input$MtProcess)     %>%
-          mutate(CharValue  = case_when(AdjPValue < input$Signif & log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
-                                        AdjPValue < input$Signif & log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
-                                        AdjPValue > input$Signif & log2FC > (-1)*as.numeric(input$VerticalThreshold) | log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
+          mutate(CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
+                                        AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
+                                        AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                         AdjPValue > input$Signif  ~ "#6a6a6a" ))
         # b- crosstalking sharing dataframe with colors
         data_shared_hs_process = SharedData$new(colors_to_highlight_hs_process)  #works but only for highlighted dots
         
         # c- GGPLOT | Volcano plot
-        VolcanoPlot_hs_process = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        VolcanoPlot_hs_process = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
           geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
           geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = data_shared_hs_process, aes(x = log2FC, y = -log10(AdjPValue)),
+          geom_point(data  = data_shared_hs_process, aes(x = Log2FC, y = -log10(AdjPValue)),
                      color = data_shared_hs_process$origData()[,7], size = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$log2FC, na.rm = T)), round( max( DataInputFile()$log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
@@ -1098,25 +1098,25 @@ server = function(input, output, session) {
         col_to_highlight_infile_custom = DataFrameWithColors()  %>%
           mutate( GeneSymbol     = toupper(GeneSymbol)) %>%
           filter( GeneSymbol %in% inputfile_customdata) %>%
-          mutate( CharValue  = case_when(AdjPValue < input$Signif & log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
-                                         AdjPValue < input$Signif & log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
-                                         AdjPValue > input$Signif & log2FC > (-1)*as.numeric(input$VerticalThreshold) | log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
+          mutate( CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
+                                         AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
+                                         AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                          AdjPValue > input$Signif  ~ "#6a6a6a" ))
         # c- GGPLOT
-        volcanoplotInputFileCustom = ggplot(data= DataFrameWithColors(), mapping = aes(x = log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        volcanoplotInputFileCustom = ggplot(data= DataFrameWithColors(), mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color     = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  +
           geom_hline( yintercept     = -log10(sigval_cust),      color = "#777777", size = 0.15 ) +
           geom_vline( xintercept     = logFC_threshold_pos_cust, color = "#777777", size = 0.15 ) +
           geom_vline( xintercept     = logFC_threshold_neg_cust, color = "#777777", size = 0.15 ) +
-          geom_point(data = col_to_highlight_infile_custom, aes(x = log2FC, y = -log10(AdjPValue)),
+          geom_point(data = col_to_highlight_infile_custom, aes(x = Log2FC, y = -log10(AdjPValue)),
                      color= col_to_highlight_infile_custom$CharValue, size = 1.7) +
           geom_text(data    = col_to_highlight_infile_custom,
-                    aes(x   = log2FC, y  = -log10(AdjPValue), label = stringr::str_to_title(GeneSymbol)),
+                    aes(x   = Log2FC, y  = -log10(AdjPValue), label = stringr::str_to_title(GeneSymbol)),
                     nudge_x = 0, nudge_y = 0.18,
                     size    = 3.5, family  = "sans serif") +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$log2FC, na.rm = T)), round( max( DataInputFile()$log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows_cust} variables; Significant Threshold = ${sigval_cust}; Vertical = +/-${as.integer(logFC_threshold_pos_cust)} "))
         
@@ -1141,25 +1141,25 @@ server = function(input, output, session) {
         col_to_highlight  = DataFrameWithColors() %>%
           mutate( GeneSymbol = toupper(GeneSymbol)) %>%
           filter( GeneSymbol %in% convert_to_vector_customlist) %>%
-          mutate( CharValue  = case_when(AdjPValue < input$Signif & log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
-                                         AdjPValue < input$Signif & log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
-                                         AdjPValue > input$Signif & log2FC > (-1)*as.numeric(input$VerticalThreshold) | log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
+          mutate( CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
+                                         AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
+                                         AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                          AdjPValue > input$Signif  ~ "#6a6a6a" ))
         # c- Visualise custom genes
-        volcanoplotcustom = ggplot(data= DataFrameWithColors(), mapping = aes(x = log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        volcanoplotcustom = ggplot(data= DataFrameWithColors(), mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color     = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  +
           geom_hline( yintercept     = -log10(sigval_cust),      color = "#777777", size = 0.15 ) +
           geom_vline( xintercept     = logFC_threshold_pos_cust, color = "#777777", size = 0.15 ) +
           geom_vline( xintercept     = logFC_threshold_neg_cust, color = "#777777", size = 0.15 ) +
-          geom_point(data = col_to_highlight, aes(x = log2FC, y = -log10(AdjPValue)),
+          geom_point(data = col_to_highlight, aes(x = Log2FC, y = -log10(AdjPValue)),
                      color= col_to_highlight$CharValue, size = 1.7) +
           geom_text(data    = col_to_highlight,
-                    aes(x   = log2FC, y  = -log10(AdjPValue), label = stringr::str_to_title(GeneSymbol)),
+                    aes(x   = Log2FC, y  = -log10(AdjPValue), label = stringr::str_to_title(GeneSymbol)),
                     nudge_x = 0, nudge_y = 0.18,
                     size    = 3.5, family  = "sans serif") +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$log2FC, na.rm = T)), round( max( DataInputFile()$log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows_cust} variables; Significant Threshold = ${sigval_cust}; Vertical = +/-${as.integer(logFC_threshold_pos_cust)} "))
         
