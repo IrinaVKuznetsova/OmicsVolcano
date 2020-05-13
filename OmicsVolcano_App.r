@@ -24,6 +24,8 @@
 
 # Co-developer: Artur Lugmayr
 # email:        lartur@acm.org
+# Edith Cowan University, WA, AUSTRALIA
+# UXMachines Pty Ltd. WA, AUSTRALIA
 
 
 
@@ -146,10 +148,13 @@ Sys.setenv(R_CONFIG_ACTIVE = "homepc")
 options(shiny.maxRequestSize = 900 * 1024 ^ 2)   # Increase file size for upload | https://shiny.rstudio.com/articles/upload.html
 
 source('config.r')
-source('VolcanOmix_Server.r')
-source('VolcanOmix_UI.r', local=TRUE)
+source('OmicsVolcano_Server.r')
+source('OmicsVolcano_UI.r', local=TRUE)
+
 #source('TestUI.r', local = TRUE)
 #source('TestServer.r')
+
+
 
 
 

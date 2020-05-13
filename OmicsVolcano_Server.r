@@ -79,12 +79,17 @@
 
 
 `%then%` = shiny:::`%OR%` # Note: %then% does not exist in current preview implementations of Shiny. 
-                          # You can use the first line of code below to create a %then% operator.
-                          # https://shiny.rstudio.com/articles/validation.html
+# You can use the first line of code below to create a %then% operator.
+# https://shiny.rstudio.com/articles/validation.html
 
-##########################################################################################################
+
+# ====================================================================
+# ====================================================================
+# ====================================================================
 # II Reference Files MOUSE
-##########################################################################################################
+# ====================================================================
+# ====================================================================
+# ====================================================================
 mm_ribos_file = read.table("./ReferenceFiles/Mouse/mm_Ribosomal_processes19March20.txt",
                            header = T,
                            sep    = "\t",
@@ -97,9 +102,14 @@ mm_processes_file = read.table("./ReferenceFiles/Mouse/mm_MitoCarta_MitoXplorer_
                                fill   = T, 
                                quote  = "")   # dim = 1495  x 3 | GeneID Symbol Description Synonyms Maestro.score FDR Evidence Tissues
 
-##########################################################################################################
+
+# ====================================================================
+# ====================================================================
+# ====================================================================
 # II Reference Files HUMAN
-##########################################################################################################
+# ====================================================================
+# ====================================================================
+# ====================================================================
 hs_ribos_file = read.table("./ReferenceFiles/Human/hs_ribosomal_30March2020.txt",
                            header = T,
                            sep    = "\t",
@@ -122,14 +132,28 @@ displayErrorMessage = function (messagesubject, message, errortrace) {
     footer    = tagList(modalButton("Close"))  )) }
 
 
-##################
+
+
+
+
+
+#================================================================================================================
+#================================================================================================================
+#================================================================================================================
 # IV Server body #
-##################
+#================================================================================================================
+#================================================================================================================
+#================================================================================================================
+
 server = function(input, output, session) {
-  
-  ###########################################################################################################
-  # 0. UI Frontend Handling
-  ###########################################################################################################
+
+  #================================================================================================================
+  #================================================================================================================
+  #================================================================================================================
+  # 0. UI Front-End Handling
+  #================================================================================================================
+  #================================================================================================================
+  #================================================================================================================
   
   # Initialize UI default values
   DEFAULT_STATUS_MESSAGE     = "Ok."
@@ -165,70 +189,54 @@ server = function(input, output, session) {
              icon = (icon("list-ol")),
              color = "yellow")  })
   
-  
   output$ui_status_box_message = renderText( 
     { paste0(DEFAULT_STATUS_MESSAGE) } )
-  
   
   displayUIStatusMessage = function(message, error) {
     output$ui_status_box_message = renderText({paste0(message)})}
   
-  
   displayUIRightDashboardMenue = function (info_text) {
     output$UI_RIGHT_DASBOARD_HELP_TEXT = renderText({paste0(info_text)})
     output$UI_RIGHT_DASBOARD_CONTENT   = renderUI({
-      input$ui_threshold_configuration
-      #        sliderInput("n", "N", 1, 1000, 500)
+      input$ui_threshold_configuration        #        sliderInput("n", "N", 1, 1000, 500)
     }    )}
-  
   
   output$UI_NOTIFICATIONS = renderMenu ( {
     dropdownMenu (
       type = "notifications",
       notificationItem(
-        text = "Applications successfuly started.",
+        text = "Applications successfuly started",
         icon("thumbs-up")  ))  })
-  
-  # Observe hich left side menue bar has been selected and adjust the contextual menue of the right sidebar
-  #  observe({
-  #    if (input$ui_dashboard_sidebar == "menue_tab_exp_plot") {
-  #      shinyjs::addClass(selector = "aside.control-sidebar", class = "control-sidebar-open")
-  #      displayUIRightDashboardMenue ("Please load the data to create the plot.")
-  #    } else {
-  #      shinyjs::removeClass(selector = "aside.control-sidebar", class = "control-sidebar-open")
-  #    }
-  #  })
-  
 
   # CONTEXTUALIZED RIGHT MENUE DEPENENDENT WHAT IS SELECTED ON THE LEFT MENUE
   UI_INFO_TEXTS = list(
-    menue_tab_file_open  = ("Open data file."),
-    menue_tab_file_close = ("close data file."),
+    menue_tab_file_open  = ("Open data file"),
+    menue_tab_file_close = ("close data file"),
     
-    menue_tab_exp_plot     = ("Plot and explore data."),
-    menue_tab_exp_genelist = ("Explore gene list."),
-    menue_tab_exp_mitproc  = ("Mitochondrial process explorer."),
+    menue_tab_exp_plot     = ("Plot and explore data"),
+    menue_tab_exp_genelist = ("Explore gene list"),
+    menue_tab_exp_mitproc  = ("Mitochondrial process explorer"),
     
-    menue_tab_download_plot  = ("Download data plot."),
-    menue_tab_download_table = ("Download data tables."),
+    menue_tab_download_plot  = ("Download data plot"),
+    menue_tab_download_table = ("Download data tables"),
     
-    menue_tab_help  = ("Help page."),
-    menue_tab_about = ("About page.")  )
-  
-  
+    menue_tab_help  = ("Help page"),
+    menue_tab_about = ("About page")  )
+ 
   # Updates the right context menue, dependent which left menue in the dashboard has been selected
   observeEvent(input$ui_dashboard_sidebar, {
     print(input$ui_dashboard_sidebar)
+    
     x = UI_INFO_TEXTS["input$ui_dashboard_sidebar"]
-    
     if (is.null(x)) { x=""}
-    
     output$UI_RIGHT_DASHBOARD_HELP_TEXT = renderText({paste0( x )})
-    x="none"
+    
+    x="UI_RIGHT_SIDEBAR_NONE"
     
     if ( (input$ui_dashboard_sidebar == "menue_tab_exp_plot") | (input$ui_dashboard_sidebar == "menue_tab_exp_genelist") | (input$ui_dashboard_sidebar == "menue_tab_exp_mitproc") )
     { x = input$ui_dashboard_sidebar}
-    updateTabsetPanel(session, "params", selected = x) }) 
+    
+    updateTabsetPanel(session, "UI_RIGHT_SIDEBAR_SELECTMODE", selected = x) }) 
   
   
   # Status box upldates: Mitochondria process   
@@ -239,11 +247,10 @@ server = function(input, output, session) {
                 paste (input$MtProcess),
                 icon  = icon("fas fa-filter"),
                 color = "yellow")
-        #      paste (input$OrganismSource),
-        #      paste (input$MtProcess))
+      #      paste (input$OrganismSource),
+      #      paste (input$MtProcess))
       # paste0 (input$mtProcess)
     })   })
-  
   
   observeEvent(input$MtProcess, {
     output$UI_INFO_PROCESS = renderInfoBox ({
@@ -252,24 +259,25 @@ server = function(input, output, session) {
                paste (input$MtProcess),
                icon  = icon("fas fa-filter"),
                color = "yellow")
-        #      paste (input$OrganismSource),
-        #      paste (input$MtProcess))
+      #      paste (input$OrganismSource),
+      #      paste (input$MtProcess))
       # paste0 (input$mtProcess)
     })  })
-  
   
   observeEvent(input$VerticalThreshold, {
     output$UI_INFO_GENERAL = renderInfoBox ({
-      infoBox ("Threshold / Significance",
-               paste0 (input$VerticalThreshold),
-               paste0 (input$Signif),
-               icon  = icon("tachometer-alt"),
-               color = "yellow")
-        #      paste (input$OrganismSource),
-        #      paste (input$MtProcess))       
+      # infoBox ("Threshold / Significance",
+      infoBox ( title    = "Log2FC and Significance",
+                # value    = paste0 (input$VerticalThreshold),
+                # value    = paste0 ("+/-", input$VerticalThreshold, ""),
+                value    = paste0 ("+/-", input$VerticalThreshold, ""),
+                subtitle = paste0 (input$Signif),
+                icon     = icon("tachometer-alt"),
+                color    = "yellow")
+      #      paste (input$OrganismSource),
+      #      paste (input$MtProcess))       
       # paste0 (input$mtProcess)
     })  })
-  
   
   observeEvent(input$UI_INPUT_FILENAME, {
     output$UI_INFO_FILENAME = renderInfoBox ( {
@@ -277,167 +285,229 @@ server = function(input, output, session) {
                paste0 (input$UI_INPUT_FILENAME),
                icon  = icon("database"),
                color = "yellow")
-        #      paste (input$OrganismSource),
-        #      paste (input$MtProcess)  )       
+      #      paste (input$OrganismSource),
+      #      paste (input$MtProcess)  )       
       # paste0 (input$mtProcess)
     })  })
   
   
+  # Observe Event to be able to move bwt Custom list/file widgets back and forth 
+  #rv = reactiveValues() 
+
   observeEvent(input$CustomInputOptions, {
-    print(input$CustomInputOptions)
-    print(input$CustomInputOptions.condition)
-    
     if (input$CustomInputOptions == "Insert a list of genes") {
+      # rv$CustomInputOptions = input$CustomInputOptions  # *
       output$UI_INFO_EXPLORE = renderInfoBox ({
         infoBox ( "Explore",
                   "Manual List",
                   paste0 (input$CustomList),
                   icon  = (icon("list-ol")),
-                  color = "yellow")   })    } 
+                  color = "yellow")   }) 
+      
+      ##### IRINA: write code for manual input and start the functions in your script  !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    } 
     else 
-      {output$UI_INFO_EXPLORE = renderInfoBox ({
-        infoBox ("Explore",
-                 "File",
-                 # paste0 (input$UserGeneNamesFile),
-                 icon = (icon("list-ol")),
-                 color = "yellow")      })  }  })
+    {output$UI_INFO_EXPLORE = renderInfoBox ({
+      # rv$UserGeneNamesFile = input$UserGeneNamesFile  # *
+      infoBox ("Explore",
+               "File",
+               # paste0 (input$UserGeneNamesFile),
+               icon = (icon("list-ol")),
+               color = "yellow")      }) 
+    ##### IRINA: write code for manual input and start the functions in your script     !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    }  })
+  
   
   # exit button pressed
   observeEvent(input$ExitApplication, {
     quit(0)  })
   
-  # Error dialouges
-  # popupModal = function(failed = FALSE) {
-  #   modalDialog(
-  #     
-  #     # textInput("txt", "Write something"),
-  #     # if (failed)
-  #     #   div(tags$b("You did not input anything", style = "color: red;")),
-  #     # 
-  #     # footer = tagList(
-  #     #   modalButton("Cancel"),
-  #     #   actionButton("ok", "OK")
-  #     )
-  #   )
-  # }
+  observeEvent( input$CustomList, ({
+    #rv$CustomList = input$CustomList  # *
+    print( paste("Custom List Selected", input$CustomList))  
+    })  )
   
   
-  ###########################################################################################################
-  # 0. Widgets customisation
-  ###########################################################################################################
-  # 0.1 Validate   
-  # VerticalThresholdNumbers = reactive({
-  #   validate(
-  #     need(   is.numeric(input$VerticalThreshold), "Please input a positive number")  %then%
-  #       need( !is.null(input$VerticalThreshold),   "Please input a positive number")  %then%
-  #       need( !input$VerticalThreshold < 0,        "Please input a positive number")  %then%
-  #       need( !input$VerticalThreshold > 1000,     "Your input beyond the max limit") %then%
-  #       need( !is.na(input$VerticalThreshold),     "Please input a positive number")) })
-  # 
-  # output$value = renderPrint({ VerticalThresholdNumbers() })  
+  observeEvent( input$UserGeneNamesFile, ({
+    #rv$UserGeneNamesFile = input$UserGeneNamesFile  # *
+    print( paste("Custom List Selected", input$UserGeneNamesFile))  })  )
   
-  # 0.2 Slider custom color | NOT SIGNIF. in red
-  # SliderCustomColor = reactive({
-  #   if(input$Signif <= 0.05){
-  #     tags$style(HTML(".js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {background: #48D1CC}"))
-  #   }else {
-  #     tags$style(HTML(".js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {background: red}"))}
-  # })
-  # 
-  # output$color0 = renderUI({ 
-  #   SliderCustomColor()
-  # })
-  
-  
-  ###########################################################################################################
-  # 0. INPUT - CONVERT
-  ###########################################################################################################
-  # 0.0 PARSE INPUT FILE provided by the user
-  #  DatafileConvert = reactive({
-  #    shiny::validate(
-  #      need(input$FileToConvert, " "))
-  #    read.csv(input$FileToConvert$datapath, header = T, sep = "\t", quote = "")})
-  
-  # 0.1 CONVERTER | fileInput(inputId  = "FileToConvert",  downloadButton(outputId = "DownloadDataConverted"   DTOutput( outputId = "ConvertedOriginalData"
-  # ConvertedInput     = reactive({
-  #   # Remove duplicates from gene symbol column
-  #   infile = DatafileConvert() %>%
-  #     # Add numeric extention to duplicated gene name
-  #     mutate( GeneSymbol  = make.names( sapply(strsplit( as.character(DatafileConvert()$GeneSymbol),";"), `[`, 1) , unique = T) ) %>% 
-  #     # Represent Gene Symbols that are not available as NA 
-  #     mutate( GeneSymbol = gsub(".*NA.*", "NA" , GeneSymbol))
-  #   return(infile)
-  # })
-  
-  # 0.2 WRITE results into a file
-  # output$DownloadDataConverted = downloadHandler(
-  #   filename = function() {
-  #     paste("ConvertedOriginalData", "_", format(Sys.Date(), "%d%b%Y"),  paste(".", "txt", sep="") , sep = "")},
-  #   content = function(file) {
-  #     write.table(ConvertedInput(), file, sep = "\t", row.names = FALSE, quote =F) })
-  # 
-  # 0.3 OUTPUT TABLE to webpage main space
-  # output$ConvertedOriginalDataTable = renderDT({ 
-  #   data.frame(ConvertedInput()) })
-  
-  
-  ###########################################################################################################
-  # 1. SUBSET DATA to SIGNIFICANT, PROCESSES
-  ###########################################################################################################
-  # 1.0 PARSE INPUT FILE provided by the user
-  DataInputFile = reactive ({
-    # USER INPUT FILE 
-    tryCatch({
-      print(input$UI_INPUT_FILE_SEPARATOR)
-      if (!is.null(input$UI_INPUT_FILE_NAME)){
-      req(input$UI_INPUT_FILE_NAME)   #require x to be available
-        shiny::validate(need(input$UI_INPUT_FILE_SEPARATOR=="\t", "Please choose correct separator ..."))
-        df = read.csv(input$UI_INPUT_FILE_NAME$datapath,
-                      sep    = input$UI_INPUT_FILE_SEPARATOR,
-                      header = T,
-                      quote  = "") }
-      else {return(NULL)}
 
-      # IF CHECK FOR DUPLICATES BOX IS TICKED
-      if (input$UI_INPUT_FILE_REMOVE_DUPLICATES==TRUE) {
-        df = df %>%
-          # Add numeric extention to duplicated gene name
-          mutate( GeneSymbol  = make.names( sapply(strsplit( as.character(df$GeneSymbol),";"), `[`, 1) , unique = T) ) %>% 
-          # Represent Gene Symbols that are not available as NA 
-          mutate( GeneSymbol  = gsub(".*NA.*", "NA" , GeneSymbol)) }
-      
-      displayUIStatusMessage("File Loading Successful!", FALSE)
-      output$UI_INPUT_FILE_RESULTS = renderDT(df)
-      return(df)      },
-      
-      error = function(e) {
-        # return a safeError if a parsing error occurs
-        print(e)
-        print(head(df))
-        displayErrorMessage("File Loading Error in Data Input File!", "Please choose the correct file separator or review the documentation for the file input format", "")
-        #displayErrorMessage("File Loading Error in Data Input File!", "Please review the documentation of this software to understand the file structure that is required", "")
-        #displayUIErrorMessage("File Loading Error!", TRUE)
-        return (NULL) }      )    })
+  # 
+  # observeEvent(input$CustomInputOptions, {
+  #   if (input$CustomInputOptions == "Insert a list of genes") {
+  #     output$UI_INFO_EXPLORE = renderInfoBox ({
+  #       infoBox ( "Explore",
+  #                 "Manual List",
+  #                 paste0 (input$CustomList),
+  #                 icon  = (icon("list-ol")),
+  #                 color = "yellow")   })    
+  #     ##### IRINA: write code for manual input and start the functions in your script  !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  #   } 
+  #   else 
+  #   {output$UI_INFO_EXPLORE = renderInfoBox ({
+  #     infoBox ("Explore",
+  #              "File",
+  #              # paste0 (input$UserGeneNamesFile),
+  #              icon = (icon("list-ol")),
+  #              color = "yellow")      }) 
+  #   ##### IRINA: write code for manual input and start the functions in your script     !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  #   }  })
+  
+
+
+
+  
+
+ # Raise error if file is not uploaded 
+  observeEvent(input$ui_dashboard_sidebar, {
+    if ( is.null(input$UI_INPUT_FILE_NAME$datapath) & input$ui_dashboard_sidebar=="menue_tab_exp_plot"){
+      displayErrorMessage("Input file is not uploded!", "Please use File tab to upload your file.", "")
+      return(NULL)}
+    else if (is.null(input$UI_INPUT_FILE_NAME$datapath) & input$ui_dashboard_sidebar=="menue_tab_exp_genelist"){
+      displayErrorMessage("Input file is not uploded!", "Please use File tab to upload your file.", "")
+      return(NULL)}
+    else if (is.null(input$UI_INPUT_FILE_NAME$datapath) & input$ui_dashboard_sidebar=="menue_tab_exp_mitproc"){
+      displayErrorMessage("Input file is not uploded!", "Please use File tab to upload your file.", "")
+      return(NULL)}
+    })
+
+
+
   
   
+
+  #================================================================================================================
+  #================================================================================================================
+  # 1. SUBSET DATA to SIGNIFICANT, PROCESSES
+  #================================================================================================================
+  #================================================================================================================
+
+  
+  
+  #================================================================================================================
+  # 1.0 PARSE INPUT FILE provided by the user
+  #================================================================================================================
+  # DataInputFile = function () {
+  #   return (IntermediateDataInputFile()) }
+  
+  DataInputFile = reactive ({
+    # Ensure that required values are available 
+    req(input$UI_INPUT_FILE_NAME$datapath)
+    #req(input$UI_INPUT_FILE_SEPARATOR)
+    
+    # specify your location in the script
+    print("DataInputFile() Reactive:")
+    print(input$UI_INPUT_FILE_NAME$datapath)
+    print(input$UI_INPUT_FILE_SEPARATOR)
+    print(input$UI_INPUT_FILE_REMOVE_DUPLICATES)
+    print("END ----  DataInputFile() Reactive: -------")
+    print("-------------------------------------------")
+    
+    # handling errors and warnings
+    tryCatch({
+      # IF CHECK FOR THE FILE
+      # parse file
+      df = read.csv(file   = input$UI_INPUT_FILE_NAME$datapath,
+                     sep    = input$UI_INPUT_FILE_SEPARATOR,
+                     header = T,
+                     quote  = "")
+      
+      # browser()    
+      # I.Number of columns 
+      if (!ncol(df) ==5){
+        displayErrorMessage("File Loading Error in Data Input File!", "Please check number of columns or select correct field separator character. Alternatively, review the Help Page for the file input format", "")
+        return(NULL)
+      }
+      # II.Column names
+      else if ( !names(df)[1]=="ID"){
+        displayErrorMessage( "File Formatting Error", paste("Please check the name of the 1st column. It is ID, not", names(df)[1], sep=" "), "")
+        return(NULL)
+        }
+      else if (!names(df)[2]=="GeneSymbol"){
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 2nd column. It is GeneSymbol", names(df)[2], sep=" "), "")
+        return(NULL)
+        }
+      else if (!names(df)[3]=="Description"){
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 3rd column. It is Description", names(df)[3], sep=" "), "")
+        return(NULL)
+        }
+      else if (!names(df)[4]=="Log2FC"){
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 4th column. It is Log2FC", names(df)[4], sep=" "), "")
+        return(NULL)
+        }
+      else if (!names(df)[5]=="AdjPValue"){
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 5th column. It is AdjPValue", names(df)[5], sep=" "), "")
+        return(NULL)
+      }
+      # III. Check if column values are numeric
+      # else if (!is.numeric(df[4, ])==TRUE & !is.numeric(df[5,])==TRUE){
+      #   displayErrorMessage("File Formatting Error", paste("Please check that 4th and/or 5th column contain numeric values. Wrong file reading can be for example, the result of having 'extra' commas in the text, while file fileds are comma separated.", names(df)[5], sep=" "), "")
+      #   
+      # }
+      # IV. IF CHECK FOR DUPLICATES BOX IS TICKED
+      else if (input$UI_INPUT_FILE_REMOVE_DUPLICATES==TRUE) {
+        df_dup = df %>%
+          mutate( GeneSymbol = make.names( sapply(strsplit( as.character(df$GeneSymbol),";"), `[`, 1) , unique = T) ) %>%    # Add numeric extention to duplicated gene name
+          mutate( GeneSymbol = gsub(".*NA.*", "NA" , GeneSymbol))
+        # Represent Gene Symbols that are not available as NA 
+        displayUIStatusMessage("File Loading Successful!", FALSE)
+        output$UI_INPUT_FILE_RESULTS = renderDT(DataInputFile())
+        return(df_dup)}
+      else { 
+        displayUIStatusMessage("File Loading Successful!", FALSE)
+        output$UI_INPUT_FILE_RESULTS = renderDT(DataInputFile())
+        return(df)}
+    },
+    error = function(e) {
+      displayErrorMessage("File Loading Error in Data Input File!", "Please choose the correct file separator! Alternatively, review the Help Page for the file input format", "")})
+  })
+  
+  # displayUIStatusMessage("File Loading Successful!", FALSE)
+  # output$UI_INPUT_FILE_RESULTS = renderDT(DataInputFile())
+  
+  
+  
+  #================================================================================================================
   # 1.1 SUBSET input data to SIGNIF. threshold
+  #================================================================================================================
   FilteredToSignif = reactive({
+    # Ensure that required values are available
+    req(DataInputFile())
+    req(input$Signif)
+    
+    # specify your location in the script
+    print("FilteredToSignif Reactive:")
+    print("----")
+
+    # Filter to significant
     signif = DataInputFile() %>%
       filter( AdjPValue < input$Signif,
               !is.na(AdjPValue)) 
     return(signif[,c(1,2,4,5,3)])  })
   
   
+  #================================================================================================================
   # 1.1.0 OUTPUT SIGNIF. to TABs: "Explore Plot Values" AND to "Explore Mitochondrial Processes"
+  #================================================================================================================
   output$SignifData = output$SignifData2 = renderDT({ FilteredToSignif() })
   
+  
+  #================================================================================================================
   # 1.2 COMBINE MT PROCESSES, such as MitoCarta+MitoXplorer AND Ribosomal
+  #================================================================================================================
   MitoProcesses = reactive ({  
+    # Ensure that required values are available
+    req(DataInputFile())
+    req(input$OrganismSource)
     
-    if (input$OrganismSource == "Mouse" & is.null(DataInputFile()) ){
-      return(NULL)}
+    # specify your location in the script
+    print("MitoProcesses Reactive:")
+    print(input$OrganismSource)
+    print("END ---- MitoProcesses Reactive: -----")
+    print("-------------------------------------------")
     
-    else if (input$OrganismSource == "Mouse" & !is.null(DataInputFile()) ){
+    if (input$OrganismSource == "Mouse" & !is.null(DataInputFile()) ){
       # prepare input data
       upperCase      = mutate( DataInputFile(), upcase = toupper(GeneSymbol) )
       mtfunct_in     = upperCase %>% filter(upcase %in% toupper(mm_processes_file$GeneName))
@@ -451,7 +521,7 @@ server = function(input, output, session) {
       # Add OXPHO and Ribsomal Processes 
       final_processes    = rbind(processdata_in, processdata_rib)
       return(final_processes[,c(2,3,5,6,4,7)]) }  # dim(final_processes) # 644   7
-      #browser()
+    #browser()
     
     else if (input$OrganismSource == "Human" & !is.null(DataInputFile()) ){
       #"Human data"
@@ -461,7 +531,7 @@ server = function(input, output, session) {
       mtfunct_in_hs     = upperCase2 %>% filter(upcase %in% toupper(hs_processes_file$GeneName))
       processdata_in_hs = merge.data.frame(mtfunct_in_hs, hs_processes_file[,c(1,3)], by.x = "upcase", by.y = "GeneName")     #processdata_in_hs[ , c(3,2,7,5,6,4)] 
       
-      # HS add Ribosomal | TOTAL-82
+      # HS add Ribosomal 
       hs_ribos_file_upper= mutate( hs_ribos_file, GeneName = toupper(GeneName) ) 
       hs_mtfunct_rib     = upperCase2 %>% filter(upcase %in% toupper(hs_ribos_file_upper$GeneName))
       hs_processdata_rib = merge.data.frame(hs_mtfunct_rib, hs_ribos_file_upper[,c(1,3)], by.x = "upcase", by.y = "GeneName") #hs_processdata_rib[1:5 , c(3,2,7,5,6,4)]  #   42  7
@@ -470,28 +540,46 @@ server = function(input, output, session) {
       hs_final_processes = rbind(processdata_in_hs, hs_processdata_rib)
       return(hs_final_processes[,c(2,3,5,6,4,7)])}
     
+    else if (input$OrganismSource == "Mouse" & is.null(DataInputFile()) ){
+      return(NULL)}
     else if (input$OrganismSource == "Human" & is.null(DataInputFile()) ){
       return(NULL)}
   })
+  
+  #================================================================================================================
   # 1.2.0 OUTPUT PROCESSES
+  #================================================================================================================
   output$ProcessesData = renderDT({
     MitoProcesses() })
   
   
-  ###########################################################################################################
-  # 2. VISUALISE (Explore Plot Values Tab) | crosstalk btw table and plot
-  ###########################################################################################################
+  #================================================================================================================
+  #================================================================================================================
   # 2.0 Create dataframe with color identifier for visualisation 
+  #================================================================================================================
+  #================================================================================================================
   DataFrameWithColors = reactive({
+    # Ensure that required values are available
+    req(DataInputFile())
+    req(input$Signif)
+    req(input$VerticalThreshold)
+    
+    # specify your location in the script
+    print("DataFrameWithColors Reactive:")
+    print(input$Signif)
+    print("END DataFrameWithColors----")
+    print("-------------------------------------------")        
+    
+    # 2.0.0 Initialise input varibales  
+
+
     tryCatch ({
       if (is.null(DataInputFile())){
         return(NULL) }
-
+      
       else      {
-        # 2.0.0 Initialise input varibales  
         inputdata  = DataInputFile()   #INfile
         refprocess = mm_processes_file
-        
         # 2.0.1 Convert gene symbols in INPUT file to Upper case
         upperCaseDF   = mutate( inputdata, upcase = toupper(GeneSymbol) )   # 1388    6
         
@@ -547,84 +635,158 @@ server = function(input, output, session) {
       }
     }, error = function(e) {
       displayErrorMessage("File Structure Error in DataFrameWithColors!", "Please refer to the manual.", "") })
-    })
-
+  })
   
   
+  #================================================================================================================
   # 2.1 CROSSTALK :)  # https://rstudio.github.io/crosstalk/shiny.html
+  #================================================================================================================
   DataSharedWithColors = SharedData$new(DataFrameWithColors)
   
   
-  
+  #================================================================================================================
   # 2.2 REACTIVE VALUE, so plot can be saved 
-  StorePlotForExplore = reactiveValues()   #@!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!7/05/
+  #================================================================================================================
+  StorePlotForExplore = reactiveValues()   
   
   
+  #================================================================================================================
   # 2.3 VISUALISATION ("Explore Plot Values")
+  #================================================================================================================
   ExplorePlotVolPplot = reactive ({ # observe({
-    print("ExplorePlotVolPplot")
+    # Ensure that required values are available
+    req(DataInputFile())
+    req(input$Signif)
+    req(input$VerticalThreshold)
     
-    if (is.null(DataInputFile())){
-      return(NULL) }
-    else {
-      # 2.3.0 Initialised parameters
-      sigval                = input$Signif
-      logFC_threshold_pos   = as.numeric(input$VerticalThreshold)
-      logFC_threshold_neg   = -logFC_threshold_pos
-      numrows               = nrow(DataInputFile())
-      yaxis = list(tickmode = "array", automargin = TRUE )
-      tex   = list(family   = "sans serif", size  = 14, color = toRGB("#262626"))
-      
-      # 2.3.1 GGPLOT
-      VolcanoPlotExplore           = ggplot(  data  = DataSharedWithColors , mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol )) +
-        geom_point( aes( color     = CharValue), show.legend = FALSE ) +
-        scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +   # #9fd8fb- blue #cccccc-grey #ffcccc- red  "" none
-        geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
-        geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
-        geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-        theme_classic() +
-        scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
-        labs( title="Volcano Plot",
-              caption= str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
-      
-      StorePlotForExplore$image0 = VolcanoPlotExplore
-      
-      # 2.3.2 PLOTLY
-      VolcanoPlotExplore_plotly = ggplotly( VolcanoPlotExplore, tooltip = "text") %>%
-        highlight(on = "plotly_click", off   = "plotly_doubleclick", dynamic = F, persistent = TRUE, color = "#777777",
-                  opacityDim = 1, selected   = attrs_selected(mode = "text", textfont = tex, textposition = "top right",
-                                                              marker = list(symbol = ".crossTalkKey"))) %>%
-        layout(showlegend = FALSE, autosize = T, yaxis = yaxis) %>%
-        config(toImageButtonOptions   = list(format = "svg", width = 800, height = 600, dpi= 1200),
-               modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
-      #browser()
-      return(VolcanoPlotExplore_plotly)} })
+    # specify your location in the script
+    print("ExplorePlotVolPplot Reactive:")
+    print("END ---- ExplorePlotVolPplot Reactive: ------")
+    print("-------------------------------------------")
+    
+
+    # 0 Initialised parameters
+    sigval                = input$Signif
+    logFC_threshold_pos   = as.numeric(input$VerticalThreshold)
+    logFC_threshold_neg   = -logFC_threshold_pos
+    numrows               = nrow(DataInputFile())
+    yaxis = list(tickmode = "array", automargin = TRUE )
+    tex   = list(family   = "sans serif", size  = 14, color = toRGB("#262626"))
+    
+    # 1 GGPLOT
+    VolcanoPlotExplore = ggplot(data  = DataSharedWithColors,
+                                mapping = aes(x    = Log2FC, 
+                                              y    = -log10(AdjPValue), 
+                                              text = GeneSymbol )) +
+      geom_point( aes( color  = CharValue), 
+                  show.legend = FALSE ) +
+      scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +  
+      geom_hline( yintercept = -log10(sigval),      
+                  color      = "#777777", 
+                  size       = 0.15 ) +
+      geom_vline( xintercept = logFC_threshold_pos, 
+                  color      = "#777777", 
+                  size       = 0.15 ) +
+      geom_vline( xintercept = logFC_threshold_neg, 
+                  color      = "#777777", 
+                  size       = 0.15 ) +
+      theme_classic() +
+      scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), 
+                                       round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+      labs( title   = "Volcano Plot",
+            caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
+    
+    StorePlotForExplore$image0 = VolcanoPlotExplore
+    
+    # 2. PLOTLY
+    VolcanoPlotExplore_plotly = ggplotly( VolcanoPlotExplore, tooltip = "text") %>%
+      highlight(on         = "plotly_click", 
+                off        = "plotly_doubleclick", 
+                dynamic    = F, 
+                persistent = TRUE, 
+                color      = "#777777",
+                opacityDim = 1, 
+                selected   = attrs_selected(mode         = "text", 
+                                            textfont     = tex, 
+                                            textposition = "top right",
+                                            marker       = list(symbol = ".crossTalkKey"))) %>%
+      layout(showlegend = FALSE, 
+             autosize   = T, 
+             yaxis      = yaxis) %>%
+      config(toImageButtonOptions   = list(format = "svg", 
+                                           width  = 800, 
+                                           height = 600, 
+                                           dpi    = 1200),
+             modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
+    #browser()
+    return(VolcanoPlotExplore_plotly)
+
+    })
   
+  
+  #================================================================================================================
   # 2.3.3 OUT VISUAL  
-  output$volcanoPlotNuclear = renderPlotly({ ExplorePlotVolPplot() })
+  #================================================================================================================
   
-  # https://shiny.rstudio.com/articles/plot-caching.html
-  # output$volcanoPlotNuclear   = renderCachedPlot({
-  #   ExplorePlotVolPplot()
-  # },cacheKeyExpr = {list(input$Signif, input$VerticalThreshold, DataInputFile()) } )
+  output$volcanoPlotNuclear = renderPlotly({
+
+    a1 = ExplorePlotVolPplot()
+    Sys.sleep(2)
+    hide(id = "loading-content1")  
+    a1
+    
+    })
   
+
+  #================================================================================================================
   # 2.3.4 OUT Display Table
+  #================================================================================================================
   output$InputOriginalData = renderDT({
-    datatable(DataSharedWithColors)}, server = FALSE)
+    if (! is.null(DataSharedWithColors) ) {
+      datatable(DataSharedWithColors)
+    }
+  }, 
+  server = FALSE)
   
   
-  ###########################################################################################################
+
+  #================================================================================================================
+  #================================================================================================================
   # 3. VISUALISE ("Explore Mitochondrial Processes") | crosstalk btw table and plot 
-  ###########################################################################################################
+  #================================================================================================================
+  #================================================================================================================
+  
+  
+  #================================================================================================================
   # 3.0 Input data 
+  #================================================================================================================
   DataFrameForMitoProcess = reactive({
+    # Ensure that required values are available
+    req(DataInputFile())
+    req(input$Signif)
+    req(input$VerticalThreshold)
+    req(input$OrganismSource)
+    
+    # 3.1.0 Initialise input varibales  
+    inputdata  = DataInputFile()        # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
+
+    
+    
+    # specify your location in the script
+    print("DataFrameForMitoProcess Reactive:")
+    print(input$Signif)
+    print(input$VerticalThreshold)
+    print(input$OrganismSource)
+    print( head(inputdata))
+    print("END ---- DataFrameForMitoProcess Reactive: ------")
+    print("-------------------------------------------")
+    
     tryCatch ({
-      if (input$OrganismSource == "Mouse" & is.null(DataInputFile())) {
-        return(NULL)}
+
+      if (input$OrganismSource == "Mouse" & is.null(inputdata )) {
+        return(NULL)      }
       
-      else if (input$OrganismSource == "Mouse" & !is.null(DataInputFile())) {
-        # 3.1.0 Initialise input varibales  
-        inputdata  = DataInputFile()       # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
+      else if (input$OrganismSource == "Mouse" & !is.null(inputdata )) {
         refprocess = mm_processes_file     # mm 1495 3       | GeneName Description Process
         ribosomal  = mm_ribos_file         # mm 82   3       | GeneName Description Process
         
@@ -717,16 +879,16 @@ server = function(input, output, session) {
         
         all_processes_mm = rbind(df_color_oxpho_rib, df_color)
         return(all_processes_mm) }
-        # browser()         }
-   
-      else if (input$OrganismSource == "Human" & is.null(DataInputFile())){
+      # browser()         }
+      
+      else if (input$OrganismSource == "Human" & is.null(mito_df)){
         return(NULL)}
       
       else {
         # 3.3.0 Initialise input varibales  
-        inputdata     = DataInputFile()   # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
-        refprocess_hs = hs_processes_file    # mm 1495 3       | GeneName Description Process
-        ribosomal_hs  = hs_ribos_file        # mm 82   3       | GeneName Description Process ribosomal
+        # inputdata     = DataInputFile()    # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
+        # refprocess_hs = hs_processes_file    # mm 1495 3       | GeneName Description Process
+        # ribosomal_hs  = hs_ribos_file        # mm 82   3       | GeneName Description Process ribosomal
         
         # 3.3.1 Convert gene symbols in INPUT file to Upper case
         upperCaseDF2   = mutate( inputdata, upcase = toupper(GeneSymbol) )   # 1388    6
@@ -818,15 +980,28 @@ server = function(input, output, session) {
         all_processes_hs = rbind(df_color_oxpho_rib_hs, df_color_hs)
         
         return(all_processes_hs)}
-      }, error = function (e) {
-          print(e)
-          print(head(df))
-          displayErrorMessage("Source File Error!", "Please read the documentation", "")})
-    })
+    }, error = function (e) {
+        # go through exeption handling
+        print(e)
+      print(head(df))
+      displayErrorMessage("ERROR [DataFrameForMitoProcess]: processing error, please read the documentation", as.character(e), "")})
+  })
   
   
+  
+  #================================================================================================================
   # 3.5 Get all mito genes present in data 
+  #================================================================================================================
   AllMitoProcesses = reactive({     # mito_processes = observe({
+    # Ensure that required values are available
+    req(input$OrganismSource)
+    
+    # specify your location in the script
+    print("AllMitoProcesses Reactive:")
+    print(input$OrganismSource)
+    print("END ---- AllMitoProcesses Reactive: -----")
+    print("-------------------------------------------")
+    
     if (input$OrganismSource == "Mouse"){
       # 3.5.0 Info to highlight all mt genes
       refprocess = mm_processes_file    # mm 1495 3       | GeneName Description Process
@@ -851,42 +1026,61 @@ server = function(input, output, session) {
   })
   
   
+  #================================================================================================================
   # 3.6 CROSSTALK 
+  #================================================================================================================
   DataSharedForMitoProcess = SharedData$new(DataFrameForMitoProcess)
   AllSharedMitoProcesses   = SharedData$new(AllMitoProcesses)
   
+  
+  #================================================================================================================
   # 3.6.0 OUT Display Table
+  #================================================================================================================
   output$InputOriginalData2 = renderDT({
     datatable( DataSharedForMitoProcess )}, server = FALSE) 
   
+  
+  #================================================================================================================
   # 3.6.1 OUT VISUAL
+  #================================================================================================================
   ExploreMitoVolcanoStore = reactiveValues()
   
   
+  #================================================================================================================
   # 3.7 Highlight all MT genes/proteins OR only specific MT function | persistent 
   # Subset dataset to selected process, Create condition to highlight selected process
   # if padjas < 0.05 and logFC > 1 darker red  | plotCol ffcccc  | ff2f2f
   # if padjas < 0.05 and logFC =1 darker blue | plotCol 87CEFA  | 087fc8
   # else darker grey                           | plotCol cccccc  | 6a6a6a
-  
+  #================================================================================================================
   HighlightProcess = reactive({       #HighlightProcess = observe({ 
+    # Ensure that required values are available
+    req(input$Signif)
+    req(input$VerticalThreshold)
+    req(DataInputFile())
+    
+    # specify your location in the script
+    print("HighlightProcess Reactive:")
+    print(input$Signif)
+    print(input$VerticalThreshold)
+    print("END ---- HighlightProcess Reactive: -------")
+    print("-------------------------------------------")
+    
+    # 0 Initialise thresholds
+    sigval                = input$Signif
+    logFC_threshold_pos   = as.numeric(input$VerticalThreshold)
+    logFC_threshold_neg   = -logFC_threshold_pos
+    numrows               = nrow(DataInputFile())
+    yaxis = list(tickmode = "array", automargin = TRUE )
+    tex   = list(family   = "sans serif", 
+                 size     = 14, 
+                 color    = toRGB("#262626"))
     
     if (is.null(DataInputFile())){
       return(NULL) }
     
     else {
-      # 3.7.0 Initialise thresholds
-      sigval                = input$Signif
-      logFC_threshold_pos   = as.numeric(input$VerticalThreshold)
-      logFC_threshold_neg   = -logFC_threshold_pos
-      numrows               = nrow(DataInputFile())
-      yaxis = list(tickmode = "array", automargin = TRUE )
-      tex   = list(family   = "sans serif", 
-                   size     = 14, 
-                   color    = toRGB("#262626"))
-      
-      
-      # 3.7.1 "Mouse" and "Show All Mitochondrial Genes"
+      # 1. "Mouse" and "Show All Mitochondrial Genes"
       if (input$MtProcess == "Show All Mitochondrial Genes" & input$OrganismSource == "Mouse"){
         # a- data frame with colors for MT mm
         mm_colors_to_highlight_mt_all = AllSharedMitoProcesses$data() %>%  
@@ -894,120 +1088,182 @@ server = function(input, output, session) {
                                         AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
                                         AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                         AdjPValue > input$Signif  ~ "#6a6a6a" ))   # 485  7
-        # b- Crosstalking / share
+        # 2. Crosstalking / share
         mm_all_data_shared = SharedData$new(mm_colors_to_highlight_mt_all)
         
-        # c- GGPLOT 
-        VolcanoPlot_mm_allmito = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        # 3. GGPLOT 
+        VolcanoPlot_mm_allmito = ggplot(  data    = DataSharedForMitoProcess, 
+                                          mapping = aes(x    = Log2FC, 
+                                                        y    = -log10(AdjPValue), 
+                                                        text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
-          geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = mm_all_data_shared, aes(x = Log2FC, y = -log10(AdjPValue)),
+          geom_hline( yintercept = -log10(sigval),      
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_pos, 
+                      color      = "#777777",
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_neg, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_point(data  = mm_all_data_shared, 
+                     aes(x = Log2FC,
+                         y = -log10(AdjPValue)),
                      color = mm_all_data_shared$origData()[,7], size = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), 
+                                           round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
-        # d- PLOTLY 
+        # 4. PLOTLY 
         VolcanoPlot_mm_allmito_plotly = ggplotly( VolcanoPlot_mm_allmito, tooltip = "text") %>%
-          highlight(on = "plotly_click", off = "plotly_doubleclick", persistent = F,
-                    opacityDim = 1, selected   = attrs_selected(mode   = "text", textfont = tex, textposition = "top right",
-                                                                marker = list(symbol = ".crossTalkKey"))) %>%
+          highlight(on        = "plotly_click", 
+                    off       = "plotly_doubleclick", 
+                    persistent= F,
+                    opacityDim= 1, 
+                    selected  = attrs_selected(mode        = "text", 
+                                               textfont    = tex, 
+                                               textposition= "top right",
+                                               marker      = list(symbol = ".crossTalkKey"))) %>%
           layout(showlegend = FALSE,
                  autosize   = T,
                  yaxis      = yaxis ) %>%  
-          config(toImageButtonOptions   = list(format = "svg", width = 800, height = 600, dpi= 1200),
+          config(toImageButtonOptions   = list(format = "svg", 
+                                               width  = 800, 
+                                               height = 600, 
+                                               dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
         return(VolcanoPlot_mm_allmito_plotly) }
       
+      
       # 3.7.2 "Human" and "Show All Mitochondrial Genes"
       else if (input$MtProcess == "Show All Mitochondrial Genes" & input$OrganismSource == "Human"){
-        # a- data frame with colors for MT human
+        # 0- data frame with colors for MT human
         hs_colors_to_highlight_mt_all = AllSharedMitoProcesses$data() %>%  
           mutate(CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
                                         AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
                                         AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                         AdjPValue > input$Signif  ~ "#6a6a6a" ))   # 467   7
-        # b- Crosstalking / share
+        # 1- Crosstalking / share
         hs_all_data_shared = SharedData$new(hs_colors_to_highlight_mt_all)
         
-        # c- GGPLOT 
-        VolcanoPlot_hs_allmito   = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        # 2- GGPLOT 
+        VolcanoPlot_hs_allmito   = ggplot(  data  = DataSharedForMitoProcess, 
+                                            mapping = aes(x    = Log2FC, 
+                                                          y    = -log10(AdjPValue), 
+                                                          text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
-          geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = hs_all_data_shared, aes(x = Log2FC, y = -log10(AdjPValue)),
-                     color = hs_all_data_shared$origData()[,7], size = 1.5) +
+          geom_hline( yintercept = -log10(sigval),      
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_pos, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_neg, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_point(data  = hs_all_data_shared, 
+                     aes(x = Log2FC, 
+                         y = -log10(AdjPValue)),
+                     color = hs_all_data_shared$origData()[,7], 
+                     size = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), 
+                                           round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
-        # d- PLOTLY | Plotly webpage apperance
-        VolcanoPlot_hs_allmito_plotly = ggplotly( VolcanoPlot_hs_allmito, tooltip = "text") %>%
-          highlight(on = "plotly_click", off = "plotly_doubleclick", persistent = F,
-                    opacityDim = 1, selected   = attrs_selected(mode   = "text", textfont = tex, textposition = "top right",
-                                                                marker = list(symbol = ".crossTalkKey"))) %>%
+        # 3- PLOTLY | Plotly webpage apperance
+        VolcanoPlot_hs_allmito_plotly = ggplotly( VolcanoPlot_hs_allmito, 
+                                                  tooltip = "text") %>%
+          highlight(on         = "plotly_click", 
+                    off        = "plotly_doubleclick", 
+                    persistent = F,
+                    opacityDim = 1, 
+                    selected   = attrs_selected(mode         = "text", 
+                                                textfont     = tex, 
+                                                textposition = "top right",
+                                                marker      = list(symbol = ".crossTalkKey"))) %>%
           layout(showlegend = FALSE,
                  autosize   = F,
                  yaxis      = yaxis ) %>%  
-          config(toImageButtonOptions   = list(format = "svg", width = 800, height = 600, dpi= 1200),
+          config(toImageButtonOptions   = list(format = "svg", 
+                                               width  = 800, 
+                                               height = 600, 
+                                               dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
         return(VolcanoPlot_hs_allmito_plotly) 
         # browser()
       }
-    
-    
+      
+      
       # 3.7.3 "Mouse" and  seleceted process of interest 
       else if (!input$MtProcess == "Show All Mitochondrial Genes" & input$OrganismSource == "Mouse"){
-        # a- data frame with colors for MT processes mouse
+        # 0- data frame with colors for MT processes mouse
         colors_to_highlight_process = DataSharedForMitoProcess$data() %>%
           filter( Process   == input$MtProcess)     %>%
           mutate(CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
                                         AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
                                         AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                         AdjPValue > input$Signif  ~ "#6a6a6a" ))
-        # b- crosstalking sharing dataframe with colors
+        # 1- crosstalking sharing dataframe with colors
         data_shared_mm_process = SharedData$new(colors_to_highlight_process)  #works but only for highlighted dots
         
-        # c- GGPLOT | Volcano plot
-        VolcanoPlot_mm_process = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        # 2- GGPLOT | Volcano plot
+        VolcanoPlot_mm_process = ggplot(  data    = DataSharedForMitoProcess, 
+                                          mapping = aes(x    = Log2FC, 
+                                                        y    = -log10(AdjPValue), 
+                                                        text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
-          geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = data_shared_mm_process, aes(x = Log2FC, y = -log10(AdjPValue)),
-                     color = data_shared_mm_process$origData()[,7], size = 1.5) +
+          geom_hline( yintercept = -log10(sigval),      
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_pos, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_neg, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_point(data  = data_shared_mm_process, 
+                     aes(x = Log2FC, y = -log10(AdjPValue)),
+                     color = data_shared_mm_process$origData()[,7], 
+                     size  = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)),
+                                           round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
         ExploreMitoVolcanoStore$image1 = VolcanoPlot_mm_process
         
         # d- PLOTLY | Plotly webpage apperance
-        VolcanoPlot_mm_process_plotly = ggplotly( VolcanoPlot_mm_process, tooltip = "text") %>%
-          highlight(on = "plotly_click", off = "plotly_doubleclick", persistent = F,
-                    opacityDim = 1, selected   = attrs_selected(mode   = "text", textfont = tex, textposition = "top right",
-                                                                marker = list(symbol = ".crossTalkKey"))) %>%
+        VolcanoPlot_mm_process_plotly = ggplotly( VolcanoPlot_mm_process, 
+                                                  tooltip = "text") %>%
+          highlight(on  = "plotly_click",
+                    off = "plotly_doubleclick", 
+                    persistent = F,
+                    opacityDim = 1, 
+                    selected   = attrs_selected(mode         = "text", 
+                                                textfont     = tex, 
+                                                textposition = "top right",
+                                                marker = list(symbol = ".crossTalkKey"))) %>%
           layout(showlegend = FALSE,
                  autosize   = T,
                  yaxis      = yaxis ) %>%  
-          config(toImageButtonOptions   = list(format = "svg", width = 800, height = 600, dpi= 1200),
+          config(toImageButtonOptions   = list(format = "svg",
+                                               width  = 800, 
+                                               height = 600, 
+                                               dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
-        
-
         return(VolcanoPlot_mm_process_plotly)    
         # browser()
       }
-    
-    
+      
+      
       # 3.7.4 "Human" and  seleceted process of interest 
       else if (!input$MtProcess == "Show All Mitochondrial Genes" & input$OrganismSource == "Human"){
         # a- data frame with colors for MT processes mouse
@@ -1021,16 +1277,29 @@ server = function(input, output, session) {
         data_shared_hs_process = SharedData$new(colors_to_highlight_hs_process)  #works but only for highlighted dots
         
         # c- GGPLOT | Volcano plot
-        VolcanoPlot_hs_process = ggplot(  data  = DataSharedForMitoProcess, mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
+        VolcanoPlot_hs_process = ggplot(  data  = DataSharedForMitoProcess, 
+                                          mapping = aes(x    = Log2FC, 
+                                                        y    = -log10(AdjPValue), 
+                                                        text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
-          geom_hline( yintercept     = -log10(sigval),      color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_pos, color = "#777777", size=0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_neg, color = "#777777", size=0.15 ) +
-          geom_point(data  = data_shared_hs_process, aes(x = Log2FC, y = -log10(AdjPValue)),
-                     color = data_shared_hs_process$origData()[,7], size = 1.5) +
+          geom_hline( yintercept = -log10(sigval),      
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_pos, 
+                      color      = "#777777",
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_neg, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_point(data  = data_shared_hs_process,
+                     aes(x = Log2FC,
+                         y = -log10(AdjPValue)),
+                     color = data_shared_hs_process$origData()[,7], 
+                     size  = 1.5) +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), 
+                                           round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
@@ -1038,43 +1307,98 @@ server = function(input, output, session) {
         
         # d- PLOTLY | Plotly webpage apperance
         VolcanoPlot_hs_process_plotly = ggplotly( VolcanoPlot_hs_process, tooltip = "text") %>%
-          highlight(on = "plotly_click", off = "plotly_doubleclick", persistent = TRUE,
-                    opacityDim = 1, selected   = attrs_selected(mode   = "text", textfont = tex, textposition = "top right",
-                                                                marker = list(symbol = ".crossTalkKey"))) %>%
+          highlight(on         = "plotly_click",
+                    off        = "plotly_doubleclick", 
+                    persistent = TRUE,
+                    opacityDim = 1, 
+                    selected   = attrs_selected(mode         = "text", 
+                                                textfont     = tex, 
+                                                textposition = "top right",
+                                                marker = list(symbol = ".crossTalkKey"))) %>%
           layout(showlegend = FALSE,
-                 autosize   = F,
+                 autosize   = T,
                  yaxis      = yaxis ) %>%  # hoverlabel=list(bgcolor="white")
-          config(toImageButtonOptions   = list(format = "svg", width = 800, height = 600, dpi= 1200),
+          config(toImageButtonOptions   = list(format = "svg", 
+                                               width  = 800, 
+                                               height = 600, 
+                                               dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
         return(VolcanoPlot_hs_process_plotly)     
       }
     }
-    })
+  })
   
+  
+  #================================================================================================================
   # 3.7.5 OUTPUT visualisation
+  #================================================================================================================
   output$VolcanoPlotOutExploreMito = renderPlotly({
-    HighlightProcess()  })
+    
+    a2=HighlightProcess()
+    Sys.sleep(2)
+    hide(id = "loading-content2")    
+    a2    })
   
   
-  ###########################################################################################################
+
+  #================================================================================================================
+  #================================================================================================================
   # 4. VISUALISE (Custom Tab) | visualise labels of genes of interest 
-  ###########################################################################################################
+  #================================================================================================================
+  #================================================================================================================
+  
+  
+  #================================================================================================================
   # 4.0 Reactive values for plot
+  #================================================================================================================
   CustomVolcanoPlotStore = reactiveValues()
   
+  
+  #================================================================================================================
   # 4.0.0 User input file with custom list
+  #================================================================================================================
   CustomDataFile = reactive({
     inFile       = input$UserGeneNamesFile
-    
+
     if (is.null(inFile)){
       return(NULL) }
     
     else{
-      read.table(input$UserGeneNamesFile$datapath, header = T, sep = "\t", quote = "") }  })
+      #rv$UserGeneNamesFile = read.table(input$UserGeneNamesFile$datapath, header = T, sep = "\t", quote = "") 
+       read.table(input$UserGeneNamesFile$datapath, header = T, sep = "\t", quote = "")   # /
+      }  })
   
   
+  #================================================================================================================
   # 4.1 PLOT
+  #================================================================================================================
+  # create reactive values
+  # reactiveValuesForEvent = reactiveValues()
+  # 
+  # # file load
+  # observeEvent(CustomDataFile(), {
+  #   reactiveValuesForEvent$CustomDataFile() = CustomDataFile()
+  #   reactiveValuesForEvent$CustomList = NULL
+  # })
+  # 
+  # # insert own gene names
+  # observeEvent( input$CustomList, {
+  #   reactiveValuesForEvent$CustomList = input$CustomList
+  # })
+  
+  
   CustomListOfInterest = reactive({    # CustomListOfInterest = observe({
+    # Ensure that required values are available
+    req(input$Signif)
+    req(input$VerticalThreshold)
+    req(DataInputFile())
+    
+    # specify your location in the script
+    print("CustomListOfInterest Reactive:")
+    print(input$Signif)
+    print(input$VerticalThreshold)
+    print("END ---- CustomListOfInterest Reactive: ------")
+    print("-------------------------------------------")
     
     if (is.null(DataInputFile())){
       return(NULL) }
@@ -1089,14 +1413,19 @@ server = function(input, output, session) {
       yaxis = list(tickmode = "array", automargin = TRUE )
       
       
+      # print( isolate( reactiveValuesForEvent$CustomDataFile())) 
+      # print("reactivity")
+      # print( isolate(reactiveValuesForEvent$CustomList ))
+      
+      
       # 4.1.1 - UPLOAD own file with list of genes, one gene per row
       if (!is.null(CustomDataFile())){
         # a- Custom data with uploaded custom file
-        inputfile_customdata           = toupper(CustomDataFile()[,1])
+        inputfile_customdata = toupper(CustomDataFile()[,1])
         
         # b- Highlight color for custom file input
         col_to_highlight_infile_custom = DataFrameWithColors()  %>%
-          mutate( GeneSymbol     = toupper(GeneSymbol)) %>%
+          mutate( GeneSymbol = toupper(GeneSymbol)) %>%
           filter( GeneSymbol %in% inputfile_customdata) %>%
           mutate( CharValue  = case_when(AdjPValue < input$Signif & Log2FC > as.numeric(input$VerticalThreshold)      ~ "#ff2f2f",    # red
                                          AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
@@ -1106,30 +1435,47 @@ server = function(input, output, session) {
         volcanoplotInputFileCustom = ggplot(data= DataFrameWithColors(), mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color     = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  +
-          geom_hline( yintercept     = -log10(sigval_cust),      color = "#777777", size = 0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_pos_cust, color = "#777777", size = 0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_neg_cust, color = "#777777", size = 0.15 ) +
-          geom_point(data = col_to_highlight_infile_custom, aes(x = Log2FC, y = -log10(AdjPValue)),
+          geom_hline( yintercept = -log10(sigval_cust),      
+                      color      = "#777777",
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_pos_cust, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_neg_cust, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_point(data = col_to_highlight_infile_custom, aes(x = Log2FC, 
+                                                                y = -log10(AdjPValue)),
                      color= col_to_highlight_infile_custom$CharValue, size = 1.7) +
-          geom_text(data    = col_to_highlight_infile_custom,
-                    aes(x   = Log2FC, y  = -log10(AdjPValue), label = stringr::str_to_title(GeneSymbol)),
-                    nudge_x = 0, nudge_y = 0.18,
-                    size    = 3.5, family  = "sans serif") +
+          geom_text(data      = col_to_highlight_infile_custom,
+                    aes(x     = Log2FC, 
+                        y     = -log10(AdjPValue), 
+                        label = stringr::str_to_title(GeneSymbol)),
+                    nudge_x   = 0, 
+                    nudge_y   = 0.18,
+                    size      = 3.5,
+                    family    = "sans serif") +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), 
+                                           round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows_cust} variables; Significant Threshold = ${sigval_cust}; Vertical = +/-${as.integer(logFC_threshold_pos_cust)} "))
         
         CustomVolcanoPlotStore$image2 = volcanoplotInputFileCustom
         
         # d- PLOTLY
-        volcanoplotInputFileCustom_plotly = ggplotly( volcanoplotInputFileCustom, tooltip = "text") %>%
+        volcanoplotInputFileCustom_plotly = ggplotly( volcanoplotInputFileCustom, 
+                                                      tooltip = "text") %>%
           layout(showlegend = FALSE,
                  autosize   = F,
                  yaxis      = yaxis ) %>%
-          config(toImageButtonOptions   = list(format = "svg", width = 800, height = 600, dpi= 1200),
+          config(toImageButtonOptions   = list(format = "svg", 
+                                               width  = 800, 
+                                               height = 600, 
+                                               dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
         return(volcanoplotInputFileCustom_plotly)    }
+      
       
       # 4.1.2 INSERT own list of genes 
       else if (!is.null(input$CustomList)){
@@ -1138,6 +1484,7 @@ server = function(input, output, session) {
         
         # b- Subset orginal data to custom list
         convert_to_vector_customlist = toupper(unlist(strsplit(input$CustomList, " ")))
+        #convert_to_vector_customlist = toupper(unlist(strsplit(rv$CustomList, " ")))
         col_to_highlight  = DataFrameWithColors() %>%
           mutate( GeneSymbol = toupper(GeneSymbol)) %>%
           filter( GeneSymbol %in% convert_to_vector_customlist) %>%
@@ -1146,45 +1493,76 @@ server = function(input, output, session) {
                                          AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                          AdjPValue > input$Signif  ~ "#6a6a6a" ))
         # c- Visualise custom genes
-        volcanoplotcustom = ggplot(data= DataFrameWithColors(), mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
-          geom_point( aes( color     = as.factor(CharValue) ), show.legend = FALSE ) +
+        volcanoplotcustom = ggplot(data    = DataFrameWithColors(), 
+                                   mapping = aes(x    = Log2FC, 
+                                                 y    = -log10(AdjPValue), 
+                                                 text = GeneSymbol)) +
+          geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
           scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  +
-          geom_hline( yintercept     = -log10(sigval_cust),      color = "#777777", size = 0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_pos_cust, color = "#777777", size = 0.15 ) +
-          geom_vline( xintercept     = logFC_threshold_neg_cust, color = "#777777", size = 0.15 ) +
-          geom_point(data = col_to_highlight, aes(x = Log2FC, y = -log10(AdjPValue)),
-                     color= col_to_highlight$CharValue, size = 1.7) +
-          geom_text(data    = col_to_highlight,
-                    aes(x   = Log2FC, y  = -log10(AdjPValue), label = stringr::str_to_title(GeneSymbol)),
-                    nudge_x = 0, nudge_y = 0.18,
-                    size    = 3.5, family  = "sans serif") +
+          geom_hline( yintercept = -log10(sigval_cust),
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_pos_cust, 
+                      color      = "#777777", 
+                      size       = 0.15 ) +
+          geom_vline( xintercept = logFC_threshold_neg_cust,
+                      color      = "#777777",
+                      size       = 0.15 ) +
+          geom_point(data  = col_to_highlight, 
+                     aes(x = Log2FC, 
+                         y = -log10(AdjPValue)),
+                     color = col_to_highlight$CharValue, 
+                     size  = 1.7) +
+          geom_text(data  = col_to_highlight,
+                    aes(x = Log2FC, 
+                        y = -log10(AdjPValue),
+                        label = stringr::str_to_title(GeneSymbol)),
+                    nudge_x = 0, 
+                    nudge_y = 0.18,
+                    size    = 3.5, 
+                    family  = "sans serif") +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), 
+                                           round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows_cust} variables; Significant Threshold = ${sigval_cust}; Vertical = +/-${as.integer(logFC_threshold_pos_cust)} "))
         
         CustomVolcanoPlotStore$image2 = volcanoplotcustom
         
         # d- PLOTLY     # m = list(l = 50, r = 50, b = 100, t = 100,  pad = 4)
-        volcanoplotcustom_plotly = ggplotly( volcanoplotcustom, tooltip = "text") %>%
+        volcanoplotcustom_plotly = ggplotly( volcanoplotcustom, 
+                                             tooltip = "text") %>%
           layout(showlegend = FALSE,
                  autosize   = F,
                  yaxis      = yaxis ) %>%
-          config(toImageButtonOptions   = list(format = "svg", width = 800, height = 600, dpi= 1200),
+          config(toImageButtonOptions   = list(format = "svg", 
+                                               width  = 800, 
+                                               height = 600, 
+                                               dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
         return(volcanoplotcustom_plotly)}
       
-      # 4.1.3 No File
-      else if (is.null(CustomDataFile())){
-        return(NULL) }
+      # # 4.1.3 No File
+      # else if (is.null(CustomDataFile())){
+      #   return(NULL) }
     }
   })
   
-  # 4.1.4 OUTPUT visualisation
-  output$CustomisedPlot = renderPlotly({
-    CustomListOfInterest()   } )
   
+  #================================================================================================================
+  # 4.1.4 OUTPUT visualisation
+  #================================================================================================================
+  output$CustomisedPlot = renderPlotly({
+    a3 = CustomListOfInterest()
+    Sys.sleep(2)
+    hide(id = "loading-content3")  
+    a3 
+       } )
+  
+  
+  #================================================================================================================
   # 4.1.5 OUTPUT table
+  #================================================================================================================
   output$CustomisedTable = renderDT({
     if (!is.null(CustomDataFile())){
       convert_file_data_uppercase   = toupper(CustomDataFile()[,1])
@@ -1206,10 +1584,16 @@ server = function(input, output, session) {
   })
   
   
-  ###########################################################################################################
+  #================================================================================================================
+  #================================================================================================================
   # 5. DOWNLOAD results
-  ###########################################################################################################
+  #================================================================================================================
+  #================================================================================================================
+  
+  
+  #================================================================================================================
   # 5.0 Download table results
+  #================================================================================================================
   output$DownloadTbl = downloadHandler(
     filename = function(){
       if (input$TableDownload == "Significant" & input$Tablefiletype == "csv"){
@@ -1234,88 +1618,79 @@ server = function(input, output, session) {
         write.table( MitoProcesses() , file = file, row.names = FALSE, sep = "\t")}
     })
   
-  
-  # observe(
-  #   print(input$PlotDownload == "Explore Plot Values")
-  #   
-  # )
-
-
-
 
   
   output$DownloadPlot = downloadHandler(
     filename = function(){
-      if (     input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "png"){
-        print(input$PlotDownload)
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "pdf"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "svg"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "jpeg"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "tiff"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # if (     input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "png"){
+      #   print(input$PlotDownload)
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "pdf"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "svg"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "jpeg"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "tiff"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # 
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "png"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "pdf"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "svg"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "jpeg"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "tiff"){
+      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
       
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "png"){
+      if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "png"){
         paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "pdf"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "pdf"){
         paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "svg"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "svg"){
         paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "jpeg"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "jpeg"){
         paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "tiff"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "png"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "pdf"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "svg"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "jpeg"){
-        paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "tiff"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "tiff"){
         paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
     },
     content = function(file){
       print(file)
-      if (     input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "png"){
-        ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="png",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "pdf"){
-        ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="pdf",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "svg"){
-        ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="svg", width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "jpeg"){
-        ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="jpeg", width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "tiff"){
-        ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="tiff",width = 400, height = 300, dpi= 1200, units = "mm")}
+      # if (     input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "png"){
+      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="png",  width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "pdf"){
+      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="pdf",  width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "svg"){
+      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="svg", width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "jpeg"){
+      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="jpeg", width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "tiff"){
+      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="tiff",width = 400, height = 300, dpi= 1200, units = "mm")}
+      # 
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "png"){
+      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "png",  width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "pdf"){
+      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "pdf",  width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "svg"){
+      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "svg",  width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "jpeg"){
+      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "jpeg",  width = 400, height = 300, dpi= 1200, units = "mm")}
+      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "tiff"){
+      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "tiff",  width = 400, height = 300, dpi= 1200, units = "mm")}
       
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "png"){
-        ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "png",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "pdf"){
-        ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "pdf",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "svg"){
-        ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "svg",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "jpeg"){
-        ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "jpeg",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "tiff"){
-        ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "tiff",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "png"){
+      if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "png"){
         ggsave(  filename=file, plot = CustomVolcanoPlotStore$image2, device = "png",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "pdf"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "pdf"){
         ggsave(  filename=file, plot = CustomVolcanoPlotStore$image2, device = "pdf",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "svg"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "svg"){
         ggsave(  filename=file, plot = CustomVolcanoPlotStore$image2, device = "svg",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "jpeg"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "jpeg"){
         ggsave(  filename=file, plot = CustomVolcanoPlotStore$image2, device = "jpeg",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      else if (input$PlotDownload == "Explore Custom Gene List" & input$Plotfiletype == "tiff"){
+      else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "tiff"){
         ggsave(  filename=file, plot = CustomVolcanoPlotStore$image2, device = "tiff",  width = 400, height = 300, dpi= 1200, units = "mm")}
-    })
-  
+    } )
 }
 
 
