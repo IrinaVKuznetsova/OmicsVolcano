@@ -9,25 +9,25 @@ Help page was designed to help you with the OmicsVolcano software
 Software Download and Usage
 ------
 * Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
-* Download the OmicsVolcano software from GitHub repository as zip folder ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadIcon_image.jpg) and  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/GitHubDownloadZIPIcon_image.jpg).  Unzip folder into a directory of your choice. For example, to the desktop  
+* Download the OmicsVolcano software from GitHub repository as zip folder ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/GitHubDownloadIcon_image.jpg) and  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/GitHubDownloadZIPIcon_image.jpg).  Unzip folder into a directory of your choice. For example, to the desktop  
 * Open RStudio   
-* Select R script OmicsVolcano_App.r (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/RunApp_image.jpg)  
+* Select R script OmicsVolcano_App.r (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/RunApp_image.jpg)  
 * The software will appear as a webpage interface  
 
-<img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AppLook_image.jpg">   
+<img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/AppLook_image.jpg">   
 
 
 Software Icons  
 ------
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/FileTabIcon_image.jpg)  **File** tab enables to upload users  input file      
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/FileTabIcon_image.jpg)  **File** tab enables to upload users  input file      
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: (1) explore entire plot and visualize labels of any selected data points; (2) visualize a custom list of genes; (3) visualize a mitochondrial process(es)   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/ExploreIcon_image.jpg)  **Explore** tab enables to select one of three plot`s functionality: (1) explore entire plot and visualize labels of any selected data points; (2) visualize a custom list of genes; (3) visualize a mitochondrial process(es)   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/ExportIcon_image.jpg)  **Export** tab enables to download generated plots and tables   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/ExportIcon_image.jpg)  **Export** tab enables to download generated plots and tables   
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/HelpIcon_image.jpg)  **Help** tab provides brief description of the software usage     
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/HelpIcon_image.jpg)  **Help** tab provides brief description of the software usage     
 
-  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/docs/images/AboutIcon_image.jpg)  **About** tab provides information about authors, license, used packages and their versions, citation   
+  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/AboutIcon_image.jpg)  **About** tab provides information about authors, license, used packages and their versions, citation   
 
 
 Plot Managment  
