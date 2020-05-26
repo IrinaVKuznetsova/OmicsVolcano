@@ -45,7 +45,7 @@ Plot Managment
   
 File Tab
 ------  
-* Input file can be tab, comma or semicolon separated format saved as a text file. It should contain five columns with the same column names as shown below  
+* Input file can be in tab, comma or semicolon separated format saved as a text file. It should contain five columns with the same column names as shown below  
 
 | ID | GeneSymbol | Description | Log2FC | AdjPValue
 | - | - | - | - | - | 
