@@ -743,7 +743,7 @@ server = function(input, output, session) {
       }}, 
       error = function(e) {
         displayErrorMessage("File Loading Error in Data Input File!", 
-                            "Check the Help Page for the file input format, column names. /// ExplorePlotVolPplot function", "")}
+                            "Check the Help Page for the file input format, column names. Mac OS users, check if the XQuartz App (https://www.xquartz.org) is installed /// ExplorePlotVolPplot function", "")}
     )
   })
   
