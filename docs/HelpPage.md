@@ -5,6 +5,7 @@
 Help Page  
 ------
 Help page was designed to help you with the OmicsVolcano software
+**IMPORTANT** Mac OS users are required to install the [**XQuartz app**](https://www.xquartz.org)
 
 Software Download and Usage
 ------
@@ -32,7 +33,7 @@ Software Icons
 
 Plot Managment  
 ------
-* Set significance and log2FC thresholds by using **Settings** tab located at the right top corner      
+* Set significance and log2FC thresholds by using **Settings** tab located on the right side      
 * Hold Shift and right click mouse to select as many gene labels as desired   
 **Note:** related information of the selected gene is represented in the table "InputData" below the plot   
 * To disable any changes double click on the plot   
@@ -63,12 +64,12 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 Explore Tab 
 ------
 * **Plot** tab enables to visualize a gene label of any value represented on the plot  
-&nbsp;&nbsp;&nbsp;&nbsp; * set significance and log2FC thresholds (**Settings** at right top corner)      
+&nbsp;&nbsp;&nbsp;&nbsp; * set significance and log2FC thresholds (**Settings** on the right side)      
 &nbsp;&nbsp;&nbsp;&nbsp; * explore any value represented on the plot
 
  
 * **Custom Gene List** tab enables to visualize custom list of genes of interest   
-&nbsp;&nbsp;&nbsp;&nbsp; * set significance and log2FC thresholds (**Settings** at right top corner)     
+&nbsp;&nbsp;&nbsp;&nbsp; * set significance and log2FC thresholds (**Settings** on the right side)     
 &nbsp;&nbsp;&nbsp;&nbsp; * type in own gene names separated by space or upload them as a file, where each gene name is on own row  
 
 ||
