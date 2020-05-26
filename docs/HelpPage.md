@@ -4,7 +4,7 @@
 ------  
 Help Page  
 ------
-Help page was designed to help you with the OmicsVolcano software
+Help page was designed to help you with the OmicsVolcano software  
 **IMPORTANT** Mac OS users are required to install the [**XQuartz app**](https://www.xquartz.org)
 
 Software Download and Usage
