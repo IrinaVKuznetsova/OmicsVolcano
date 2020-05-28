@@ -34,8 +34,8 @@ Software Icons
 Plot Managment  
 ------
 * Set significance and log2FC thresholds by using **Settings** tab located on the right side      
-* Windows users: Hold Shift and right click mouse to select as many gene labels as desired   
-* Mac users: Hold command and right click mouse to select as many gene labels as desired   
+* **Windows users**: Hold **Shift** and **right click mouse** to select as many gene labels as desired   
+**Mac users**: Hold **Command** and **right click mouse** to select as many gene labels as desired   
 **Note:** related information of the selected gene is represented in the table "InputData" below the plot   
 * To disable any changes double click on the plot   
 * Plot has own icons on the right top corner of the plot (become visible when hovering over). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover  
