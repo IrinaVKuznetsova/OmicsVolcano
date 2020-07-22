@@ -4,6 +4,7 @@
 # Title:      OmicsVolcano 
 # Copyright:  (C) 2020
 # License:    GNU General Public
+# non-academics: contact authors/developers for any commercial use
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -25,6 +26,7 @@
 # Co-developer: Artur Lugmayr
 # email:        lartur@acm.org
 # Edith Cowan University, WA, AUSTRALIA
+# Umea University, Umea, Sweden
 # UXMachines Pty Ltd. WA, AUSTRALIA
 
 
@@ -90,7 +92,6 @@
 # ====================================================================
 # ====================================================================
 
-#https://vbaliga.github.io/verify-that-r-packages-are-installed-and-loaded/
 req_packages = c(
   "dplyr",
   "shiny",

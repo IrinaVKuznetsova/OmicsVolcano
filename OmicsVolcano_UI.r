@@ -4,6 +4,7 @@
 # Title:      OmicsVolcano
 # Copyright:  (C) 2020
 # License:    GNU General Public
+# non-academics: contact authors/developers for any commercial use
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -24,6 +25,9 @@
 
 # Co-developer: Artur Lugmayr
 # email:        lartur@acm.org
+# Edith Cowan University, WA, AUSTRALIA
+# Umea University, Umea, Sweden
+# UXMachines Pty Ltd. WA, AUSTRALIA
 
 
 
@@ -150,7 +154,6 @@ ui_download_demo_file =
     href     = CONST_DEMO_FILE,
     target   = "_blank",
     icon     = icon("fa fa-heart"),
-    #style   = "font-size: 12px; font-family: Arial, sans-serif; color:#369C99;",
     icon("disk"),
     "Download demo file to local PC...",
     download = "demofile.txt")
@@ -188,11 +191,6 @@ ui_file_input_diag = box (
                     ".csv") ),
   
   DTOutput(outputId     = "UI_INPUT_FILE_RESULTS")
-   #    mainPanel(
-  #      tableOutput("UI_INPUT_FILE_RESULTS")
-  
-  #    )
-  #  )
 )
 
 
@@ -339,9 +337,6 @@ ui_explore_custom_gene_list = box(color = "orange",
 
 ui_download_plot = box (selectInput(inputId  = "PlotDownload",
                                     label    = "Select Plot",
-                                    # choices  = c( "Explore Plot Values",
-                                    #               "Explore Mitochondrial Processes",
-                                    #               "Explore Custom Gene List"),
                                     choices  = c("Custom Gene List"),
                                     selected = c("Custom Gene List")),
                         selectInput(
@@ -349,7 +344,6 @@ ui_download_plot = box (selectInput(inputId  = "PlotDownload",
                           label    = "Select Plot File Format",
                           choices  = c("svg", "pdf", "jpeg", "png", "tiff"),
                           selected = "svg"),
-                        ###actionButton("DownloadPlot", "Download Plot"))), #!!!!!!!!!!!!!!!!!!!!!!!!!
                         downloadButton(outputId  = "DownloadPlot",
                                        label     = "Download Plot")
                         )
@@ -387,7 +381,7 @@ function_para_tabs =  tagList (tags$style("#UI_RIGHT_SIDEBAR_SELECTMODE { displa
                                tabsetPanel (id= "UI_RIGHT_SIDEBAR_SELECTMODE",
                                             selected = "menue_tab_exp_plot",
                                             ui_threshold_configuration,
-                                 tabPanel("menue_tab_exp_plot"),                 #??????????????????????????????????????   12/05
+                                 tabPanel("menue_tab_exp_plot"),                 
                                  tabPanel("menue_tab_exp_genelist",
                                           ui_explore_custom_gene_list ),
                                  tabPanel("menue_tab_exp_mitproc",
@@ -422,7 +416,7 @@ ui_dash_sidebar = dashboardSidebar(
   collapsed = FALSE,
   disable  = FALSE,
   sidebarMenu(id = "ui_dashboard_sidebar",
-              sartExpanded = TRUE,    #    modify_stop_propagation(
+              sartExpanded = TRUE,    #    
               
               menuItem("Home Page",
                        tabName = "menue_tab_home",
@@ -453,7 +447,6 @@ ui_dash_sidebar = dashboardSidebar(
                         menuSubItem("Table",
                                     tabName = "menue_tab_download_table",
                                     icon = icon("file-export"))   ),
-              #    menuItem("EXIT"), icon = icon ("sign-out-alt"), tabName ="menue_tab_exit",
               menuItem("Help",  icon = icon("question"), tabName = "menue_tab_help"),
               menuItem("About", icon = icon("info"),     tabName = "menue_tab_about")
               )
@@ -490,30 +483,13 @@ menue_tab_home_body = tabItem("menue_tab_home",
 #
 menue_tab_exp_plot_body = tabItem("menue_tab_exp_plot",
                                   h1("Explore Plot Values"),
-                                  #  ui_threshold_configuration,
                                   helpText("Explore your data for any genes/proteins of interest"),
-                                  #  splitLayout(
-                                  #    cellWidths = c("65%", "35%"),
-                                  #  fluidRow (width = 12,
-                                  #            box (
-                                  #              with = 12,
-                                  #fluidRow (
-                                  #  width = 10,
-                                  
+
                                   div(id = "loading-content1",
                                       h2("Loading Data...")),
                                   plotlyOutput(outputId = "volcanoPlotNuclear"),
-
-
-                                  #),
-                                  # plotlyOutput(outputId = "volcanoPlotNuclear"),
-                                  #            )),
-                                  #  ),
                                   br(),
                                   br(),
-                                  # IRNA:      ??????????????????????????????????????????????????? 12/05
-                                  #  box(DTOutput(outputId     = "TableOutExploreNucl")),
-                                  
                                   tabBox(
                                     width  = 12,
                                     # Table INPUT, SIGNIF
@@ -528,10 +504,6 @@ menue_tab_exp_genelist_body = tabItem("menue_tab_exp_genelist",
   #  ui_explore_custom_gene_list,
   # Plot3 and Table
   helpText("Type in a list of gene names of interest in 'Explore Custom Gene List' tab, separated by space or upload own file with one gene per row Genes that are present in your data will be visualized on Volcano Plot"),
-  # tags$hr(style="border-color: #48D1CC;"),
-  #textInput(inputId     = "CustomList", label ="List of genes, separated by space", value = "ptcd3 sf1 mrpl30"),
-  
-  
   div(id = "loading-content3",
       h2("Loading Data...")),
   plotlyOutput(outputId = "CustomisedPlot"),
@@ -554,22 +526,14 @@ menue_tab_exit_body = tabItem ( "menue_tab_exit",
 
 menue_tab_exp_mitproc_body = tabItem( "menue_tab_exp_mitproc",
                                       h1("Explore Mitochondrial Process"),
-                                      #  ui_explore_mitochondrial_process,
                                       title = "Explore Mitochondrial Processes",
                                       #Plot2
                                       helpText("Explore your data for mitochondrial processes"),
-                                      #  splitLayout(
-                                      #    cellWidths = c("65%", "35%"),
 
                                       # Loading message
                                       div(id = "loading-content2",
                                           h2("Loading Data...")),
                                       plotlyOutput(outputId = "VolcanoPlotOutExploreMito"),
-
-                                      
-                                      
-                                      #    DTOutput(outputId     = "TableOutExploreMT")
-                                      #  ),
                                       br(),
                                       br(),
                                       tabBox (
@@ -580,7 +544,6 @@ menue_tab_exp_mitproc_body = tabItem( "menue_tab_exp_mitproc",
                                         tabPanel(title  = "Signific",
                                                  DTOutput(outputId = "SignifData2")),
                                         tabPanel(title  = "Processes",
-                                                 #h2("test this tab"),
                                                  DTOutput(outputId = "ProcessesData"))  ))
 
 
@@ -589,23 +552,6 @@ menue_tab_file_open_body = tabItem("menue_tab_file_open",
                                    h1("Open File"),
                                    ui_file_input_diag)
 
-# fileInput(inputId  = "InputFile",
-#           #label   = tags$a(href   ="//uniwa.uwa.edu.au/userhome/staff8/00090658/Desktop/2020/0_Shiny_VolcanoVisual/00_Input/2_INPUT.txt",
-#           label    = tags$a(href   = CONST_DEMO_FILE,
-#                             #target = "_blank",
-#                             style  = "font-size: 12px; font-family: Arial, sans-serif; color:#369C99;",
-#                             "Download Demo File Locally",
-#                             download ="demofile.txt"),
-#           multiple = FALSE,
-#           accept   = c("text/csv",
-#                        "text/comma-separated-values,text/plain",
-#                        ".csv")),)
-
-
-
-#
-#
-#))
 menue_tab_download_plot_body =
   tabItem("menue_tab_download_plot",
           ui_download_plot)
@@ -614,11 +560,6 @@ menue_tab_download_table_body =
   tabItem ("menue_tab_download_table",
            ui_download_table)
 
-# menue_tab_help_body =
-#   tabItem ("menue_tab_about",
-#            fluidRow(width = 2,
-#                     h1("About"),
-#                     includeHTML("www/AboutPage2.html")))
 menue_tab_help_body =
   tabItem ("menue_tab_about",
            h1("About"),
@@ -628,22 +569,6 @@ menue_tab_about_body =
   tabItem ("menue_tab_help",
            h1("Help"),
            includeHTML("www/HelpPage2.html"))
-# FILE
-# - Open File...
-# - Open & Convert File...
-# (duplicates removal -> extension, Open File and remove duplicates
-#   - Save Demo File...
-#   - Close
-
-# tabPanel(
-#   fileInput("file1", "Choose CSV File",
-#             accept = c(
-#               "text/csv",
-#               "text/comma-separated-values,text/plain",
-#               ".csv")
-#   )
-
-
 
 
 # ====================================================================
@@ -655,17 +580,7 @@ menue_tab_about_body =
 # ====================================================================
 
 ui =
-  # navbarPage("Application",
-  #
-  #   navbarMenu("More",
-  #              ui_menue_file,
-  #
-  #
-  #              "----",
-  #              "Section header",
-  #              tabPanel("Table")
-  #   ),
-  
+
 dashboardPagePlus(skin = "yellow",
                   
                   dashboardHeaderPlus(
@@ -675,7 +590,6 @@ dashboardPagePlus(skin = "yellow",
                     title               = "OmicsVolcano"),
                   ui_dash_sidebar,
                   # alternative right sidebar
-                  # rightsidebar = ui_right_sidebar,
                   dashboardBody (useShinyjs(),
                                  fluidRow (width = 12,
                                            ui_info_box),

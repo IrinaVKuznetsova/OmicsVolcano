@@ -4,6 +4,7 @@
 # Title:      OmicsVolcano 
 # Copyright:  (C) 2020
 # License:    GNU General Public
+# non-academics: contact authors/developers for any commercial use
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -24,6 +25,9 @@
 
 # Co-developer: Artur Lugmayr
 # email:        lartur@acm.org
+# Edith Cowan University, WA, AUSTRALIA
+# Umea University, Umea, Sweden
+# UXMachines Pty Ltd. WA, AUSTRALIA
 
 
 
@@ -247,9 +251,6 @@ server = function(input, output, session) {
                 paste (input$MtProcess),
                 icon  = icon("fas fa-filter"),
                 color = "yellow")
-      #      paste (input$OrganismSource),
-      #      paste (input$MtProcess))
-      # paste0 (input$mtProcess)
     })   })
   
   observeEvent(input$MtProcess, {
@@ -259,24 +260,15 @@ server = function(input, output, session) {
                paste (input$MtProcess),
                icon  = icon("fas fa-filter"),
                color = "yellow")
-      #      paste (input$OrganismSource),
-      #      paste (input$MtProcess))
-      # paste0 (input$mtProcess)
     })  })
   
   observeEvent(input$VerticalThreshold, {
     output$UI_INFO_GENERAL = renderInfoBox ({
-      # infoBox ("Threshold / Significance",
       infoBox ( title    = "Log2FC and Significance",
-                # value    = paste0 (input$VerticalThreshold),
-                # value    = paste0 ("+/-", input$VerticalThreshold, ""),
                 value    = paste0 ("+/-", input$VerticalThreshold, ""),
                 subtitle = paste0 (input$Signif),
                 icon     = icon("tachometer-alt"),
                 color    = "yellow")
-      #      paste (input$OrganismSource),
-      #      paste (input$MtProcess))       
-      # paste0 (input$mtProcess)
     })  })
   
   observeEvent(input$UI_INPUT_FILENAME, {
@@ -285,36 +277,26 @@ server = function(input, output, session) {
                paste0 (input$UI_INPUT_FILENAME),
                icon  = icon("database"),
                color = "yellow")
-      #      paste (input$OrganismSource),
-      #      paste (input$MtProcess)  )       
-      # paste0 (input$mtProcess)
     })  })
   
   
-  # Observe Event to be able to move bwt Custom list/file widgets back and forth 
-  #rv = reactiveValues() 
+
   
   observeEvent(input$CustomInputOptions, {
     if (input$CustomInputOptions == "Insert a list of genes") {
-      # rv$CustomInputOptions = input$CustomInputOptions  # *
       output$UI_INFO_EXPLORE = renderInfoBox ({
         infoBox ( "Explore",
                   "Manual List",
                   paste0 (input$CustomList),
                   icon  = (icon("list-ol")),
                   color = "yellow")   }) 
-      
-      ##### IRINA: write code for manual input and start the functions in your script  !!!!!!!!!!!!!!!!!!!!!!!!!!!!
     } 
     else 
     {output$UI_INFO_EXPLORE = renderInfoBox ({
-      # rv$UserGeneNamesFile = input$UserGeneNamesFile  # *
       infoBox ("Explore",
                "File",
-               # paste0 (input$UserGeneNamesFile),
                icon = (icon("list-ol")),
                color = "yellow")      }) 
-    ##### IRINA: write code for manual input and start the functions in your script     !!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }  })
   
   
@@ -323,42 +305,15 @@ server = function(input, output, session) {
     quit(0)  })
   
   observeEvent( input$CustomList, ({
-    #rv$CustomList = input$CustomList  # *
     print( paste("Custom List Selected", input$CustomList))  
   })  )
   
   
   observeEvent( input$UserGeneNamesFile, ({
-    #rv$UserGeneNamesFile = input$UserGeneNamesFile  # *
     print( paste("Custom List Selected", input$UserGeneNamesFile))  })  )
   
   
-  # 
-  # observeEvent(input$CustomInputOptions, {
-  #   if (input$CustomInputOptions == "Insert a list of genes") {
-  #     output$UI_INFO_EXPLORE = renderInfoBox ({
-  #       infoBox ( "Explore",
-  #                 "Manual List",
-  #                 paste0 (input$CustomList),
-  #                 icon  = (icon("list-ol")),
-  #                 color = "yellow")   })    
-  #     ##### IRINA: write code for manual input and start the functions in your script  !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  #   } 
-  #   else 
-  #   {output$UI_INFO_EXPLORE = renderInfoBox ({
-  #     infoBox ("Explore",
-  #              "File",
-  #              # paste0 (input$UserGeneNamesFile),
-  #              icon = (icon("list-ol")),
-  #              color = "yellow")      }) 
-  #   ##### IRINA: write code for manual input and start the functions in your script     !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  #   }  })
-  
-  
-  
-  
-  
-  
+
   # Raise error if file is not uploaded 
   observeEvent(input$ui_dashboard_sidebar, {
     if ( is.null(input$UI_INPUT_FILE_NAME$datapath) & input$ui_dashboard_sidebar=="menue_tab_exp_plot"){
@@ -388,14 +343,10 @@ server = function(input, output, session) {
   #================================================================================================================
   # 1.0 PARSE INPUT FILE provided by the user
   #================================================================================================================
-  # DataInputFile = function () {
-  #   return (IntermediateDataInputFile()) }
-  
   DataInputFile = reactive ({
     # Ensure that required values are available 
     req(input$UI_INPUT_FILE_NAME$datapath)
-    #req(input$UI_INPUT_FILE_SEPARATOR)
-    
+
     # specify your location in the script
     print("DataInputFile() Reactive:")
     print(input$UI_INPUT_FILE_NAME$datapath)
@@ -413,7 +364,6 @@ server = function(input, output, session) {
                     header = T,
                     quote  = "")
       
-      # browser()    
       # I.Number of columns 
       if (!ncol(df) ==5){
         displayErrorMessage("File Loading Error in Data Input File!", "Please check number of columns or select correct field separator character. Alternatively, review the Help Page for the file input format", "")
@@ -440,12 +390,8 @@ server = function(input, output, session) {
         displayErrorMessage("File Formatting Error", paste("Please check the name of the 5th column. It is AdjPValue", names(df)[5], sep=" "), "")
         return(NULL)
       }
-      # III. Check if column values are numeric
-      # else if (!is.numeric(df[4, ])==TRUE & !is.numeric(df[5,])==TRUE){
-      #   displayErrorMessage("File Formatting Error", paste("Please check that 4th and/or 5th column contain numeric values. Wrong file reading can be for example, the result of having 'extra' commas in the text, while file fileds are comma separated.", names(df)[5], sep=" "), "")
-      #   
-      # }
-      # IV. IF CHECK FOR DUPLICATES BOX IS TICKED
+
+      # III. IF CHECK FOR DUPLICATES BOX IS TICKED
       else if (input$UI_INPUT_FILE_REMOVE_DUPLICATES==TRUE) {
         df_dup = df %>%
           mutate( GeneSymbol = make.names( sapply(strsplit( as.character(df$GeneSymbol),";"), `[`, 1) , unique = T) ) %>%    # Add numeric extention to duplicated gene name
@@ -463,8 +409,7 @@ server = function(input, output, session) {
       displayErrorMessage("File Loading Error in Data Input File!", "Please choose the correct file separator! Alternatively, review the Help Page for the file input format", "")})
   })
   
-  # displayUIStatusMessage("File Loading Successful!", FALSE)
-  # output$UI_INPUT_FILE_RESULTS = renderDT(DataInputFile())
+
   
   
   
@@ -490,8 +435,7 @@ server = function(input, output, session) {
     error = function(e) {
       displayErrorMessage("File Loading Error in Data Input File!", 
                           "Check the Help Page for the file input format, column names", "")}
-    )
-  })
+    )  })
   
   
   #================================================================================================================
@@ -529,8 +473,7 @@ server = function(input, output, session) {
         # Add OXPHO and Ribsomal Processes 
         final_processes    = rbind(processdata_in, processdata_rib)
         return(final_processes[,c(2,3,5,6,4,7)]) }  # dim(final_processes) # 644   7
-      #browser()
-      
+
       else if (input$OrganismSource == "Human" & !is.null(DataInputFile()) ){
         #"Human data"
         upperCase2        = mutate( DataInputFile(), upcase = toupper(GeneSymbol) )
@@ -644,7 +587,6 @@ server = function(input, output, session) {
         
         # 2.1.0 6-COMBINE ALL filtered data
         df_color        = rbind(positiv_signif, neg_signif, notsignif1, notsignif2, na_data) 
-        #browser()
         return(df_color[, c(1,2,3,4,6,7)])  # ID -	GeneSymbol -	Log2FC -	AdjPValue -	Description -	CharValue
       }
     }, error = function(e) {
@@ -738,7 +680,6 @@ server = function(input, output, session) {
                                                height = 600, 
                                                dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
-        #browser()
         return(VolcanoPlotExplore_plotly)
       }}, 
       error = function(e) {
@@ -758,7 +699,6 @@ server = function(input, output, session) {
     Sys.sleep(2)
     hide(id = "loading-content1")  
     a1
-    
   })
   
   
@@ -901,17 +841,11 @@ server = function(input, output, session) {
         
         all_processes_mm = rbind(df_color_oxpho_rib, df_color)
         return(all_processes_mm) }
-      # browser()         }
-      
+
       else if (input$OrganismSource == "Human" & is.null(mito_df)){
         return(NULL)}
       
       else {
-        # 3.3.0 Initialise input varibales  
-        # inputdata     = DataInputFile()    # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
-        # refprocess_hs = hs_processes_file    # mm 1495 3       | GeneName Description Process
-        # ribosomal_hs  = hs_ribos_file        # mm 82   3       | GeneName Description Process ribosomal
-        
         # 3.3.1 Convert gene symbols in INPUT file to Upper case
         upperCaseDF2   = mutate( inputdata, upcase = toupper(GeneSymbol) )   # 1388    6
         
@@ -1040,7 +974,6 @@ server = function(input, output, session) {
         mm_mt      = rbind(mm_process, mm_ribos) # 951   4   | #rbind(mm_process, mm_oxpho, mm_ribos)
         mm_unique_mt_genes  = mm_mt[ !duplicated(mm_mt$GeneSymbol), ]             # 485   7
         return(mm_unique_mt_genes)
-        #browser()
       }
       else if (input$OrganismSource == "Human"){
         # 3.5.1 Info to highlight all mt genes in the plot uses reactivevalues function
@@ -1230,7 +1163,6 @@ server = function(input, output, session) {
                                                  dpi    = 1200),
                    modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
           return(VolcanoPlot_hs_allmito_plotly) 
-          # browser()
         }
         
         
@@ -1294,7 +1226,6 @@ server = function(input, output, session) {
                                                  dpi    = 1200),
                    modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
           return(VolcanoPlot_mm_process_plotly)    
-          # browser()
         }
         
         
@@ -1400,7 +1331,6 @@ server = function(input, output, session) {
       if (is.null(inFile)){
         return(NULL) }
       else{
-        #rv$UserGeneNamesFile = read.table(input$UserGeneNamesFile$datapath, header = T, sep = "\t", quote = "") 
         read.table(input$UserGeneNamesFile$datapath, header = T, sep = "\t", quote = "")   # /
       } },
       error = function(e) {
@@ -1413,21 +1343,6 @@ server = function(input, output, session) {
   #================================================================================================================
   # 4.1 PLOT
   #================================================================================================================
-  # create reactive values
-  # reactiveValuesForEvent = reactiveValues()
-  # 
-  # # file load
-  # observeEvent(CustomDataFile(), {
-  #   reactiveValuesForEvent$CustomDataFile() = CustomDataFile()
-  #   reactiveValuesForEvent$CustomList = NULL
-  # })
-  # 
-  # # insert own gene names
-  # observeEvent( input$CustomList, {
-  #   reactiveValuesForEvent$CustomList = input$CustomList
-  # })
-  
-  
   CustomListOfInterest = reactive({    # CustomListOfInterest = observe({
     # Ensure that required values are available
     req(input$Signif)
@@ -1515,12 +1430,9 @@ server = function(input, output, session) {
       
       # 4.1.2 INSERT own list of genes 
       else if (!is.null(input$CustomList)){
-        # a- List of custom gene names
-        # input_text            = input$CustomList
-        
+
         # b- Subset orginal data to custom list
         convert_to_vector_customlist = toupper(unlist(strsplit(input$CustomList, " ")))
-        #convert_to_vector_customlist = toupper(unlist(strsplit(rv$CustomList, " ")))
         col_to_highlight  = DataFrameWithColors() %>%
           mutate( GeneSymbol = toupper(GeneSymbol)) %>%
           filter( GeneSymbol %in% convert_to_vector_customlist) %>%
@@ -1662,29 +1574,6 @@ server = function(input, output, session) {
   
   output$DownloadPlot = downloadHandler(
     filename = function(){
-      # if (     input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "png"){
-      #   print(input$PlotDownload)
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "pdf"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "svg"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "jpeg"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "tiff"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # 
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "png"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "pdf"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "svg"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "jpeg"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "tiff"){
-      #   paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
-      
       if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "png"){
         paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
       else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "pdf"){
@@ -1698,28 +1587,6 @@ server = function(input, output, session) {
     },
     content = function(file){
       print(file)
-      # if (     input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "png"){
-      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="png",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "pdf"){
-      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="pdf",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "svg"){
-      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="svg", width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "jpeg"){
-      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="jpeg", width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Plot Values" & input$Plotfiletype == "tiff"){
-      #   ggsave( filename=file, plot = ExplorePlotVolPplot$image0, device="tiff",width = 400, height = 300, dpi= 1200, units = "mm")}
-      # 
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "png"){
-      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "png",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "pdf"){
-      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "pdf",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "svg"){
-      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "svg",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "jpeg"){
-      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "jpeg",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      # else if (input$PlotDownload == "Explore Mitochondrial Processes" & input$Plotfiletype == "tiff"){
-      #   ggsave(  filename=file, plot = ExploreMitoVolcanoStore$image1, device = "tiff",  width = 400, height = 300, dpi= 1200, units = "mm")}
-      
       if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "png"){
         ggsave(  filename=file, plot = CustomVolcanoPlotStore$image2, device = "png",  width = 400, height = 300, dpi= 1200, units = "mm")}
       else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "pdf"){
