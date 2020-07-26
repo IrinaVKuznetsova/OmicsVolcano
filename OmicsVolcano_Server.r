@@ -364,11 +364,16 @@ server = function(input, output, session) {
                     header = T,
                     quote  = "")
       
+      #browser()
+      
       # I.Number of columns 
       if (!ncol(df) ==5){
         displayErrorMessage("File Loading Error in Data Input File!", "Please check number of columns or select correct field separator character. Alternatively, review the Help Page for the file input format", "")
         return(NULL)
       }
+      # else if( anyNA(df[5])==FALSE){
+      #   return(rbind(df, c(NA,NA, NA,NA,NA)))
+      # }
       # II.Column names
       else if ( !names(df)[1]=="ID"){
         displayErrorMessage( "File Formatting Error", paste("Please check the name of the 1st column. It is ID, not", names(df)[1], sep=" "), "")
@@ -588,6 +593,7 @@ server = function(input, output, session) {
         # 2.1.0 6-COMBINE ALL filtered data
         df_color        = rbind(positiv_signif, neg_signif, notsignif1, notsignif2, na_data) 
         return(df_color[, c(1,2,3,4,6,7)])  # ID -	GeneSymbol -	Log2FC -	AdjPValue -	Description -	CharValue
+        
       }
     }, error = function(e) {
       displayErrorMessage("File Loading Error in Data Input File!", 
@@ -602,6 +608,7 @@ server = function(input, output, session) {
   DataSharedWithColors = SharedData$new(DataFrameWithColors)
   
   
+  
   #================================================================================================================
   # 2.2 REACTIVE VALUE, so plot can be saved 
   #================================================================================================================
@@ -611,7 +618,7 @@ server = function(input, output, session) {
   #================================================================================================================
   # 2.3 VISUALISATION ("Explore Plot Values")
   #================================================================================================================
-  ExplorePlotVolPplot = reactive ({ # observe({
+  ExplorePlotVolPplot = reactive({ 
     # Ensure that required values are available
     req(DataInputFile())
     req(input$Signif)
@@ -629,59 +636,75 @@ server = function(input, output, session) {
     numrows               = nrow(DataInputFile())
     yaxis = list(tickmode = "array", automargin = TRUE )
     tex   = list(family   = "sans serif", size  = 14, color = toRGB("#262626"))
+    # Color distribution
+    colorvec = unique(DataFrameWithColors()$CharValue)  # color order: red blue grey grey2
+    plot_color_values = c()
+    if ( length(colorvec)==4){
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  #red blue grey grey2
+    }
+    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){    # red - grey grey2
+      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))      # grey - white - pink
+    }
+    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){    # - blue grey grey2
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))
+    }
+    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  #red blue grey -
+       plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))   
+    }
+    # browser()
     
     tryCatch ({
       if (is.null(DataInputFile())){
         return(NULL) }
       
-      else {
-        # 1 GGPLOT
-        VolcanoPlotExplore = ggplot(data  = DataSharedWithColors,
-                                    mapping = aes(x    = Log2FC, 
-                                                  y    = -log10(AdjPValue), 
-                                                  text = GeneSymbol )) +
-          geom_point( aes( color  = CharValue), 
-                      show.legend = FALSE ) +
-          scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +  
-          geom_hline( yintercept = -log10(sigval),      
-                      color      = "#777777", 
-                      size       = 0.15 ) +
-          geom_vline( xintercept = logFC_threshold_pos, 
-                      color      = "#777777", 
-                      size       = 0.15 ) +
-          geom_vline( xintercept = logFC_threshold_neg, 
-                      color      = "#777777", 
-                      size       = 0.15 ) +
-          theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)), 
-                                           round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
-          labs( title   = "Volcano Plot",
-                caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
-        
-        StorePlotForExplore$image0 = VolcanoPlotExplore
-        
-        # 2. PLOTLY
-        VolcanoPlotExplore_plotly = ggplotly( VolcanoPlotExplore, tooltip = "text") %>%
-          highlight(on         = "plotly_click", 
-                    off        = "plotly_doubleclick", 
-                    dynamic    = F, 
-                    persistent = TRUE, 
-                    color      = "#777777",
-                    opacityDim = 1, 
-                    selected   = attrs_selected(mode         = "text", 
-                                                textfont     = tex, 
-                                                textposition = "top right",
-                                                marker       = list(symbol = ".crossTalkKey"))) %>%
-          layout(showlegend = FALSE, 
-                 autosize   = T, 
-                 yaxis      = yaxis) %>%
-          config(toImageButtonOptions   = list(format = "svg", 
-                                               width  = 800, 
-                                               height = 600, 
-                                               dpi    = 1200),
-                 modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
-        return(VolcanoPlotExplore_plotly)
-      }}, 
+      else{
+          VolcanoPlotExplore = ggplot(data  = DataSharedWithColors,
+                                      mapping = aes(x    = Log2FC,
+                                                    y    = -log10(AdjPValue),
+                                                    text = GeneSymbol )) +
+            geom_point( aes( color  = CharValue),
+                        show.legend = FALSE ) +
+            scale_color_manual( values = plot_color_values) +   # blue grey white red
+            geom_hline( yintercept = -log10(sigval),
+                        color      = "#777777",
+                        size       = 0.15 ) +
+            geom_vline( xintercept = logFC_threshold_pos,
+                        color      = "#777777",
+                        size       = 0.15 ) +
+            geom_vline( xintercept = logFC_threshold_neg,
+                        color      = "#777777",
+                        size       = 0.15 ) +
+            theme_classic() +
+            scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)),
+                                             round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+            labs( title   = "Volcano Plot",
+                  caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
+
+          StorePlotForExplore$image0 = VolcanoPlotExplore
+
+          # 2. PLOTLY
+          VolcanoPlotExplore_plotly = ggplotly( VolcanoPlotExplore, tooltip = "text") %>%
+            highlight(on         = "plotly_click",
+                      off        = "plotly_doubleclick",
+                      dynamic    = F,
+                      persistent = TRUE,
+                      color      = "#777777",
+                      opacityDim = 1,
+                      selected   = attrs_selected(mode         = "text",
+                                                  textfont     = tex,
+                                                  textposition = "top right",
+                                                  marker       = list(symbol = ".crossTalkKey"))) %>%
+            layout(showlegend = FALSE,
+                   autosize   = T,
+                   yaxis      = yaxis) %>%
+            config(toImageButtonOptions   = list(format = "svg",
+                                                 width  = 800,
+                                                 height = 600,
+                                                 dpi    = 1200),
+                   modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
+          return(VolcanoPlotExplore_plotly)
+        }
+      }, 
       error = function(e) {
         displayErrorMessage("File Loading Error in Data Input File!", 
                             "Check the Help Page for the file input format, column names. Mac OS users, check if the XQuartz App (https://www.xquartz.org) is installed /// ExplorePlotVolPplot function", "")}
@@ -751,6 +774,8 @@ server = function(input, output, session) {
       else if (input$OrganismSource == "Mouse" & !is.null(inputdata )) {
         refprocess = mm_processes_file     # mm 1495 3       | GeneName Description Process
         ribosomal  = mm_ribos_file         # mm 82   3       | GeneName Description Process
+        
+        # browser()
         
         # 3.1.1 Convert gene symbols in INPUT file to Upper case
         upperCaseDF   = mutate( inputdata, upcase = toupper(GeneSymbol) )   # 1388    6
@@ -842,10 +867,12 @@ server = function(input, output, session) {
         all_processes_mm = rbind(df_color_oxpho_rib, df_color)
         return(all_processes_mm) }
 
-      else if (input$OrganismSource == "Human" & is.null(mito_df)){
+      else if (input$OrganismSource == "Human" & is.null(inputdata)){    
         return(NULL)}
       
       else {
+        refprocess_hs = hs_processes_file  # mm 1516 3       | GeneName Description Process
+        ribosomal_hs  = hs_ribos_file      # mm 82   3       | GeneName Description Process ribosomal
         # 3.3.1 Convert gene symbols in INPUT file to Upper case
         upperCaseDF2   = mutate( inputdata, upcase = toupper(GeneSymbol) )   # 1388    6
         
@@ -962,7 +989,7 @@ server = function(input, output, session) {
     dfmitoprc     = DataFrameForMitoProcess()
     refprocess    = mm_processes_file    # mm 1495 3       | GeneName Description Process
     ribosomal     = mm_ribos_file        # mm 82   3       | GeneName Description Process
-    refprocess_hs = hs_processes_file  # mm 1495 3       | GeneName Description Process
+    refprocess_hs = hs_processes_file  # mm 1516    4       | GeneName Description Process
     ribosomal_hs  = hs_ribos_file      # mm 82   3       | GeneName Description Process ribosomal
     
     tryCatch({
@@ -1041,6 +1068,21 @@ server = function(input, output, session) {
     tex   = list(family   = "sans serif", 
                  size     = 14, 
                  color    = toRGB("#262626"))
+    # Color distribution
+    colorvec = unique(DataFrameWithColors()$CharValue)  # color order: red blue grey grey2
+    plot_color_values = c()
+    if ( length(colorvec)==4){
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  #red blue grey grey2
+    }
+    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){    # red - grey grey2
+      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))      # grey - white - pink
+    }
+    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){    # - blue grey grey2
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))
+    }
+    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  #red blue grey -
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))   
+    }
     
     tryCatch(
       if (is.null(inputfile)){
@@ -1064,7 +1106,7 @@ server = function(input, output, session) {
                                                           y    = -log10(AdjPValue), 
                                                           text = GeneSymbol)) +
             geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
-            scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
+            scale_color_manual( values = plot_color_values) +
             geom_hline( yintercept = -log10(sigval),      
                         color      = "#777777", 
                         size       = 0.15 ) +
@@ -1122,7 +1164,7 @@ server = function(input, output, session) {
                                                             y    = -log10(AdjPValue), 
                                                             text = GeneSymbol)) +
             geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
-            scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
+            scale_color_manual( values = plot_color_values) +
             geom_hline( yintercept = -log10(sigval),      
                         color      = "#777777", 
                         size       = 0.15 ) +
@@ -1184,7 +1226,7 @@ server = function(input, output, session) {
                                                           y    = -log10(AdjPValue), 
                                                           text = GeneSymbol)) +
             geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
-            scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
+            scale_color_manual( values = plot_color_values) +
             geom_hline( yintercept = -log10(sigval),      
                         color      = "#777777", 
                         size       = 0.15 ) +
@@ -1247,7 +1289,7 @@ server = function(input, output, session) {
                                                           y    = -log10(AdjPValue), 
                                                           text = GeneSymbol)) +
             geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
-            scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc")) +
+            scale_color_manual( values = plot_color_values) +
             geom_hline( yintercept = -log10(sigval),      
                         color      = "#777777", 
                         size       = 0.15 ) +
@@ -1364,12 +1406,30 @@ server = function(input, output, session) {
     numrows_cust               = nrow(dfinput)
     tex   = list(family   = "sans serif", size  = 14, color = toRGB("#262626"))
     yaxis = list(tickmode = "array", automargin = TRUE )
+    # Color distribution
+    colorvec = unique(DataFrameWithColors()$CharValue)  # color order: red blue grey grey2
+    plot_color_values = c()
+    if ( length(colorvec)==4){
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  #red blue grey grey2
+    }
+    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){    # red - grey grey2
+      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))      # grey - white - pink
+    }
+    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){    # - blue grey grey2
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))
+    }
+    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  #red blue grey -
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))   
+    }
+   # browser()
     
     tryCatch({ 
       if (is.null(dfinput)){
         return(NULL) }
       
+      ###########################################################################
       # 4.1.1 - UPLOAD own file with list of genes, one gene per row
+      ###########################################################################
       else if (!is.null(custominputfile)){
         # a- Custom data with uploaded custom file
         inputfile_customdata = toupper(custominputfile[,1])
@@ -1382,53 +1442,57 @@ server = function(input, output, session) {
                                          AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
                                          AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                          AdjPValue > input$Signif  ~ "#6a6a6a" ))
+        #  IRINAKUZ
+        
         # c- GGPLOT
         volcanoplotInputFileCustom = ggplot(data= DataFrameWithColors(), mapping = aes(x = Log2FC, y = -log10(AdjPValue), text = GeneSymbol)) +
           geom_point( aes( color     = as.factor(CharValue) ), show.legend = FALSE ) +
-          scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  +
-          geom_hline( yintercept = -log10(sigval_cust),      
+          scale_color_manual( values = plot_color_values)  +
+          geom_hline( yintercept = -log10(sigval_cust),
                       color      = "#777777",
                       size       = 0.15 ) +
-          geom_vline( xintercept = logFC_threshold_pos_cust, 
-                      color      = "#777777", 
+          geom_vline( xintercept = logFC_threshold_pos_cust,
+                      color      = "#777777",
                       size       = 0.15 ) +
-          geom_vline( xintercept = logFC_threshold_neg_cust, 
-                      color      = "#777777", 
+          geom_vline( xintercept = logFC_threshold_neg_cust,
+                      color      = "#777777",
                       size       = 0.15 ) +
-          geom_point(data = col_to_highlight_infile_custom, aes(x = Log2FC, 
+          geom_point(data = col_to_highlight_infile_custom, aes(x = Log2FC,
                                                                 y = -log10(AdjPValue)),
                      color= col_to_highlight_infile_custom$CharValue, size = 1.7) +
           geom_text(data      = col_to_highlight_infile_custom,
-                    aes(x     = Log2FC, 
-                        y     = -log10(AdjPValue), 
+                    aes(x     = Log2FC,
+                        y     = -log10(AdjPValue),
                         label = stringr::str_to_title(GeneSymbol)),
-                    nudge_x   = 0, 
+                    nudge_x   = 0,
                     nudge_y   = 0.18,
                     size      = 3.5,
                     family    = "sans serif") +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( dfinput$Log2FC, na.rm = T)), 
+          scale_x_continuous(breaks = seq( round( min( dfinput$Log2FC, na.rm = T)),
                                            round( max( dfinput$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows_cust} variables; Significant Threshold = ${sigval_cust}; Vertical = +/-${as.integer(logFC_threshold_pos_cust)} "))
-        
+
         CustomVolcanoPlotStore$image2 = volcanoplotInputFileCustom
-        
+
         # d- PLOTLY
-        volcanoplotInputFileCustom_plotly = ggplotly( volcanoplotInputFileCustom, 
+        volcanoplotInputFileCustom_plotly = ggplotly( volcanoplotInputFileCustom,
                                                       tooltip = "text") %>%
           layout(showlegend = FALSE,
                  autosize   = F,
                  yaxis      = yaxis ) %>%
-          config(toImageButtonOptions   = list(format = "svg", 
-                                               width  = 800, 
-                                               height = 600, 
+          config(toImageButtonOptions   = list(format = "svg",
+                                               width  = 800,
+                                               height = 600,
                                                dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
         return(volcanoplotInputFileCustom_plotly)    }
       
       
+      ###########################################################################
       # 4.1.2 INSERT own list of genes 
+      ###########################################################################
       else if (!is.null(input$CustomList)){
 
         # b- Subset orginal data to custom list
@@ -1440,55 +1504,56 @@ server = function(input, output, session) {
                                          AdjPValue < input$Signif & Log2FC < (-1)*as.numeric(input$VerticalThreshold) ~ "#087fc8",    # blue
                                          AdjPValue > input$Signif & Log2FC > (-1)*as.numeric(input$VerticalThreshold) | Log2FC < as.numeric(input$VerticalThreshold) ~ "#6a6a6a",
                                          AdjPValue > input$Signif  ~ "#6a6a6a" ))
+
         # c- Visualise custom genes
-        volcanoplotcustom = ggplot(data    = DataFrameWithColors(), 
-                                   mapping = aes(x    = Log2FC, 
-                                                 y    = -log10(AdjPValue), 
+        volcanoplotcustom = ggplot(data    = DataFrameWithColors(),
+                                   mapping = aes(x    = Log2FC,
+                                                 y    = -log10(AdjPValue),
                                                  text = GeneSymbol)) +
           geom_point( aes( color = as.factor(CharValue) ), show.legend = FALSE ) +
-          scale_color_manual( values = c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  +
+          scale_color_manual( values = plot_color_values)  +
           geom_hline( yintercept = -log10(sigval_cust),
-                      color      = "#777777", 
+                      color      = "#777777",
                       size       = 0.15 ) +
-          geom_vline( xintercept = logFC_threshold_pos_cust, 
-                      color      = "#777777", 
+          geom_vline( xintercept = logFC_threshold_pos_cust,
+                      color      = "#777777",
                       size       = 0.15 ) +
           geom_vline( xintercept = logFC_threshold_neg_cust,
                       color      = "#777777",
                       size       = 0.15 ) +
-          geom_point(data  = col_to_highlight, 
-                     aes(x = Log2FC, 
+          geom_point(data  = col_to_highlight,
+                     aes(x = Log2FC,
                          y = -log10(AdjPValue)),
-                     color = col_to_highlight$CharValue, 
+                     color = col_to_highlight$CharValue,
                      size  = 1.7) +
           geom_text(data  = col_to_highlight,
-                    aes(x = Log2FC, 
+                    aes(x = Log2FC,
                         y = -log10(AdjPValue),
                         label = stringr::str_to_title(GeneSymbol)),
-                    nudge_x = 0, 
+                    nudge_x = 0,
                     nudge_y = 0.18,
-                    size    = 3.5, 
+                    size    = 3.5,
                     family  = "sans serif") +
           theme_classic() +
-          scale_x_continuous(breaks = seq( round( min( dfinput$Log2FC, na.rm = T)), 
+          scale_x_continuous(breaks = seq( round( min( dfinput$Log2FC, na.rm = T)),
                                            round( max( dfinput$Log2FC, na.rm = T)), 1) )+
           labs( title ="Volcano Plot",
                 caption = str_interp("Total = ${numrows_cust} variables; Significant Threshold = ${sigval_cust}; Vertical = +/-${as.integer(logFC_threshold_pos_cust)} "))
-        
+
         CustomVolcanoPlotStore$image2 = volcanoplotcustom
-        
+
         # d- PLOTLY     # m = list(l = 50, r = 50, b = 100, t = 100,  pad = 4)
-        volcanoplotcustom_plotly = ggplotly( volcanoplotcustom, 
+        volcanoplotcustom_plotly = ggplotly( volcanoplotcustom,
                                              tooltip = "text") %>%
           layout(showlegend = FALSE,
                  autosize   = F,
                  yaxis      = yaxis ) %>%
-          config(toImageButtonOptions   = list(format = "svg", 
-                                               width  = 800, 
-                                               height = 600, 
+          config(toImageButtonOptions   = list(format = "svg",
+                                               width  = 800,
+                                               height = 600,
                                                dpi    = 1200),
                  modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
-        return(volcanoplotcustom_plotly) }   
+        return(volcanoplotcustom_plotly) }
       
       # # 4.1.3 No File
       else if (is.null(custominputfile)){
