@@ -364,7 +364,7 @@ server = function(input, output, session) {
                     header = T,
                     quote  = "")
       
-      #browser()
+      # browser()
       
       # I.Number of columns 
       if (!ncol(df) ==5){
@@ -429,13 +429,14 @@ server = function(input, output, session) {
     # specify your location in the script
     print("FilteredToSignif Reactive:")
     print("----")
-    
+
     tryCatch({
       # Filter to significant  
       signif = DataInputFile() %>%
         filter( AdjPValue < input$Signif,
                 !is.na(AdjPValue)) 
       return(signif[,c(1,2,4,5,3)])
+
     },
     error = function(e) {
       displayErrorMessage("File Loading Error in Data Input File!", 
@@ -618,7 +619,8 @@ server = function(input, output, session) {
   #================================================================================================================
   # 2.3 VISUALISATION ("Explore Plot Values")
   #================================================================================================================
-  ExplorePlotVolPplot = reactive({ 
+  ExplorePlotVolPplot = reactive({
+  #ExplorePlotVolPplot = observe({ 
     # Ensure that required values are available
     req(DataInputFile())
     req(input$Signif)
@@ -639,18 +641,32 @@ server = function(input, output, session) {
     # Color distribution
     colorvec = unique(DataFrameWithColors()$CharValue)  # color order: red blue grey grey2
     plot_color_values = c()
+    
+    # all values: left sig NA right
     if ( length(colorvec)==4){
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  #red blue grey grey2
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  # => reverse coloring: blue - grey - white - red 
     }
-    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){    # red - grey grey2
-      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))      # grey - white - pink
+    # left nsig na  ---
+    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){            
+      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))             # => reverse coloring: grey - white - red
     }
-    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){    # - blue grey grey2
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))
+    # --- nsig na right
+    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){           
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))             # => reverse coloring: blue - grey - white 
     }
-    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  #red blue grey -
-       plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))   
+    # left nsig --- right
+    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  
+       plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))          # => reverse coloring: blue - grey - red
     }
+    # --- nsig NA ---
+    else if (length(colorvec)==2 & (colorvec[1]=="grey") & (colorvec[2]=="grey2") ){         # => reverse coloring: grey white
+      plot_color_values = c(plot_color_values, c( "#cccccc", "white"))   
+    }
+    # left --- --- right
+    else if (length(colorvec)==2 & (colorvec[1]=="red") & (colorvec[2]=="blue") ){         # => reverse coloring: blue - red
+      plot_color_values = c(plot_color_values, c( "#9fd8fb", "#ffcccc"))   
+    }
+    else{}
     # browser()
     
     tryCatch ({
@@ -1070,19 +1086,33 @@ server = function(input, output, session) {
                  color    = toRGB("#262626"))
     # Color distribution
     colorvec = unique(DataFrameWithColors()$CharValue)  # color order: red blue grey grey2
+    
     plot_color_values = c()
+    # all values: left sig NA right
     if ( length(colorvec)==4){
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  #red blue grey grey2
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  # => reverse coloring: blue - grey - white - red 
     }
-    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){    # red - grey grey2
-      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))      # grey - white - pink
+    # left nsig na  ---
+    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){            
+      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))             # => reverse coloring: grey - white - red
     }
-    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){    # - blue grey grey2
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))
+    # --- nsig na right
+    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){           
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))             # => reverse coloring: blue - grey - white 
     }
-    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  #red blue grey -
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))   
+    # left nsig --- right
+    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))          # => reverse coloring: blue - grey - red
     }
+    # --- nsig NA ---
+    else if (length(colorvec)==2 & (colorvec[1]=="grey") & (colorvec[2]=="grey2") ){         # => reverse coloring: grey white
+      plot_color_values = c(plot_color_values, c( "#cccccc", "white"))   
+    }
+    # left --- --- right
+    else if (length(colorvec)==2 & (colorvec[1]=="red") & (colorvec[2]=="blue") ){         # => reverse coloring: blue - red
+      plot_color_values = c(plot_color_values, c( "#9fd8fb", "#ffcccc"))   
+    }
+    else{}
     
     tryCatch(
       if (is.null(inputfile)){
@@ -1409,18 +1439,31 @@ server = function(input, output, session) {
     # Color distribution
     colorvec = unique(DataFrameWithColors()$CharValue)  # color order: red blue grey grey2
     plot_color_values = c()
+    # all values: left sig NA right
     if ( length(colorvec)==4){
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  #red blue grey grey2
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white", "#ffcccc"))  # => reverse coloring: blue - grey - white - red 
     }
-    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){    # red - grey grey2
-      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))      # grey - white - pink
+    # left nsig na  ---
+    else if (length(colorvec)==3 & (colorvec[1]=="red") & (!colorvec[2]=="blue")){            
+      plot_color_values = c(plot_color_values, c("#cccccc", "white", "#ffcccc"))             # => reverse coloring: grey - white - red
     }
-    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){    # - blue grey grey2
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))
+    # --- nsig na right
+    else if (length(colorvec)==3 & (colorvec[1]=="blue") & (colorvec[2]=="grey")){           
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "white"))             # => reverse coloring: blue - grey - white 
     }
-    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  #red blue grey -
-      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))   
+    # left nsig --- right
+    else if (length(colorvec)==3 & (!"grey2" %in% colorvec) & (colorvec[1]=="red") & (colorvec[2]=="blue") & (colorvec[3]=="grey")){  
+      plot_color_values = c(plot_color_values, c("#9fd8fb", "#cccccc", "#ffcccc"))          # => reverse coloring: blue - grey - red
     }
+    # --- nsig NA ---
+    else if (length(colorvec)==2 & (colorvec[1]=="grey") & (colorvec[2]=="grey2") ){         # => reverse coloring: grey white
+      plot_color_values = c(plot_color_values, c( "#cccccc", "white"))   
+    }
+    # left --- --- right
+    else if (length(colorvec)==2 & (colorvec[1]=="red") & (colorvec[2]=="blue") ){         # => reverse coloring: blue - red
+      plot_color_values = c(plot_color_values, c( "#9fd8fb", "#ffcccc"))   
+    }
+    else{}
    # browser()
     
     tryCatch({ 
@@ -1651,7 +1694,7 @@ server = function(input, output, session) {
         paste( input$PlotDownload, "_", format(Sys.Date(), "%d%b%Y"), paste(".", input$Plotfiletype, sep=""), sep="")}
     },
     content = function(file){
-      print(file)
+      # print(file)
       if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "png"){
         ggsave(  filename=file, plot = CustomVolcanoPlotStore$image2, device = "png",  width = 400, height = 300, dpi= 1200, units = "mm")}
       else if (input$PlotDownload == "Custom Gene List" & input$Plotfiletype == "pdf"){
