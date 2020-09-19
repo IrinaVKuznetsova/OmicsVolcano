@@ -380,19 +380,19 @@ server = function(input, output, session) {
         return(NULL)
       }
       else if (!names(df)[2]=="GeneSymbol"){
-        displayErrorMessage("File Formatting Error", paste("Please check the name of the 2nd column. It is GeneSymbol", names(df)[2], sep=" "), "")
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 2nd column. It is GeneSymbol, not", names(df)[2], sep=" "), "")
         return(NULL)
       }
       else if (!names(df)[3]=="Description"){
-        displayErrorMessage("File Formatting Error", paste("Please check the name of the 3rd column. It is Description", names(df)[3], sep=" "), "")
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 3rd column. It is Description, not", names(df)[3], sep=" "), "")
         return(NULL)
       }
       else if (!names(df)[4]=="Log2FC"){
-        displayErrorMessage("File Formatting Error", paste("Please check the name of the 4th column. It is Log2FC", names(df)[4], sep=" "), "")
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 4th column. It is Log2FC, not", names(df)[4], sep=" "), "")
         return(NULL)
       }
       else if (!names(df)[5]=="AdjPValue"){
-        displayErrorMessage("File Formatting Error", paste("Please check the name of the 5th column. It is AdjPValue", names(df)[5], sep=" "), "")
+        displayErrorMessage("File Formatting Error", paste("Please check the name of the 5th column. It is AdjPValue, not", names(df)[5], sep=" "), "")
         return(NULL)
       }
 

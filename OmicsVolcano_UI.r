@@ -174,7 +174,7 @@ ui_file_input_diag = box (
   radioButtons(
     inputId = "UI_INPUT_FILE_SEPARATOR",
     "File Separator",
-    choices = c( Comma = ",", Semicolon = ";", Tab = "\t"),
+    choices = c( Semicolon = ";", Tab = "\t"),
     selected= "\t"),
   
   tags$hr(),
@@ -272,7 +272,7 @@ ui_explore_mitochondrial_process = box (
       "Metabolism of Vitamins & Co-Factors",
       "Mitochondrial Carrier",
       "Mitochondrial Dynamics",
-      "Mitochondrial gene expression",
+      "Mitochondrial Gene Expression",
       "Mitochondrial Signaling",
       "Mitophagy",
       "Nitrogen Metabolism",
