@@ -90,6 +90,20 @@ Explore Tab
 **Note:** User can chose which gene label(s) of the selected process are seen on the plot    
  
 
+
+* **Mutliple Processes** tab enables to select and highlight in different colours multiple mitochodrial processes present in the data  
+&nbsp;&nbsp;&nbsp;&nbsp; * select organism  
+&nbsp;&nbsp;&nbsp;&nbsp; * select different processes of interest and assign colours  
+&nbsp;&nbsp;&nbsp;&nbsp; * press Apply button  
+**Note:** Same colour can be assigned to different processes  
+**Note:** To label plot points, hover over the plot's point of interest. The hover will indicate a gene name information with the same background colour as the point of interest    
+
+* **Cellular Localization** tab enables to explore cellular compartment localization  
+&nbsp;&nbsp;&nbsp;&nbsp; * select cellular localization of interest from drop-down menue  
+**Note:** Information is available only for Human data  
+**Note:** User can choose which gene label(s) of the selected process are seen on the plot    
+
+
  
 Export Tab
 ------
