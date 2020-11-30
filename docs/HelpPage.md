@@ -12,7 +12,7 @@ Software Download and Usage
 * Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio latest version. The software works for R version 3.6.1 or above. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
 * Download the OmicsVolcano software from GitHub repository as zip folder ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/GitHubDownloadIcon_image.jpg) and  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/GitHubDownloadZIPIcon_image.jpg).  Unzip folder into a directory of your choice. For example, to the desktop  
 * Open RStudio   
-* Select R script OmicsVolcano_App.r (File – Open File ..  – OmicsVolcano_App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/RunApp_image.jpg). Make sure "Run External", which will load the software to the default web browser, or "Run in Window", which will load the software to R envieroment.  
+* Select R script OmicsVolcano_App.r (File – Open File ..  – OmicsVolcano_App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/RunApp_image.jpg). Make sure "Run External", which will load the software to the default web browser, or "Run in Window", which will load the software to R environment.  
 * The software will appear as a webpage interface  
 
 <img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/AppLook_image.jpg">   
