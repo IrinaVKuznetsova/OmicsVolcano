@@ -12,7 +12,7 @@
 <li class="has-line-data" data-line-start="10" data-line-end="11">Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio. For R <a href="https://www.r-project.org/">https://www.r-project.org/</a> and RStudio <a href="https://rstudio.com/products/rstudio/download/">https://rstudio.com/products/rstudio/download/</a></li>
 <li class="has-line-data" data-line-start="11" data-line-end="12">Download the OmicsVolcano software from GitHub repository as zip folder <img src="./images/GitHubDownloadIcon_image.jpg" alt="tab"> and <img src="./images/GitHubDownloadZIPIcon_image.jpg" alt="tab">. Unzip folder into a directory of your choice. For example, to the desktop</li>
 <li class="has-line-data" data-line-start="12" data-line-end="13">Open RStudio</li>
-<li class="has-line-data" data-line-start="13" data-line-end="14">Select R script OmicsVolcano_App.r (File – Open File … – App.r). To run the software, click <img src="./images/RunApp_image.jpg" alt="Run App"></li>
+<li class="has-line-data" data-line-start="13" data-line-end="14">Select R script OmicsVolcano_App.r (File – Open File … – OmicsVolcano_App.r). To run the software, click <img src="./images/RunApp_image.jpg" alt="Run App"></li>
 <li class="has-line-data" data-line-start="14" data-line-end="16">The software will appear as a webpage interface</li>
 <p class="has-line-data" data-line-start="16" data-line-end="17"><img src="./images/AppLook_image.jpg" alt="UI Interface"</p>
 <h2 class="code-line" data-line-start=19 data-line-end=21><a id="Software_Icons_19"></a>Software Icons</h2>
@@ -24,7 +24,7 @@
 <h2 class="code-line" data-line-start=34 data-line-end=36><a id="Plot_Managment_34"></a>Plot Managment</h2>
 <ul>
 <li class="has-line-data" data-line-start="36" data-line-end="37">Set significance and Log2FC thresholds by using <strong>Settings</strong> tab located on the right side</li>
-<li class="has-line-data" data-line-start="37" data-line-end="39">Windows users: Hold Shift and right click mouse to select as many gene labels as desired. Mac users: Hold command and right click mouse to select as many gene labels as desired<br>
+<li class="has-line-data" data-line-start="37" data-line-end="39">Windows users: Hold Shift and left/right click mouse to select as many gene labels as desired. Mac users: Hold command and left/right click mouse to select as many gene labels as desired<br>
 <strong>Note:</strong> related information of the selected gene is represented in the table “InputData” below the plot</li>
 <li class="has-line-data" data-line-start="39" data-line-end="40">To disable any changes double click on the plot</li>
 <li class="has-line-data" data-line-start="40" data-line-end="41">Plot has own icons on the right top corner of the plot (become visible when hovering over). Icons enable to save image with selected gene labels in SVG format, to zoom, zoom in, zoom out, autoscale, show closest data on hover, compare data on hover</li>
@@ -132,6 +132,16 @@
      * select organism<br>
      * select process of interest<br>
 <strong>Note:</strong> User can choose which gene label(s) of the selected process are seen on the plot</li>
+<li class="has-line-data" data-line-start="85" data-line-end="90"><strong>Mutliple Processes</strong> tab enables to select and highlight in different colours multiple mitochodrial processes present in the data<br>
+     * select organism<br>
+	 * select different processes of interest and assign colours<br>
+     * press Apply button<br>
+<strong>Note:</strong> Same colour can be assigned to different processes<br>
+<strong>Note:</strong> To label plot points, hover over the plot's point of interest. The hover will indicate a gene name information with the same background colour as the point of interest</li>
+<li class="has-line-data" data-line-start="85" data-line-end="90"><strong>Cellular Localization</strong> tab enables to explore cellular compartment localization<br>
+     * select cellular localization of interest from drop-down menue<br>
+<strong>Note:</strong> Information is available only for Human data<br>
+<strong>Note:</strong> User can choose which gene label(s) of the selected process are seen on the plot</li>
 </ul>
 <h2 class="code-line" data-line-start=93 data-line-end=95><a id="Export_Tab_93"></a>Export Tab</h2>
 <ul>
@@ -141,7 +151,9 @@
 <h2 class="code-line" data-line-start=100 data-line-end=102><a id="Support_100"></a>Support</h2>
 <p class="has-line-data" data-line-start="102" data-line-end="104">Explore OmicsVolcano. Get general feeling how software works, it`s flow and functionality. You can use Demo to explore OmicsVolcano, which is provided in the <strong>File</strong> tab.<br>
 When you email your question please include OS you are using, R version, screenshort of the error message.</p>
-<p class="has-line-data" data-line-start="105" data-line-end="106">Irina Kuznetsova | email: <a href="/cdn-cgi/l/email-protection#f79e859e9996d99c828d99928384988196b78792859c9e9984d9988590d99682"><span class="__cf_email__" data-cfemail="d9b0abb0b7b8f7b2aca3b7bcadaab6afb899a9bcabb2b0b7aaf7b6abbef7b8ac">[email&#160;protected]</span></a></p>
+
+<p class="has-line-data" data-line-start="105" data-line-end="106">Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au</p>
+
 <p class="has-line-data" data-line-start="107" data-line-end="109">© Copyright © 2020<br>
 <a href="https://github.com/IrinaVKuznetsova/OmicsVolcano.git">https://github.com/IrinaVKuznetsova/OmicsVolcano.git</a></p>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>

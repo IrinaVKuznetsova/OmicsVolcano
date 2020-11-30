@@ -4,7 +4,12 @@
 # Title:      OmicsVolcano
 # Copyright:  (C) 2020
 # License:    GNU General Public
-# non-academics: contact authors/developers for any commercial use
+#
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# NON-ACADEMICS: 
+# CONTACT authors/software developers for any COMMERCIAL USE 
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -12,10 +17,11 @@
 
 
 
+
 # ====================================================================
 # ====================================================================
 # ====================================================================
-# Script Developers
+# SOFTWARE DEVELOPERS
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -32,10 +38,11 @@
 
 
 
+
 # ====================================================================
 # ====================================================================
 # ====================================================================
-# License
+# LICENSE
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -61,6 +68,7 @@
 
 
 
+
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -68,18 +76,20 @@
 # ====================================================================
 # ====================================================================
 # ====================================================================
-
 # install.packages("dplyr")
 # install.packages("tidyverse")
 # install.packages('shiny')
 # install.packages("plotly")
 # install.packages('DT')
 # install.packages("shinydashboard")
-# install.packages("ggplot2")
+# install.packages("ggplot2") 
 # install.packages("svglite")
 # install.packages("stringr")
 # install.packages("shinyWidgets")
 # install.packages("devtools")
+# install.packages("colourpicker")
+
+
 
 
 
@@ -91,16 +101,10 @@
 # ====================================================================
 # ====================================================================
 # ====================================================================
-
 modify_stop_propagation = function(x) {
   x$children[[1]]$attribs$onclick = "event.stopPropagation()"
   x
 }
-
-
-
-
-
 
 
 
@@ -115,10 +119,12 @@ modify_stop_propagation = function(x) {
 # ====================================================================
 
 
-# --------------------------------------------------------------------
-# STATUS AND ERROR BAR
-# --------------------------------------------------------------------
-
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 1. STATUS AND ERROR BAR
+# ===================================================================================================================================
+# ===================================================================================================================================
+# TOP ICONS
 ui_info_box = box(width = 12,
                   fluidRow(
                     width = 12,
@@ -131,6 +137,7 @@ ui_info_box = box(width = 12,
 
 
 
+
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -139,16 +146,20 @@ ui_info_box = box(width = 12,
 # ====================================================================
 # ====================================================================
 
-# --------------------------------------------------------------------
-# GENERAL ELEMENTS
-# --------------------------------------------------------------------
+
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 1. GENERAL ELEMENTS
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_menue_body_elements = c("menue_tab_home_body", "menue_tab_file_open_body")
 
 
-
-# --------------------------------------------------------------------
-# DOWNLOAD DEMO FILE LINK
-# --------------------------------------------------------------------
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 2. DOWNLOAD DEMO FILE LINK
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_download_demo_file =
   tags$a(
     href     = CONST_DEMO_FILE,
@@ -159,17 +170,17 @@ ui_download_demo_file =
     download = "demofile.txt")
 
 
-
-# --------------------------------------------------------------------
-# FILE UPLOAD
-# --------------------------------------------------------------------
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 3. FILE UPLOAD
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_file_input_diag = box (
   width = 12,
-  #  fluidRow (
   checkboxInput(
     inputId = "UI_INPUT_FILE_REMOVE_DUPLICATES",
     label   = "Check for Duplicates",
-    value   = FALSE),
+    value   = TRUE),
   
   radioButtons(
     inputId = "UI_INPUT_FILE_SEPARATOR",
@@ -194,12 +205,11 @@ ui_file_input_diag = box (
 )
 
 
-
-
-
-# --------------------------------------------------------------------
-# THRESHOLD BOX
-# --------------------------------------------------------------------
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 4. THRESHOLD BOX
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_threshold_configuration = box (id    = "ui_threshold_configuration",
                                   color = "orange",
                                   title = "Threshold",
@@ -210,16 +220,16 @@ ui_threshold_configuration = box (id    = "ui_threshold_configuration",
                                   numericInput("VerticalThreshold",
                                                label = "Plot Vertical Threshold",
                                                value = 1,
-                                               min   = 0.1,  #################
+                                               min   = 0.1,  
                                                max   = 1000,
                                                step  = 0.5),
                                   
                                   tags$style(
                                     type = "text/css",
                                     ".irs-grid-text:nth-child(-2n+18) {color: black; }",   #https://stackoverflow.com/questions/50370958/color-tick-mark-tick-mark-labels-in-sliderinput-shiny
-                                    ".irs-grid-text:nth-child(2n+20) {color: red;   font-size:12}",
-                                    ".irs-grid-pol:nth-of-type(-n+0) {background:black; }",
-                                    ".irs-grid-pol:nth-of-type(n+0) {background:black}" ),
+                                    ".irs-grid-text:nth-child(2n+20)  {color: red;   font-size:12}",
+                                    ".irs-grid-pol:nth-of-type(-n+0)  {background: black; }",
+                                    ".irs-grid-pol:nth-of-type(n+0)  {background:  black}" ),
                                   
                                   sliderInput(inputId   = "Signif",
                                               label     = "Significance",
@@ -230,11 +240,11 @@ ui_threshold_configuration = box (id    = "ui_threshold_configuration",
                                               round     = -3 ))
 
 
-
-# --------------------------------------------------------------------
-# EXPLORE MIROCHONDRIAL PROCESS
-# --------------------------------------------------------------------
-
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 5. EXPLORE ONE MITOCHONDRIAL PROCESS
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_explore_mitochondrial_process = box (
   color = "orange",
   title = "Mitochondrial Process",
@@ -244,65 +254,132 @@ ui_explore_mitochondrial_process = box (
   # Organism of interest
   radioButtons(
     inputId  = "OrganismSource",
-    label     = "Select Organism",
-    choices   = c("Mouse", "Human"),
-    inline    = TRUE),
+    label    = "Select Organism",
+    choices  = c("Mouse", "Human"),
+    inline   = TRUE),
   
-  selectInput(
+  # A process of interest
+  selectInput(    
     inputId   = "MtProcess",
     label     = "Show Mitochondrial Process",
-    choices   = c(
-      "Show All Mitochondrial Genes",
-      "Amino Acid Metabolism",
-      "Apoptosis",
-      "Bile Acid Synthesis",
-      "Calcium Signaling & Transport",
-      "Cardiolipin Biosynthesis",
+    # IF: mult=F, selectize=F, size - 5 box anables to see 5 options, but to select only one 
+    # IF: mult=T, selectize=T | no size option
+    multiple  =F,                                
+    selected ="Show All Mitochondrial Genes",   
+    choices   = list( `Processes:` = list(
+    # choices   = list( 
+      "Show All Mitochondrial Genes", "Amino Acid Metabolism",
+      "Apoptosis", "Bile Acid Synthesis",
+      "Calcium Signaling & Transport", "Cardiolipin Biosynthesis",
       "Fatty Acid Biosynthesis & Elongation",
       "Fatty Acid Degradation & Beta-oxidation",
-      "Fatty Acid Metabolism",
-      "Fe-S Cluster Biosynthesis",
-      "Folate & Pterin Metabolism",
-      "Fructose Metabolism",
-      "Glycolysis",
-      "Heme Biosynthesis",
-      "Import & Sorting",
-      "Lipoic Acid Metabolism",
-      "Metabolism of Lipids & Lipoproteins",
-      "Metabolism of Vitamins & Co-Factors",
-      "Mitochondrial Carrier",
-      "Mitochondrial Dynamics",
-      "Mitochondrial Gene Expression",
-      "Mitochondrial Signaling",
-      "Mitophagy",
-      "Nitrogen Metabolism",
-      "Nucleotide Metabolism",
-      "Oxidative Phosphorylation",
-      "Oxidative Phosphorylation (MT)",
-      "Pentose Phosphate Pathway",
-      "Protein Stability & Degradation",
-      "Pyruvate Metabolism",
-      "Replication & Transcription",
-      "Ribosomal", 
-      "ROS Defense",
-      "Transcription (nuclear)",
-      "Translation",
-      "Translation (MT)",
-      "Transmembrane Transport",
-      "Tricarboxylic Acid Cycle",
-      "Ubiquinone Biosynthesis",
-      "Unknown MT process",
-      "UPRmt")
+      "Fatty Acid Metabolism", "Fe-S Cluster Biosynthesis",
+      "Folate & Pterin Metabolism", "Fructose Metabolism", "Glycolysis",
+      "Heme Biosynthesis", "Import & Sorting", "Lipoic Acid Metabolism",
+      "Metabolism of Lipids & Lipoproteins", "Metabolism of Vitamins & Co-Factors",
+      "Mitochondrial Carrier", "Mitochondrial Dynamics",
+      "Mitochondrial Gene Expression", "Mitochondrial Signaling",
+      "Mitophagy", "Nitrogen Metabolism", "Nucleotide Metabolism",
+      "Oxidative Phosphorylation", "Pentose Phosphate Pathway",
+      "Protein Stability & Degradation", "Pyruvate Metabolism",
+      "Replication & Transcription", "Ribosomal", "ROS Defense", "Transcription (nuclear)",
+      "Translation", "Transmembrane Transport", "Tricarboxylic Acid Cycle",
+      "Ubiquinone Biosynthesis", "Unknown MT process", "UPRmt"), 
+      # "Oxidative Phosphorylation (MT)", "Translation (MT)")
+      `MT DNA encoded:` = list("Oxidative Phosphorylation (MT)", "Translation (MT)"))
     )
+)
+
+
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 6. EXPLORE MULTIPLE MITOCHONDRIAL PROCESSES
+# ===================================================================================================================================
+# ===================================================================================================================================
+ui_explore_multiple_mitochondrial_processes = box(
+  color       = "orange",
+  title       = "Mutliple Mitochondrial Processes",
+  solidHeader = TRUE,
+  width       = 12,
+  
+  # ORGANISM OF INTEREST
+  radioButtons(
+    inputId  = "OrganismSource2",
+    label    = "Select Organism",
+    choices  = c("Mouse", "Human"),
+    inline   = TRUE),
+  
+  # uiOutput("UI_MMP_PROCESSES")
+  actionButton(inputId = "UI_MMP_LIST_ACTION",
+                              width   = '80px',
+                              label   = "Apply"),
+  # actionButton("selectall", "Select All"),
+  hr(),   # space btw Action button and next info
+  h4("Select Processes and Colours"),
+  h6("Hex colour code - #D91414, or colour name - red"),
+  lapply(1:length(ui_mmp_names), function(x) {
+  fluidRow( offset = 1,
+            # CHECK BOXES
+            column (width = 1,
+                    checkboxInput(
+                      inputId = paste0("UI_MMP_LIST_CHECKBOX_", x),
+                      value   = FALSE,
+                      label   = NULL)),
+            # COLOUR PALETTE
+            column (width = 2,
+                    colourWidget( elementId  = paste0("UI_MMP_LIST_COLORPICKER_", x),
+                                  value      = "#000000",
+                                  palette    = "square",
+                                  showColour = "both",
+                                  width      = '77px',
+                                  height     = '20px')),
+            # PROCESSES
+            column (width = 9,
+                    h5(ui_mmp_names[x]))
+  )})
+
 )
 
 
 
 
-# --------------------------------------------------------------------
-# EXPLORE CUSTOM GENE LIST
-# --------------------------------------------------------------------
 
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 7. EXPLORE CELLULAR COMPARTMENT LOCALIZATION
+# ===================================================================================================================================
+# ===================================================================================================================================
+ui_explore_cellular_compartment_localiz = box (
+  color = "orange",
+  title = "Cellular Compartment Localization (Human)",
+  solidHeader = TRUE,
+  width = 12,
+
+  # A process of interest
+  selectInput(
+    inputId   = "CellularLocal",
+    label     = "Cellular Localization",
+    multiple  = F,
+    selected  ="actin",
+    choices   = list("Actin Filaments", "Centrosome", "Cytosol", "Endoplasmic Reticulum", "Golgi Apparatus", "Intermediate Filaments",
+                     "Microtubules", "Mitochondria", "Nucleoli", "Nuclear Membrane", "Plasma Membrane", "Vesicles")
+  )
+)
+
+# ui_explore_cellular_compartment_localiz = box(
+#   color       = "orange",
+#   title       = "Cellular Compartment Localization (Human)",
+#   solidHeader = TRUE,
+#   width       = 12,
+# 
+#   uiOutput("UI_MMP_CELLULAR_LOCALIZ")
+# )
+
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 8. EXPLORE CUSTOM GENE LIST
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_explore_custom_gene_list = box(color = "orange",
                                   title = "Custom Gene List",
                                   solidHeader = TRUE,
@@ -330,11 +407,11 @@ ui_explore_custom_gene_list = box(color = "orange",
                                   )
 
 
-
-# --------------------------------------------------------------------
-# PLOT DOWNLOAD
-# --------------------------------------------------------------------
-
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 10. PLOT DOWNLOAD
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_download_plot = box (selectInput(inputId  = "PlotDownload",
                                     label    = "Select Plot",
                                     choices  = c("Custom Gene List"),
@@ -347,17 +424,20 @@ ui_download_plot = box (selectInput(inputId  = "PlotDownload",
                         downloadButton(outputId  = "DownloadPlot",
                                        label     = "Download Plot")
                         )
+# ===================================================================================================================================
+#  --------------------------------------- END --------------------------------------- "PLOT DOWNLOAD"
+# ===================================================================================================================================
 
 
-
-
-# --------------------------------------------------------------------
-# TABLE DOWNLOAD
-# --------------------------------------------------------------------
-
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 11.TABLE DOWNLOAD
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_download_table = box ( selectInput(inputId  = "TableDownload",
                                       label    = "Select Table",
-                                      choices  = c("Significant", "Processes"),
+                                      choices  = c("Significant", "Mito Processes", 
+                                                   "All Processes in Input Data", "Multiple Processes", "Cellular Localization"),
                                       selected = c("Significant") ),
                           selectInput(inputId  = "Tablefiletype",
                                       label    = "Select File Format",
@@ -366,6 +446,12 @@ ui_download_table = box ( selectInput(inputId  = "TableDownload",
                           downloadButton(outputId = "DownloadTbl",
                                          label    = "Download Table")
                           )
+# ===================================================================================================================================
+#  --------------------------------------- END --------------------------------------- "TABLE DOWNLOAD"
+# ===================================================================================================================================
+
+
+
 
 
 # ====================================================================
@@ -376,9 +462,13 @@ ui_download_table = box ( selectInput(inputId  = "TableDownload",
 # ====================================================================
 # ====================================================================
 
-# list of setting options for the right dasboard menue
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 1. SETTING OPTIONS FOR THE RIGHT-SIDE DASHBOARD MENUE
+# ===================================================================================================================================
+# ===================================================================================================================================
 function_para_tabs =  tagList (tags$style("#UI_RIGHT_SIDEBAR_SELECTMODE { display:none; }"),
-                               tabsetPanel (id= "UI_RIGHT_SIDEBAR_SELECTMODE",
+                               tabsetPanel (id       = "UI_RIGHT_SIDEBAR_SELECTMODE",
                                             selected = "menue_tab_exp_plot",
                                             ui_threshold_configuration,
                                  tabPanel("menue_tab_exp_plot"),                 
@@ -386,20 +476,35 @@ function_para_tabs =  tagList (tags$style("#UI_RIGHT_SIDEBAR_SELECTMODE { displa
                                           ui_explore_custom_gene_list ),
                                  tabPanel("menue_tab_exp_mitproc",
                                           ui_explore_mitochondrial_process),
+                                 tabPanel("menue_tab_exp_cellular_compartment",           
+                                          ui_explore_cellular_compartment_localiz),
+                                 tabPanel("menue_tab_exp_multiple_mitoprocesses",           
+                                          ui_explore_multiple_mitochondrial_processes),
+                                 
                                  tabPanel("UI_RIGHT_SIDEBAR_NONE",
                                           p(""))
                                  )
                                )
+# ===================================================================================================================================
+#  --------------------------------------- END -------------------------------- "SETTING OPTIONS FOR THE RIGHT-SIDE DASHBOARD MENUE"
+# ===================================================================================================================================
 
 
-
-# right dashboard configuration
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 2. CONFIGURATION (RIGHT DASHBOARD)
+# ===================================================================================================================================
+# ===================================================================================================================================
 ui_right_sidebar = rightSidebar(
-  background = "light",
-  width      = 350,
-  fluid      = FALSE,
+  background     = "light",
+  width          = 350,
+  fluid          = FALSE,
   h1("Settings"),
   function_para_tabs)
+# ===================================================================================================================================
+#  --------------------------------------- END -------------------------------- "CONFIGURATION"
+# ===================================================================================================================================
+
 
 
 
@@ -411,22 +516,23 @@ ui_right_sidebar = rightSidebar(
 # ====================================================================
 # ====================================================================
 # ====================================================================
-
 ui_dash_sidebar = dashboardSidebar(
   collapsed = FALSE,
-  disable  = FALSE,
-  sidebarMenu(id = "ui_dashboard_sidebar",
-              sartExpanded = TRUE,    #    
+  disable   = FALSE,
+  sidebarMenu(id           = "ui_dashboard_sidebar",
+              sartExpanded = TRUE,        
               
               menuItem("Home Page",
                        tabName = "menue_tab_home",
                        icon    = icon("home")),
+              
               menuItem("File",
-                       icon = icon("database"),
+                       icon    = icon("database"),
                        
                        menuSubItem("Open...",
                                    tabName = "menue_tab_file_open",
                                    icon    = icon("folder-open")) ),
+              
               menuItem("Explore",
                        icon = icon("eye"),
                        menuSubItem("Plot",
@@ -437,16 +543,22 @@ ui_dash_sidebar = dashboardSidebar(
                                    icon    = icon("dna")),
                        menuSubItem( "Mitochondrial Process",
                                     tabName = "menue_tab_exp_mitproc",
-                                    icon    = icon("project-diagram") ) ),
+                                    icon    = icon("project-diagram") ),
+                       menuSubItem( "Multiple Processes",                              
+                                    tabName = "menue_tab_exp_multiple_mitoprocesses",      
+                                    icon    = icon("balance-scale") ),
+                       menuSubItem( "Cellular Localization",                              
+                                    tabName = "menue_tab_exp_cellular_compartment",      
+                                    icon    = icon("anchor") )),
+              
               menuItem( "Export",
                         icon = icon("save"),
-                        
                         menuSubItem("Plot",
                                     tabName = "menue_tab_download_plot",
-                                    icon = icon("file-export")),
+                                    icon    = icon("file-export")),
                         menuSubItem("Table",
                                     tabName = "menue_tab_download_table",
-                                    icon = icon("file-export"))   ),
+                                    icon    = icon("file-export"))   ),
               menuItem("Help",  icon = icon("question"), tabName = "menue_tab_help"),
               menuItem("About", icon = icon("info"),     tabName = "menue_tab_about")
               )
@@ -454,15 +566,24 @@ ui_dash_sidebar = dashboardSidebar(
 
 
 
-# --------------------------------------------------------------------
+
+
+# ====================================================================
+# ====================================================================
+# ====================================================================
 # BODY ELEMENTS
-# --------------------------------------------------------------------
+# ====================================================================
+# ====================================================================
+# ====================================================================
 
-#
-# MENUE ITEMS FOR BODY TAB
-#
 
-# HOMEPAGE
+
+# ===================================================================================================================================
+# ===================================================================================================================================
+# I. MENUE ITEMS FOR BODY TAB
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 1. HOMEPAGE
 menue_tab_home_body = tabItem("menue_tab_home",
                               h1("Home Page"),
                               
@@ -476,99 +597,179 @@ menue_tab_home_body = tabItem("menue_tab_home",
                                                   br(),
                                                   br(),
                                                   p("Copyright (C) 2020") )) )
+# ===================================================================================================================================
+#  --------------------------------------- END --------------------------------------- "MENUE ITEMS FOR BODY TAB"
+# ===================================================================================================================================
 
 
-#
-# EXPLORE PLOT VALUES
-#
+
+# ===================================================================================================================================
+# ===================================================================================================================================
+# II. EXPLORE PLOT VALUES
+# ===================================================================================================================================
+# ===================================================================================================================================
+# 1. PLOT enables to explore and visualize all values
+# LOCATION: "PLOT" tab (left-hand side menue tab)
 menue_tab_exp_plot_body = tabItem("menue_tab_exp_plot",
                                   h1("Explore Plot Values"),
                                   helpText("Explore your data for any genes/proteins of interest"),
-
+                                  
+                                  # Loading message
                                   div(id = "loading-content1",
-                                      h2("Loading Data...")),
+                                      h4("Loading Data...")),
                                   plotlyOutput(outputId = "volcanoPlotNuclear"),
                                   br(),
                                   br(),
                                   tabBox(
                                     width  = 12,
                                     # Table INPUT, SIGNIF
-                                    tabPanel(title  = "InputData",
-                                             DTOutput(outputId = "InputOriginalData")),
-                                    tabPanel(title  = "Signific",
-                                             DTOutput(outputId = "SignifData"))  ))
+                                    tabPanel(title  = "Input Data",
+                                             DTOutput(outputId = "InputOriginalData1")),
+                                    tabPanel(title  = "Signif",
+                                             DTOutput(outputId = "SignifData1"))  ))
 
+
+# 2. PLOT enables to visualize custom gene list which may be related to specific process
+# LOCATION: "CUSTOM GENE LIST" (left-hand side menue tab)
 menue_tab_exp_genelist_body = tabItem("menue_tab_exp_genelist",
-  h1("Explore Custom Gene List"),
-  
-  #  ui_explore_custom_gene_list,
-  # Plot3 and Table
-  helpText("Type in a list of gene names of interest in 'Explore Custom Gene List' tab, separated by space or upload own file with one gene per row Genes that are present in your data will be visualized on Volcano Plot"),
-  div(id = "loading-content3",
-      h2("Loading Data...")),
-  plotlyOutput(outputId = "CustomisedPlot"),
-
-  
-  br(),
-  br(),
-  tabBox(width = 12,
-         tabPanel(
-           title = "Data",
-           DTOutput(outputId = "CustomisedTable")   )) )
-
-menue_tab_exit_body = tabItem ( "menue_tab_exit",
-  h1("Exit Application"),
-  p("Are you sure you would like to exit the application?"),
-  actionButton ("ExitApplication",
-                "Exit") )
+                                      h1("Explore Custom Gene List"),
+                                      # Plot3 and Table   #  ui_explore_custom_gene_list
+                                      helpText("Type in a list of gene names of interest in 'Explore Custom Gene List' tab, separated by space or upload own file with one gene per row Genes that are present in your data will be visualized on Volcano Plot"),
+                                      
+                                      # Loading message
+                                      div(id = "loading-content2",
+                                          h4("Loading Data...")),
+                                      plotlyOutput(outputId = "CustomisedPlot"),
+                                      br(),
+                                      br(),
+                                      tabBox(width = 12,
+                                             tabPanel(
+                                               title = "Selected Gene(s) Info",
+                                               DTOutput(outputId = "CustomisedTable2")   )) )
 
 
-
+# 3. EXPLORE ONE MITO PROCESS
+# LOCATION: "MITOCHONDRIAL PROCESS" (left-hand side menue tab)
 menue_tab_exp_mitproc_body = tabItem( "menue_tab_exp_mitproc",
                                       h1("Explore Mitochondrial Process"),
                                       title = "Explore Mitochondrial Processes",
                                       #Plot2
                                       helpText("Explore your data for mitochondrial processes"),
-
+                                      
                                       # Loading message
-                                      div(id = "loading-content2",
-                                          h2("Loading Data...")),
+                                      div(id = "loading-content3",
+                                          h4("Loading Data...")),
                                       plotlyOutput(outputId = "VolcanoPlotOutExploreMito"),
                                       br(),
                                       br(),
                                       tabBox (
                                         width  = 12,
                                         # Table INPUT, SIGNIF, PROCESSES
-                                        tabPanel(title  = "InputData",
-                                                 DTOutput(outputId = "InputOriginalData2")),
-                                        tabPanel(title  = "Signific",
-                                                 DTOutput(outputId = "SignifData2")),
-                                        tabPanel(title  = "Processes",
-                                                 DTOutput(outputId = "ProcessesData"))  ))
+                                        tabPanel(title  = "All Processes",
+                                                 DTOutput(outputId = "InputOriginalData3")),
+                                        tabPanel(title  = "Signif",
+                                                 DTOutput(outputId = "SignifData3")),
+                                        tabPanel(title  = "MITO Processes",
+                                                 DTOutput(outputId = "ProcessesData3")),
+                                        tabPanel(title="Selected Process",                      
+                                                 DTOutput(outputId = "ProcessesDataSubset3"))))
+
+
+# 4. EXPLORE MITO MULTIPLE PROCESSES   
+# LOCATION: "MULTIPLE PROCESSES" (left-hand side menue tab)
+menue_tab_exp_multiple_mitoprocesses_body = tabItem( "menue_tab_exp_multiple_mitoprocesses",
+                                      h1("Explore Multiple Mitochondrial Processes"),
+                                      title = "Explore Multiple Mitochondrial Processes",
+                                      #Plot2
+                                      helpText("Explore multiple mitochondrial processes"),
+                                      
+                                      # Loading message
+                                      div(id = "loading-content4",
+                                          h4("Select Processes and colours from the right-hand pannel, press Apply to visualize plot")),
+                                      # plotlyOutput(outputId = "VolcanoPlotOutMultipleProcessesMito"),
+                                      
+                                      column(12,
+                                             plotlyOutput(outputId = "VolcanoPlotOutMultipleProcessesMito")),
+                                      # column(4,
+                                      #        plotlyOutput(outputId = "VolcanoPlotOutMultipleProcessesMitoLEGEND")),
+                                      br(),
+                                      br(),
+                                      tabBox (
+                                        width  = 12,
+                                        # Table INPUT, SIGNIF, PROCESSES
+                                        tabPanel(title  = "All Processes",
+                                                 DTOutput(outputId = "InputOriginalDataMult4")),
+                                        tabPanel(title="Selected Multiple Processes",                      
+                                                 DTOutput(outputId = "ProcessesDataSubsetMult4"))))
+
+
+# 5. EXPLORE CELL CELLULAR COMPARTMENT   
+# LOCATION: "MULTIPLE PROCESSES" (left-hand side menue tab)
+menue_tab_exp_cellular_compartment_body = tabItem( "menue_tab_exp_cellular_compartment",
+                                                     h1("Explore Cellular Compartment Localizations"),
+                                                     title = "Explore Cellular Compartment Localization",
+                                                     #Plot
+                                                     helpText("Explore cellular compartment localization (Human)"),  
+                                                     
+                                                     # # Loading message
+                                                     div(id = "loading-content5",
+                                                         h4("Loading Data...")),
+                                                     plotlyOutput(outputId = "CellularCompartmentLocalPlot"),
+                                                     br(),
+                                                     br(),
+                                                     tabBox (
+                                                       width  = 12,
+                                                       # Table INPUT, SIGNIF, PROCESSES
+                                                       tabPanel(title  = "All Processes",
+                                                                DTOutput(outputId = "InputOriginalDataMult5")),
+                                                       tabPanel(title="Selected Cellular Compartment(s)",                      
+                                                                DTOutput(outputId = "ProcessesDataSubsetMult5"))))
+
+# NOTE: dont use anymore
+# menue_tab_exit_body = tabItem ( "menue_tab_exit",
+#                                 h1("Exit Application"),
+#                                 p("Are you sure you would like to exit the application?"),
+#                                 actionButton ("ExitApplication",
+#                                               "Exit") )
+# ===================================================================================================================================
+#  --------------------------------------- END --------------------------------------- "EXPLORE PLOT VALUES"
+# ===================================================================================================================================
 
 
 
+# ===================================================================================================================================
+# ===================================================================================================================================
+# III. SOFTWARE NAVIGATION BUTTONS
+# ===================================================================================================================================
+# ===================================================================================================================================
+# OPEN FILE
 menue_tab_file_open_body = tabItem("menue_tab_file_open",
                                    h1("Open File"),
                                    ui_file_input_diag)
 
-menue_tab_download_plot_body =
-  tabItem("menue_tab_download_plot",
-          ui_download_plot)
+# DOWNLOAD PLOT
+menue_tab_download_plot_body = tabItem("menue_tab_download_plot",
+                                       ui_download_plot)
 
-menue_tab_download_table_body =
-  tabItem ("menue_tab_download_table",
-           ui_download_table)
+# DOWNLOAD TABLE
+menue_tab_download_table_body = tabItem ("menue_tab_download_table",
+                                         ui_download_table)
 
-menue_tab_help_body =
-  tabItem ("menue_tab_about",
-           h1("About"),
-           includeHTML("www/AboutPage2.html"))
+# ABOUT 
+menue_tab_help_body = tabItem ("menue_tab_about",
+                               h1("About"),
+                               includeHTML("www/AboutPage2.html"))
 
-menue_tab_about_body =
-  tabItem ("menue_tab_help",
-           h1("Help"),
-           includeHTML("www/HelpPage2.html"))
+# HELP 
+menue_tab_about_body = tabItem ("menue_tab_help",
+                                h1("Help"),
+                                includeHTML("www/HelpPage2.html"))
+# ===================================================================================================================================
+# --------------------------------------- END --------------------------------------- "SOFTWARE NAVIGATION BUTTONS"
+# ===================================================================================================================================
+
+
+
 
 
 # ====================================================================
@@ -578,43 +779,40 @@ menue_tab_about_body =
 # ====================================================================
 # ====================================================================
 # ====================================================================
-
-ui =
-
-dashboardPagePlus(skin = "yellow",
-                  
-                  dashboardHeaderPlus(
-                    dropdownMenuOutput("UI_NOTIFICATIONS"),
-                    enable_rightsidebar = FALSE,
-                    rightSidebarIcon    = "gears",
-                    title               = "OmicsVolcano"),
-                  ui_dash_sidebar,
-                  # alternative right sidebar
-                  dashboardBody (useShinyjs(),
-                                 fluidRow (width = 12,
-                                           ui_info_box),
-                                 fluidRow (
-                                   column(width = 8,
-                                          fluidRow (
-                                            width = 12,
-                                            tabItems (
-                                              menue_tab_file_open_body,
-                                              menue_tab_home_body,
-                                              menue_tab_exp_plot_body,
-                                              menue_tab_exp_genelist_body,
-                                              menue_tab_exp_mitproc_body,
-                                              menue_tab_download_plot_body,
-                                              menue_tab_download_table_body,
-                                              menue_tab_help_body,
-                                              menue_tab_about_body
-                                              #        menue_tab_exit_body
-                                              )
-                                            )),
-                                   column (width = 4,
-                                           function_para_tabs) ))  )
-
-
-
+ui = dashboardPagePlus(skin = "yellow",
+                       
+                       dashboardHeaderPlus(
+                         dropdownMenuOutput("UI_NOTIFICATIONS"),
+                         enable_rightsidebar = FALSE,
+                         rightSidebarIcon    = "gears",
+                         title               = "OmicsVolcano"),
+                       
+                       ui_dash_sidebar,
+                       # alternative right sidebar
+                       
+                       dashboardBody (useShinyjs(),
+                                      fluidRow (width = 12,
+                                                ui_info_box),
+                                      fluidRow (
+                                        column(width = 8,
+                                               fluidRow (
+                                                 width = 12,
+                                                 tabItems (
+                                                   menue_tab_file_open_body,
+                                                   menue_tab_home_body,
+                                                   menue_tab_exp_plot_body,
+                                                   menue_tab_exp_genelist_body,
+                                                   menue_tab_exp_mitproc_body,
+                                                   menue_tab_exp_multiple_mitoprocesses_body,
+                                                   menue_tab_exp_cellular_compartment_body,
+                                                   menue_tab_download_plot_body,
+                                                   menue_tab_download_table_body,
+                                                   menue_tab_help_body,
+                                                   menue_tab_about_body       #        menue_tab_exit_body
+                                                   )
+                                                 )),
+                                        column (width = 4,
+                                                function_para_tabs) ))  )
 
 
 
@@ -623,7 +821,7 @@ dashboardPagePlus(skin = "yellow",
 # ====================================================================
 # ====================================================================
 # ====================================================================
-# V. Versions
+# PACKAGES VERSION
 # ====================================================================
 # ====================================================================
 # ====================================================================
@@ -655,3 +853,6 @@ dashboardPagePlus(skin = "yellow",
 # [29] stringi_1.4.3     grid_3.6.1        tools_3.6.1       magrittr_1.5      lazyeval_0.2.2    tibble_2.1.3      crayon_1.3.4
 # [36] tidyr_1.0.0       pkgconfig_2.0.3   zeallot_0.1.0     data.table_1.12.8 assertthat_0.2.1  httr_1.4.1        rstudioapi_0.10
 # [43] R6_2.4.0          compiler_3.6.1
+
+
+

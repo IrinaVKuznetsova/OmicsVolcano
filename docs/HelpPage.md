@@ -12,7 +12,7 @@ Software Download and Usage
 * Anyone with RStudio can use the OmicsVolcano software. If you don’t have RStudio follow the installation instructions. You need to install both R and RStudio latest version. The software works for R version 3.6.1 or above. For R [https://www.r-project.org/](https://www.r-project.org/) and RStudio [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)  
 * Download the OmicsVolcano software from GitHub repository as zip folder ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/GitHubDownloadIcon_image.jpg) and  ![tab](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/GitHubDownloadZIPIcon_image.jpg).  Unzip folder into a directory of your choice. For example, to the desktop  
 * Open RStudio   
-* Select R script OmicsVolcano_App.r (File – Open File ..  – App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/RunApp_image.jpg)  
+* Select R script OmicsVolcano_App.r (File – Open File ..  – OmicsVolcano_App.r). To run the software, click  ![Run App](https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/RunApp_image.jpg). Make sure "Run External", which will load the software to the default web browser, or "Run in Window", which will load the software to R envieroment.  
 * The software will appear as a webpage interface  
 
 <img align="center" src="https://github.com/IrinaVKuznetsova/OmicsVolcano/blob/master/www/images/AppLook_image.jpg">   
@@ -89,20 +89,6 @@ Explore Tab
 &nbsp;&nbsp;&nbsp;&nbsp; * select process of interest  
 **Note:** User can chose which gene label(s) of the selected process are seen on the plot    
  
-
-
-* **Mutliple Processes** tab enables to select and highlight in different colours multiple mitochodrial processes present in the data  
-&nbsp;&nbsp;&nbsp;&nbsp; * select organism  
-&nbsp;&nbsp;&nbsp;&nbsp; * select different processes of interest and assign colours  
-&nbsp;&nbsp;&nbsp;&nbsp; * press Apply button  
-**Note:** Same colour can be assigned to different processes  
-**Note:** To label plot points, hover over the plot's point of interest. The hover will indicate a gene name information with the same background colour as the point of interest    
-
-* **Cellular Localization** tab enables to explore cellular compartment localization  
-&nbsp;&nbsp;&nbsp;&nbsp; * select cellular localization of interest from drop-down menue  
-**Note:** Information is available only for Human data  
-**Note:** User can choose which gene label(s) of the selected process are seen on the plot    
-
 
  
 Export Tab
