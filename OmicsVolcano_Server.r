@@ -1086,10 +1086,10 @@ server = function(input, output, session) {
             theme_classic() +
             # X axis scale
             scale_x_continuous(breaks = seq( round( min( DataInputFile()$Log2FC, na.rm = T)),
-                                             round( max( DataInputFile()$Log2FC, na.rm = T)), 1) )+
+                                             round( max( DataInputFile()$Log2FC, na.rm = T)), 1) ) #+
             # Y axis scale
-            scale_y_continuous(breaks = seq( round( min( -log10(DataInputFile()$AdjPValue), na.rm = T)), 
-                                             round( max( -log10(DataInputFile()$AdjPValue), na.rm = T)), 2) )
+            # scale_y_continuous(breaks = seq( round( min( -log10(DataInputFile()$AdjPValue), na.rm = T)), 
+            #                                  round( max( -log10(DataInputFile()$AdjPValue), na.rm = T)), 2) )
 
           StorePlotForExplore$image0 = VolcanoPlotExplore
 
@@ -1447,10 +1447,11 @@ server = function(input, output, session) {
       theme_classic() +
       # X axis scale
       scale_x_continuous(breaks = seq( round( min( inputfile$Log2FC, na.rm = T)),
-                                       round( max( inputfile$Log2FC, na.rm = T)), 1) )+
-      # Y axis scale
-      scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)), 
-                                       round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
+                                       round( max( inputfile$Log2FC, na.rm = T)), 1) )
+    # +
+    #   # Y axis scale
+    #   scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)), 
+    #                                    round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
     
     # 4. PLOTLY
     VolcanoPlot_mm_allmito_plotly = ggplotly( VolcanoPlot_mm_allmito, tooltip = "text") %>%
@@ -2116,10 +2117,11 @@ server = function(input, output, session) {
             theme_classic() +
             # X axis scaling
             scale_x_continuous(breaks = seq( round( min( inputfile$Log2FC, na.rm = T)),
-                                             round( max( inputfile$Log2FC, na.rm = T)), 1) )+
-            # Y axis scale
-            scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)),
-                                             round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
+                                             round( max( inputfile$Log2FC, na.rm = T)), 1) )
+          # +
+            # # Y axis scale
+            # scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)),
+            #                                  round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
 
           ExploreMitoVolcanoStore$image1 = VolcanoPlot_mm_mult_process
           # browser()
@@ -2215,10 +2217,11 @@ server = function(input, output, session) {
             theme_classic() +
             # X axis scaling
             scale_x_continuous(breaks = seq( round( min( inputfile$Log2FC, na.rm = T)),
-                                             round( max( inputfile$Log2FC, na.rm = T)), 1) )+
-            # Y axis scale
-            scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)),
-                                             round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
+                                             round( max( inputfile$Log2FC, na.rm = T)), 1) )
+          # +
+          #   # Y axis scale
+          #   scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)),
+          #                                    round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
           
           
           ExploreMitoVolcanoStore$image1 = VolcanoPlot_hs_mult_process
@@ -2471,10 +2474,11 @@ HighlightCellularLocalization = reactive({
           theme_classic() +
           # X axis scale
           scale_x_continuous(breaks = seq( round( min( inputdata$Log2FC, na.rm = T)),
-                                           round( max( inputdata$Log2FC, na.rm = T)), 1) )+
-          # Y axis scale
-          scale_y_continuous(breaks = seq( round( min( -log10(inputdata$AdjPValue), na.rm = T)), 
-                                           round( max( -log10(inputdata$AdjPValue), na.rm = T)), 2) )
+                                           round( max( inputdata$Log2FC, na.rm = T)), 1) )
+        # +
+        #   # Y axis scale
+        #   scale_y_continuous(breaks = seq( round( min( -log10(inputdata$AdjPValue), na.rm = T)), 
+        #                                    round( max( -log10(inputdata$AdjPValue), na.rm = T)), 2) )
         # labs( title ="Volcano Plot",
         #       caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
         
@@ -2731,9 +2735,10 @@ output$CellularCompartmentLocalPlot = renderPlotly({
                     family  = "sans serif") +
           theme_classic() +
           scale_x_continuous(breaks = seq( round( min( dfinput$Log2FC, na.rm = T)),
-                                           round( max( dfinput$Log2FC, na.rm = T)), 1) )+    # Y axis scale
-          scale_y_continuous(breaks = seq( round( min( -log10(dfinput$AdjPValue), na.rm = T)), 
-                                           round( max( -log10(dfinput$AdjPValue), na.rm = T)), 2) )
+                                           round( max( dfinput$Log2FC, na.rm = T)), 1) )
+        # +    # Y axis scale
+        #   scale_y_continuous(breaks = seq( round( min( -log10(dfinput$AdjPValue), na.rm = T)), 
+        #                                    round( max( -log10(dfinput$AdjPValue), na.rm = T)), 2) )
 
         CustomVolcanoPlotStore$image2 = volcanoplotcustom
         
