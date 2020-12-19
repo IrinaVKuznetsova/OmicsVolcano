@@ -114,10 +114,10 @@ req_packages = c(
   "config",
   "shinydashboardPlus",
   "shinythemes",
-  "shinyalert",
+  #"shinyalert",
   "shinyjs",
   "colourpicker",
-  "cowplot",      # for extracting only legend from the plot
+  #"cowplot",      # for extracting only legend from the plot
   "gridExtra"
   )
   # "ggpubr" 
