@@ -91,7 +91,7 @@
 # install.packages("colourpicker")
 
 
-`%then%` = shiny:::`%OR%` # Note: %then% does not exist in current preview implementations of Shiny. 
+#`%then%` = shiny:::`%OR%` # Note: %then% does not exist in current preview implementations of Shiny. 
 # You can use the first line of code below to create a %then% operator.
 
 
