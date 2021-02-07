@@ -91,8 +91,6 @@
 # install.packages("colourpicker")
 
 
-#`%then%` = shiny:::`%OR%` # Note: %then% does not exist in current preview implementations of Shiny. 
-# You can use the first line of code below to create a %then% operator.
 
 
 # Debugging mode only - set TRUE if debugging information should be displayed
@@ -491,54 +489,9 @@ server = function(input, output, session) {
   })
   
 
-  # ====================================================================
-  # ====================================================================
-  # ====================================================================
-  # EXPLORE MULTIPLE PROCESSES + COULORS widgets appearance 
-  # ====================================================================
-  # ====================================================================
-  # ====================================================================
-  
-  #================================================================================================================
-  # 1. MULTIPLE PROCESSES WIDGET (right-hand widget appearance)
-  #================================================================================================================
-  # output$UI_MMP_PROCESSES = renderUI ({
-  #   # BOX for "APPLY" button
-  #   box (width = NULL,  #For column-based layouts, use NULL for the width
-  #        fluidRow( width = 12,
-  #                  offset =2,
-  #                  actionButton(inputId = "UI_MMP_LIST_ACTION",
-  #                               width   = '80px',
-  #                               label   = "Apply")),
-  #        hr(),   # space btw Action button and next info
-  #        lapply(1:length(ui_mmp_names), function(x) {
-  #          fluidRow( offset = 1,
-  #                    # CHECK BOXES
-  #                    column (width = 1,
-  #                            checkboxInput(
-  #                              inputId = paste0("UI_MMP_LIST_CHECKBOX_", x),
-  #                              value   = FALSE,
-  #                              label   = NULL)),
-  #                    # COLOUR PALETTE
-  #                    column (width = 2,
-  #                            colourWidget( elementId  = paste0("UI_MMP_LIST_COLORPICKER_", x),
-  #                                          value      = "#000000",
-  #                                          palette    = "square",
-  #                                          showColour = "both",
-  #                                          width      = '77px',
-  #                                          height     = '20px')),
-  #                    # PROCESSES
-  #                    column (width = 9,
-  #                            h5(ui_mmp_names[x]))
-  #         )})
-  #       )
-  # })
-################################################################################################
-
-  
   # ===================================================================================================================================
   # 2. The function takes the complete list of input values and creates 
-  # a dataframe for further processing.
+  # a data frame for further processing.
   # vl:      global value, reactiveValuesToList(input)
   # RETURNS: a data frame with the input$ values as value-key pairs
   # ===================================================================================================================================
@@ -561,7 +514,7 @@ server = function(input, output, session) {
   
 
   # ===================================================================================================================================
-  # 3. The function takes a dataframe which consists of value-key pairs
+  # 3. The function takes a data frame which consists of value-key pairs
   # and compares it to the second string
   # INPUT: df - data frame with key-value pairs
   # INPUT: st - string value to compare to
@@ -574,7 +527,7 @@ server = function(input, output, session) {
       }
       
     for (x in (1:dim(df)[1])){
-      # TODO Artur STRING COMPARISON HERE
+      # ARL STRING COMPARISON HERE
       if (st == df[x,1]) {
         # print("st")
         # print(st)
@@ -587,21 +540,10 @@ server = function(input, output, session) {
       return (NULL)
     }
 
-  # getValueOfDF = function(df, st){
-  #   # print("getValueOfDF")
-  #   lapply(1:dim(df)[1], function (x) {
-  #     if (st == df[x,1]) {
-  #       return (unlist(df[x, 2]))
-  #     }
-  #     else{
-  #       return (NULL)
-  #     }
-  #     })
-  # }
   
 
   # ===================================================================================================================================
-  # 4. BUILD DATA FRAME OF SELECTED MULTIPLE PROCESSES WITH SELECTED COLOUR  reactiveValues
+  # 4. BUILD DATA FRAME OF SELECTED MULTIPLE PROCESSES WITH SELECTED COLOR | reactiveValues
   # ===================================================================================================================================
   getMMPValuesSelected = function () {
     
@@ -904,7 +846,7 @@ server = function(input, output, session) {
   
   #================================================================================================================
   #================================================================================================================
-  # 2.0 Create dataframe with colour identifier for visualization
+  # 2.0 Create data frame with  identifier for visualization
   # TASK: Take input data and assign color according its significance values:  blue, red, grey
   #================================================================================================================
   #================================================================================================================
@@ -921,7 +863,7 @@ server = function(input, output, session) {
     print("END DataFrameWithColors----")
     print("-------------------------------------------")        
     
-    # 2.0.0 Initialise input varibales  
+    # 2.0.0 Initialize input variables  
     tryCatch ({
       if (is.null(DataInputFile())){
         return(NULL) }
@@ -1068,7 +1010,7 @@ server = function(input, output, session) {
                                       mapping = aes(x    = Log2FC,
                                                     y    = -log10(AdjPValue),
                                                     text = GeneSymbol )) +
-            # Plot value colours
+            # Plot value s
             geom_point( aes( color  = CharValue),
                         show.legend = FALSE ) +
             scale_color_manual( values = plot_color_values) +   # blue grey white red
@@ -1268,7 +1210,7 @@ server = function(input, output, session) {
   #================================================================================================================
   # 3.0 Input data 
   #================================================================================================================
-  # Note: dataframe of this function will have large dimentions as multiple genes may contribute to the same process 
+  # Note: data frame of this function will have large dimensions as multiple genes may contribute to the same process 
   # DataFrameForMitoProcess
   DataFrameForMitoProcess = reactive({
   # DataFrameForMitoProcess = observe({
@@ -1831,7 +1773,7 @@ server = function(input, output, session) {
   
   mmp_createTabDataFrame = function(mmpvalues) {
     # 0. FUNCTION TASK:
-    # Return dataframe for mouse or human of selected mutliple processes  
+    # Return data frame for mouse or human of selected mutliple processes  
 
         # 1. FUNCTION ARGUMENTS:
     dfmitoprc     = DataFrameForMULTIPLEMitoProcess()
@@ -1871,27 +1813,27 @@ server = function(input, output, session) {
     if (input$OrganismSource2 == "Mouse"){
 
       # a- Subset df to selected MULTIPLE processes | 88x7 |
-      # NOTE: some selecetd processes may be not present in the data
+      # NOTE: some selected processes may be not present in the data
       # multiprocess_df_mm = DataFrameForMULTIPLEMitoProcess()[ as.character(DataFrameForMULTIPLEMitoProcess()$Process) %in% as.character(mmpvalues$ProcessName), ]
       # NOTE: remove genes with logFC or PAdjust =NA
       multiprocess_df_no_na = na.omit(DataFrameForMULTIPLEMitoProcess(), na.omit("Log2FC","AdjPValue"))
       multiprocess_df_mm = multiprocess_df_no_na[ as.character(multiprocess_df_no_na$Process) %in% as.character(mmpvalues$ProcessName), ]
       
       # b- Factors with the same levels before merging
-      # Merge getMMPValuesSelected() with input data frame that conatins same processes, and distribute colours
+      # Merge getMMPValuesSelected() with input data frame that contains same processes, and distribute colors
       combined_fact_mm  = sort( union( levels(multiprocess_df_mm$Process), levels(mmpvalues$ProcessName)))
       colors_to_highlight_mm_multiple_process = inner_join(mutate(multiprocess_df_mm, Process = factor(Process, levels = combined_fact_mm)),
                                                            mutate(mmpvalues, ProcessName = factor(ProcessName, levels = combined_fact_mm)),
                                                            by = c("Process"="ProcessName"))       # dim(colors_to_highlight_mm_multiple_process)  # 44 x 8
       colors_to_highlight_mm_multiple_process = colors_to_highlight_mm_multiple_process[, c(1,2,3,4,5,6,7,12)]
       colors_to_highlight_mm_multiple_process = as.data.frame(colors_to_highlight_mm_multiple_process, stringsAsFactors=FALSE)
-      # c- validate number of selecetd multiple processes in input data | unique
+      # c- validate number of selected multiple processes in input data | unique
       # NOTE: to enable same color selection for multiple processes "unique()" cant be used for creating color vector
       uniq_processes_df = colors_to_highlight_mm_multiple_process[!duplicated(colors_to_highlight_mm_multiple_process$Process), ]
       uniq_sel_col  = as.character(uniq_processes_df$ColValue)
       
       
-      # # selected processes data frame
+      # # selected processes dataframe
       # dim(uniq_processes_df)
       sel_pr_col_df = data.frame(
         shape_names = rep("circle filled",  length(uniq_processes_df$Process)),
@@ -1917,7 +1859,7 @@ server = function(input, output, session) {
                axis.ticks.x =element_blank(),
                #legend.position = "none"
         )
-      browser()
+      #browser()
       # legend_plotly = ggplotly(leg, tooltip =NULL) %>%
       #   layout(legend = list(showlegend = TRUE, orientation = "h"))
       #subplot(legend_plotly, VolcanoPlot_mm_mult_process_plotly, nrows = 2)
@@ -1952,7 +1894,7 @@ server = function(input, output, session) {
     multiprocess_df_mm = multiprocess_df_no_na[ as.character(multiprocess_df_no_na$Process) %in% as.character(mmpvalues$ProcessName), ]
 
     # b- Factors with the same levels before merging
-    # Merge getMMPValuesSelected() with input data frame that conatins same processes, and distribute colours
+    # Merge getMMPValuesSelected() with input data frame that conatins same processes, and distribute colors
     combined_fact_mm  = sort( union( levels(multiprocess_df_mm$Process), levels(mmpvalues$ProcessName)))
     colors_to_highlight_mm_multiple_process = inner_join(mutate(multiprocess_df_mm, Process = factor(Process, levels = combined_fact_mm)),
                                                          mutate(mmpvalues, ProcessName = factor(ProcessName, levels = combined_fact_mm)),
@@ -2015,7 +1957,7 @@ server = function(input, output, session) {
   
   mmp_create_plot_processes_highlighted = function(mmpvalues) {
     # 0. FUNCTION TASK:
-    # Creates a plot with selected mutliple processes
+    # Creates a plot with selected multiple processes
 
     # specify your location in the script
     print("mmp_create_plot_processes_highlighted():")
@@ -2034,7 +1976,7 @@ server = function(input, output, session) {
     tex   = list(family   = "sans serif", 
                  size     = 14, 
                  color    = toRGB("#262626"))
-    # Colour distribution
+    # color distribution
     plot_color_values = plot_colour_distrib(DataFrameWithColors()) 
 
     # 2. FUNCTION BODY:
@@ -2052,18 +1994,24 @@ server = function(input, output, session) {
           multiprocess_df_mm = DataSharedForMULTIPLEMitoProcess$data()[ as.character(DataSharedForMULTIPLEMitoProcess$data()$Process) %in% as.character(mmpvalues$ProcessName), ]
           
           # b- Factors with the same levels before merging
-          # Merge getMMPValuesSelected() with input data frame that conatins same processes, and distribute colours
-          combined_fact_mm  = sort( union( levels(multiprocess_df_mm$Process), levels(mmpvalues$ProcessName)))
+          # Merge getMMPValuesSelected() with input data frame that contains same processes, and distribute colors
+          #combined_fact_mm  = sort( union( levels(multiprocess_df_mm$Process), levels(mmpvalues$ProcessName)))
+          # colors_to_highlight_mm_multiple_process = inner_join(mutate(multiprocess_df_mm, 
+          #                                                             Process = factor(Process, 
+          #                                                                              levels = combined_fact_mm)),
+          #                                                      mutate(mmpvalues, 
+          #                                                             ProcessName = factor(ProcessName, 
+          #                                                                                  levels = combined_fact_mm)),
+          #                                                      by = c("Process"="ProcessName"))       # dim(colors_to_highlight_mm_multiple_process)  # 44 x 8
           colors_to_highlight_mm_multiple_process = inner_join(mutate(multiprocess_df_mm, 
-                                                                      Process = factor(Process, 
-                                                                                       levels = combined_fact_mm)),
+                                                                      Process = factor(Process)),
                                                                mutate(mmpvalues, 
-                                                                      ProcessName = factor(ProcessName, 
-                                                                                           levels = combined_fact_mm)),
-                                                               by = c("Process"="ProcessName"))       # dim(colors_to_highlight_mm_multiple_process)  # 44 x 8
+                                                                      ProcessName = factor(ProcessName)),
+                                                               by = c("Process"="ProcessName"))
+          
           colors_to_highlight_mm_multiple_process = colors_to_highlight_mm_multiple_process[, c(1,2,3,4,5,6,7,12)]
           colors_to_highlight_mm_multiple_process = as.data.frame(colors_to_highlight_mm_multiple_process, stringsAsFactors=FALSE)
-          # c- validate number of selecetd multiple processes in input data | unique 
+          # c- validate number of selected multiple processes in input data | unique 
           # NOTE: to enable same color selection for multiple processes "unique()" cant be used for creating color vector
           # NOTE: DONOT use UNIQUE(), as same colors can\t be displayed
           uniq_processes_df = colors_to_highlight_mm_multiple_process[!duplicated(colors_to_highlight_mm_multiple_process$Process), ]
@@ -2076,7 +2024,7 @@ server = function(input, output, session) {
           # e - Assemble DFs with all required values
           final_df_mm =rbind(no_match_multi_process_df, colors_to_highlight_mm_multiple_process)
           
-          # f- Replace red/blue/grey colour with HEX encoding, less intense colour
+          # f- Replace red/blue/grey color with HEX encoding, less intense color
           final_df_mm$ColValue[final_df_mm$ColValue == "red"]   = "#ffcccc"
           final_df_mm$ColValue[final_df_mm$ColValue == "blue"]  = "#9fd8fb"
           final_df_mm$ColValue[final_df_mm$ColValue == "grey2"] = "#cccccc"
@@ -2085,7 +2033,7 @@ server = function(input, output, session) {
           # dim(final_df_mm)   
           #as.vector(unique(final_df_mm$col))
           
-          # g- crosstalking sharing dataframe with colors
+          # g- crosstalking sharing data frame with colors
           data_shared_mm_mult_process = SharedData$new(final_df_mm)  #works but only for highlighted dots
           # browser()
           
@@ -2100,7 +2048,7 @@ server = function(input, output, session) {
                                                  mapping = aes(x    = Log2FC,
                                                                y    = -log10(AdjPValue),
                                                                text = GeneSymbol)) +
-            # Colour all selected processes and data values correctly
+            # color all selected processes and data values correctly
             geom_point(color = data_shared_mm_mult_process$origData()[,8],
                        size  = 1.5) +
             # Axis
@@ -2159,19 +2107,22 @@ server = function(input, output, session) {
         else if (input$OrganismSource2 == "Human"){     #else if (input$OrganismSource2 == "Human"){
           
           # a- Subset df to selected MULTIPLE processes | 88x7 |
-          # NOTE: some selecetd processes may be not present in the data
-          # mmpvalues <- getMMP valeus needs to be replaced!!!!! getMMPValuesSelected()
+          # NOTE: some selected processes may be not present in the data
+          # mmpvalues <- getMMP values needs to be replaced!!!!! getMMPValuesSelected()
           multiprocess_df_hs = DataSharedForMULTIPLEMitoProcess$data()[ as.character(DataSharedForMULTIPLEMitoProcess$data()$Process) %in% as.character(mmpvalues$ProcessName), ]
           
           # b- Factors with the same levels before merging
-          # Merge getMMPValuesSelected() with input data frame that conatins same processes, and distribute colours
-          combined_fact_hs  = sort( union( levels(multiprocess_df_hs$Process), levels(mmpvalues$ProcessName)))
-          colors_to_highlight_hs_multiple_process = inner_join(mutate(multiprocess_df_hs, Process = factor(Process, levels = combined_fact_hs)),
-                                                               mutate(mmpvalues, ProcessName = factor(ProcessName, levels = combined_fact_hs)),
-                                                               by = c("Process"="ProcessName"))       # dim(colors_to_highlight_hs_multiple_process)  # 44 x 8
+          # Merge getMMPValuesSelected() with input data frame that contains same processes, and distribute colors
+          # combined_fact_hs  = sort( union( levels(multiprocess_df_hs$Process), levels(mmpvalues$ProcessName)))
+          # colors_to_highlight_hs_multiple_process = inner_join(mutate(multiprocess_df_hs, Process = factor(Process, levels = combined_fact_hs)),
+          #                                                      mutate(mmpvalues, ProcessName = factor(ProcessName, levels = combined_fact_hs)),
+          #                                                      by = c("Process"="ProcessName"))       # dim(colors_to_highlight_hs_multiple_process)  # 44 x 8
+          colors_to_highlight_hs_multiple_process = inner_join(mutate(multiprocess_df_hs, Process = factor(Process)),
+                                                               mutate(mmpvalues, ProcessName = factor(ProcessName)),
+                                                               by = c("Process"="ProcessName"))
           colors_to_highlight_hs_multiple_process = colors_to_highlight_hs_multiple_process[, c(1,2,3,4,5,6,7,12)]
           colors_to_highlight_hs_multiple_process = as.data.frame(colors_to_highlight_hs_multiple_process, stringsAsFactors=FALSE)
-          # c- validate number of selecetd multiple processes in input data | unique 
+          # c- validate number of selected multiple processes in input data | unique 
           # NOTE: to enable same color selection for multiple processes "unique()" cant be used for creating color vector
           uniq_processes_df_hs = colors_to_highlight_hs_multiple_process[!duplicated(colors_to_highlight_hs_multiple_process$Process), ]
           uniq_sel_col_hs  = as.character(uniq_processes_df_hs$ColValue)
@@ -2183,7 +2134,7 @@ server = function(input, output, session) {
           # e - Assemble DFs with all required values
           final_df_hs =rbind(no_match_multi_process_df, colors_to_highlight_hs_multiple_process)
           
-          # f- Replace red/blue/grey colour with HEX encoding, less intense colour
+          # f- Replace red/blue/grey color with HEX encoding, less intense color
           final_df_hs$ColValue[final_df_hs$ColValue == "red"]   = "#ffcccc"
           final_df_hs$ColValue[final_df_hs$ColValue == "blue"]  = "#9fd8fb"
           final_df_hs$ColValue[final_df_hs$ColValue == "grey2"] = "#cccccc"
@@ -2200,7 +2151,7 @@ server = function(input, output, session) {
                                                  mapping = aes(x    = Log2FC,
                                                                y    = -log10(AdjPValue),
                                                                text = GeneSymbol)) +
-            # Colour all selected processes and data values correctly
+            # color all selected processes and data values correctly
             geom_point(color = data_shared_hs_mult_process$origData()[,8],
                        size  = 1.5) +
             # Axis
@@ -2218,16 +2169,11 @@ server = function(input, output, session) {
             # X axis scaling
             scale_x_continuous(breaks = seq( round( min( inputfile$Log2FC, na.rm = T)),
                                              round( max( inputfile$Log2FC, na.rm = T)), 1) )
-          # +
-          #   # Y axis scale
-          #   scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)),
-          #                                    round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
-          
-          
+
           ExploreMitoVolcanoStore$image1 = VolcanoPlot_hs_mult_process
           # browser()
           
-          # h- PLOTLY | Plotly webpage apperance
+          # h- PLOTLY | Plotly web-page appearance
           VolcanoPlot_hs_mult_process_plotly = ggplotly( VolcanoPlot_hs_mult_process, tooltip = "text") %>%
             highlight(on         = "plotly_click",
                       off        = "plotly_doubleclick", 
@@ -2262,8 +2208,6 @@ server = function(input, output, session) {
   
   
   
-  
-  
   observeEvent(input$UI_MMP_LIST_ACTION, {
     if (DEBUGGING_MODE) {
       Sys.time()
@@ -2276,50 +2220,11 @@ server = function(input, output, session) {
     output$VolcanoPlotOutMultipleProcessesMitoLEGEND= renderPlotly(mmp_create_plot_legend(mmpvalues))
   })
   
-  
-  
-  # output$VolcanoPlotOutMultipleProcessesMito = renderPlotly({
-     #ActionButtonSelectedProcCol()
-  #   # a4 = HighlightMultipleProcess()
-  #   a4 = mmp_create_plot_processes_highlighted()
-  #   Sys.sleep(2)
-  #   hide(id = "loading-content4")
-  #   a4
-  # })
-  
-
-  
-
-  # 4.1.1. Subset of mutliple processes Tab under Mutliple processes Plot
-#  output$ProcessesDataSubsetMult4 = renderDT({
-#    ActionButtonSelectedProcCol() })
-  
-  # 4.1.2. InputData Tab under Mutliple processes Plot 
+  # 4.1.2. Input Data Tab under Multiple processes Plot 
   output$InputOriginalDataMult4 = renderDT({
     datatable(DataSharedForMULTIPLEMitoProcess )}, server = FALSE) 
   
   
-
-  
-  
-
-  
-  
-  
-  ###############################################
-
-  ###############################################
-  
-  
-  #================================================================================================================
-  # 4.3.0 OUTPUT HIGHLIGHTED SELECTED MULTIPLE PROCESSES 
-  #================================================================================================================  
-
-  
-
-  
-  
-
   
   
   
@@ -2342,7 +2247,7 @@ server = function(input, output, session) {
     req(input$VerticalThreshold)
     print("-------------------------------------------------------------------- DataFrameForCellularCompartLocaliz")
     #input$UI_MMP_LIST_ACTION
-    # 3.1.0 Initialise input varibales  
+    # 3.1.0 Initialize input variables  
     inputdata  = DataInputFile()        # testdata 1388 5 | ID GeneSymbol Description Log2FC AdjPValue
     refcellularcompartloc = list_of_cellular_values     # mm 1495 3       | 
     print("DataFrameForCellularCompartLocaliz")
@@ -2363,13 +2268,13 @@ server = function(input, output, session) {
         inputdata_upper = mutate( inputdata, upcase = toupper(GeneSymbol) )
             
         # 5.1.1 Get a vector of gene names for selected cellular compartment of interest, subset to input data  
-        # 1. Get position of the selecetd term
+        # 1. Get position of the selected term
         term_ind = as.numeric(grep(input$CellularLocal, unlist(name_list_of_cellular_values)))
         # Name in a list 
         term_name_inlist = names(refcellularcompartloc)[term_ind]               # "Actin"
-        # GET GENS stored in selecetd term
+        # GET GENS stored in selected term
         genes_per_term = toupper( as.character(refcellularcompartloc[[term_ind]]))
-        # subset input data to genes of selecetd term of cellular compartment
+        # subset input data to genes of selected term of cellular compartment
         subset_input_to_cellularcompart = inputdata_upper[ as.character(inputdata_upper$upcase) %in% as.character(genes_per_term), ]
         # dim(subset_input_to_cellularcompart)   # 28x6
         
@@ -2395,7 +2300,7 @@ output$ProcessesDataSubsetMult5 = renderDT({
   DataFrameForCellularCompartLocaliz()
   })  # not developed yet
   
-# 5.1.2. InputData Tab under Cellular Compartment Plot
+# 5.1.2. Input Data Tab under Cellular Compartment Plot
 output$InputOriginalDataMult5 = renderDT({
   datatable(DataSharedForMULTIPLEMitoProcess )}, server = FALSE) 
 
@@ -2424,7 +2329,7 @@ HighlightCellularLocalization = reactive({
   print("END ---- HighlightCellularLocalization Reactive: -------")
   print("-------------------------------------------")
   
-  # 0 Initialise thresholds
+  # 0 Initialize thresholds
   sigval                = input$Signif
   logFC_threshold_pos   = as.numeric(input$VerticalThreshold)
   logFC_threshold_neg   = -logFC_threshold_pos
@@ -2475,13 +2380,7 @@ HighlightCellularLocalization = reactive({
           # X axis scale
           scale_x_continuous(breaks = seq( round( min( inputdata$Log2FC, na.rm = T)),
                                            round( max( inputdata$Log2FC, na.rm = T)), 1) )
-        # +
-        #   # Y axis scale
-        #   scale_y_continuous(breaks = seq( round( min( -log10(inputdata$AdjPValue), na.rm = T)), 
-        #                                    round( max( -log10(inputdata$AdjPValue), na.rm = T)), 2) )
-        # labs( title ="Volcano Plot",
-        #       caption = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "))
-        
+
         # 4. PLOTLY
         VolcanoPlot_hs_cellLoc_plotly = ggplotly( VolcanoPlot_hs_cellularLocal, tooltip = "text") %>%
           highlight(on        = "plotly_click",
@@ -2736,9 +2635,6 @@ output$CellularCompartmentLocalPlot = renderPlotly({
           theme_classic() +
           scale_x_continuous(breaks = seq( round( min( dfinput$Log2FC, na.rm = T)),
                                            round( max( dfinput$Log2FC, na.rm = T)), 1) )
-        # +    # Y axis scale
-        #   scale_y_continuous(breaks = seq( round( min( -log10(dfinput$AdjPValue), na.rm = T)), 
-        #                                    round( max( -log10(dfinput$AdjPValue), na.rm = T)), 2) )
 
         CustomVolcanoPlotStore$image2 = volcanoplotcustom
         
@@ -2961,85 +2857,36 @@ output$CellularCompartmentLocalPlot = renderPlotly({
 # [43] rstudioapi_0.11       R6_2.4.1              compiler_3.6.1       
 
 
+# ====================================================================
+# V. Versions updated R and RStudio 2021
+# ====================================================================
+# R version 4.0.3 (2020-10-10)
+# Platform: x86_64-w64-mingw32/x64 (64-bit)
+# Running under: Windows 10 x64 (build 18363)
+# 
+# Matrix products: default
+# 
+# locale:
+#   [1] LC_COLLATE=English_Australia.1252  LC_CTYPE=English_Australia.1252    LC_MONETARY=English_Australia.1252
+# [4] LC_NUMERIC=C                       LC_TIME=English_Australia.1252    
+# 
+# attached base packages:
+#   [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
+# other attached packages:
+#   [1] gridExtra_2.3            colourpicker_1.1.0       shinyjs_2.0.0            shinythemes_1.2.0        shinydashboardPlus_0.7.5
+# [6] config_0.3.1             crosstalk_1.1.1          stringr_1.4.0            svglite_1.2.3.2          DT_0.17                 
+# [11] plotly_4.9.3             ggplot2_3.3.3            shinyWidgets_0.5.6       shinydashboard_0.7.1     dplyr_1.0.3             
+# [16] shiny_1.6.0             
+# 
+# loaded via a namespace (and not attached):
+#   [1] Rcpp_1.0.6        tidyr_1.1.2       assertthat_0.2.1  digest_0.6.27     mime_0.9          R6_2.5.0          evaluate_0.14    
+# [8] httr_1.4.2        pillar_1.4.7      gdtools_0.2.3     rlang_0.4.10      lazyeval_0.2.2    data.table_1.13.6 miniUI_0.1.1.1   
+# [15] jquerylib_0.1.3   rmarkdown_2.6     labeling_0.4.2    htmlwidgets_1.5.3 munsell_0.5.0     tinytex_0.29      compiler_4.0.3   
+# [22] httpuv_1.5.5      xfun_0.20         pkgconfig_2.0.3   systemfonts_0.3.2 htmltools_0.5.1.1 tidyselect_1.1.0  tibble_3.0.5     
+# [29] viridisLite_0.3.0 crayon_1.4.0      withr_2.4.1       later_1.1.0.1     grid_4.0.3        jsonlite_1.7.2    xtable_1.8-4     
+# [36] gtable_0.3.0      lifecycle_0.2.0   DBI_1.1.1         magrittr_2.0.1    scales_1.1.1      cachem_1.0.1      stringi_1.5.3    
+# [43] promises_1.1.1    bslib_0.2.4       ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.6       tools_4.0.3       glue_1.4.2       
+# [50] purrr_0.3.4       fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-0  knitr_1.31        sass_0.3.1   
 
 
-
-##############################################################################################################################
-#
-# PLOT with legend. However, ggplotly alter legend colors  
-#
-##############################################################################################################################
-# h- selecetd multiple processes vector and color
-# uniq_processes_df
-# colors_to_highlight_mm_multiple_process | value_key_for_legend = as.character(unique(colors_to_highlight_mm_multiple_process$Process))
-# NOTE: to enbale same colour usage , unique() is not used
-# NOTE: scale_color_manual() to use ONLY "values=c()" will sort colour names alphabetically, therefore use "labels=c()"
-# VolcanoPlot_mm_mult_process = ggplot(  data    = final_df_mm,
-#                                        mapping = aes(x    = Log2FC,
-#                                                      y    = -log10(AdjPValue),
-#                                                      text = GeneSymbol
-#                                        )) +
-#   # Colour all selected processes and data values correctly
-#   geom_point(
-#     color = data_shared_mm_mult_process$origData()[,8],
-#     size  = 1.5
-#   ) +
-#   # Selection of value labels (reactivity, crosstalking)
-#   geom_point(data        = data_shared_subset_to_selected_proc_df,    # 40x8
-#              aes(colour  = Process),
-#              show.legend = T) +
-#   # Legend title and correct colour scaling
-#   scale_color_manual(
-#     #aesthetics = c("colour", "fill"),
-#     name   = "Selected Processes",
-#     labels = value_key_for_legend,
-#     values = color_key_for_legend
-#   ) +
-#   # Axis
-#   geom_hline( yintercept = -log10(sigval),
-#               color      = "#777777",
-#               size       = 0.15 ) +
-#   geom_vline( xintercept = logFC_threshold_pos,
-#               color      = "#777777",
-#               size       = 0.15 ) +
-#   geom_vline( xintercept = logFC_threshold_neg,
-#               color      = "#777777",
-#               size       = 0.15 ) +
-#   # Plot background
-#   theme_classic() +
-#   # X axis scaling
-#   scale_x_continuous(breaks = seq( round( min( inputfile$Log2FC, na.rm = T)),
-#                                    round( max( inputfile$Log2FC, na.rm = T)), 1) )+
-#   # Y axis scale
-#   scale_y_continuous(breaks = seq( round( min( -log10(inputfile$AdjPValue), na.rm = T)),
-#                                    round( max( -log10(inputfile$AdjPValue), na.rm = T)), 2) )
-# 
-# ExploreMitoVolcanoStore$image1 = VolcanoPlot_mm_mult_process
-# 
-# # h- PLOTLY | Plotly webpage apperance
-# # NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ggplotly(messes up legend colors )
-# VolcanoPlot_mm_mult_process_plotly = ggplotly( VolcanoPlot_mm_mult_process, tooltip = "text") %>%
-#   highlight(on         = "plotly_click",
-#             off        = "plotly_doubleclick", 
-#             persistent = T,      
-#             opacityDim = 1, 
-#             selected   = attrs_selected(mode         = "text", 
-#                                         textfont     = tex, 
-#                                         textposition = "top right",
-#                                         marker = list(symbol = ".crossTalkKey"))) %>%
-#   layout(showlegend = TRUE,
-#          autosize   = TRUE,
-#          yaxis      = yaxis,
-#          title = list(text = str_interp("Total = ${numrows} variables; Significant Threshold = ${sigval}; Vertical = +/-${as.integer(logFC_threshold_pos)} "),
-#                       font = list(family = "Arial",
-#                                   size   = 10),
-#                       xanchor= "center")
-#   ) %>% 
-#   config(toImageButtonOptions   = list(format = "svg", 
-#                                        width  = 800, 
-#                                        height = 600, 
-#                                        dpi    = 1200),
-#          modeBarButtonsToRemove = c("lasso2d", "resetScale2d", "toggleSpikelines", "select2d", "pan2d"))
-# 
-# 
-# return(VolcanoPlot_mm_mult_process_plotly)

@@ -366,14 +366,9 @@ ui_explore_cellular_compartment_localiz = box (
   )
 )
 
-# ui_explore_cellular_compartment_localiz = box(
-#   color       = "orange",
-#   title       = "Cellular Compartment Localization (Human)",
-#   solidHeader = TRUE,
-#   width       = 12,
-# 
-#   uiOutput("UI_MMP_CELLULAR_LOCALIZ")
-# )
+
+
+
 
 # ===================================================================================================================================
 # ===================================================================================================================================
@@ -405,6 +400,7 @@ ui_explore_custom_gene_list = box(color = "orange",
                                               label   = "Upload a gene file")
                                     )
                                   )
+
 
 
 # ===================================================================================================================================
@@ -676,7 +672,7 @@ menue_tab_exp_mitproc_body = tabItem( "menue_tab_exp_mitproc",
 
 
 # 4. EXPLORE MITO MULTIPLE PROCESSES   
-# LOCATION: "MULTIPLE PROCESSES" (left-hand side menue tab)
+# LOCATION: "MULTIPLE PROCESSES" (left-hand side menu tab)
 menue_tab_exp_multiple_mitoprocesses_body = tabItem( "menue_tab_exp_multiple_mitoprocesses",
                                       h1("Explore Multiple Mitochondrial Processes"),
                                       title = "Explore Multiple Mitochondrial Processes",
@@ -686,12 +682,8 @@ menue_tab_exp_multiple_mitoprocesses_body = tabItem( "menue_tab_exp_multiple_mit
                                       # Loading message
                                       div(id = "loading-content4",
                                           h4("Select Processes and colours from the right-hand pannel, press Apply to visualize plot")),
-                                      # plotlyOutput(outputId = "VolcanoPlotOutMultipleProcessesMito"),
-                                      
                                       column(12,
                                              plotlyOutput(outputId = "VolcanoPlotOutMultipleProcessesMito")),
-                                      # column(4,
-                                      #        plotlyOutput(outputId = "VolcanoPlotOutMultipleProcessesMitoLEGEND")),
                                       br(),
                                       br(),
                                       tabBox (
@@ -704,7 +696,7 @@ menue_tab_exp_multiple_mitoprocesses_body = tabItem( "menue_tab_exp_multiple_mit
 
 
 # 5. EXPLORE CELL CELLULAR COMPARTMENT   
-# LOCATION: "MULTIPLE PROCESSES" (left-hand side menue tab)
+# LOCATION: "MULTIPLE PROCESSES" (left-hand side menu tab)
 menue_tab_exp_cellular_compartment_body = tabItem( "menue_tab_exp_cellular_compartment",
                                                      h1("Explore Cellular Compartment Localizations"),
                                                      title = "Explore Cellular Compartment Localization",
@@ -725,12 +717,7 @@ menue_tab_exp_cellular_compartment_body = tabItem( "menue_tab_exp_cellular_compa
                                                        tabPanel(title="Selected Cellular Compartment(s)",                      
                                                                 DTOutput(outputId = "ProcessesDataSubsetMult5"))))
 
-# NOTE: dont use anymore
-# menue_tab_exit_body = tabItem ( "menue_tab_exit",
-#                                 h1("Exit Application"),
-#                                 p("Are you sure you would like to exit the application?"),
-#                                 actionButton ("ExitApplication",
-#                                               "Exit") )
+
 # ===================================================================================================================================
 #  --------------------------------------- END --------------------------------------- "EXPLORE PLOT VALUES"
 # ===================================================================================================================================
@@ -829,30 +816,66 @@ ui = dashboardPagePlus(skin = "yellow",
 # > sessionInfo()
 # R version 3.6.1 (2019-07-05)
 # Platform: x86_64-w64-mingw32/x64 (64-bit)
-# Running under: Windows >= 8 x64 (build 9200)
-#
+# Running under: Windows 10 x64 (build 17134)
+# 
 # Matrix products: default
-#
+# 
+# Random number generation:
+#   RNG:     Mersenne-Twister 
+# Normal:  Inversion 
+# Sample:  Rounding 
+# 
+# locale:
+#   [1] LC_COLLATE=English_Australia.1252  LC_CTYPE=English_Australia.1252    LC_MONETARY=English_Australia.1252 LC_NUMERIC=C                      
+# [5] LC_TIME=English_Australia.1252    
+# 
+# attached base packages:
+#   [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
+# other attached packages:
+#   [1] colourpicker_1.1.0       shinyjs_2.0.0            shinyalert_1.1           shinythemes_1.1.2        shinydashboardPlus_0.7.5 config_0.3              
+# [7] crosstalk_1.0.0          stringr_1.4.0            svglite_1.2.3            DT_0.12                  plotly_4.9.1             ggplot2_3.2.1           
+# [13] shinyWidgets_0.5.0       shinydashboard_0.7.1     dplyr_0.8.3              shiny_1.4.0             
+# 
+# loaded via a namespace (and not attached):
+#   [1] tidyselect_0.2.5      purrr_0.3.3           colorspace_1.4-1      vctrs_0.2.2           miniUI_0.1.1.1        htmltools_0.4.0       viridisLite_0.3.0    
+# [8] yaml_2.2.1            rlang_0.4.2           later_1.0.0           pillar_1.4.3          glue_1.3.1            withr_2.1.2           gdtools_0.2.1        
+# [15] lifecycle_0.1.0       munsell_0.5.0         gtable_0.3.0          htmlwidgets_1.5.1     fastmap_1.0.1         httpuv_1.5.2          Rcpp_1.0.3           
+# [22] xtable_1.8-4          promises_1.1.0        scales_1.1.0          EnhancedVolcano_1.4.0 jsonlite_1.6.1        mime_0.9              systemfonts_0.1.1    
+# [29] digest_0.6.23         stringi_1.4.4         ggrepel_0.8.1         grid_3.6.1            tools_3.6.1           magrittr_1.5          lazyeval_0.2.2       
+# [36] tibble_2.1.3          crayon_1.3.4          tidyr_1.0.2           pkgconfig_2.0.3       data.table_1.12.8     assertthat_0.2.1      httr_1.4.1           
+# [43] rstudioapi_0.11       R6_2.4.1              compiler_3.6.1       
+
+
+# ====================================================================
+# V. Versions updated R and RStudio 2021
+# ====================================================================
+# R version 4.0.3 (2020-10-10)
+# Platform: x86_64-w64-mingw32/x64 (64-bit)
+# Running under: Windows 10 x64 (build 18363)
+# 
+# Matrix products: default
+# 
 # locale:
 #   [1] LC_COLLATE=English_Australia.1252  LC_CTYPE=English_Australia.1252    LC_MONETARY=English_Australia.1252
-# [4] LC_NUMERIC=C                       LC_TIME=English_Australia.1252
-#
+# [4] LC_NUMERIC=C                       LC_TIME=English_Australia.1252    
+# 
 # attached base packages:
-#   [1] stats     graphics  grDevices utils     datasets  methods   base
-#
+#   [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
 # other attached packages:
-#   [1] shinyjs_1.1              shinythemes_1.1.2        shinydashboardPlus_0.7.0 config_0.3               crosstalk_1.0.0
-# [6] stringr_1.4.0            svglite_1.2.2            DT_0.11                  plotly_4.9.1             ggplot2_3.2.1
-# [11] shinyWidgets_0.5.1       shinydashboard_0.7.1     dplyr_0.8.3              shiny_1.4.0
-#
+#   [1] gridExtra_2.3            colourpicker_1.1.0       shinyjs_2.0.0            shinythemes_1.2.0        shinydashboardPlus_0.7.5
+# [6] config_0.3.1             crosstalk_1.1.1          stringr_1.4.0            svglite_1.2.3.2          DT_0.17                 
+# [11] plotly_4.9.3             ggplot2_3.3.3            shinyWidgets_0.5.6       shinydashboard_0.7.1     dplyr_1.0.3             
+# [16] shiny_1.6.0             
+# 
 # loaded via a namespace (and not attached):
-#   [1] tidyselect_0.2.5  purrr_0.3.3       colorspace_1.4-1  vctrs_0.2.1       htmltools_0.4.0   viridisLite_0.3.0 yaml_2.2.0
-# [8] rlang_0.4.2       later_1.0.0       pillar_1.4.3      glue_1.3.1        withr_2.1.2       gdtools_0.2.1     lifecycle_0.1.0
-# [15] munsell_0.5.0     gtable_0.3.0      htmlwidgets_1.5.1 fastmap_1.0.1     httpuv_1.5.2      Rcpp_1.0.2        xtable_1.8-4
-# [22] promises_1.1.0    scales_1.0.0      backports_1.1.5   jsonlite_1.6      mime_0.7          systemfonts_0.1.1 digest_0.6.21
-# [29] stringi_1.4.3     grid_3.6.1        tools_3.6.1       magrittr_1.5      lazyeval_0.2.2    tibble_2.1.3      crayon_1.3.4
-# [36] tidyr_1.0.0       pkgconfig_2.0.3   zeallot_0.1.0     data.table_1.12.8 assertthat_0.2.1  httr_1.4.1        rstudioapi_0.10
-# [43] R6_2.4.0          compiler_3.6.1
-
-
+#   [1] Rcpp_1.0.6        tidyr_1.1.2       assertthat_0.2.1  digest_0.6.27     mime_0.9          R6_2.5.0          evaluate_0.14    
+# [8] httr_1.4.2        pillar_1.4.7      gdtools_0.2.3     rlang_0.4.10      lazyeval_0.2.2    data.table_1.13.6 miniUI_0.1.1.1   
+# [15] jquerylib_0.1.3   rmarkdown_2.6     labeling_0.4.2    htmlwidgets_1.5.3 munsell_0.5.0     tinytex_0.29      compiler_4.0.3   
+# [22] httpuv_1.5.5      xfun_0.20         pkgconfig_2.0.3   systemfonts_0.3.2 htmltools_0.5.1.1 tidyselect_1.1.0  tibble_3.0.5     
+# [29] viridisLite_0.3.0 crayon_1.4.0      withr_2.4.1       later_1.1.0.1     grid_4.0.3        jsonlite_1.7.2    xtable_1.8-4     
+# [36] gtable_0.3.0      lifecycle_0.2.0   DBI_1.1.1         magrittr_2.0.1    scales_1.1.1      cachem_1.0.1      stringi_1.5.3    
+# [43] promises_1.1.1    bslib_0.2.4       ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.6       tools_4.0.3       glue_1.4.2       
+# [50] purrr_0.3.4       fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-0  knitr_1.31        sass_0.3.1   
 

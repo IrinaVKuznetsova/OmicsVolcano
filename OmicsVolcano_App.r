@@ -114,14 +114,11 @@ req_packages = c(
   "config",
   "shinydashboardPlus",
   "shinythemes",
-  #"shinyalert",
   "shinyjs",
   "colourpicker",
-  #"cowplot",      # for extracting only legend from the plot
   "gridExtra"
   )
-  # "ggpubr" 
-    # colour palette       
+    
 
 
 
@@ -135,31 +132,12 @@ package.check = lapply(
   }
 )
 
-# library(dplyr)             # v 0.8.3
-# library(shiny)             # v '1.4.0'
-# library(shinydashboard)    # v '0.7.1'
-# library(shinyWidgets)
-# library(plotly)            # v '4.9.1'
-# library(DT)                # v '0.12'
-#
-# library(ggplot2)           # v '3.2.1'
-# library(svglite)           # v '1.2.2'
-# library(stringr)           # v '1.4.0'
-# library(crosstalk)         # v '1.0.0'
-# library(config)
-# library(colourpicker)      # v.'1.1.0'
-# library(htmltools)         # v.0.4.0   na
 
 #
 # Change development environment: homepc, university
 #
 Sys.setenv(R_CONFIG_ACTIVE = "homepc")
 
-
-#`%then%` <-
-#  shiny:::`%OR%` # Note: %then% does not exist in current preview implementations of Shiny.
-#       You can use the first line of code below to create a %then% operator.
-#       https://shiny.rstudio.com/articles/validation.html
 
 
 options(shiny.maxRequestSize = 900 * 1024 ^ 2)   # Increase file size for upload | https://shiny.rstudio.com/articles/upload.html
@@ -185,6 +163,41 @@ shinyApp(ui = ui, server = server)
 # ====================================================================
 # ====================================================================
 
+# sessionInfo()
+# R version 4.0.3 (2020-10-10)
+# Platform: x86_64-w64-mingw32/x64 (64-bit)
+# Running under: Windows 10 x64 (build 18363)
+# 
+# Matrix products: default
+# 
+# locale:
+#   [1] LC_COLLATE=English_Australia.1252  LC_CTYPE=English_Australia.1252    LC_MONETARY=English_Australia.1252
+# [4] LC_NUMERIC=C                       LC_TIME=English_Australia.1252    
+# 
+# attached base packages:
+#   [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
+# other attached packages:
+#   [1] gridExtra_2.3            colourpicker_1.1.0       shinyjs_2.0.0            shinythemes_1.2.0        shinydashboardPlus_0.7.5
+# [6] config_0.3.1             crosstalk_1.1.1          stringr_1.4.0            svglite_1.2.3.2          DT_0.17                 
+# [11] plotly_4.9.3             ggplot2_3.3.3            shinyWidgets_0.5.6       shinydashboard_0.7.1     dplyr_1.0.3             
+# [16] shiny_1.6.0             
+# 
+# loaded via a namespace (and not attached):
+#   [1] Rcpp_1.0.6        tidyr_1.1.2       assertthat_0.2.1  digest_0.6.27     mime_0.9          R6_2.5.0          evaluate_0.14    
+# [8] httr_1.4.2        pillar_1.4.7      gdtools_0.2.3     rlang_0.4.10      lazyeval_0.2.2    data.table_1.13.6 miniUI_0.1.1.1   
+# [15] jquerylib_0.1.3   rmarkdown_2.6     labeling_0.4.2    htmlwidgets_1.5.3 munsell_0.5.0     tinytex_0.29      compiler_4.0.3   
+# [22] httpuv_1.5.5      xfun_0.20         pkgconfig_2.0.3   systemfonts_0.3.2 htmltools_0.5.1.1 tidyselect_1.1.0  tibble_3.0.5     
+# [29] viridisLite_0.3.0 crayon_1.4.0      withr_2.4.1       later_1.1.0.1     grid_4.0.3        jsonlite_1.7.2    xtable_1.8-4     
+# [36] gtable_0.3.0      lifecycle_0.2.0   DBI_1.1.1         magrittr_2.0.1    scales_1.1.1      cachem_1.0.1      stringi_1.5.3    
+# [43] promises_1.1.1    bslib_0.2.4       ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.6       tools_4.0.3       glue_1.4.2       
+# [50] purrr_0.3.4       fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-0  knitr_1.31        sass_0.3.1  
+
+
+
+####################################################################
+# was developed with this R verssion
+####################################################################
 # > sessionInfo()
 # R version 3.6.1 (2019-07-05)
 # Platform: x86_64-w64-mingw32/x64 (64-bit)
