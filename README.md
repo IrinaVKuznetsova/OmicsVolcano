@@ -13,7 +13,7 @@ install.packages("dplyr")
 library(devtools)   
 install_version("shinydashboardPlus", "0.7.5")   
 
-This way older version of the package is installed. ** Now you can run the software!!!!**   
+This way older version of the package is installed. **Now you can run the software!!!!**   
 p.s: this issue will be fixed soon!  
 ```diff
 !****************************ATTENTION*********************************
