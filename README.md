@@ -1,9 +1,10 @@
 # OmicsVolcano
 
 ```diff
-!*******************ATTENTION  
+!*******************ATTENTION*********************************
+````  
 You might get following error message:  
-<span style="color:red">some *Error in rightSidebar(background = "light", width = 350, fluid = FALSE,  :   could not find function "rightSidebar"*</span>.
+<span style="color:red">some **Error in rightSidebar(background = "light", width = 350, fluid = FALSE,  :   could not find function "rightSidebar"**</span>.
 
 
 One of the sofwate packages has been ubpdated recently that affected the softwae work. Way around is install an older **shinydashboardPlus** version 0.7.5.  To do this, in RStudio run following commands in the console (bottom left window) before you run the software: 
@@ -15,7 +16,7 @@ install_version("shinydashboardPlus", "0.7.5")
 This way older version of the package is installed
 p.s: this issue will be fixed soon!
 
-```
+
 
 
 ```diff
