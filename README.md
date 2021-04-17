@@ -1,7 +1,7 @@
 # OmicsVolcano
 
-
-*******************ATTENTION***********
+```diff
+!*******************ATTENTION  
 You might get following error message:  
 <span style="color:red">some *Error in rightSidebar(background = "light", width = 350, fluid = FALSE,  :   could not find function "rightSidebar"*</span>.
 
@@ -15,7 +15,7 @@ install_version("shinydashboardPlus", "0.7.5")
 This way older version of the package is installed
 p.s: this issue will be fixed soon!
 
-
+```
 
 
 ```diff
