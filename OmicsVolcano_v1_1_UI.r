@@ -5,12 +5,13 @@
 #
 # UPDATED !!!!!!!!!!!!!!!!!!!!
 # 
-# The initial version of OmicsVolcano used shinydashboardPlus() function,
+# The initial version of OmicsVolcano used shinydashboardPlus() v.0.7.5 function,
 # which has been depreciated. 
-# This version replaces shinydashboardPlus() to dashboardPage()
-# and some required adjustment has been made to the script.
+# The software has updated version of shinydashboardPlus() v.2.0.0 now.
 #
-# fontawesome package has been added packageVersion("fontawesome") - '0.2.2'
+# rightSidebar() is replaced with dashboardControlbar()
+#
+# fontawesome package has been added |  packageVersion("fontawesome") - '0.2.2'
 #
 # The software has been tested on R version 4.1.1 (2021-08-10) "Kick Things"
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
