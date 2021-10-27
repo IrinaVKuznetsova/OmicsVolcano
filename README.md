@@ -4,10 +4,10 @@
 A new and improved version of OmicsVolcano V1.1  
 
 **Updates:**  
-*  tested on R version 4.1.1 (2021-08-10) "Kick Things"  
+*  tested on **R version 4.1.1** (2021-08-10) "Kick Things"  
 *  **fontawesome** package has been added  
-*  rightSidebar() function is replaced with dashboardControlbar()  
-*  updated version v.2.0.0 of shinydashboardPlus() function. [**More info on shinydashboardPlus**](https://rinterface.github.io/shinydashboardPlus/articles/shinydashboardPlus.html)  
+*  **rightSidebar()** function is replaced with **dashboardControlbar()**  
+*  updated version v.2.0.0 of **shinydashboardPlus()** function. [**More info on shinydashboardPlus**](https://rinterface.github.io/shinydashboardPlus/articles/shinydashboardPlus.html)  
 ------
 
 
