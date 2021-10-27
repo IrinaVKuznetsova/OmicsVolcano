@@ -1,29 +1,16 @@
-# OmicsVolcano
+# OmicsVolcano V1.1
 
-```diff
-!*****************************ATTENTION*********************************
-````  
-You might get following error message:  
-<span style="color:red">**Error in rightSidebar(background = "light", width = 350, fluid = FALSE,  :   could not find function "rightSidebar"**</span>.
+**Update: October 2021**
+OmicsVolcano has been updated to V1.1
 
-
-One of the sofwate packages has been ubpdated recently that affected the softwae work. Work around is to install an older **shinydashboardPlus** version **0.7.5**.  To do this, in RStudio run following commands in the console (bottom left window) before you run the software: 
-
-install.packages("dplyr")   
-library(devtools)   
-install_version("shinydashboardPlus", "0.7.5")   
-
-This way older version of the package is installed. **Now you can run the software!!!!**   
-p.s: this issue will be fixed soon!  
-```diff
-!****************************ATTENTION*********************************
-````
+*  tested on R version 4.1.1 (2021-08-10) "Kick Things"  
+*  **fontawesome** package has been added  
+*  function shinydashboardPlus() has been replaced to dashboardPage(). [More info] (https://rinterface.github.io/shinydashboardPlus/articles/shinydashboardPlus.html)  
 
 
 
-```diff
-! *OmicsVolcano Version 1.0 is available 06/05/2020  
-```
+
+
 
 ### Don't know where to start? Start at [Help Page](https://github.com/IrinaVKuznetsova/OmicsVolcano/tree/master/docs/HelpPage.md)
 
@@ -31,7 +18,7 @@ p.s: this issue will be fixed soon!
 General Usage Notes  
 ------
 
-**Description:** OmicsVolcano is the R software for intuitive visualization and interactive exploration of high throughput biological data in a volcano plot. Unique feature of this software is the possibility to explore Mitochodrial Process(es) present in the data  
+**Description:** OmicsVolcano V1.1 is the R software for intuitive visualization and interactive exploration of high throughput biological data in a volcano plot. Unique feature of this software is the possibility to explore Mitochodrial Process(es) present in the data  
 
 
 **Software workflow:**  
@@ -56,23 +43,23 @@ P09055 | Itgb1 | Integrin beta-1 | 0.08 | 6.29E-08
 
 Version Control  
 ------ 
-OmicsVolcano Version 1.0 R 3+     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tested on Windows 10  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R version 3.6.1 (2019-07-05)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "dplyr" v.0.8.3  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shiny" v.1.4.0  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinydashboard" v.0.7.1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinyWidgets" v.0.5.1   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "plotly" v.4.9.1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "DT" v.0.11  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "ggplot2" v.3.2.1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "svglite" v.1.2.2  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "stringr" v.1.4.0   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "crosstalk" v.1.0.0  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "config" v.0.3  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinydashboardPlus" v.0.7.0  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinythemes" v.1.1.2   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinyjs" v.1.1  
+OmicsVolcano Version 1.1 R 4+     * *
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R version 4.1.1 (2021-08-10) "Kick Things"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "dplyr" v.1.0.7  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shiny" v.1.7.1  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinydashboard" v.0.7.2  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinyWidgets" v.0.6.2   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "plotly" v.4.10.0  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "DT" v.0.19  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "ggplot2" v.3.3.5  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "svglite" v.2.0.0  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "stringr" v.1.4.0  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "crosstalk" v.1.1.1  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "config" v.0.3.1  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinydashboardPlus" v.2.0.3  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinythemes" v.1.2.0  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "shinyjs" v.2.0.0  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "fontawesome" v.0.2.2   
 
 
 

@@ -1,7 +1,29 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# OmicsVolcano V1.1
+#
+# UPDATED !!!!!!!!!!!!!!!!!!!!
+# 
+# The initial version of OmicsVolcano used shinydashboardPlus() function,
+# which has been depreciated. 
+# This version replaces shinydashboardPlus() to dashboardPage()
+# and some required adjustment has been made to the script.
+#
+# fontawesome package has been added packageVersion("fontawesome") - '0.2.2'
+#
+# The software has been tested on R version 4.1.1 (2021-08-10) "Kick Things"
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
 # ====================================================================
 # ====================================================================
 # ====================================================================
-# Title:      OmicsVolcano
+# Title:      OmicsVolcano 
 # Copyright:  (C) 2020
 # License:    GNU General Public
 #
@@ -67,27 +89,6 @@
 
 
 
-
-
-# ====================================================================
-# ====================================================================
-# ====================================================================
-# INSTALL
-# ====================================================================
-# ====================================================================
-# ====================================================================
-# install.packages("dplyr")
-# install.packages("tidyverse")
-# install.packages('shiny')
-# install.packages("plotly")
-# install.packages('DT')
-# install.packages("shinydashboard")
-# install.packages("ggplot2") 
-# install.packages("svglite")
-# install.packages("stringr")
-# install.packages("shinyWidgets")
-# install.packages("devtools")
-# install.packages("colourpicker")
 
 
 
@@ -164,8 +165,8 @@ ui_download_demo_file =
   tags$a(
     href     = CONST_DEMO_FILE,
     target   = "_blank",
-    icon     = icon("fa fa-heart"),
-    icon("disk"),
+    icon     = icon("sliders-h"),    # changed in October 2021
+    #icon("disk"),                   # commented out October 2021
     "Download demo file to local PC...",
     download = "demofile.txt")
 
@@ -491,10 +492,31 @@ function_para_tabs =  tagList (tags$style("#UI_RIGHT_SIDEBAR_SELECTMODE { displa
 # 2. CONFIGURATION (RIGHT DASHBOARD)
 # ===================================================================================================================================
 # ===================================================================================================================================
-ui_right_sidebar = rightSidebar(
-  background     = "light",
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# START
+# Belongs to the initial software version 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#The old rightSidebar() component becomes the dashboardControlbar() 
+#  to ease the transition from shinydashboardPlus to {bs4Dash}, the latter being the Bootstrap 4 
+# version with a more modern look and feel
+#
+# ui_right_sidebar = rightSidebar(
+#   background     = "light",
+#   width          = 350,
+#   fluid          = FALSE,
+#   h1("Settings"),
+#   function_para_tabs)
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Belongs to the initial software version 
+# END
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ui_right_sidebar = dashboardControlbar(
+  skin     = "light",
   width          = 350,
-  fluid          = FALSE,
+ # fluid          = FALSE,
   h1("Settings"),
   function_para_tabs)
 # ===================================================================================================================================
@@ -516,19 +538,19 @@ ui_dash_sidebar = dashboardSidebar(
   collapsed = FALSE,
   disable   = FALSE,
   sidebarMenu(id           = "ui_dashboard_sidebar",
-              sartExpanded = TRUE,        
-              
+              sartExpanded = TRUE,
+
               menuItem("Home Page",
                        tabName = "menue_tab_home",
                        icon    = icon("home")),
-              
+
               menuItem("File",
                        icon    = icon("database"),
-                       
+
                        menuSubItem("Open...",
                                    tabName = "menue_tab_file_open",
                                    icon    = icon("folder-open")) ),
-              
+
               menuItem("Explore",
                        icon = icon("eye"),
                        menuSubItem("Plot",
@@ -540,13 +562,13 @@ ui_dash_sidebar = dashboardSidebar(
                        menuSubItem( "Mitochondrial Process",
                                     tabName = "menue_tab_exp_mitproc",
                                     icon    = icon("project-diagram") ),
-                       menuSubItem( "Multiple Processes",                              
-                                    tabName = "menue_tab_exp_multiple_mitoprocesses",      
+                       menuSubItem( "Multiple Processes",
+                                    tabName = "menue_tab_exp_multiple_mitoprocesses",
                                     icon    = icon("balance-scale") ),
-                       menuSubItem( "Cellular Localization",                              
-                                    tabName = "menue_tab_exp_cellular_compartment",      
+                       menuSubItem( "Cellular Localization",
+                                    tabName = "menue_tab_exp_cellular_compartment",
                                     icon    = icon("anchor") )),
-              
+
               menuItem( "Export",
                         icon = icon("save"),
                         menuSubItem("Plot",
@@ -766,41 +788,76 @@ menue_tab_about_body = tabItem ("menue_tab_help",
 # ====================================================================
 # ====================================================================
 # ====================================================================
-ui = dashboardPagePlus(skin = "yellow",
-                       
-                       dashboardHeaderPlus(
-                         dropdownMenuOutput("UI_NOTIFICATIONS"),
-                         enable_rightsidebar = FALSE,
-                         rightSidebarIcon    = "gears",
-                         title               = "OmicsVolcano"),
-                       
-                       ui_dash_sidebar,
-                       # alternative right sidebar
-                       
-                       dashboardBody (useShinyjs(),
-                                      fluidRow (width = 12,
-                                                ui_info_box),
-                                      fluidRow (
-                                        column(width = 8,
-                                               fluidRow (
-                                                 width = 12,
-                                                 tabItems (
-                                                   menue_tab_file_open_body,
-                                                   menue_tab_home_body,
-                                                   menue_tab_exp_plot_body,
-                                                   menue_tab_exp_genelist_body,
-                                                   menue_tab_exp_mitproc_body,
-                                                   menue_tab_exp_multiple_mitoprocesses_body,
-                                                   menue_tab_exp_cellular_compartment_body,
-                                                   menue_tab_download_plot_body,
-                                                   menue_tab_download_table_body,
-                                                   menue_tab_help_body,
-                                                   menue_tab_about_body       #        menue_tab_exit_body
-                                                   )
-                                                 )),
-                                        column (width = 4,
-                                                function_para_tabs) ))  )
+# https://rinterface.github.io/shinydashboardPlus/news/index.html
+# Remove all sidebar related parameters of dashboardPagePlus(). They now belong to 
+# dashboardSidebarPlus() to Align with {shinydashboard}
 
+ui = dashboardPage(header= dashboardHeader(
+                            disable = FALSE,
+                            title   = "OmicsVolcano"),
+                   sidebar =ui_dash_sidebar,
+                   body=dashboardBody (useShinyjs(),
+                                    fluidRow (width = 12,
+                                              ui_info_box),
+                                    fluidRow (
+                                      column(width = 8,
+                                             fluidRow (
+                                               width = 12,
+                                               tabItems (
+                                                 menue_tab_file_open_body,
+                                                 menue_tab_home_body,
+                                                 menue_tab_exp_plot_body,
+                                                 menue_tab_exp_genelist_body,
+                                                 menue_tab_exp_mitproc_body,
+                                                 menue_tab_exp_multiple_mitoprocesses_body,
+                                                 menue_tab_exp_cellular_compartment_body,
+                                                 menue_tab_download_plot_body,
+                                                 menue_tab_download_table_body,
+                                                 menue_tab_help_body,
+                                                 menue_tab_about_body )
+                                             )),
+                                      column (width = 4,
+                                              function_para_tabs))),
+                                    skin = "yellow")
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Belongs to the initial software version 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ui = dashboardPagePlus(skin = "yellow",
+#                        
+#                        dashboardHeaderPlus(
+#                          dropdownMenuOutput("UI_NOTIFICATIONS"),
+#                          enable_rightsidebar = FALSE,
+#                          rightSidebarIcon    = "gears",
+#                          title               = "OmicsVolcano"),
+#                        
+#                        ui_dash_sidebar,
+#                        # alternative right sidebar
+#                        
+#                        dashboardBody (useShinyjs(),
+#                                       fluidRow (width = 12,
+#                                                 ui_info_box),
+#                                       fluidRow (
+#                                         column(width = 8,
+#                                                fluidRow (
+#                                                  width = 12,
+#                                                  tabItems (
+#                                                    menue_tab_file_open_body,
+#                                                    menue_tab_home_body,
+#                                                    menue_tab_exp_plot_body,
+#                                                    menue_tab_exp_genelist_body,
+#                                                    menue_tab_exp_mitproc_body,
+#                                                    menue_tab_exp_multiple_mitoprocesses_body,
+#                                                    menue_tab_exp_cellular_compartment_body,
+#                                                    menue_tab_download_plot_body,
+#                                                    menue_tab_download_table_body,
+#                                                    menue_tab_help_body,
+#                                                    menue_tab_about_body       #        menue_tab_exit_body
+#                                                    )
+#                                                  )),
+#                                         column (width = 4,
+#                                                 function_para_tabs) ))  )
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -812,6 +869,52 @@ ui = dashboardPagePlus(skin = "yellow",
 # ====================================================================
 # ====================================================================
 # ====================================================================
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# START
+# October 2021
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 
+# > sessionInfo()
+# R version 4.1.1 (2021-08-10)
+# Platform: x86_64-w64-mingw32/x64 (64-bit)
+# Running under: Windows 10 x64 (build 19043)
+# 
+# Matrix products: default
+# 
+# locale:
+#   [1] LC_COLLATE=English_Australia.1252  LC_CTYPE=English_Australia.1252    LC_MONETARY=English_Australia.1252
+# [4] LC_NUMERIC=C                       LC_TIME=English_Australia.1252    
+# 
+# attached base packages:
+#   [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
+# other attached packages:
+#   [1] fontawesome_0.2.2        gridExtra_2.3            colourpicker_1.1.1       shinyjs_2.0.0           
+# [5] shinythemes_1.2.0        shinydashboardPlus_2.0.3 config_0.3.1             crosstalk_1.1.1         
+# [9] stringr_1.4.0            svglite_2.0.0            DT_0.19                  plotly_4.10.0           
+# [13] ggplot2_3.3.5            shinyWidgets_0.6.2       shinydashboard_0.7.2     dplyr_1.0.7             
+# [17] shiny_1.7.1             
+# 
+# loaded via a namespace (and not attached):
+#   [1] Rcpp_1.0.7        tidyr_1.1.4       assertthat_0.2.1  digest_0.6.28     utf8_1.2.2        mime_0.12        
+# [7] R6_2.5.1          evaluate_0.14     httr_1.4.2        pillar_1.6.4      rlang_0.4.11      lazyeval_0.2.2   
+# [13] data.table_1.14.2 miniUI_0.1.1.1    jquerylib_0.1.4   rmarkdown_2.11    labeling_0.4.2    htmlwidgets_1.5.4
+# [19] munsell_0.5.0     compiler_4.1.1    httpuv_1.6.3      xfun_0.26         pkgconfig_2.0.3   systemfonts_1.0.3
+# [25] htmltools_0.5.2   tidyselect_1.1.1  tibble_3.1.5      fansi_0.5.0       viridisLite_0.4.0 crayon_1.4.1     
+# [31] withr_2.4.2       later_1.3.0       grid_4.1.1        jsonlite_1.7.2    xtable_1.8-4      gtable_0.3.0     
+# [37] lifecycle_1.0.1   DBI_1.1.1         magrittr_2.0.1    scales_1.1.1      stringi_1.7.5     cachem_1.0.6     
+# [43] promises_1.2.0.1  bslib_0.3.1       ellipsis_0.3.2    generics_0.1.0    vctrs_0.3.8       tools_4.1.1      
+# [49] glue_1.4.2        purrr_0.3.4       fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-2  knitr_1.36       
+# [55] sass_0.4.0   
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# October 2021
+# END
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 
 # > sessionInfo()
 # R version 3.6.1 (2019-07-05)
@@ -878,4 +981,7 @@ ui = dashboardPagePlus(skin = "yellow",
 # [36] gtable_0.3.0      lifecycle_0.2.0   DBI_1.1.1         magrittr_2.0.1    scales_1.1.1      cachem_1.0.1      stringi_1.5.3    
 # [43] promises_1.1.1    bslib_0.2.4       ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.6       tools_4.0.3       glue_1.4.2       
 # [50] purrr_0.3.4       fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-0  knitr_1.31        sass_0.3.1   
+
+
+
 
