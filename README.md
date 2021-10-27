@@ -1,13 +1,14 @@
 # OmicsVolcano V1.1
 
-**Update: October 2021**
-OmicsVolcano has been updated to V1.1
+**Update: October 2021**  
+A new and improved version of OmicsVolcano V1.1  
 
+**Updates:**  
 *  tested on R version 4.1.1 (2021-08-10) "Kick Things"  
 *  **fontawesome** package has been added  
 *  rightSidebar() function is replaced with dashboardControlbar()  
 *  updated version v.2.0.0 of shinydashboardPlus() function. [More info] (https://rinterface.github.io/shinydashboardPlus/articles/shinydashboardPlus.html)  
-
+------
 
 
 
