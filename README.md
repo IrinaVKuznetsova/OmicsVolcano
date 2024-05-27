@@ -79,10 +79,10 @@ Kuznetsova I, Lugmayr A, Rackham O, Filipovska A. OmicsVolcano: software for int
  
  
 ## Software Developers 
-Irina Kuznetsova | email: irina.kuznetsova@perkins.org.au  
+Irina Kuznetsova | email: irina.kuznetsova@curtin.edu.au  (not valid anymore email: irina.kuznetsova@perkins.org.au, May 2024)  
 Artur Lugmayr | email: lartur@acm.org   
  
- © Copyright (C) 2020  
+ Â© Copyright (C) 2020  
 https://github.com/IrinaVKuznetsova/OmicsVolcano.git  
   
  
